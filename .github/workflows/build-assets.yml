@@ -1,0 +1,28 @@
+name: Rebuild editable SVG assets
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - "content/profile.yml"
+      - "scripts/build_assets.py"
+
+jobs:
+  build-assets:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install dependencies
+        run: pip install pyyaml
+      - name: Generate SVG assets
+        run: python scripts/build_assets.py
+      - name: Commit generated assets
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: rebuild editable profile SVG assets"
+          file_pattern: "assets/*.svg"

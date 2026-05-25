@@ -1,0 +1,180 @@
+# fishman7337 GitHub Profile README visual source of truth
+# Edit this file first, then run: python scripts/build_assets.py
+# Most SVG text is generated from this file so you can update the visuals without hand-editing coordinates.
+
+identity:
+  name: Goh Kun Ming
+  username: fishman7337
+  location: Singapore
+  role: AI Research Intern @ RSAF RAiD (AETHER)
+  education: Diploma in Applied AI & Analytics @ Singapore Polytechnic
+  email: kunmingaden@gmail.com
+  github: https://github.com/fishman7337
+  linkedin: https://www.linkedin.com/in/goh-kun-ming-58573430a/
+  orcid: https://orcid.org/0009-0008-7666-781X
+  arxiv: https://arxiv.org/abs/2508.09209
+  tagline: Building research-grade AI systems that connect quantum ML, perception, and dependable deployment.
+  motto: Prototype quickly. Evaluate honestly. Ship responsibly.
+
+signals:
+  - Quantum GANs
+  - Computer Vision
+  - Sensor Fusion
+  - Remote Sensing
+  - MLOps
+  - Responsible AI
+
+metrics:
+  public_repositories: "24"
+  arxiv_preprints: "1"
+  base: SG
+  focus: AI R&D
+
+research:
+  title: Quantum-Enhanced GANs
+  subtitle: Comparative Analysis of Classical and Hybrid Quantum-Classical GANs
+  arxiv_id: "2508.09209"
+  summary: Hybrid quantum-classical GANs with quantum-circuit latent priors, benchmarked against classical GAN baselines.
+  bullets:
+    - Classical GAN vs 3-, 5-, and 7-qubit HQCGAN variants
+    - Qiskit AerSimulator with realistic noise models
+    - Binary MNIST digits 0 and 1 to respect near-term quantum constraints
+    - 150-epoch training runs with reproducible experiment configs
+    - FID and KID evaluation for honest image-quality benchmarking
+  result_note: Classical GAN led overall; the 7-qubit HQCGAN remained competitive and narrowed the gap in later epochs.
+
+mission_cards:
+  - title: Research
+    label: R&D
+    score: 92
+    desc: Hybrid quantum ML, GAN baselines, reproducible experiments, and careful evaluation.
+  - title: Perception
+    label: CV
+    score: 88
+    desc: Computer vision, sensor fusion, geospatial preparation, and detection workflows.
+  - title: Systems
+    label: MLOps
+    score: 84
+    desc: Flask/FastAPI, Docker, CI/CD, model serving, tests, and security scanning.
+  - title: Governance
+    label: Trust
+    score: 86
+    desc: Responsible AI, model cards, data cards, risk thinking, and accountable release practices.
+
+projects:
+  - name: HQCGAN Research
+    repo: hybrid-quantum-classical-gan-research
+    theme: Quantum AI
+    desc: Research-grade Hybrid Quantum-Classical GAN experiments using noisy quantum-circuit latent priors on binary MNIST.
+    stack: Qiskit · TensorFlow · FID/KID · arXiv
+  - name: ISR
+    repo: ISR
+    theme: Geospatial CV
+    desc: Satellite imagery preparation, topology/geometry feature engineering, preliminary screening, W&B orchestration.
+    stack: PyTorch · Remote Sensing · W&B · CV
+  - name: Global Security Policy Intelligence
+    repo: global-security-policy-intelligence
+    theme: Policy Intelligence
+    desc: Historical security analytics, governance panels, graph intelligence, RAG safety, and reproducible MLOps.
+    stack: React · ML · Neo4j · Data Engineering
+  - name: VeggieAI
+    repo: sp-daaa-doaa-ca2-vegetable-classification-application
+    theme: MLOps App
+    desc: Flask-based vegetable image classifier with model serving, auth, CI/CD, Docker, pytest, and security checks.
+    stack: Flask · TensorFlow · Docker · CI/CD
+  - name: EstateScope AI
+    repo: sp-daaa-doaa-ca1-housing-price-ml-application
+    theme: Multimodal ML
+    desc: Housing valuation platform combining tabular data, NLP descriptions, image CNN signals, and deployment docs.
+    stack: Flask · scikit-learn · NLP · CNN
+  - name: YubiWatch
+    repo: yubikey-secure-endpoint-system
+    theme: Secure Systems
+    desc: Rust-based secure endpoint watchdog with security-key presence checks, audit logging, and local controls.
+    stack: Rust · Security · Audit Logging
+  - name: Wage Modelling
+    repo: sp-daaa-mai-ca3-wage-modelling
+    theme: Regression
+    desc: Regression analysis with gradient descent, pytest, LaTeX reporting, and GitHub Actions.
+    stack: Python · NumPy · pytest · LaTeX
+  - name: Movie Sentiment AI
+    repo: sp-daaa-dele-ca1-movie-review-sentiment-analysis
+    theme: NLP
+    desc: Movie review sentiment classification and rating prediction using SimpleRNN, LSTM, and GRU architectures.
+    stack: TensorFlow · RNN · LSTM · GRU
+  - name: Reinforcement Learning Pendulum
+    repo: sp-daaa-dele-ca2-pendulum-reinforcement-learning
+    theme: RL
+    desc: DQN-style reinforcement learning experimentation for the Pendulum-v1 control task.
+    stack: Python · RL · DQN · Control
+  - name: HDB Price Dashboard
+    repo: sp-daaa-davi-ca1-hdb-price-dashboard
+    theme: Analytics
+    desc: Singapore HDB resale price analysis with cleaned datasets, dashboards, validation scripts, and notebooks.
+    stack: Python · Tableau · Data Viz
+
+skills:
+  Machine Learning:
+    - Python
+    - scikit-learn
+    - TensorFlow
+    - PyTorch
+    - Evaluation
+  Vision + Geospatial:
+    - OpenCV
+    - Satellite Imagery
+    - Feature Engineering
+    - Remote Sensing
+    - Sensor Fusion
+  Quantum AI:
+    - Qiskit
+    - HQCGANs
+    - Quantum Circuits
+    - NISQ Thinking
+    - FID/KID
+  Systems + MLOps:
+    - Flask
+    - FastAPI
+    - Docker
+    - GitHub Actions
+    - pytest
+  Data + Analytics:
+    - Pandas
+    - NumPy
+    - SQL
+    - Dashboards
+    - Plotly
+  Security + Governance:
+    - Rust
+    - Threat Models
+    - Audit Logs
+    - Model Cards
+    - Risk Controls
+
+timeline:
+  - date: 2025
+    title: HQCGAN Preprint
+    desc: Posted an arXiv preprint on Hybrid Quantum-Classical GANs and classical GAN baselines.
+  - date: Now
+    title: AI Research Intern
+    desc: Building research and applied AI capability across ML, CV, sensor fusion, and quantum computing.
+  - date: 2026+
+    title: Applied AI Systems
+    desc: Shipped public projects across MLOps, geospatial CV, policy intelligence, dashboards, and secure tooling.
+  - date: Next
+    title: Research-Grade Portfolio
+    desc: Turning experiments into reproducible systems with strong docs, testing, evaluation, and governance.
+
+theme:
+  bg0: "#05070F"
+  bg1: "#0B1F24"
+  panel: "#10172A"
+  panel2: "#102A35"
+  cyan: "#22D3EE"
+  blue: "#60A5FA"
+  purple: "#C084FC"
+  pink: "#FB7185"
+  green: "#2DD4BF"
+  amber: "#FBBF24"
+  text: "#ECFEFF"
+  muted: "#9EB7C7"

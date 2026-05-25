@@ -1,0 +1,286 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="640" viewBox="0 0 1600 640" role="img" aria-labelledby="title desc">
+<title id="title">Goh Kun Ming cyberdeck profile banner</title>
+<desc id="desc">Animated editable GitHub profile hero banner</desc>
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0%" stop-color="#05070F"/>
+    <stop offset="48%" stop-color="#0B1F24"/>
+    <stop offset="100%" stop-color="#111827"/>
+  </linearGradient>
+  <linearGradient id="panelGrad" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0%" stop-color="#10172A" stop-opacity="0.98"/>
+    <stop offset="100%" stop-color="#102A35" stop-opacity="0.92"/>
+  </linearGradient>
+  <linearGradient id="neon" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0%" stop-color="#22D3EE"/>
+    <stop offset="45%" stop-color="#C084FC"/>
+    <stop offset="100%" stop-color="#FB7185"/>
+  </linearGradient>
+  <linearGradient id="greenGrad" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0%" stop-color="#2DD4BF"/>
+    <stop offset="100%" stop-color="#22D3EE"/>
+  </linearGradient>
+  <linearGradient id="amberGrad" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0%" stop-color="#FBBF24"/>
+    <stop offset="100%" stop-color="#FB7185"/>
+  </linearGradient>
+  <linearGradient id="glassGrad" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0%" stop-color="#17233C" stop-opacity="0.92"/>
+    <stop offset="100%" stop-color="#06131B" stop-opacity="0.86"/>
+  </linearGradient>
+  <linearGradient id="scanGrad" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="#22D3EE" stop-opacity="0"/>
+    <stop offset="52%" stop-color="#22D3EE" stop-opacity="0.24"/>
+    <stop offset="100%" stop-color="#22D3EE" stop-opacity="0"/>
+  </linearGradient>
+  <radialGradient id="orbGlow" cx="50%" cy="50%" r="50%">
+    <stop offset="0%" stop-color="#22D3EE" stop-opacity="0.85"/>
+    <stop offset="65%" stop-color="#C084FC" stop-opacity="0.16"/>
+    <stop offset="100%" stop-color="#C084FC" stop-opacity="0"/>
+  </radialGradient>
+  <filter id="softGlow" x="-40%" y="-40%" width="180%" height="180%">
+    <feGaussianBlur stdDeviation="6" result="blur"/>
+    <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+  <filter id="cardShadow" x="-30%" y="-30%" width="160%" height="160%">
+    <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#020617" flood-opacity="0.50"/>
+  </filter>
+  <pattern id="grid" width="44" height="44" patternUnits="userSpaceOnUse">
+    <path d="M 44 0 L 0 0 0 44" fill="none" stroke="#22D3EE" stroke-opacity="0.065" stroke-width="1"/>
+  </pattern>
+  <pattern id="microGrid" width="12" height="12" patternUnits="userSpaceOnUse">
+    <path d="M 12 0 L 0 0 0 12" fill="none" stroke="#2DD4BF" stroke-opacity="0.045" stroke-width="1"/>
+  </pattern>
+  <style><![CDATA[
+    .bg { fill: url(#bg); }
+    .grid { fill: url(#grid); opacity: .95; }
+    .microGrid { fill: url(#microGrid); opacity: .70; }
+    .title { font-family: Inter, ui-sans-serif, system-ui, Segoe UI, Arial, sans-serif; font-weight: 900; letter-spacing: 0; fill: #ECFEFF; }
+    .subtitle { font-family: Inter, ui-sans-serif, system-ui, Segoe UI, Arial, sans-serif; font-weight: 700; fill: #22D3EE; }
+    .body { font-family: Inter, ui-sans-serif, system-ui, Segoe UI, Arial, sans-serif; fill: #9EB7C7; }
+    .mono { font-family: JetBrains Mono, SFMono-Regular, Consolas, Monaco, monospace; fill: #ECFEFF; }
+    .label { font-family: JetBrains Mono, SFMono-Regular, Consolas, Monaco, monospace; font-weight: 800; fill: #22D3EE; }
+    .muted { fill: #9EB7C7; }
+    .tiny { font-size: 18px; }
+    .small { font-size: 22px; }
+    .medium { font-size: 28px; }
+    .large { font-size: 46px; }
+    .huge { font-size: 72px; }
+    .chip { fill: rgba(15, 23, 42, .78); stroke: #22D3EE; stroke-opacity: .35; }
+    .panel { fill: url(#panelGrad); stroke: #22D3EE; stroke-opacity: .22; filter: url(#cardShadow); }
+    .glass { fill: url(#glassGrad); stroke: #22D3EE; stroke-opacity: .24; filter: url(#cardShadow); }
+    .hairline { stroke: #22D3EE; stroke-opacity: .28; stroke-width: 1.3; fill: none; }
+    .faintLine { stroke: #9EB7C7; stroke-opacity: .18; stroke-width: 1; fill: none; }
+    .neonStroke { stroke: url(#neon); stroke-width: 3; fill: none; filter: url(#softGlow); }
+    .glowText { fill: url(#neon); filter: url(#softGlow); }
+    .pulse { animation: pulse 2.8s ease-in-out infinite; transform-origin: center; transform-box: fill-box; }
+    .floatA { animation: floatA 8s ease-in-out infinite; transform-box: fill-box; }
+    .floatB { animation: floatB 10s ease-in-out infinite; transform-box: fill-box; }
+    .spinSlow { animation: spin 24s linear infinite; transform-origin: center; transform-box: fill-box; }
+    .spinReverse { animation: spinReverse 32s linear infinite; transform-origin: center; transform-box: fill-box; }
+    .dash { fill: none; stroke-dasharray: 16 18; animation: dash 12s linear infinite; }
+    .scan { animation: scan 6s ease-in-out infinite; }
+    .blink { animation: blink 1.2s steps(2, end) infinite; }
+    .bar { transform-origin: left center; transform-box: fill-box; animation: barLoad 3.2s ease-out both; }
+    .twinkle { animation: twinkle 3s ease-in-out infinite; }
+    .wave { animation: wave 7s ease-in-out infinite alternate; }
+    .fadeSlide { animation: fadeSlide 5s ease-in-out infinite; }
+    @keyframes pulse { 0%,100% { opacity:.55; transform:scale(1); } 50% { opacity:1; transform:scale(1.055); } }
+    @keyframes floatA { 0%,100% { transform:translateY(0px); } 50% { transform:translateY(-14px); } }
+    @keyframes floatB { 0%,100% { transform:translateY(0px); } 50% { transform:translateY(12px); } }
+    @keyframes spin { from { transform:rotate(0deg); } to { transform:rotate(360deg); } }
+    @keyframes spinReverse { from { transform:rotate(360deg); } to { transform:rotate(0deg); } }
+    @keyframes dash { to { stroke-dashoffset:-280; } }
+    @keyframes scan { 0%,100% { transform:translateY(-120px); opacity:0; } 25%,70% { opacity:.50; } 50% { transform:translateY(740px); opacity:.20; } }
+    @keyframes blink { 0%,45% { opacity: 1; } 46%,100% { opacity: 0; } }
+    @keyframes barLoad { from { transform:scaleX(.08); } to { transform:scaleX(1); } }
+    @keyframes twinkle { 0%,100% { opacity:.25; } 50% { opacity:1; } }
+    @keyframes wave { from { transform: translateX(-20px); } to { transform: translateX(20px); } }
+    @keyframes fadeSlide { 0%,100% { opacity:.28; transform:translateX(-12px); } 50% { opacity:.75; transform:translateX(12px); } }
+    @media (prefers-reduced-motion: reduce) { * { animation: none !important; } }
+  ]]></style>
+</defs>
+
+<rect width="1600" height="640" fill="#05070F"/>
+<rect class="bg" width="1600" height="640" rx="28"/>
+<rect class="grid" width="1600" height="640" rx="28"/>
+<rect class="microGrid" width="1600" height="640" rx="28"/>
+<path d="M0 0 H1600 V126 C1200 96 960 136 608 104 C320 78 192 112 0 78 Z" fill="url(#neon)" opacity="0.055"/>
+<path d="M0 520 C352 582 672 480 1088 548 C1312 584 1472 522 1600 558 V640 H0 Z" fill="url(#greenGrad)" opacity="0.05"/>
+<g opacity="0.42"><circle class="twinkle" cx="137" cy="83" r="1.6" fill="#C084FC" opacity="0.45" style="animation-delay:0.25s"/><circle class="twinkle" cx="274" cy="166" r="2.3" fill="#2DD4BF" opacity="0.45" style="animation-delay:0.50s"/><circle class="twinkle" cx="411" cy="249" r="1.0" fill="#FB7185" opacity="0.45" style="animation-delay:0.75s"/><circle class="twinkle" cx="548" cy="332" r="1.6" fill="#22D3EE" opacity="0.45" style="animation-delay:1.00s"/><circle class="twinkle" cx="685" cy="415" r="2.3" fill="#C084FC" opacity="0.45" style="animation-delay:1.25s"/><circle class="twinkle" cx="822" cy="498" r="1.0" fill="#2DD4BF" opacity="0.45" style="animation-delay:1.50s"/><circle class="twinkle" cx="959" cy="581" r="1.6" fill="#FB7185" opacity="0.45" style="animation-delay:1.75s"/><circle class="twinkle" cx="1096" cy="24" r="2.3" fill="#22D3EE" opacity="0.45" style="animation-delay:2.00s"/><circle class="twinkle" cx="1233" cy="107" r="1.0" fill="#C084FC" opacity="0.45" style="animation-delay:0.00s"/><circle class="twinkle" cx="1370" cy="190" r="1.6" fill="#2DD4BF" opacity="0.45" style="animation-delay:0.25s"/><circle class="twinkle" cx="1507" cy="273" r="2.3" fill="#FB7185" opacity="0.45" style="animation-delay:0.50s"/><circle class="twinkle" cx="44" cy="356" r="1.0" fill="#22D3EE" opacity="0.45" style="animation-delay:0.75s"/><circle class="twinkle" cx="181" cy="439" r="1.6" fill="#C084FC" opacity="0.45" style="animation-delay:1.00s"/><circle class="twinkle" cx="318" cy="522" r="2.3" fill="#2DD4BF" opacity="0.45" style="animation-delay:1.25s"/><circle class="twinkle" cx="455" cy="605" r="1.0" fill="#FB7185" opacity="0.45" style="animation-delay:1.50s"/><circle class="twinkle" cx="592" cy="48" r="1.6" fill="#22D3EE" opacity="0.45" style="animation-delay:1.75s"/><circle class="twinkle" cx="729" cy="131" r="2.3" fill="#C084FC" opacity="0.45" style="animation-delay:2.00s"/><circle class="twinkle" cx="866" cy="214" r="1.0" fill="#2DD4BF" opacity="0.45" style="animation-delay:0.00s"/><circle class="twinkle" cx="1003" cy="297" r="1.6" fill="#FB7185" opacity="0.45" style="animation-delay:0.25s"/><circle class="twinkle" cx="1140" cy="380" r="2.3" fill="#22D3EE" opacity="0.45" style="animation-delay:0.50s"/><circle class="twinkle" cx="1277" cy="463" r="1.0" fill="#C084FC" opacity="0.45" style="animation-delay:0.75s"/><circle class="twinkle" cx="1414" cy="546" r="1.6" fill="#2DD4BF" opacity="0.45" style="animation-delay:1.00s"/><circle class="twinkle" cx="1551" cy="629" r="2.3" fill="#FB7185" opacity="0.45" style="animation-delay:1.25s"/><circle class="twinkle" cx="88" cy="72" r="1.0" fill="#22D3EE" opacity="0.45" style="animation-delay:1.50s"/><circle class="twinkle" cx="225" cy="155" r="1.6" fill="#C084FC" opacity="0.45" style="animation-delay:1.75s"/><circle class="twinkle" cx="362" cy="238" r="2.3" fill="#2DD4BF" opacity="0.45" style="animation-delay:2.00s"/><circle class="twinkle" cx="499" cy="321" r="1.0" fill="#FB7185" opacity="0.45" style="animation-delay:0.00s"/><circle class="twinkle" cx="636" cy="404" r="1.6" fill="#22D3EE" opacity="0.45" style="animation-delay:0.25s"/><circle class="twinkle" cx="773" cy="487" r="2.3" fill="#C084FC" opacity="0.45" style="animation-delay:0.50s"/><circle class="twinkle" cx="910" cy="570" r="1.0" fill="#2DD4BF" opacity="0.45" style="animation-delay:0.75s"/><circle class="twinkle" cx="1047" cy="13" r="1.6" fill="#FB7185" opacity="0.45" style="animation-delay:1.00s"/><circle class="twinkle" cx="1184" cy="96" r="2.3" fill="#22D3EE" opacity="0.45" style="animation-delay:1.25s"/><circle class="twinkle" cx="1321" cy="179" r="1.0" fill="#C084FC" opacity="0.45" style="animation-delay:1.50s"/><circle class="twinkle" cx="1458" cy="262" r="1.6" fill="#2DD4BF" opacity="0.45" style="animation-delay:1.75s"/><circle class="twinkle" cx="1595" cy="345" r="2.3" fill="#FB7185" opacity="0.45" style="animation-delay:2.00s"/><circle class="twinkle" cx="132" cy="428" r="1.0" fill="#22D3EE" opacity="0.45" style="animation-delay:0.00s"/><circle class="twinkle" cx="269" cy="511" r="1.6" fill="#C084FC" opacity="0.45" style="animation-delay:0.25s"/><circle class="twinkle" cx="406" cy="594" r="2.3" fill="#2DD4BF" opacity="0.45" style="animation-delay:0.50s"/><circle class="twinkle" cx="543" cy="37" r="1.0" fill="#FB7185" opacity="0.45" style="animation-delay:0.75s"/><circle class="twinkle" cx="680" cy="120" r="1.6" fill="#22D3EE" opacity="0.45" style="animation-delay:1.00s"/><circle class="twinkle" cx="817" cy="203" r="2.3" fill="#C084FC" opacity="0.45" style="animation-delay:1.25s"/><circle class="twinkle" cx="954" cy="286" r="1.0" fill="#2DD4BF" opacity="0.45" style="animation-delay:1.50s"/><circle class="twinkle" cx="1091" cy="369" r="1.6" fill="#FB7185" opacity="0.45" style="animation-delay:1.75s"/><circle class="twinkle" cx="1228" cy="452" r="2.3" fill="#22D3EE" opacity="0.45" style="animation-delay:2.00s"/><circle class="twinkle" cx="1365" cy="535" r="1.0" fill="#C084FC" opacity="0.45" style="animation-delay:0.00s"/><circle class="twinkle" cx="1502" cy="618" r="1.6" fill="#2DD4BF" opacity="0.45" style="animation-delay:0.25s"/><circle class="twinkle" cx="39" cy="61" r="2.3" fill="#FB7185" opacity="0.45" style="animation-delay:0.50s"/><circle class="twinkle" cx="176" cy="144" r="1.0" fill="#22D3EE" opacity="0.45" style="animation-delay:0.75s"/><circle class="twinkle" cx="313" cy="227" r="1.6" fill="#C084FC" opacity="0.45" style="animation-delay:1.00s"/><circle class="twinkle" cx="450" cy="310" r="2.3" fill="#2DD4BF" opacity="0.45" style="animation-delay:1.25s"/><circle class="twinkle" cx="587" cy="393" r="1.0" fill="#FB7185" opacity="0.45" style="animation-delay:1.50s"/><circle class="twinkle" cx="724" cy="476" r="1.6" fill="#22D3EE" opacity="0.45" style="animation-delay:1.75s"/><circle class="twinkle" cx="861" cy="559" r="2.3" fill="#C084FC" opacity="0.45" style="animation-delay:2.00s"/><circle class="twinkle" cx="998" cy="2" r="1.0" fill="#2DD4BF" opacity="0.45" style="animation-delay:0.00s"/><circle class="twinkle" cx="1135" cy="85" r="1.6" fill="#FB7185" opacity="0.45" style="animation-delay:0.25s"/></g>
+<g id="ambient-circuit-traces"><path d="M72 104 h42 v18 h21" fill="none" stroke="#22D3EE" stroke-opacity="0.13" stroke-width="1.2"/><path d="M185 175 h68 v30 h34" fill="none" stroke="#2DD4BF" stroke-opacity="0.13" stroke-width="1.2"/><path d="M298 246 h94 v42 h47" fill="none" stroke="#C084FC" stroke-opacity="0.13" stroke-width="1.2"/><path d="M411 317 h120 v18 h60" fill="none" stroke="#FBBF24" stroke-opacity="0.13" stroke-width="1.2"/><path d="M524 388 h42 v30 h21" fill="none" stroke="#22D3EE" stroke-opacity="0.13" stroke-width="1.2"/><path d="M637 459 h68 v42 h34" fill="none" stroke="#2DD4BF" stroke-opacity="0.13" stroke-width="1.2"/><path d="M750 530 h94 v18 h47" fill="none" stroke="#C084FC" stroke-opacity="0.13" stroke-width="1.2"/><path d="M863 141 h120 v30 h60" fill="none" stroke="#FBBF24" stroke-opacity="0.13" stroke-width="1.2"/><path d="M976 212 h42 v42 h21" fill="none" stroke="#22D3EE" stroke-opacity="0.13" stroke-width="1.2"/><path d="M1089 283 h68 v18 h34" fill="none" stroke="#2DD4BF" stroke-opacity="0.13" stroke-width="1.2"/><path d="M1202 354 h94 v30 h47" fill="none" stroke="#C084FC" stroke-opacity="0.13" stroke-width="1.2"/><path d="M1315 425 h120 v42 h60" fill="none" stroke="#FBBF24" stroke-opacity="0.13" stroke-width="1.2"/><path d="M1428 496 h42 v18 h21" fill="none" stroke="#22D3EE" stroke-opacity="0.13" stroke-width="1.2"/><path d="M101 107 h68 v30 h34" fill="none" stroke="#2DD4BF" stroke-opacity="0.13" stroke-width="1.2"/></g>
+<path d="M28 92 V28 H92 M1508 28 H1572 V92 M28 548 V612 H92 M1508 612 H1572 V548" fill="none" stroke="url(#neon)" stroke-width="4" stroke-linecap="round" opacity="0.62"/>
+<rect class="scan" x="0" y="0" width="1600" height="136" fill="url(#scanGrad)" opacity="0.42"/>
+
+<g id="layer-background-orbits" opacity="0.78">
+<circle class="spinSlow" cx="1230" cy="316" r="194" fill="none" stroke="#C084FC" stroke-opacity="0.28" stroke-width="2" stroke-dasharray="12 18"/>
+<circle class="spinReverse" cx="1230" cy="316" r="248" fill="none" stroke="#22D3EE" stroke-opacity="0.18" stroke-width="2" stroke-dasharray="6 22"/>
+<circle cx="1230" cy="316" r="310" fill="url(#orbGlow)" opacity="0.20"/>
+</g>
+<g id="edit-hero-main-copy">
+<path d="M52 74 V520" stroke="url(#neon)" stroke-width="5" stroke-linecap="round" opacity="0.74"/>
+<g>
+<rect x="72" y="66" width="430" height="38" rx="19" fill="rgba(15,23,42,.72)" stroke="#22D3EE" stroke-opacity="0.36"/>
+<text x="287" y="91" text-anchor="middle" class="mono" font-size="18" font-weight="700">fishman7337 // PROFILE README OS</text>
+</g>
+<text id="edit-hero-name" x="72" y="160" class="title huge">Goh Kun Ming</text>
+<text id="edit-hero-username" x="76" y="205" class="mono medium" fill="#22D3EE">@fishman7337</text>
+<text id="edit-hero-tagline-1" x="72" y="262" class="body small">Building research-grade AI systems that connect quantum</text>
+<text id="edit-hero-tagline-2" x="72" y="296" class="body small">ML, perception, and dependable deployment.</text>
+<text id="edit-hero-role" x="72" y="350" class="subtitle medium">AI Research Intern @ RSAF RAiD (AETHER)</text>
+<text id="edit-hero-edu" x="72" y="388" class="body small">Diploma in Applied AI &amp; Analytics @ Singapore Polytechnic</text>
+<g>
+<rect x="72" y="430" width="198" height="38" rx="19" fill="rgba(15,23,42,.72)" stroke="#22D3EE" stroke-opacity="0.36"/>
+<text x="171" y="455" text-anchor="middle" class="mono" font-size="17" font-weight="700">Quantum GANs</text>
+</g>
+<g>
+<rect x="284" y="430" width="237" height="38" rx="19" fill="rgba(15,23,42,.72)" stroke="#C084FC" stroke-opacity="0.36"/>
+<text x="402" y="455" text-anchor="middle" class="mono" font-size="17" font-weight="700">Computer Vision</text>
+</g>
+<g>
+<rect x="535" y="430" width="211" height="38" rx="19" fill="rgba(15,23,42,.72)" stroke="#2DD4BF" stroke-opacity="0.36"/>
+<text x="640" y="455" text-anchor="middle" class="mono" font-size="17" font-weight="700">Sensor Fusion</text>
+</g>
+<g>
+<rect x="72" y="482" width="224" height="38" rx="19" fill="rgba(15,23,42,.72)" stroke="#FB7185" stroke-opacity="0.36"/>
+<text x="184" y="507" text-anchor="middle" class="mono" font-size="17" font-weight="700">Remote Sensing</text>
+</g>
+<g>
+<rect x="310" y="482" width="132" height="38" rx="19" fill="rgba(15,23,42,.72)" stroke="#22D3EE" stroke-opacity="0.36"/>
+<text x="376" y="507" text-anchor="middle" class="mono" font-size="17" font-weight="700">MLOps</text>
+</g>
+<g>
+<rect x="456" y="482" width="224" height="38" rx="19" fill="rgba(15,23,42,.72)" stroke="#C084FC" stroke-opacity="0.36"/>
+<text x="568" y="507" text-anchor="middle" class="mono" font-size="17" font-weight="700">Responsible AI</text>
+</g>
+<text id="edit-hero-motto" x="76" y="535" class="mono" font-size="17" fill="#9EB7C7">Prototype quickly. Evaluate honestly. Ship responsibly.</text>
+</g>
+<g id="edit-hero-metrics">
+<g>
+<rect x="72" y="558" width="152" height="50" rx="15" fill="rgba(16,26,53,.72)" stroke="#22D3EE" stroke-opacity="0.32"/>
+<text x="90" y="580" class="title" font-size="22">24</text>
+<text x="90" y="598" class="mono" font-size="11" fill="#9EB7C7">PUBLIC REPOS</text>
+</g>
+<g>
+<rect x="250" y="558" width="152" height="50" rx="15" fill="rgba(16,26,53,.72)" stroke="#C084FC" stroke-opacity="0.32"/>
+<text x="268" y="580" class="title" font-size="22">1</text>
+<text x="268" y="598" class="mono" font-size="11" fill="#9EB7C7">ARXIV PREPRINT</text>
+</g>
+<g>
+<rect x="428" y="558" width="152" height="50" rx="15" fill="rgba(16,26,53,.72)" stroke="#2DD4BF" stroke-opacity="0.32"/>
+<text x="446" y="580" class="title" font-size="22">SG</text>
+<text x="446" y="598" class="mono" font-size="11" fill="#9EB7C7">BASE</text>
+</g>
+<g>
+<rect x="606" y="558" width="152" height="50" rx="15" fill="rgba(16,26,53,.72)" stroke="#FBBF24" stroke-opacity="0.32"/>
+<text x="624" y="580" class="title" font-size="22">AI R&amp;D</text>
+<text x="624" y="598" class="mono" font-size="11" fill="#9EB7C7">FOCUS</text>
+</g>
+</g>
+<g id="edit-hero-cockpit" class="floatA">
+<rect class="panel" x="930" y="82" width="590" height="468" rx="34" opacity="1"/>
+<rect x="960" y="116" width="530" height="58" rx="20" fill="rgba(6,11,24,.78)" stroke="#22D3EE" stroke-opacity="0.20"/>
+<text id="edit-hero-cockpit-title" x="988" y="151" class="mono" font-size="21" font-weight="900" fill="#22D3EE">LIVE RESEARCH STACK</text>
+<circle cx="1462" cy="144" r="8" fill="#2DD4BF"/>
+<text x="1410" y="151" class="mono" font-size="15" fill="#2DD4BF">ONLINE</text>
+<circle cx="1228" cy="318" r="112" fill="rgba(56,189,248,.10)" stroke="url(#neon)" stroke-width="3"/>
+<g id="edit-hero-core-node" class="pulse">
+<circle cx="1228" cy="318" r="74" fill="rgba(167,139,250,.10)" stroke="#C084FC" stroke-opacity="0.46"/>
+<text id="edit-hero-core" x="1228" y="304" text-anchor="middle" class="title" font-size="32">AI SYSTEMS</text>
+<text x="1228" y="338" text-anchor="middle" class="mono" font-size="18" fill="#9EB7C7">R&amp;D | CV | QML | MLOps</text>
+</g>
+<path class="dash" d="M1228 318 L1082 222" stroke="#C084FC" stroke-opacity="0.36" stroke-width="2"/>
+<g id="edit-hero-node-group-1" class="pulse" style="animation-delay:0.00s">
+<circle cx="1082" cy="222" r="38" fill="rgba(15,23,42,.88)" stroke="#C084FC" stroke-width="2"/>
+<text id="edit-hero-node-1" x="1082" y="229" text-anchor="middle" class="mono" font-size="17" font-weight="800">QML</text>
+</g>
+<path class="dash" d="M1228 318 L1390 230" stroke="#22D3EE" stroke-opacity="0.36" stroke-width="2"/>
+<g id="edit-hero-node-group-2" class="pulse" style="animation-delay:0.35s">
+<circle cx="1390" cy="230" r="38" fill="rgba(15,23,42,.88)" stroke="#22D3EE" stroke-width="2"/>
+<text id="edit-hero-node-2" x="1390" y="237" text-anchor="middle" class="mono" font-size="17" font-weight="800">CV</text>
+</g>
+<path class="dash" d="M1228 318 L1390 414" stroke="#2DD4BF" stroke-opacity="0.36" stroke-width="2"/>
+<g id="edit-hero-node-group-3" class="pulse" style="animation-delay:0.70s">
+<circle cx="1390" cy="414" r="38" fill="rgba(15,23,42,.88)" stroke="#2DD4BF" stroke-width="2"/>
+<text id="edit-hero-node-3" x="1390" y="421" text-anchor="middle" class="mono" font-size="17" font-weight="800">MLOps</text>
+</g>
+<path class="dash" d="M1228 318 L1084 414" stroke="#FBBF24" stroke-opacity="0.36" stroke-width="2"/>
+<g id="edit-hero-node-group-4" class="pulse" style="animation-delay:1.05s">
+<circle cx="1084" cy="414" r="38" fill="rgba(15,23,42,.88)" stroke="#FBBF24" stroke-width="2"/>
+<text id="edit-hero-node-4" x="1084" y="421" text-anchor="middle" class="mono" font-size="17" font-weight="800">Trust</text>
+</g>
+<rect x="975" y="466" width="500" height="62" rx="18" fill="rgba(2,6,23,.82)" stroke="#2DD4BF" stroke-opacity="0.22"/>
+<text id="edit-hero-terminal-1" x="1000" y="493" class="mono" font-size="16" fill="#2DD4BF">$ build --truth-grounded --readme-ready</text>
+<text id="edit-hero-terminal-2" x="1000" y="516" class="mono" font-size="14" fill="#9EB7C7">status: reproducible portfolio system ready</text>
+<g id="edit-hero-signal-meters" opacity="0.92">
+<text x="988" y="194" class="label" font-size="13" fill="#22D3EE">EVAL</text>
+<rect class="bar" x="988.0" y="230" width="4.7" height="18" rx="2" fill="#22D3EE" opacity="0.36" style="animation-delay:0.00s"/><rect class="bar" x="997.7" y="219" width="4.7" height="29" rx="2" fill="#22D3EE" opacity="0.49" style="animation-delay:0.04s"/><rect class="bar" x="1007.4" y="207" width="4.7" height="41" rx="2" fill="#22D3EE" opacity="0.62" style="animation-delay:0.08s"/><rect class="bar" x="1017.1" y="216" width="4.7" height="32" rx="2" fill="#22D3EE" opacity="0.36" style="animation-delay:0.12s"/><rect class="bar" x="1026.9" y="235" width="4.7" height="13" rx="2" fill="#22D3EE" opacity="0.49" style="animation-delay:0.16s"/><rect class="bar" x="1036.6" y="212" width="4.7" height="36" rx="2" fill="#22D3EE" opacity="0.62" style="animation-delay:0.20s"/><rect class="bar" x="1046.3" y="230" width="4.7" height="18" rx="2" fill="#22D3EE" opacity="0.36" style="animation-delay:0.24s"/>
+<text x="1368" y="194" class="label" font-size="13" fill="#2DD4BF">DOCS</text>
+<rect class="bar" x="1368.0" y="220" width="4.7" height="28" rx="2" fill="#2DD4BF" opacity="0.36" style="animation-delay:0.00s"/><rect class="bar" x="1377.7" y="227" width="4.7" height="21" rx="2" fill="#2DD4BF" opacity="0.49" style="animation-delay:0.04s"/><rect class="bar" x="1387.4" y="210" width="4.7" height="38" rx="2" fill="#2DD4BF" opacity="0.62" style="animation-delay:0.08s"/><rect class="bar" x="1397.1" y="237" width="4.7" height="11" rx="2" fill="#2DD4BF" opacity="0.36" style="animation-delay:0.12s"/><rect class="bar" x="1406.9" y="213" width="4.7" height="35" rx="2" fill="#2DD4BF" opacity="0.49" style="animation-delay:0.16s"/><rect class="bar" x="1416.6" y="232" width="4.7" height="16" rx="2" fill="#2DD4BF" opacity="0.62" style="animation-delay:0.20s"/><rect class="bar" x="1426.3" y="209" width="4.7" height="39" rx="2" fill="#2DD4BF" opacity="0.36" style="animation-delay:0.24s"/>
+<text x="988" y="372" class="label" font-size="13" fill="#FBBF24">OPS</text>
+<rect class="bar" x="988.0" y="391" width="4.7" height="35" rx="2" fill="#FBBF24" opacity="0.36" style="animation-delay:0.00s"/><rect class="bar" x="997.7" y="414" width="4.7" height="12" rx="2" fill="#FBBF24" opacity="0.49" style="animation-delay:0.04s"/><rect class="bar" x="1007.4" y="395" width="4.7" height="31" rx="2" fill="#FBBF24" opacity="0.62" style="animation-delay:0.08s"/><rect class="bar" x="1017.1" y="409" width="4.7" height="17" rx="2" fill="#FBBF24" opacity="0.36" style="animation-delay:0.12s"/><rect class="bar" x="1026.9" y="388" width="4.7" height="38" rx="2" fill="#FBBF24" opacity="0.49" style="animation-delay:0.16s"/><rect class="bar" x="1036.6" y="385" width="4.7" height="41" rx="2" fill="#FBBF24" opacity="0.62" style="animation-delay:0.20s"/><rect class="bar" x="1046.3" y="406" width="4.7" height="20" rx="2" fill="#FBBF24" opacity="0.36" style="animation-delay:0.24s"/>
+<text x="1368" y="372" class="label" font-size="13" fill="#FB7185">RISK</text>
+<rect class="bar" x="1368.0" y="400" width="4.7" height="26" rx="2" fill="#FB7185" opacity="0.36" style="animation-delay:0.00s"/><rect class="bar" x="1377.7" y="392" width="4.7" height="34" rx="2" fill="#FB7185" opacity="0.49" style="animation-delay:0.04s"/><rect class="bar" x="1387.4" y="404" width="4.7" height="22" rx="2" fill="#FB7185" opacity="0.62" style="animation-delay:0.08s"/><rect class="bar" x="1397.1" y="413" width="4.7" height="13" rx="2" fill="#FB7185" opacity="0.36" style="animation-delay:0.12s"/><rect class="bar" x="1406.9" y="398" width="4.7" height="28" rx="2" fill="#FB7185" opacity="0.49" style="animation-delay:0.16s"/><rect class="bar" x="1416.6" y="387" width="4.7" height="39" rx="2" fill="#FB7185" opacity="0.62" style="animation-delay:0.20s"/><rect class="bar" x="1426.3" y="394" width="4.7" height="32" rx="2" fill="#FB7185" opacity="0.36" style="animation-delay:0.24s"/>
+</g>
+</g>
+<g id="hero-waveform" opacity="0.70">
+<rect class="bar" x="830" y="586" width="6" height="18" rx="3" fill="#22D3EE" opacity="0.45" style="animation-delay:0.00s"/>
+<rect class="bar" x="841" y="549" width="6" height="55" rx="3" fill="#C084FC" opacity="0.45" style="animation-delay:0.01s"/>
+<rect class="bar" x="852" y="570" width="6" height="34" rx="3" fill="#2DD4BF" opacity="0.45" style="animation-delay:0.03s"/>
+<rect class="bar" x="863" y="533" width="6" height="71" rx="3" fill="#22D3EE" opacity="0.45" style="animation-delay:0.04s"/>
+<rect class="bar" x="874" y="554" width="6" height="50" rx="3" fill="#C084FC" opacity="0.45" style="animation-delay:0.06s"/>
+<rect class="bar" x="885" y="575" width="6" height="29" rx="3" fill="#2DD4BF" opacity="0.45" style="animation-delay:0.07s"/>
+<rect class="bar" x="896" y="538" width="6" height="66" rx="3" fill="#22D3EE" opacity="0.45" style="animation-delay:0.09s"/>
+<rect class="bar" x="907" y="559" width="6" height="45" rx="3" fill="#C084FC" opacity="0.45" style="animation-delay:0.10s"/>
+<rect class="bar" x="918" y="580" width="6" height="24" rx="3" fill="#2DD4BF" opacity="0.45" style="animation-delay:0.12s"/>
+<rect class="bar" x="929" y="543" width="6" height="61" rx="3" fill="#22D3EE" opacity="0.45" style="animation-delay:0.14s"/>
+<rect class="bar" x="940" y="564" width="6" height="40" rx="3" fill="#C084FC" opacity="0.45" style="animation-delay:0.15s"/>
+<rect class="bar" x="951" y="585" width="6" height="19" rx="3" fill="#2DD4BF" opacity="0.45" style="animation-delay:0.16s"/>
+<rect class="bar" x="962" y="548" width="6" height="56" rx="3" fill="#22D3EE" opacity="0.45" style="animation-delay:0.18s"/>
+<rect class="bar" x="973" y="569" width="6" height="35" rx="3" fill="#C084FC" opacity="0.45" style="animation-delay:0.20s"/>
+<rect class="bar" x="984" y="532" width="6" height="72" rx="3" fill="#2DD4BF" opacity="0.45" style="animation-delay:0.21s"/>
+<rect class="bar" x="995" y="553" width="6" height="51" rx="3" fill="#22D3EE" opacity="0.45" style="animation-delay:0.22s"/>
+<rect class="bar" x="1006" y="574" width="6" height="30" rx="3" fill="#C084FC" opacity="0.45" style="animation-delay:0.24s"/>
+<rect class="bar" x="1017" y="537" width="6" height="67" rx="3" fill="#2DD4BF" opacity="0.45" style="animation-delay:0.26s"/>
+<rect class="bar" x="1028" y="558" width="6" height="46" rx="3" fill="#22D3EE" opacity="0.45" style="animation-delay:0.27s"/>
+<rect class="bar" x="1039" y="579" width="6" height="25" rx="3" fill="#C084FC" opacity="0.45" style="animation-delay:0.28s"/>
+<rect class="bar" x="1050" y="542" width="6" height="62" rx="3" fill="#2DD4BF" opacity="0.45" style="animation-delay:0.30s"/>
+<rect class="bar" x="1061" y="563" width="6" height="41" rx="3" fill="#22D3EE" opacity="0.45" style="animation-delay:0.32s"/>
+<rect class="bar" x="1072" y="584" width="6" height="20" rx="3" fill="#C084FC" opacity="0.45" style="animation-delay:0.33s"/>
+<rect class="bar" x="1083" y="547" width="6" height="57" rx="3" fill="#2DD4BF" opacity="0.45" style="animation-delay:0.34s"/>
+<rect class="bar" x="1094" y="568" width="6" height="36" rx="3" fill="#22D3EE" opacity="0.45" style="animation-delay:0.36s"/>
+<rect class="bar" x="1105" y="531" width="6" height="73" rx="3" fill="#C084FC" opacity="0.45" style="animation-delay:0.38s"/>
+<rect class="bar" x="1116" y="552" width="6" height="52" rx="3" fill="#2DD4BF" opacity="0.45" style="animation-delay:0.39s"/>
+<rect class="bar" x="1127" y="573" width="6" height="31" rx="3" fill="#22D3EE" opacity="0.45" style="animation-delay:0.40s"/>
+<rect class="bar" x="1138" y="536" width="6" height="68" rx="3" fill="#C084FC" opacity="0.45" style="animation-delay:0.42s"/>
+<rect class="bar" x="1149" y="557" width="6" height="47" rx="3" fill="#2DD4BF" opacity="0.45" style="animation-delay:0.43s"/>
+<rect class="bar" x="1160" y="578" width="6" height="26" rx="3" fill="#22D3EE" opacity="0.45" style="animation-delay:0.45s"/>
+<rect class="bar" x="1171" y="541" width="6" height="63" rx="3" fill="#C084FC" opacity="0.45" style="animation-delay:0.46s"/>
+<rect class="bar" x="1182" y="562" width="6" height="42" rx="3" fill="#2DD4BF" opacity="0.45" style="animation-delay:0.48s"/>
+<rect class="bar" x="1193" y="583" width="6" height="21" rx="3" fill="#22D3EE" opacity="0.45" style="animation-delay:0.49s"/>
+<rect class="bar" x="1204" y="546" width="6" height="58" rx="3" fill="#C084FC" opacity="0.45" style="animation-delay:0.51s"/>
+<rect class="bar" x="1215" y="567" width="6" height="37" rx="3" fill="#2DD4BF" opacity="0.45" style="animation-delay:0.53s"/>
+<rect class="bar" x="1226" y="530" width="6" height="74" rx="3" fill="#22D3EE" opacity="0.45" style="animation-delay:0.54s"/>
+<rect class="bar" x="1237" y="551" width="6" height="53" rx="3" fill="#C084FC" opacity="0.45" style="animation-delay:0.55s"/>
+<rect class="bar" x="1248" y="572" width="6" height="32" rx="3" fill="#2DD4BF" opacity="0.45" style="animation-delay:0.57s"/>
+<rect class="bar" x="1259" y="535" width="6" height="69" rx="3" fill="#22D3EE" opacity="0.45" style="animation-delay:0.58s"/>
+<rect class="bar" x="1270" y="556" width="6" height="48" rx="3" fill="#C084FC" opacity="0.45" style="animation-delay:0.60s"/>
+<rect class="bar" x="1281" y="577" width="6" height="27" rx="3" fill="#2DD4BF" opacity="0.45" style="animation-delay:0.61s"/>
+<rect class="bar" x="1292" y="540" width="6" height="64" rx="3" fill="#22D3EE" opacity="0.45" style="animation-delay:0.63s"/>
+<rect class="bar" x="1303" y="561" width="6" height="43" rx="3" fill="#C084FC" opacity="0.45" style="animation-delay:0.65s"/>
+<rect class="bar" x="1314" y="582" width="6" height="22" rx="3" fill="#2DD4BF" opacity="0.45" style="animation-delay:0.66s"/>
+<rect class="bar" x="1325" y="545" width="6" height="59" rx="3" fill="#22D3EE" opacity="0.45" style="animation-delay:0.67s"/>
+<rect class="bar" x="1336" y="566" width="6" height="38" rx="3" fill="#C084FC" opacity="0.45" style="animation-delay:0.69s"/>
+<rect class="bar" x="1347" y="529" width="6" height="75" rx="3" fill="#2DD4BF" opacity="0.45" style="animation-delay:0.70s"/>
+<rect class="bar" x="1358" y="550" width="6" height="54" rx="3" fill="#22D3EE" opacity="0.45" style="animation-delay:0.72s"/>
+<rect class="bar" x="1369" y="571" width="6" height="33" rx="3" fill="#C084FC" opacity="0.45" style="animation-delay:0.73s"/>
+<rect class="bar" x="1380" y="534" width="6" height="70" rx="3" fill="#2DD4BF" opacity="0.45" style="animation-delay:0.75s"/>
+<rect class="bar" x="1391" y="555" width="6" height="49" rx="3" fill="#22D3EE" opacity="0.45" style="animation-delay:0.77s"/>
+<rect class="bar" x="1402" y="576" width="6" height="28" rx="3" fill="#C084FC" opacity="0.45" style="animation-delay:0.78s"/>
+<rect class="bar" x="1413" y="539" width="6" height="65" rx="3" fill="#2DD4BF" opacity="0.45" style="animation-delay:0.79s"/>
+<rect class="bar" x="1424" y="560" width="6" height="44" rx="3" fill="#22D3EE" opacity="0.45" style="animation-delay:0.81s"/>
+<rect class="bar" x="1435" y="581" width="6" height="23" rx="3" fill="#C084FC" opacity="0.45" style="animation-delay:0.82s"/>
+<rect class="bar" x="1446" y="544" width="6" height="60" rx="3" fill="#2DD4BF" opacity="0.45" style="animation-delay:0.84s"/>
+<rect class="bar" x="1457" y="565" width="6" height="39" rx="3" fill="#22D3EE" opacity="0.45" style="animation-delay:0.85s"/>
+</g>
+</svg>
