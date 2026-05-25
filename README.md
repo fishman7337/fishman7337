@@ -153,30 +153,30 @@ flowchart LR
 <table>
   <tr>
     <td width="50%" valign="top">
-      <a href="https://github.com/fishman7337/hybrid-quantum-classical-gan-research"><img src="https://github-readme-stats.vercel.app/api/pin/?username=fishman7337&repo=hybrid-quantum-classical-gan-research&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=38BDF8&text_color=C9D1D9&icon_color=A78BFA" alt="HQCGAN repository card" /></a>
       <h3>🧬 Hybrid Quantum-Classical GAN Research</h3>
       <p>HQCGAN experiments comparing classical GAN baselines with noisy quantum-circuit latent priors on binary MNIST.</p>
       <p><b>Signal stack:</b> Qiskit · TensorFlow · GANs · FID/KID · experiment configs · reproducibility · arXiv.</p>
+      <p><a href="https://github.com/fishman7337/hybrid-quantum-classical-gan-research"><b>Open repository</b></a></p>
     </td>
     <td width="50%" valign="top">
-      <a href="https://github.com/fishman7337/ISR"><img src="https://github-readme-stats.vercel.app/api/pin/?username=fishman7337&repo=ISR&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=38BDF8&text_color=C9D1D9&icon_color=A78BFA" alt="ISR repository card" /></a>
       <h3>🛰️ ISR Satellite Imagery Pipeline</h3>
       <p>Satellite imagery preparation, geometry/topology feature engineering, preliminary model screening, and W&B-tracked orchestration.</p>
       <p><b>Signal stack:</b> remote sensing · computer vision · PyTorch · W&B · geospatial features · governance docs.</p>
+      <p><a href="https://github.com/fishman7337/ISR"><b>Open repository</b></a></p>
     </td>
   </tr>
   <tr>
     <td width="50%" valign="top">
-      <a href="https://github.com/fishman7337/global-security-policy-intelligence"><img src="https://github-readme-stats.vercel.app/api/pin/?username=fishman7337&repo=global-security-policy-intelligence&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=38BDF8&text_color=C9D1D9&icon_color=A78BFA" alt="Global Security Policy Intelligence repository card" /></a>
       <h3>🌐 Global Security Policy Intelligence</h3>
       <p>Historical security analytics, governance/public-policy panels, ML/DL, graph intelligence, RAG safety, and reproducible MLOps.</p>
       <p><b>Signal stack:</b> React · ML · graph analytics · Neo4j · data engineering · RAG guardrails.</p>
+      <p><a href="https://github.com/fishman7337/global-security-policy-intelligence"><b>Open repository</b></a></p>
     </td>
     <td width="50%" valign="top">
-      <a href="https://github.com/fishman7337/sp-daaa-doaa-ca2-vegetable-classification-application"><img src="https://github-readme-stats.vercel.app/api/pin/?username=fishman7337&repo=sp-daaa-doaa-ca2-vegetable-classification-application&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=38BDF8&text_color=C9D1D9&icon_color=A78BFA" alt="VeggieAI repository card" /></a>
       <h3>🥬 VeggieAI MLOps Platform</h3>
       <p>Vegetable image classifier with model serving, auth, prediction history, CI/CD, pytest, security checks, Docker, and MLOps docs.</p>
       <p><b>Signal stack:</b> Flask · TensorFlow serving · model registry · CI/CD · security scanning · operational docs.</p>
+      <p><a href="https://github.com/fishman7337/sp-daaa-doaa-ca2-vegetable-classification-application"><b>Open repository</b></a></p>
     </td>
   </tr>
 </table>
@@ -260,31 +260,9 @@ mindmap
 
 ---
 
-## Profile Source
+## Systems Console
 
-<img src="./assets/terminal-lab.svg" alt="Animated research terminal card with profile commands" width="100%" />
-
-<details>
-<summary><b>Open profile source controls</b></summary>
-
-<br />
-
-This README is not just a static markdown file. It ships with an editable visual system:
-
-```bash
-# change profile text, project labels, visual copy, and theme colors
-code content/profile.yml
-
-# regenerate all local animated SVGs
-python scripts/build_assets.py
-
-# optional: create local screenshots for QA
-python scripts/render_preview.py
-```
-
-The SVGs are generated with native `<text>` elements, stable IDs, and layer comments, so you can edit them manually in VS Code, Figma, Illustrator, or Inkscape without dealing with flattened image text.
-
-</details>
+<img src="./assets/terminal-lab.svg" alt="Animated research terminal showing AI systems, experiments, and deployment checks" width="100%" />
 
 ---
 
@@ -292,74 +270,25 @@ The SVGs are generated with native `<text>` elements, stable IDs, and layer comm
 
 <div align="center">
 
-<img width="49%" src="https://github-readme-stats.vercel.app/api?username=fishman7337&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=38BDF8&text_color=C9D1D9&icon_color=A78BFA" alt="GitHub stats for fishman7337" />
-<img width="49%" src="https://streak-stats.demolab.com?user=fishman7337&theme=tokyonight&hide_border=true&background=0D1117&ring=38BDF8&fire=F472B6&currStreakLabel=38BDF8" alt="GitHub streak stats for fishman7337" />
+<img width="98%" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=fishman7337&theme=tokyonight" alt="GitHub profile details for fishman7337" />
+
+<img width="49%" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=fishman7337&theme=tokyonight" alt="GitHub summary stats for fishman7337" />
+<img width="49%" src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=fishman7337&theme=tokyonight&utcOffset=8" alt="Productive time card for fishman7337" />
+
+<img width="49%" src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=fishman7337&theme=tokyonight" alt="Repositories per language for fishman7337" />
+<img width="49%" src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=fishman7337&theme=tokyonight" alt="Most committed languages for fishman7337" />
+
+<img width="98%" src="https://streak-stats.demolab.com?user=fishman7337&theme=tokyonight&hide_border=true&background=0D1117&ring=38BDF8&fire=F472B6&currStreakLabel=38BDF8" alt="GitHub streak stats for fishman7337" />
 
 <img width="98%" src="https://github-readme-activity-graph.vercel.app/graph?username=fishman7337&theme=react-dark&hide_border=true&bg_color=0D1117&color=38BDF8&line=A78BFA&point=34D399" alt="GitHub activity graph for fishman7337" />
-
-<img width="49%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=fishman7337&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=38BDF8&text_color=C9D1D9" alt="Top languages for fishman7337" />
-<img width="49%" src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=fishman7337&theme=tokyonight&utcOffset=8" alt="Productive time card for fishman7337" />
 
 <img width="98%" src="https://github-profile-trophy.vercel.app/?username=fishman7337&theme=tokyonight&no-frame=true&no-bg=true&margin-w=15&margin-h=15&column=6" alt="GitHub profile trophies" />
 
 </div>
 
-<details>
-<summary><b>🐍 Contribution snake setup</b></summary>
-
-<br />
-
-The bundle includes `.github/workflows/snake.yml`. After you push it, GitHub Actions can generate this contribution snake on the `output` branch:
-
-```md
-![fishman7337 contribution snake](https://raw.githubusercontent.com/fishman7337/fishman7337/output/github-contribution-grid-snake-dark.svg)
-```
-
-Uncomment the snake section below once the workflow has run at least once.
-
-</details>
-
-<!--
 <div align="center">
   <img src="https://raw.githubusercontent.com/fishman7337/fishman7337/output/github-contribution-grid-snake-dark.svg" alt="fishman7337 contribution snake animation" />
 </div>
--->
-
----
-
-## Editable Visual System
-
-<table>
-  <tr>
-    <td width="33%" valign="top">
-      <h3>1. Edit content once</h3>
-      <p>Update <code>content/profile.yml</code> to change names, projects, stack labels, mission cards, timeline items, and theme colors.</p>
-    </td>
-    <td width="33%" valign="top">
-      <h3>2. Regenerate visuals</h3>
-      <p>Run <code>python scripts/build_assets.py</code>. All SVGs refresh from the same source of truth.</p>
-    </td>
-    <td width="33%" valign="top">
-      <h3>3. Fine-tune manually</h3>
-      <p>Every SVG keeps native text and stable IDs, so editing in VS Code, Figma, Illustrator, or Inkscape stays clean.</p>
-    </td>
-  </tr>
-</table>
-
-<details>
-<summary><b>🛠️ What can be customised?</b></summary>
-
-<br />
-
-| Area | File | What to change |
-|---|---|---|
-| Profile identity | `content/profile.yml` | Name, handle, email, LinkedIn, ORCID, role, education, tagline |
-| Visual theme | `content/profile.yml` | Neon palette, panel colors, muted text, highlight colors |
-| SVG layout/text | `scripts/build_assets.py` | Coordinates, animation timing, card layouts, charts, icon labels |
-| README structure | `README.md` | Section order, cards, external widgets, project writeups |
-| GitHub automations | `.github/workflows/*.yml` | Contribution snake and optional automatic SVG regeneration |
-
-</details>
 
 ---
 
@@ -378,11 +307,3 @@ Uncomment the snake section below once the workflow has run at least once.
 <img src="./assets/footer-wave.svg" alt="Animated footer wave with motto" width="100%" />
 
 </div>
-
-<!--
-README maintenance note:
-- Keep repository name exactly: fishman7337
-- Keep README.md in repository root
-- Edit content/profile.yml for SVG text/theme changes
-- Regenerate SVGs with: python scripts/build_assets.py
--->

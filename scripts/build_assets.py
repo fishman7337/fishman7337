@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-'''Generate editable animated SVG assets for the fishman7337 GitHub profile README.
+'''Generate animated SVG assets for the fishman7337 GitHub profile README.
 
 Primary edit path:
   1. Edit content/profile.yml
@@ -258,7 +258,7 @@ def make_hero() -> str:
     width, height = 1600, 640
     chips = DATA['signals']
     metrics = DATA['metrics']
-    s = [svg_header(width, height, f"{I['name']} cyberdeck profile banner", 'Animated editable GitHub profile hero banner'), bg(width, height)]
+    s = [svg_header(width, height, f"{I['name']} cyberdeck profile banner", 'Animated GitHub profile hero banner'), bg(width, height)]
     s.append('<g id="layer-background-orbits" opacity="0.78">')
     s.append(f'<circle class="spinSlow" cx="1230" cy="316" r="194" fill="none" stroke="{T["purple"]}" stroke-opacity="0.28" stroke-width="2" stroke-dasharray="12 18"/>')
     s.append(f'<circle class="spinReverse" cx="1230" cy="316" r="248" fill="none" stroke="{T["cyan"]}" stroke-opacity="0.18" stroke-width="2" stroke-dasharray="6 22"/>')
@@ -342,7 +342,7 @@ def make_hero() -> str:
 def make_mission() -> str:
     width, height = 1600, 660
     cards = DATA['mission_cards']
-    s = [svg_header(width, height, 'Mission control HUD', 'Editable animated mission control board'), bg(width, height)]
+    s = [svg_header(width, height, 'Mission control HUD', 'Animated mission control board'), bg(width, height)]
     s.append(section_head('mission', 'Mission Control', 'Research questions, baselines, systems delivery, and responsible release practices in one operating loop.', 'OPS LOOP'))
     # center pipeline line
     s.append('<g id="edit-mission-pipeline">')
@@ -383,7 +383,7 @@ def make_mission() -> str:
 def make_quantum_lab() -> str:
     width, height = 1600, 570
     r = DATA['research']
-    s = [svg_header(width, height, 'HQCGAN quantum lab pipeline', 'Editable animated diagram explaining the HQCGAN research pipeline'), bg(width, height)]
+    s = [svg_header(width, height, 'HQCGAN quantum lab pipeline', 'Animated diagram explaining the HQCGAN research pipeline'), bg(width, height)]
     s.append(section_head('quantum', r['title'], f'{r["subtitle"]} | arXiv:{r["arxiv_id"]}', 'RESEARCH TRACE'))
 
     # pipeline boxes
@@ -443,7 +443,7 @@ def make_quantum_lab() -> str:
 def make_project_nebula() -> str:
     width, height = 1600, 720
     projects = DATA['projects'][:10]
-    s = [svg_header(width, height, 'Project nebula map', 'Editable animated project constellation showing public GitHub builds'), bg(width, height)]
+    s = [svg_header(width, height, 'Project nebula map', 'Animated project constellation showing public GitHub builds'), bg(width, height)]
     s.append(section_head('nebula', 'Project Nebula', 'A public build map across research, geospatial AI, MLOps, analytics, security, NLP, RL, and dashboards.', 'PUBLIC GRAPH'))
     # central core
     cx, cy = 800, 380
@@ -478,7 +478,7 @@ def make_project_nebula() -> str:
 def make_skill_constellation() -> str:
     width, height = 1600, 650
     skills = DATA['skills']
-    s = [svg_header(width, height, 'Skill constellation matrix', 'Editable animated technology and capability matrix'), bg(width, height)]
+    s = [svg_header(width, height, 'Skill constellation matrix', 'Animated technology and capability matrix'), bg(width, height)]
     s.append(section_head('skills', 'Technical Stack', 'A practical stack for reproducible experiments, applied AI products, data systems, and trustworthy deployment.', 'CAPABILITY MATRIX'))
     colors = [T['cyan'], T['purple'], T['green'], T['amber'], T['pink'], T['blue']]
     x0, y0 = 70, 170
@@ -507,7 +507,7 @@ def make_skill_constellation() -> str:
 def make_timeline() -> str:
     width, height = 1600, 560
     items = DATA['timeline']
-    s = [svg_header(width, height, 'Timeline roadmap', 'Editable animated roadmap timeline'), bg(width, height)]
+    s = [svg_header(width, height, 'Timeline roadmap', 'Animated roadmap timeline'), bg(width, height)]
     s.append(section_head('roadmap', 'Roadmap / Build Log', 'The through-line: post evidence, harden systems, and keep claims bounded by reproducible work.', 'BUILD HISTORY'))
     yline = 340
     s.append(f'<rect x="86" y="{yline-38}" width="1428" height="76" rx="38" fill="rgba(2,6,23,.34)" stroke="{T["cyan"]}" stroke-opacity="0.12"/>')
@@ -535,7 +535,7 @@ def make_timeline() -> str:
 
 def make_terminal_lab() -> str:
     width, height = 1600, 560
-    s = [svg_header(width, height, 'Terminal lab card', 'Editable animated terminal simulation card'), bg(width, height)]
+    s = [svg_header(width, height, 'Terminal lab card', 'Animated terminal simulation card'), bg(width, height)]
     s.append(section_head('terminal', 'Research Terminal', 'A cinematic boot sequence for reproducible experiments, docs, evaluation, and contact routes.', 'BOOT LOG'))
     # terminal window
     s.append(f'<rect x="100" y="165" width="1400" height="330" rx="28" fill="rgba(2,6,23,.88)" stroke="{T["cyan"]}" stroke-opacity="0.30" filter="url(#cardShadow)"/>')
@@ -547,7 +547,7 @@ def make_terminal_lab() -> str:
         ('$ whoami', I['name'] + ' — ' + I['role']),
         ('$ cat focus.txt', 'Quantum GANs | Computer Vision | Sensor Fusion | MLOps | Responsible AI'),
         ('$ run experiment --mode honest-baseline', 'baseline recorded · metrics tracked · claims bounded'),
-        ('$ deploy profile --visual-system editable-svg', 'assets generated from content/profile.yml · screenshots exported'),
+        ('$ deploy portfolio --mode cyberdeck', 'profile visuals synced · checks passed · ready for review'),
         ('$ contact --linkedin --email', 'linkedin.com/in/goh-kun-ming-58573430a/ · ' + I['email']),
     ]
     y = 262
@@ -561,7 +561,7 @@ def make_terminal_lab() -> str:
 
 def make_footer_wave() -> str:
     width, height = 1600, 260
-    s = [svg_header(width, height, 'Footer wave', 'Animated editable footer wave'), bg(width, height)]
+    s = [svg_header(width, height, 'Footer wave', 'Animated footer wave'), bg(width, height)]
     s.append(f'<path d="M420 54 H1180" class="hairline" opacity="0.8"/>')
     s.append(f'<path class="wave" d="M-40 176 C220 106, 380 246, 620 176 C860 106, 1030 246, 1260 176 C1420 130, 1540 130, 1640 156 L1640 260 L-40 260 Z" fill="url(#neon)" opacity="0.26"/>')
     s.append(f'<path class="wave" d="M-40 202 C240 142, 420 250, 660 198 C880 150, 1050 230, 1268 190 C1440 160, 1540 164, 1640 190 L1640 260 L-40 260 Z" fill="{T["cyan"]}" opacity="0.14" style="animation-duration:10s"/>')

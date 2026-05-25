@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Render static QA screenshots for the editable SVG profile README.
+"""Render static QA screenshots for the animated SVG profile README.
 
 Usage:
   python scripts/render_preview.py
@@ -181,7 +181,7 @@ def make_visual_gallery() -> None:
         y += parts[i].height
         canvas.paste(parts[i + 1], ((width - inner) // 2, y))
         y += parts[i + 1].height + 24
-    draw.text((60, y), "Static screenshot preview generated from local editable SVGs. Animations render live in GitHub-compatible SVG images.", font=FONT_SMALL, fill=MUTED)
+    draw.text((60, y), "Static screenshot preview generated from local SVGs. Animations render live in GitHub-compatible SVG images.", font=FONT_SMALL, fill=MUTED)
     canvas.save(SCREENSHOTS / "visual-gallery-screenshot.png", quality=95)
 
 
@@ -193,7 +193,7 @@ def main() -> None:
     manifest = {
         "name": "fishman7337-profile-readme-cyberdeck",
         "username": "fishman7337",
-        "editable_source": "content/profile.yml",
+        "profile_source": "content/profile.yml",
         "generated_assets": sorted(p.name for p in ASSETS.glob("*.svg")),
         "screenshots": sorted(p.name for p in SCREENSHOTS.glob("*")),
     }

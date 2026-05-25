@@ -1,7 +1,7 @@
 {
   "name": "fishman7337-profile-readme-cyberdeck",
   "username": "fishman7337",
-  "editable_source": "content/profile.yml",
+  "profile_source": "content/profile.yml",
   "generated_assets": [
     "footer-wave.svg",
     "hero-cyberdeck.svg",
@@ -20,6 +20,7 @@
     "mission-control.png",
     "project-nebula.png",
     "quantum-lab.png",
+    "readme-public-gallery-qa.png",
     "skill-constellation.png",
     "svg-contact-sheet.png",
     "terminal-lab.png",

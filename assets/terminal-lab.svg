@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1600" height="560" viewBox="0 0 1600 560" role="img" aria-labelledby="title desc">
 <title id="title">Terminal lab card</title>
-<desc id="desc">Editable animated terminal simulation card</desc>
+<desc id="desc">Animated terminal simulation card</desc>
 <defs>
   <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
     <stop offset="0%" stop-color="#05070F"/>
@@ -131,8 +131,8 @@
 <text id="edit-terminal-out-2" x="610" y="310" class="mono" font-size="15" fill="#ECFEFF">Quantum GANs | Computer Vision | Sensor Fusion | MLOps | Responsible AI</text>
 <text id="edit-terminal-cmd-3" x="140" y="358" class="mono" font-size="17" fill="#2DD4BF">$ run experiment --mode honest-baseline</text>
 <text id="edit-terminal-out-3" x="610" y="358" class="mono" font-size="15" fill="#ECFEFF">baseline recorded · metrics tracked · claims bounded</text>
-<text id="edit-terminal-cmd-4" x="140" y="406" class="mono" font-size="17" fill="#2DD4BF">$ deploy profile --visual-system editable-svg</text>
-<text id="edit-terminal-out-4" x="610" y="406" class="mono" font-size="15" fill="#ECFEFF">assets generated from content/profile.yml · screenshots exported</text>
+<text id="edit-terminal-cmd-4" x="140" y="406" class="mono" font-size="17" fill="#2DD4BF">$ deploy portfolio --mode cyberdeck</text>
+<text id="edit-terminal-out-4" x="610" y="406" class="mono" font-size="15" fill="#ECFEFF">profile visuals synced · checks passed · ready for review</text>
 <text id="edit-terminal-cmd-5" x="140" y="454" class="mono" font-size="17" fill="#2DD4BF">$ contact --linkedin --email</text>
 <text id="edit-terminal-out-5" x="610" y="454" class="mono" font-size="15" fill="#ECFEFF">linkedin.com/in/goh-kun-ming-58573430a/ · kunmingaden@gmail.com</text>
 <rect class="blink" x="140" y="464" width="16" height="25" fill="#22D3EE" opacity="0.9"/>
