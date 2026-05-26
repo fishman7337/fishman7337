@@ -496,9 +496,9 @@ def make_skill_constellation() -> str:
         for j, item in enumerate(items):
             chip_x = x + 30 + (j % 2) * 205
             chip_y = y + 70 + (j // 2) * 37
-            w = 178
+            w = 186
             s.append(f'<rect x="{chip_x}" y="{chip_y}" width="{w}" height="30" rx="15" fill="rgba(2,6,23,.58)" stroke="{color}" stroke-opacity="0.24"/>')
-            s.append(f'<text id="edit-skill-{idx+1}-{j+1}" x="{chip_x+16}" y="{chip_y+21}" class="mono" font-size="14" fill="{T["text"]}">{esc(item)}</text>')
+            s.append(f'<text id="edit-skill-{idx+1}-{j+1}" x="{chip_x+16}" y="{chip_y+21}" class="mono" font-size="13" fill="{T["text"]}">{esc(ellipsize(item, 20))}</text>')
         s.append('</g>')
     s.append(svg_footer())
     return '\n'.join(s)
@@ -545,7 +545,7 @@ def make_terminal_lab() -> str:
     s.append(f'<text x="238" y="199" class="mono" font-size="17" fill="{T["muted"]}">fishman7337@research-os:~/portfolio</text>')
     lines = [
         ('$ whoami', I['name'] + ' — ' + I['role']),
-        ('$ cat focus.txt', 'Quantum GANs | Computer Vision | Sensor Fusion | MLOps | Responsible AI'),
+        ('$ cat focus.txt', 'Quantum GANs | CV | ROS/Sensor Fusion | Data/Stats | Cloud MLOps'),
         ('$ run experiment --mode honest-baseline', 'baseline recorded · metrics tracked · claims bounded'),
         ('$ deploy portfolio --mode cyberdeck', 'profile visuals synced · checks passed · ready for review'),
         ('$ contact --linkedin --email', 'linkedin.com/in/goh-kun-ming-58573430a/ · ' + I['email']),

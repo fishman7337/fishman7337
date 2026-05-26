@@ -128,7 +128,7 @@
 <text id="edit-terminal-cmd-1" x="140" y="262" class="mono" font-size="17" fill="#2DD4BF">$ whoami</text>
 <text id="edit-terminal-out-1" x="610" y="262" class="mono" font-size="15" fill="#ECFEFF">Goh Kun Ming — AI Research Intern @ RSAF RAiD (AETHER)</text>
 <text id="edit-terminal-cmd-2" x="140" y="310" class="mono" font-size="17" fill="#2DD4BF">$ cat focus.txt</text>
-<text id="edit-terminal-out-2" x="610" y="310" class="mono" font-size="15" fill="#ECFEFF">Quantum GANs | Computer Vision | Sensor Fusion | MLOps | Responsible AI</text>
+<text id="edit-terminal-out-2" x="610" y="310" class="mono" font-size="15" fill="#ECFEFF">Quantum GANs | CV | ROS/Sensor Fusion | Data/Stats | Cloud MLOps</text>
 <text id="edit-terminal-cmd-3" x="140" y="358" class="mono" font-size="17" fill="#2DD4BF">$ run experiment --mode honest-baseline</text>
 <text id="edit-terminal-out-3" x="610" y="358" class="mono" font-size="15" fill="#ECFEFF">baseline recorded · metrics tracked · claims bounded</text>
 <text id="edit-terminal-cmd-4" x="140" y="406" class="mono" font-size="17" fill="#2DD4BF">$ deploy portfolio --mode cyberdeck</text>

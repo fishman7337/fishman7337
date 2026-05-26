@@ -116,40 +116,46 @@ projects:
 skills:
   Machine Learning:
     - Python
-    - scikit-learn
-    - TensorFlow
     - PyTorch
+    - TensorFlow
+    - Keras
+    - scikit-learn
     - Evaluation
-  Vision + Geospatial:
+  Data + Statistics:
+    - Pandas
+    - NumPy
+    - SQL
+    - statsmodels
+    - Plotly
+    - Dashboards
+  Vision + Robotics:
     - OpenCV
+    - ROS
+    - Sensor Fusion
+    - Remote Sensing
     - Satellite Imagery
     - Feature Engineering
-    - Remote Sensing
-    - Sensor Fusion
   Quantum AI:
     - Qiskit
     - HQCGANs
     - Quantum Circuits
     - NISQ Thinking
     - FID/KID
-  Systems + MLOps:
+    - AerSimulator
+  Systems + Cloud:
     - Flask
     - FastAPI
     - Docker
     - GitHub Actions
+    - AWS
     - pytest
-  Data + Analytics:
-    - Pandas
-    - NumPy
-    - SQL
-    - Dashboards
-    - Plotly
   Security + Governance:
     - Rust
     - Threat Models
     - Audit Logs
     - Model Cards
     - Risk Controls
+    - Responsible AI
 
 timeline:
   - date: 2025

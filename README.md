@@ -1,9 +1,3 @@
-<!--
-  fishman7337 / Goh Kun Ming GitHub profile README
-  Visual system: edit content/profile.yml, then run python scripts/build_assets.py.
-  GitHub-compatible interactivity only: no JavaScript required.
--->
-
 <div align="center">
 
 <img src="./assets/hero-cyberdeck.svg" alt="Goh Kun Ming fishman7337 animated AI research cyberdeck banner" width="100%" />
@@ -53,7 +47,7 @@ const fishman7337 = {
   currentRole: "AI Research Intern @ RSAF RAiD (AETHER)",
   publicResearch: "Quantum-Enhanced GANs preprint · arXiv:2508.09209",
   operatingMode: "research → reproducibility → evaluation → deployable systems",
-  proofPoints: ["Qiskit", "FID/KID", "pytest", "CI/CD", "Docker", "model cards"]
+  proofPoints: ["PyTorch", "Keras", "Qiskit", "Pandas/NumPy", "SQL", "AWS", "Docker", "CI/CD"]
 };
 ```
 
@@ -209,7 +203,41 @@ flowchart LR
 
 <div align="center">
 
-<img src="https://skillicons.dev/icons?i=python,pytorch,tensorflow,sklearn,opencv,flask,fastapi,docker,git,githubactions,postgres,sqlite,react,js,ts,rust,linux,vscode&perline=9" alt="Technology skill icons" />
+<p><b>AI kernels · statistical modelling · perception systems · cloud deployment · responsible engineering</b></p>
+
+<img src="https://skillicons.dev/icons?i=python,pytorch,tensorflow,sklearn,opencv,flask,fastapi,docker,git,githubactions,postgres,sqlite,react,js,ts,rust,linux,vscode,aws&perline=10" alt="Technology skill icons" />
+
+<br />
+<br />
+
+<img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white" alt="PyTorch" />
+<img src="https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white" alt="TensorFlow" />
+<img src="https://img.shields.io/badge/Keras-D00000?style=for-the-badge&logo=keras&logoColor=white" alt="Keras" />
+<img src="https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikitlearn&logoColor=white" alt="scikit-learn" />
+<img src="https://img.shields.io/badge/Qiskit-6929C4?style=for-the-badge&logo=qiskit&logoColor=white" alt="Qiskit" />
+<img src="https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white" alt="OpenCV" />
+<img src="https://img.shields.io/badge/ROS-22314E?style=for-the-badge&logo=ros&logoColor=white" alt="ROS" />
+
+<br />
+
+<img src="https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white" alt="Pandas" />
+<img src="https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white" alt="NumPy" />
+<img src="https://img.shields.io/badge/SQL-336791?style=for-the-badge&logo=postgresql&logoColor=white" alt="SQL" />
+<img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL" />
+<img src="https://img.shields.io/badge/SQLite-003B57?style=for-the-badge&logo=sqlite&logoColor=white" alt="SQLite" />
+<img src="https://img.shields.io/badge/statsmodels-11557C?style=for-the-badge&logo=python&logoColor=white" alt="statsmodels" />
+<img src="https://img.shields.io/badge/Plotly-3F4F75?style=for-the-badge&logo=plotly&logoColor=white" alt="Plotly" />
+<img src="https://img.shields.io/badge/Tableau-E97627?style=for-the-badge&logo=tableau&logoColor=white" alt="Tableau" />
+
+<br />
+
+<img src="https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazonwebservices&logoColor=white" alt="AWS" />
+<img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker" />
+<img src="https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white" alt="FastAPI" />
+<img src="https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white" alt="Flask" />
+<img src="https://img.shields.io/badge/GitHub%20Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white" alt="GitHub Actions" />
+<img src="https://img.shields.io/badge/pytest-0A9EDC?style=for-the-badge&logo=pytest&logoColor=white" alt="pytest" />
+<img src="https://img.shields.io/badge/Weights%20%26%20Biases-FFBE00?style=for-the-badge&logo=weightsandbiases&logoColor=111827" alt="Weights and Biases" />
 
 </div>
 
@@ -220,11 +248,11 @@ flowchart LR
 
 | Capability | Tools / methods | Portfolio signal |
 |---|---|---|
-| Machine Learning | Python, scikit-learn, TensorFlow, PyTorch, evaluation metrics | Classification, regression, GANs, RL, practical ML apps |
-| Vision + Geospatial | OpenCV, image pipelines, satellite imagery, feature engineering | ISR, CV classification, object detection, image-derived signals |
-| Quantum AI | Qiskit, parameterised quantum circuits, NISQ-aware design | HQCGAN research and arXiv preprint |
-| MLOps + Backend | Flask, FastAPI, Docker, GitHub Actions, pytest | Model serving, CI/CD, security checks, deployable apps |
-| Data + Analytics | Pandas, NumPy, SQL, dashboards, Plotly/Tableau | HDB/job market/student/audience analytics projects |
+| Machine Learning | Python, PyTorch, TensorFlow, Keras, scikit-learn, evaluation metrics | Classification, regression, GANs, RL, practical ML apps |
+| Data + Statistics | Pandas, NumPy, SQL, statsmodels, Plotly/Tableau | HDB analytics, wage modelling, dashboards, validation scripts |
+| Vision + Robotics | OpenCV, ROS, sensor fusion, satellite imagery, feature engineering | ISR, CV classification, object detection, perception pipelines |
+| Quantum AI | Qiskit, AerSimulator, parameterised quantum circuits, NISQ-aware design | HQCGAN research and arXiv preprint |
+| Systems + Cloud | Flask, FastAPI, Docker, GitHub Actions, pytest, AWS | Model serving, CI/CD, security checks, deployable apps |
 | Governance + Security | threat models, audit logs, model cards, risk controls, Rust | Responsible AI docs and secure endpoint tooling |
 
 </details>
