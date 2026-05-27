@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 from pathlib import Path
+import base64
 import html
 import re
 from urllib.request import Request, urlopen
@@ -19,7 +20,9 @@ LOGOS = [
     ("tensorflow", "TensorFlow", "TensorFlow", "https://cdn.simpleicons.org/tensorflow/FF6F00", "https://www.tensorflow.org/"),
     ("keras", "Keras", "Keras", "https://cdn.simpleicons.org/keras/D00000", "https://keras.io/"),
     ("scikit-learn", "scikit-learn", "scikit", "https://cdn.simpleicons.org/scikitlearn/F7931E", "https://scikit-learn.org/"),
+    ("jupyter", "Jupyter", "Jupyter", "https://cdn.simpleicons.org/jupyter/F37626", "https://jupyter.org/"),
     ("qiskit", "Qiskit", "Qiskit", "https://cdn.simpleicons.org/qiskit/6929C4", "https://www.qiskit.org/"),
+    ("pennylane", "PennyLane", "PennyL", "https://raw.githubusercontent.com/PennyLaneAI/pennylane/master/doc/_static/logo.png", "https://pennylane.ai/"),
     ("opencv", "OpenCV", "OpenCV", "https://cdn.simpleicons.org/opencv/5C3EE8", "https://opencv.org/"),
     ("ros", "ROS", "ROS", "https://cdn.simpleicons.org/ros/22314E", "https://www.ros.org/"),
     ("pandas", "Pandas", "Pandas", "https://cdn.simpleicons.org/pandas/150458", "https://pandas.pydata.org/"),
@@ -31,6 +34,16 @@ LOGOS = [
     ("dash", "Dash", "Dash", "https://cdn.simpleicons.org/plotly/008DE4", "https://dash.plotly.com/"),
     ("tableau", "Tableau", "Tableau", "https://api.iconify.design/logos:tableau-icon.svg", "https://www.tableau.com/"),
     ("power-bi", "Power BI", "Power BI", "https://api.iconify.design/logos:microsoft-power-bi.svg", "https://powerbi.microsoft.com/"),
+    ("html5", "HTML5", "HTML5", "https://cdn.simpleicons.org/html5/E34F26", "https://developer.mozilla.org/en-US/docs/Web/HTML"),
+    ("css", "CSS", "CSS", "https://cdn.simpleicons.org/css/663399", "https://developer.mozilla.org/en-US/docs/Web/CSS"),
+    ("javascript", "JavaScript", "JS", "https://cdn.simpleicons.org/javascript/F7DF1E", "https://developer.mozilla.org/en-US/docs/Web/JavaScript"),
+    ("typescript", "TypeScript", "TS", "https://cdn.simpleicons.org/typescript/3178C6", "https://www.typescriptlang.org/"),
+    ("react", "React", "React", "https://cdn.simpleicons.org/react/61DAFB", "https://react.dev/"),
+    ("vue", "Vue", "Vue", "https://cdn.simpleicons.org/vuedotjs/4FC08D", "https://vuejs.org/"),
+    ("nextjs", "Next.js", "Next", "https://cdn.simpleicons.org/nextdotjs/111827", "https://nextjs.org/"),
+    ("nodejs", "Node.js", "Node", "https://cdn.simpleicons.org/nodedotjs/5FA04E", "https://nodejs.org/"),
+    ("vite", "Vite", "Vite", "https://cdn.simpleicons.org/vite/646CFF", "https://vite.dev/"),
+    ("tailwindcss", "Tailwind CSS", "Tailwind", "https://cdn.simpleicons.org/tailwindcss/06B6D4", "https://tailwindcss.com/"),
     ("postgresql", "PostgreSQL", "Postgres", "https://cdn.simpleicons.org/postgresql/4169E1", "https://www.postgresql.org/"),
     ("sqlite", "SQLite", "SQLite", "https://cdn.simpleicons.org/sqlite/003B57", "https://www.sqlite.org/"),
     ("neo4j", "Neo4j", "Neo4j", "https://cdn.simpleicons.org/neo4j/4581C3", "https://neo4j.com/"),
@@ -52,7 +65,13 @@ def fetch_icon(url: str) -> tuple[str, str, str | None] | None:
         return None
     request = Request(url, headers={"User-Agent": "fishman7337-profile-readme"})
     with urlopen(request, timeout=20) as response:
-        svg = response.read().decode("utf-8")
+        payload = response.read()
+        content_type = response.headers.get("Content-Type", "")
+    if "image/png" in content_type or url.lower().endswith(".png"):
+        encoded = base64.b64encode(payload).decode("ascii")
+        image = f'<image href="data:image/png;base64,{encoded}" x="0" y="0" width="512" height="512" preserveAspectRatio="xMidYMid meet"/>'
+        return "0 0 512 512", image, None
+    svg = payload.decode("utf-8")
     match = re.search(r"<svg\b([^>]*)>(.*)</svg>", svg, flags=re.I | re.S)
     if not match:
         raise ValueError(f"Could not parse SVG from {url}")

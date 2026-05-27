@@ -120,7 +120,19 @@ skills:
     - TensorFlow
     - Keras
     - scikit-learn
+    - Jupyter
     - Evaluation
+  Web + Frontend:
+    - HTML5
+    - CSS
+    - JavaScript
+    - TypeScript
+    - React
+    - Vue
+    - Next.js
+    - Node.js
+    - Vite
+    - Tailwind CSS
   Data + Statistics:
     - Pandas
     - NumPy
@@ -141,6 +153,7 @@ skills:
     - Feature Engineering
   Quantum AI:
     - Qiskit
+    - PennyLane
     - HQCGANs
     - Quantum Circuits
     - NISQ Thinking

@@ -476,7 +476,7 @@ def make_project_nebula() -> str:
 
 
 def make_skill_constellation() -> str:
-    width, height = 1600, 780
+    width, height = 1600, 1060
     skills = DATA['skills']
     s = [svg_header(width, height, 'Skill constellation matrix', 'Animated technology and capability matrix'), bg(width, height)]
     s.append(section_head('skills', 'Technical Stack', 'A practical stack for reproducible experiments, applied AI products, data systems, and trustworthy deployment.', 'CAPABILITY MATRIX'))
