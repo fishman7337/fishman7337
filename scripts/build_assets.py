@@ -476,13 +476,13 @@ def make_project_nebula() -> str:
 
 
 def make_skill_constellation() -> str:
-    width, height = 1600, 700
+    width, height = 1600, 780
     skills = DATA['skills']
     s = [svg_header(width, height, 'Skill constellation matrix', 'Animated technology and capability matrix'), bg(width, height)]
     s.append(section_head('skills', 'Technical Stack', 'A practical stack for reproducible experiments, applied AI products, data systems, and trustworthy deployment.', 'CAPABILITY MATRIX'))
     colors = [T['cyan'], T['purple'], T['green'], T['amber'], T['pink'], T['blue']]
     x0, y0 = 70, 170
-    cw, ch = 470, 218
+    cw, ch = 470, 250
     gapx, gapy = 35, 30
     for idx, (domain, items) in enumerate(skills.items()):
         row, col = divmod(idx, 3)

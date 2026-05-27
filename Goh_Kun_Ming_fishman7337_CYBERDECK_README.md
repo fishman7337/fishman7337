@@ -203,51 +203,46 @@ flowchart LR
 
 <div align="center">
 
-<p><b>AI kernels · statistical modelling · perception systems · cloud deployment · responsible engineering</b></p>
+<p><b>Clickable stack map · AI kernels · statistical modelling · graph intelligence · cloud deployment</b></p>
 
-<img src="https://skillicons.dev/icons?i=python,pytorch,tensorflow,sklearn,opencv,flask,fastapi,docker,kubernetes,git,githubactions,postgres,sqlite,react,js,ts,rust,linux,vscode,aws,gcp&perline=11" alt="Technology skill icons" />
+<a href="https://www.python.org/"><img src="https://cdn.simpleicons.org/python/3776AB" width="42" height="42" alt="Python" /></a>
+<a href="https://pytorch.org/"><img src="https://cdn.simpleicons.org/pytorch/EE4C2C" width="42" height="42" alt="PyTorch" /></a>
+<a href="https://www.tensorflow.org/"><img src="https://cdn.simpleicons.org/tensorflow/FF6F00" width="42" height="42" alt="TensorFlow" /></a>
+<a href="https://keras.io/"><img src="https://cdn.simpleicons.org/keras/D00000" width="42" height="42" alt="Keras" /></a>
+<a href="https://scikit-learn.org/"><img src="https://cdn.simpleicons.org/scikitlearn/F7931E" width="42" height="42" alt="scikit-learn" /></a>
+<a href="https://www.qiskit.org/"><img src="https://cdn.simpleicons.org/qiskit/6929C4" width="42" height="42" alt="Qiskit" /></a>
+<a href="https://opencv.org/"><img src="https://cdn.simpleicons.org/opencv/5C3EE8" width="42" height="42" alt="OpenCV" /></a>
+<a href="https://www.ros.org/"><img src="https://cdn.simpleicons.org/ros/22314E" width="42" height="42" alt="ROS" /></a>
+
+<br />
+<br />
+
+<a href="https://pandas.pydata.org/"><img src="https://cdn.simpleicons.org/pandas/150458" width="42" height="42" alt="Pandas" /></a>
+<a href="https://numpy.org/"><img src="https://cdn.simpleicons.org/numpy/013243" width="42" height="42" alt="NumPy" /></a>
+<a href="https://matplotlib.org/"><img src="https://api.iconify.design/logos:matplotlib-icon.svg" width="42" height="42" alt="Matplotlib" /></a>
+<a href="https://seaborn.pydata.org/"><img src="https://api.iconify.design/logos:seaborn-icon.svg" width="42" height="42" alt="Seaborn" /></a>
+<a href="https://www.statsmodels.org/"><img src="https://cdn.simpleicons.org/python/11557C" width="42" height="42" alt="statsmodels" /></a>
+<a href="https://plotly.com/python/"><img src="https://cdn.simpleicons.org/plotly/3F4F75" width="42" height="42" alt="Plotly" /></a>
+<a href="https://dash.plotly.com/"><img src="https://cdn.simpleicons.org/plotly/008DE4" width="42" height="42" alt="Dash" /></a>
+<a href="https://www.tableau.com/"><img src="https://api.iconify.design/logos:tableau-icon.svg" width="42" height="42" alt="Tableau" /></a>
+<a href="https://powerbi.microsoft.com/"><img src="https://api.iconify.design/logos:microsoft-power-bi.svg" width="42" height="42" alt="Power BI" /></a>
 
 <br />
 <br />
 
-<img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white" alt="PyTorch" />
-<img src="https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white" alt="TensorFlow" />
-<img src="https://img.shields.io/badge/Keras-D00000?style=for-the-badge&logo=keras&logoColor=white" alt="Keras" />
-<img src="https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikitlearn&logoColor=white" alt="scikit-learn" />
-<img src="https://img.shields.io/badge/Qiskit-6929C4?style=for-the-badge&logo=qiskit&logoColor=white" alt="Qiskit" />
-<img src="https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white" alt="OpenCV" />
-<img src="https://img.shields.io/badge/ROS-22314E?style=for-the-badge&logo=ros&logoColor=white" alt="ROS" />
-
-<br />
-
-<img src="https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white" alt="Pandas" />
-<img src="https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white" alt="NumPy" />
-<img src="https://img.shields.io/badge/Matplotlib-11557C?style=for-the-badge&logo=python&logoColor=white" alt="Matplotlib" />
-<img src="https://img.shields.io/badge/Seaborn-4C72B0?style=for-the-badge&logo=python&logoColor=white" alt="Seaborn" />
-<img src="https://img.shields.io/badge/statsmodels-11557C?style=for-the-badge&logo=python&logoColor=white" alt="statsmodels" />
-<img src="https://img.shields.io/badge/Plotly-3F4F75?style=for-the-badge&logo=plotly&logoColor=white" alt="Plotly" />
-<img src="https://img.shields.io/badge/Dash-008DE4?style=for-the-badge&logo=plotly&logoColor=white" alt="Dash" />
-<img src="https://img.shields.io/badge/Tableau-E97627?style=for-the-badge&logo=tableau&logoColor=white" alt="Tableau" />
-
-<br />
-
-<img src="https://img.shields.io/badge/SQL-336791?style=for-the-badge&logo=postgresql&logoColor=white" alt="SQL" />
-<img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL" />
-<img src="https://img.shields.io/badge/SQLite-003B57?style=for-the-badge&logo=sqlite&logoColor=white" alt="SQLite" />
-<img src="https://img.shields.io/badge/Neo4j-4581C3?style=for-the-badge&logo=neo4j&logoColor=white" alt="Neo4j" />
-<img src="https://img.shields.io/badge/Graph%20Analytics-10B981?style=for-the-badge&logo=neo4j&logoColor=white" alt="Graph Analytics" />
-
-<br />
-
-<img src="https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazonwebservices&logoColor=white" alt="AWS" />
-<img src="https://img.shields.io/badge/Google%20Cloud-4285F4?style=for-the-badge&logo=googlecloud&logoColor=white" alt="Google Cloud" />
-<img src="https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white" alt="Kubernetes" />
-<img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker" />
-<img src="https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white" alt="FastAPI" />
-<img src="https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white" alt="Flask" />
-<img src="https://img.shields.io/badge/GitHub%20Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white" alt="GitHub Actions" />
-<img src="https://img.shields.io/badge/pytest-0A9EDC?style=for-the-badge&logo=pytest&logoColor=white" alt="pytest" />
-<img src="https://img.shields.io/badge/Weights%20%26%20Biases-FFBE00?style=for-the-badge&logo=weightsandbiases&logoColor=111827" alt="Weights and Biases" />
+<a href="https://www.postgresql.org/"><img src="https://cdn.simpleicons.org/postgresql/4169E1" width="42" height="42" alt="PostgreSQL" /></a>
+<a href="https://www.sqlite.org/"><img src="https://cdn.simpleicons.org/sqlite/003B57" width="42" height="42" alt="SQLite" /></a>
+<a href="https://neo4j.com/"><img src="https://cdn.simpleicons.org/neo4j/4581C3" width="42" height="42" alt="Neo4j" /></a>
+<a href="https://aws.amazon.com/"><img src="https://api.iconify.design/logos:aws.svg" width="52" height="42" alt="AWS" /></a>
+<a href="https://cloud.google.com/"><img src="https://cdn.simpleicons.org/googlecloud/4285F4" width="42" height="42" alt="Google Cloud" /></a>
+<a href="https://kubernetes.io/"><img src="https://cdn.simpleicons.org/kubernetes/326CE5" width="42" height="42" alt="Kubernetes" /></a>
+<a href="https://www.docker.com/"><img src="https://cdn.simpleicons.org/docker/2496ED" width="42" height="42" alt="Docker" /></a>
+<a href="https://fastapi.tiangolo.com/"><img src="https://cdn.simpleicons.org/fastapi/009688" width="42" height="42" alt="FastAPI" /></a>
+<a href="https://flask.palletsprojects.com/"><img src="https://cdn.simpleicons.org/flask/FFFFFF" width="42" height="42" alt="Flask" /></a>
+<a href="https://github.com/features/actions"><img src="https://cdn.simpleicons.org/githubactions/2088FF" width="42" height="42" alt="GitHub Actions" /></a>
+<a href="https://docs.pytest.org/"><img src="https://cdn.simpleicons.org/pytest/0A9EDC" width="42" height="42" alt="pytest" /></a>
+<a href="https://wandb.ai/"><img src="https://cdn.simpleicons.org/weightsandbiases/FFBE00" width="42" height="42" alt="Weights and Biases" /></a>
+<a href="https://www.rust-lang.org/"><img src="https://cdn.simpleicons.org/rust/FFFFFF" width="42" height="42" alt="Rust" /></a>
 
 </div>
 
@@ -262,7 +257,7 @@ flowchart LR
 | Data + Statistics | Pandas, NumPy, Matplotlib, Seaborn, statsmodels, SQL | HDB analytics, wage modelling, statistical reports, validation scripts |
 | Vision + Robotics | OpenCV, ROS, sensor fusion, satellite imagery, feature engineering | ISR, CV classification, object detection, perception pipelines |
 | Quantum AI | Qiskit, AerSimulator, parameterised quantum circuits, NISQ-aware design | HQCGAN research and arXiv preprint |
-| Visual Apps + Graphs | Plotly, Dash, Tableau, Neo4j, graph analytics | Dashboards, policy intelligence, exploratory analysis, graph-backed insights |
+| Visual Apps + Graphs | Plotly, Dash, Tableau, Power BI, Neo4j, graph analytics | Dashboards, policy intelligence, exploratory analysis, graph-backed insights |
 | Systems + Cloud | Flask, FastAPI, Docker, Kubernetes, GitHub Actions, AWS, GCP, pytest | Model serving, CI/CD, security checks, deployable apps |
 | Governance + Security | threat models, audit logs, model cards, risk controls, Rust | Responsible AI docs and secure endpoint tooling |
 
