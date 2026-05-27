@@ -18,8 +18,8 @@
 </defs>
 <rect x="3" y="3" width="82" height="82" rx="18" fill="url(#card-bg)" stroke="url(#card-stroke)" stroke-width="1.8" opacity="1" filter="url(#shadow)"/>
 <rect x="8" y="8" width="72" height="72" rx="15" fill="#020617" opacity="0.38"/>
-<rect x="16" y="10" width="56" height="48" rx="14" fill="#F8FAFC" opacity="0.98"/>
-<rect x="16" y="10" width="56" height="48" rx="14" fill="none" stroke="#FFFFFF" stroke-opacity="0.72"/>
+<rect x="16" y="10" width="56" height="48" rx="14" fill="#061827" opacity="0.78"/>
+<rect x="16" y="10" width="56" height="48" rx="14" fill="none" stroke="#22D3EE" stroke-opacity="0.24"/>
 <svg x="24" y="13" width="40" height="40" viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" fill="#FFBE00" color="#FFBE00"><path d="M2.48 0a1.55 1.55 0 1 0 0 3.1 1.55 1.55 0 0 0 0-3.1zm19.04 0a1.55 1.55 0 1 0 0 3.101 1.55 1.55 0 0 0 0-3.101zM12 2.295a1.55 1.55 0 1 0 0 3.1 1.55 1.55 0 0 0 0-3.1zM2.48 5.272a2.48 2.48 0 1 0 0 4.96 2.48 2.48 0 0 0 0-4.96zm19.04 0a2.48 2.48 0 1 0 0 4.96 2.48 2.48 0 0 0 0-4.96zM12 8.496a1.55 1.55 0 1 0 0 3.1 1.55 1.55 0 0 0 0-3.1zm-9.52 3.907a1.55 1.55 0 1 0 0 3.1 1.55 1.55 0 0 0 0-3.1zm19.04 0a1.55 1.55 0 1 0 0 3.102 1.55 1.55 0 0 0 0-3.102zM12 13.767a2.48 2.48 0 1 0 0 4.962 2.48 2.48 0 0 0 0-4.962zm-9.52 3.907a2.48 2.48 0 1 0 .001 4.962 2.48 2.48 0 0 0 0-4.962zm19.04.93a1.55 1.55 0 1 0 0 3.102 1.55 1.55 0 0 0 0-3.101zM12 20.9a1.55 1.55 0 1 0 0 3.1 1.55 1.55 0 0 0 0-3.1Z"/></svg>
 <text x="44" y="73" text-anchor="middle" font-family="JetBrains Mono, Consolas, monospace" font-size="8.7" font-weight="800" fill="#CFFAFE">W&amp;B</text>
 </svg>

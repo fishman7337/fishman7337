@@ -18,8 +18,8 @@
 </defs>
 <rect x="3" y="3" width="82" height="82" rx="18" fill="url(#card-bg)" stroke="url(#card-stroke)" stroke-width="1.8" opacity="1" filter="url(#shadow)"/>
 <rect x="8" y="8" width="72" height="72" rx="15" fill="#020617" opacity="0.38"/>
-<rect x="16" y="10" width="56" height="48" rx="14" fill="#F8FAFC" opacity="0.98"/>
-<rect x="16" y="10" width="56" height="48" rx="14" fill="none" stroke="#FFFFFF" stroke-opacity="0.72"/>
+<rect x="16" y="10" width="56" height="48" rx="14" fill="#061827" opacity="0.78"/>
+<rect x="16" y="10" width="56" height="48" rx="14" fill="none" stroke="#22D3EE" stroke-opacity="0.24"/>
 <svg x="24" y="13" width="40" height="40" viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" fill="#FF6F00" color="#FF6F00"><path d="M1.292 5.856L11.54 0v24l-4.095-2.378V7.603l-6.168 3.564.015-5.31zm21.43 5.311l-.014-5.31L12.46 0v24l4.095-2.378V14.87l3.092 1.788-.018-4.618-3.074-1.756V7.603l6.168 3.564z"/></svg>
 <text x="44" y="73" text-anchor="middle" font-family="JetBrains Mono, Consolas, monospace" font-size="8.7" font-weight="800" fill="#CFFAFE">TensorFlow</text>
 </svg>

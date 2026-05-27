@@ -24,13 +24,13 @@ LOGOS = [
     ("qiskit", "Qiskit", "Qiskit", "https://cdn.simpleicons.org/qiskit/6929C4", "https://www.qiskit.org/"),
     ("pennylane", "PennyLane", "PennyL", "https://raw.githubusercontent.com/PennyLaneAI/pennylane/master/doc/_static/logo.png", "https://pennylane.ai/"),
     ("opencv", "OpenCV", "OpenCV", "https://cdn.simpleicons.org/opencv/5C3EE8", "https://opencv.org/"),
-    ("ros", "ROS", "ROS", "https://cdn.simpleicons.org/ros/22314E", "https://www.ros.org/"),
-    ("pandas", "Pandas", "Pandas", "https://cdn.simpleicons.org/pandas/150458", "https://pandas.pydata.org/"),
-    ("numpy", "NumPy", "NumPy", "https://cdn.simpleicons.org/numpy/013243", "https://numpy.org/"),
+    ("ros", "ROS", "ROS", "https://cdn.simpleicons.org/ros/9DB4CF", "https://www.ros.org/"),
+    ("pandas", "Pandas", "Pandas", "https://cdn.simpleicons.org/pandas/A78BFA", "https://pandas.pydata.org/"),
+    ("numpy", "NumPy", "NumPy", "https://cdn.simpleicons.org/numpy/67E8F9", "https://numpy.org/"),
     ("matplotlib", "Matplotlib", "MPL", "https://api.iconify.design/logos:matplotlib-icon.svg", "https://matplotlib.org/"),
     ("seaborn", "Seaborn", "Seaborn", "https://api.iconify.design/logos:seaborn-icon.svg", "https://seaborn.pydata.org/"),
     ("statsmodels", "statsmodels", "stats", "https://www.statsmodels.org/stable/_images/statsmodels-logo-v2-no-text.svg", "https://www.statsmodels.org/"),
-    ("plotly", "Plotly", "Plotly", "https://cdn.simpleicons.org/plotly/3F4F75", "https://plotly.com/python/"),
+    ("plotly", "Plotly", "Plotly", "https://cdn.simpleicons.org/plotly/9DB4FF", "https://plotly.com/python/"),
     ("dash", "Dash", "Dash", "https://cdn.simpleicons.org/plotly/008DE4", "https://dash.plotly.com/"),
     ("tableau", "Tableau", "Tableau", "https://api.iconify.design/logos:tableau-icon.svg", "https://www.tableau.com/"),
     ("power-bi", "Power BI", "Power BI", "https://api.iconify.design/logos:microsoft-power-bi.svg", "https://powerbi.microsoft.com/"),
@@ -40,23 +40,23 @@ LOGOS = [
     ("typescript", "TypeScript", "TS", "https://cdn.simpleicons.org/typescript/3178C6", "https://www.typescriptlang.org/"),
     ("react", "React", "React", "https://cdn.simpleicons.org/react/61DAFB", "https://react.dev/"),
     ("vue", "Vue", "Vue", "https://cdn.simpleicons.org/vuedotjs/4FC08D", "https://vuejs.org/"),
-    ("nextjs", "Next.js", "Next", "https://cdn.simpleicons.org/nextdotjs/111827", "https://nextjs.org/"),
+    ("nextjs", "Next.js", "Next", "https://cdn.simpleicons.org/nextdotjs/F8FAFC", "https://nextjs.org/"),
     ("nodejs", "Node.js", "Node", "https://cdn.simpleicons.org/nodedotjs/5FA04E", "https://nodejs.org/"),
     ("vite", "Vite", "Vite", "https://cdn.simpleicons.org/vite/646CFF", "https://vite.dev/"),
     ("tailwindcss", "Tailwind CSS", "Tailwind", "https://cdn.simpleicons.org/tailwindcss/06B6D4", "https://tailwindcss.com/"),
     ("postgresql", "PostgreSQL", "Postgres", "https://cdn.simpleicons.org/postgresql/4169E1", "https://www.postgresql.org/"),
-    ("sqlite", "SQLite", "SQLite", "https://cdn.simpleicons.org/sqlite/003B57", "https://www.sqlite.org/"),
+    ("sqlite", "SQLite", "SQLite", "https://cdn.simpleicons.org/sqlite/7DD3FC", "https://www.sqlite.org/"),
     ("neo4j", "Neo4j", "Neo4j", "https://cdn.simpleicons.org/neo4j/4581C3", "https://neo4j.com/"),
-    ("aws", "AWS", "AWS", "https://api.iconify.design/logos:aws.svg", "https://aws.amazon.com/"),
+    ("aws", "AWS", "AWS", "https://api.iconify.design/simple-icons:amazonaws.svg?color=%23FF9900", "https://aws.amazon.com/"),
     ("gcp", "Google Cloud", "GCP", "https://cdn.simpleicons.org/googlecloud/4285F4", "https://cloud.google.com/"),
     ("kubernetes", "Kubernetes", "K8s", "https://cdn.simpleicons.org/kubernetes/326CE5", "https://kubernetes.io/"),
     ("docker", "Docker", "Docker", "https://cdn.simpleicons.org/docker/2496ED", "https://www.docker.com/"),
     ("fastapi", "FastAPI", "FastAPI", "https://cdn.simpleicons.org/fastapi/009688", "https://fastapi.tiangolo.com/"),
-    ("flask", "Flask", "Flask", "https://cdn.simpleicons.org/flask/111827", "https://flask.palletsprojects.com/"),
+    ("flask", "Flask", "Flask", "https://cdn.simpleicons.org/flask/F8FAFC", "https://flask.palletsprojects.com/"),
     ("github-actions", "GitHub Actions", "Actions", "https://cdn.simpleicons.org/githubactions/2088FF", "https://github.com/features/actions"),
     ("pytest", "pytest", "pytest", "https://cdn.simpleicons.org/pytest/0A9EDC", "https://docs.pytest.org/"),
     ("wandb", "Weights and Biases", "W&B", "https://cdn.simpleicons.org/weightsandbiases/FFBE00", "https://wandb.ai/"),
-    ("rust", "Rust", "Rust", "https://cdn.simpleicons.org/rust/111827", "https://www.rust-lang.org/"),
+    ("rust", "Rust", "Rust", "https://cdn.simpleicons.org/rust/F8FAFC", "https://www.rust-lang.org/"),
 ]
 
 
@@ -118,8 +118,8 @@ def card(slug: str, name: str, label: str, icon: tuple[str, str, str | None] | N
 </defs>
 <rect x="3" y="3" width="82" height="82" rx="18" fill="url(#card-bg)" stroke="url(#card-stroke)" stroke-width="1.8" opacity="1" filter="url(#shadow)"/>
 <rect x="8" y="8" width="72" height="72" rx="15" fill="#020617" opacity="0.38"/>
-<rect x="16" y="10" width="56" height="48" rx="14" fill="#F8FAFC" opacity="0.98"/>
-<rect x="16" y="10" width="56" height="48" rx="14" fill="none" stroke="#FFFFFF" stroke-opacity="0.72"/>
+<rect x="16" y="10" width="56" height="48" rx="14" fill="#061827" opacity="0.78"/>
+<rect x="16" y="10" width="56" height="48" rx="14" fill="none" stroke="#22D3EE" stroke-opacity="0.24"/>
 {mark}
 <text x="44" y="73" text-anchor="middle" font-family="JetBrains Mono, Consolas, monospace" font-size="8.7" font-weight="800" fill="#CFFAFE">{label}</text>
 </svg>

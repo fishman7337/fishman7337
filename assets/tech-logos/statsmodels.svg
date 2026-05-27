@@ -18,8 +18,8 @@
 </defs>
 <rect x="3" y="3" width="82" height="82" rx="18" fill="url(#card-bg)" stroke="url(#card-stroke)" stroke-width="1.8" opacity="1" filter="url(#shadow)"/>
 <rect x="8" y="8" width="72" height="72" rx="15" fill="#020617" opacity="0.38"/>
-<rect x="16" y="10" width="56" height="48" rx="14" fill="#F8FAFC" opacity="0.98"/>
-<rect x="16" y="10" width="56" height="48" rx="14" fill="none" stroke="#FFFFFF" stroke-opacity="0.72"/>
+<rect x="16" y="10" width="56" height="48" rx="14" fill="#061827" opacity="0.78"/>
+<rect x="16" y="10" width="56" height="48" rx="14" fill="none" stroke="#22D3EE" stroke-opacity="0.24"/>
 <svg x="24" y="13" width="40" height="40" viewBox="0 0 281.72892 276.23224" preserveAspectRatio="xMidYMid meet"><defs
      id="defs3094">
     <clipPath
