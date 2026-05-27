@@ -203,48 +203,48 @@ flowchart LR
 
 <div align="center">
 
-<p><b>Clickable stack map · rounded logo cards · no duplicate technologies</b></p>
+<p><b>Clickable stack map - rounded logo cards - no duplicate technologies</b></p>
 
-<table>
+<table cellpadding="0" cellspacing="2" border="0">
   <tr>
-    <td align="center" width="88"><a href="https://www.python.org/"><img src="./assets/tech-logos/python.svg" width="72" alt="Python" /></a></td>
-    <td align="center" width="88"><a href="https://pytorch.org/"><img src="./assets/tech-logos/pytorch.svg" width="72" alt="PyTorch" /></a></td>
-    <td align="center" width="88"><a href="https://www.tensorflow.org/"><img src="./assets/tech-logos/tensorflow.svg" width="72" alt="TensorFlow" /></a></td>
-    <td align="center" width="88"><a href="https://keras.io/"><img src="./assets/tech-logos/keras.svg" width="72" alt="Keras" /></a></td>
-    <td align="center" width="88"><a href="https://scikit-learn.org/"><img src="./assets/tech-logos/scikit-learn.svg" width="72" alt="scikit-learn" /></a></td>
-    <td align="center" width="88"><a href="https://www.qiskit.org/"><img src="./assets/tech-logos/qiskit.svg" width="72" alt="Qiskit" /></a></td>
+    <td align="center" width="76" height="76"><a href="https://www.python.org/"><img src="./assets/tech-logos/python.svg" width="68" height="68" alt="Python" /></a></td>
+    <td align="center" width="76" height="76"><a href="https://pytorch.org/"><img src="./assets/tech-logos/pytorch.svg" width="68" height="68" alt="PyTorch" /></a></td>
+    <td align="center" width="76" height="76"><a href="https://www.tensorflow.org/"><img src="./assets/tech-logos/tensorflow.svg" width="68" height="68" alt="TensorFlow" /></a></td>
+    <td align="center" width="76" height="76"><a href="https://keras.io/"><img src="./assets/tech-logos/keras.svg" width="68" height="68" alt="Keras" /></a></td>
+    <td align="center" width="76" height="76"><a href="https://scikit-learn.org/"><img src="./assets/tech-logos/scikit-learn.svg" width="68" height="68" alt="scikit-learn" /></a></td>
+    <td align="center" width="76" height="76"><a href="https://www.qiskit.org/"><img src="./assets/tech-logos/qiskit.svg" width="68" height="68" alt="Qiskit" /></a></td>
   </tr>
   <tr>
-    <td align="center"><a href="https://opencv.org/"><img src="./assets/tech-logos/opencv.svg" width="72" alt="OpenCV" /></a></td>
-    <td align="center"><a href="https://www.ros.org/"><img src="./assets/tech-logos/ros.svg" width="72" alt="ROS" /></a></td>
-    <td align="center"><a href="https://pandas.pydata.org/"><img src="./assets/tech-logos/pandas.svg" width="72" alt="Pandas" /></a></td>
-    <td align="center"><a href="https://numpy.org/"><img src="./assets/tech-logos/numpy.svg" width="72" alt="NumPy" /></a></td>
-    <td align="center"><a href="https://matplotlib.org/"><img src="./assets/tech-logos/matplotlib.svg" width="72" alt="Matplotlib" /></a></td>
-    <td align="center"><a href="https://seaborn.pydata.org/"><img src="./assets/tech-logos/seaborn.svg" width="72" alt="Seaborn" /></a></td>
+    <td align="center" width="76" height="76"><a href="https://opencv.org/"><img src="./assets/tech-logos/opencv.svg" width="68" height="68" alt="OpenCV" /></a></td>
+    <td align="center" width="76" height="76"><a href="https://www.ros.org/"><img src="./assets/tech-logos/ros.svg" width="68" height="68" alt="ROS" /></a></td>
+    <td align="center" width="76" height="76"><a href="https://pandas.pydata.org/"><img src="./assets/tech-logos/pandas.svg" width="68" height="68" alt="Pandas" /></a></td>
+    <td align="center" width="76" height="76"><a href="https://numpy.org/"><img src="./assets/tech-logos/numpy.svg" width="68" height="68" alt="NumPy" /></a></td>
+    <td align="center" width="76" height="76"><a href="https://matplotlib.org/"><img src="./assets/tech-logos/matplotlib.svg" width="68" height="68" alt="Matplotlib" /></a></td>
+    <td align="center" width="76" height="76"><a href="https://seaborn.pydata.org/"><img src="./assets/tech-logos/seaborn.svg" width="68" height="68" alt="Seaborn" /></a></td>
   </tr>
   <tr>
-    <td align="center"><a href="https://www.statsmodels.org/"><img src="./assets/tech-logos/statsmodels.svg" width="72" alt="statsmodels" /></a></td>
-    <td align="center"><a href="https://plotly.com/python/"><img src="./assets/tech-logos/plotly.svg" width="72" alt="Plotly" /></a></td>
-    <td align="center"><a href="https://dash.plotly.com/"><img src="./assets/tech-logos/dash.svg" width="72" alt="Dash" /></a></td>
-    <td align="center"><a href="https://www.tableau.com/"><img src="./assets/tech-logos/tableau.svg" width="72" alt="Tableau" /></a></td>
-    <td align="center"><a href="https://powerbi.microsoft.com/"><img src="./assets/tech-logos/power-bi.svg" width="72" alt="Power BI" /></a></td>
-    <td align="center"><a href="https://www.postgresql.org/"><img src="./assets/tech-logos/postgresql.svg" width="72" alt="PostgreSQL" /></a></td>
+    <td align="center" width="76" height="76"><a href="https://www.statsmodels.org/"><img src="./assets/tech-logos/statsmodels.svg" width="68" height="68" alt="statsmodels" /></a></td>
+    <td align="center" width="76" height="76"><a href="https://plotly.com/python/"><img src="./assets/tech-logos/plotly.svg" width="68" height="68" alt="Plotly" /></a></td>
+    <td align="center" width="76" height="76"><a href="https://dash.plotly.com/"><img src="./assets/tech-logos/dash.svg" width="68" height="68" alt="Dash" /></a></td>
+    <td align="center" width="76" height="76"><a href="https://www.tableau.com/"><img src="./assets/tech-logos/tableau.svg" width="68" height="68" alt="Tableau" /></a></td>
+    <td align="center" width="76" height="76"><a href="https://powerbi.microsoft.com/"><img src="./assets/tech-logos/power-bi.svg" width="68" height="68" alt="Power BI" /></a></td>
+    <td align="center" width="76" height="76"><a href="https://www.postgresql.org/"><img src="./assets/tech-logos/postgresql.svg" width="68" height="68" alt="PostgreSQL" /></a></td>
   </tr>
   <tr>
-    <td align="center"><a href="https://www.sqlite.org/"><img src="./assets/tech-logos/sqlite.svg" width="72" alt="SQLite" /></a></td>
-    <td align="center"><a href="https://neo4j.com/"><img src="./assets/tech-logos/neo4j.svg" width="72" alt="Neo4j" /></a></td>
-    <td align="center"><a href="https://aws.amazon.com/"><img src="./assets/tech-logos/aws.svg" width="72" alt="AWS" /></a></td>
-    <td align="center"><a href="https://cloud.google.com/"><img src="./assets/tech-logos/gcp.svg" width="72" alt="Google Cloud" /></a></td>
-    <td align="center"><a href="https://kubernetes.io/"><img src="./assets/tech-logos/kubernetes.svg" width="72" alt="Kubernetes" /></a></td>
-    <td align="center"><a href="https://www.docker.com/"><img src="./assets/tech-logos/docker.svg" width="72" alt="Docker" /></a></td>
+    <td align="center" width="76" height="76"><a href="https://www.sqlite.org/"><img src="./assets/tech-logos/sqlite.svg" width="68" height="68" alt="SQLite" /></a></td>
+    <td align="center" width="76" height="76"><a href="https://neo4j.com/"><img src="./assets/tech-logos/neo4j.svg" width="68" height="68" alt="Neo4j" /></a></td>
+    <td align="center" width="76" height="76"><a href="https://aws.amazon.com/"><img src="./assets/tech-logos/aws.svg" width="68" height="68" alt="AWS" /></a></td>
+    <td align="center" width="76" height="76"><a href="https://cloud.google.com/"><img src="./assets/tech-logos/gcp.svg" width="68" height="68" alt="Google Cloud" /></a></td>
+    <td align="center" width="76" height="76"><a href="https://kubernetes.io/"><img src="./assets/tech-logos/kubernetes.svg" width="68" height="68" alt="Kubernetes" /></a></td>
+    <td align="center" width="76" height="76"><a href="https://www.docker.com/"><img src="./assets/tech-logos/docker.svg" width="68" height="68" alt="Docker" /></a></td>
   </tr>
   <tr>
-    <td align="center"><a href="https://fastapi.tiangolo.com/"><img src="./assets/tech-logos/fastapi.svg" width="72" alt="FastAPI" /></a></td>
-    <td align="center"><a href="https://flask.palletsprojects.com/"><img src="./assets/tech-logos/flask.svg" width="72" alt="Flask" /></a></td>
-    <td align="center"><a href="https://github.com/features/actions"><img src="./assets/tech-logos/github-actions.svg" width="72" alt="GitHub Actions" /></a></td>
-    <td align="center"><a href="https://docs.pytest.org/"><img src="./assets/tech-logos/pytest.svg" width="72" alt="pytest" /></a></td>
-    <td align="center"><a href="https://wandb.ai/"><img src="./assets/tech-logos/wandb.svg" width="72" alt="Weights and Biases" /></a></td>
-    <td align="center"><a href="https://www.rust-lang.org/"><img src="./assets/tech-logos/rust.svg" width="72" alt="Rust" /></a></td>
+    <td align="center" width="76" height="76"><a href="https://fastapi.tiangolo.com/"><img src="./assets/tech-logos/fastapi.svg" width="68" height="68" alt="FastAPI" /></a></td>
+    <td align="center" width="76" height="76"><a href="https://flask.palletsprojects.com/"><img src="./assets/tech-logos/flask.svg" width="68" height="68" alt="Flask" /></a></td>
+    <td align="center" width="76" height="76"><a href="https://github.com/features/actions"><img src="./assets/tech-logos/github-actions.svg" width="68" height="68" alt="GitHub Actions" /></a></td>
+    <td align="center" width="76" height="76"><a href="https://docs.pytest.org/"><img src="./assets/tech-logos/pytest.svg" width="68" height="68" alt="pytest" /></a></td>
+    <td align="center" width="76" height="76"><a href="https://wandb.ai/"><img src="./assets/tech-logos/wandb.svg" width="68" height="68" alt="Weights and Biases" /></a></td>
+    <td align="center" width="76" height="76"><a href="https://www.rust-lang.org/"><img src="./assets/tech-logos/rust.svg" width="68" height="68" alt="Rust" /></a></td>
   </tr>
 </table>
 

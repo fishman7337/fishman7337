@@ -3,8 +3,9 @@
 <desc id="desc">Rounded square logo card for Plotly</desc>
 <defs>
   <linearGradient id="card-bg" x1="0" y1="0" x2="1" y2="1">
-    <stop offset="0%" stop-color="#111827"/>
-    <stop offset="100%" stop-color="#06131B"/>
+    <stop offset="0%" stop-color="#172033"/>
+    <stop offset="54%" stop-color="#0B1F2A"/>
+    <stop offset="100%" stop-color="#061F1B"/>
   </linearGradient>
   <linearGradient id="card-stroke" x1="0" y1="0" x2="1" y2="1">
     <stop offset="0%" stop-color="#22D3EE"/>
@@ -15,10 +16,10 @@
     <feDropShadow dx="0" dy="7" stdDeviation="8" flood-color="#020617" flood-opacity="0.55"/>
   </filter>
 </defs>
-<rect x="3" y="3" width="82" height="82" rx="20" fill="url(#card-bg)" stroke="url(#card-stroke)" stroke-width="1.4" opacity="0.98" filter="url(#shadow)"/>
-<rect x="9" y="9" width="70" height="70" rx="16" fill="#020617" opacity="0.34"/>
-<rect x="17" y="10" width="54" height="48" rx="15" fill="#F8FAFC" opacity="0.96"/>
-<rect x="17" y="10" width="54" height="48" rx="15" fill="none" stroke="#FFFFFF" stroke-opacity="0.68"/>
+<rect x="3" y="3" width="82" height="82" rx="18" fill="url(#card-bg)" stroke="url(#card-stroke)" stroke-width="1.8" opacity="1" filter="url(#shadow)"/>
+<rect x="8" y="8" width="72" height="72" rx="15" fill="#020617" opacity="0.38"/>
+<rect x="16" y="10" width="56" height="48" rx="14" fill="#F8FAFC" opacity="0.98"/>
+<rect x="16" y="10" width="56" height="48" rx="14" fill="none" stroke="#FFFFFF" stroke-opacity="0.72"/>
 <svg x="24" y="13" width="40" height="40" viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" fill="#3F4F75" color="#3F4F75"><path d="M1.713.002A1.713 1.713 0 0 0 0 1.715a1.713 1.713 0 0 0 1.713 1.713 1.713 1.713 0 0 0 1.714-1.713A1.713 1.713 0 0 0 1.713.002Zm6.861 0a1.713 1.713 0 0 0-1.713 1.713 1.713 1.713 0 0 0 1.713 1.713 1.713 1.713 0 0 0 1.713-1.713A1.713 1.713 0 0 0 8.574.002Zm6.857 0a1.713 1.713 0 0 0-1.714 1.713 1.713 1.713 0 0 0 1.714 1.713 1.713 1.713 0 0 0 1.713-1.713A1.713 1.713 0 0 0 15.431.002zm6.856 0a1.713 1.713 0 0 0-1.713 1.713 1.713 1.713 0 0 0 1.713 1.713A1.713 1.713 0 0 0 24 1.715 1.713 1.713 0 0 0 22.287.002ZM1.713 6.859A1.713 1.713 0 0 0 0 8.572a1.713 1.713 0 0 0 1.713 1.713 1.713 1.713 0 0 0 1.714-1.713A1.713 1.713 0 0 0 1.713 6.86Zm6.861 0c-.948 0-1.713.765-1.713 1.713v13.713c0 .947.765 1.713 1.713 1.713.948 0 1.713-.766 1.713-1.713V8.572c0-.948-.765-1.713-1.713-1.713zm6.857 0a1.713 1.713 0 0 0-1.714 1.713 1.713 1.713 0 0 0 1.714 1.713 1.713 1.713 0 0 0 1.713-1.713 1.713 1.713 0 0 0-1.713-1.713zm6.856 0c-.947 0-1.713.765-1.713 1.713v13.713c0 .947.766 1.713 1.713 1.713.948 0 1.713-.766 1.713-1.713V8.572c0-.948-.765-1.713-1.713-1.713zM1.713 13.715C.766 13.715 0 14.48 0 15.428v6.857c0 .947.766 1.713 1.713 1.713.948 0 1.714-.766 1.714-1.713v-6.857c0-.948-.766-1.713-1.714-1.713zm13.718 0c-.948 0-1.714.765-1.714 1.713v6.857c0 .947.766 1.713 1.714 1.713.947 0 1.713-.766 1.713-1.713v-6.857c0-.948-.766-1.713-1.713-1.713z"/></svg>
 <text x="44" y="73" text-anchor="middle" font-family="JetBrains Mono, Consolas, monospace" font-size="8.7" font-weight="800" fill="#CFFAFE">Plotly</text>
 </svg>
