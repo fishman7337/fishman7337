@@ -124,10 +124,12 @@ skills:
   Data + Statistics:
     - Pandas
     - NumPy
-    - SQL
-    - statsmodels
+    - Matplotlib
+    - Seaborn
     - Plotly
-    - Dashboards
+    - Dash
+    - statsmodels
+    - SQL
   Vision + Robotics:
     - OpenCV
     - ROS
@@ -146,16 +148,20 @@ skills:
     - Flask
     - FastAPI
     - Docker
-    - GitHub Actions
+    - Kubernetes
     - AWS
+    - GCP
+    - GitHub Actions
     - pytest
-  Security + Governance:
+  Security + Graphs:
+    - Neo4j
     - Rust
     - Threat Models
     - Audit Logs
     - Model Cards
     - Risk Controls
     - Responsible AI
+    - Security Docs
 
 timeline:
   - date: 2025

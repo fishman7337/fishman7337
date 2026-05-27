@@ -476,14 +476,14 @@ def make_project_nebula() -> str:
 
 
 def make_skill_constellation() -> str:
-    width, height = 1600, 650
+    width, height = 1600, 700
     skills = DATA['skills']
     s = [svg_header(width, height, 'Skill constellation matrix', 'Animated technology and capability matrix'), bg(width, height)]
     s.append(section_head('skills', 'Technical Stack', 'A practical stack for reproducible experiments, applied AI products, data systems, and trustworthy deployment.', 'CAPABILITY MATRIX'))
     colors = [T['cyan'], T['purple'], T['green'], T['amber'], T['pink'], T['blue']]
     x0, y0 = 70, 170
-    cw, ch = 470, 190
-    gapx, gapy = 35, 34
+    cw, ch = 470, 218
+    gapx, gapy = 35, 30
     for idx, (domain, items) in enumerate(skills.items()):
         row, col = divmod(idx, 3)
         x = x0 + col * (cw + gapx)
@@ -495,10 +495,10 @@ def make_skill_constellation() -> str:
         s.append(mini_meter(x+335, y+25, [18+idx*3, 29, 22+idx*2, 35, 27, 40], color, width=92))
         for j, item in enumerate(items):
             chip_x = x + 30 + (j % 2) * 205
-            chip_y = y + 70 + (j // 2) * 37
-            w = 186
-            s.append(f'<rect x="{chip_x}" y="{chip_y}" width="{w}" height="30" rx="15" fill="rgba(2,6,23,.58)" stroke="{color}" stroke-opacity="0.24"/>')
-            s.append(f'<text id="edit-skill-{idx+1}-{j+1}" x="{chip_x+16}" y="{chip_y+21}" class="mono" font-size="13" fill="{T["text"]}">{esc(ellipsize(item, 20))}</text>')
+            chip_y = y + 68 + (j // 2) * 34
+            w = 188
+            s.append(f'<rect x="{chip_x}" y="{chip_y}" width="{w}" height="28" rx="14" fill="rgba(2,6,23,.58)" stroke="{color}" stroke-opacity="0.24"/>')
+            s.append(f'<text id="edit-skill-{idx+1}-{j+1}" x="{chip_x+14}" y="{chip_y+19}" class="mono" font-size="12" fill="{T["text"]}">{esc(ellipsize(item, 21))}</text>')
         s.append('</g>')
     s.append(svg_footer())
     return '\n'.join(s)
@@ -545,7 +545,7 @@ def make_terminal_lab() -> str:
     s.append(f'<text x="238" y="199" class="mono" font-size="17" fill="{T["muted"]}">fishman7337@research-os:~/portfolio</text>')
     lines = [
         ('$ whoami', I['name'] + ' — ' + I['role']),
-        ('$ cat focus.txt', 'Quantum GANs | CV | ROS/Sensor Fusion | Data/Stats | Cloud MLOps'),
+        ('$ cat focus.txt', 'Quantum GANs | CV/ROS | Data Viz | Neo4j | K8s/GCP MLOps'),
         ('$ run experiment --mode honest-baseline', 'baseline recorded · metrics tracked · claims bounded'),
         ('$ deploy portfolio --mode cyberdeck', 'profile visuals synced · checks passed · ready for review'),
         ('$ contact --linkedin --email', 'linkedin.com/in/goh-kun-ming-58573430a/ · ' + I['email']),

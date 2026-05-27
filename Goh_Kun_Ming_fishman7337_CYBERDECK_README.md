@@ -205,7 +205,7 @@ flowchart LR
 
 <p><b>AI kernels · statistical modelling · perception systems · cloud deployment · responsible engineering</b></p>
 
-<img src="https://skillicons.dev/icons?i=python,pytorch,tensorflow,sklearn,opencv,flask,fastapi,docker,git,githubactions,postgres,sqlite,react,js,ts,rust,linux,vscode,aws&perline=10" alt="Technology skill icons" />
+<img src="https://skillicons.dev/icons?i=python,pytorch,tensorflow,sklearn,opencv,flask,fastapi,docker,kubernetes,git,githubactions,postgres,sqlite,react,js,ts,rust,linux,vscode,aws,gcp&perline=11" alt="Technology skill icons" />
 
 <br />
 <br />
@@ -222,16 +222,26 @@ flowchart LR
 
 <img src="https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white" alt="Pandas" />
 <img src="https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white" alt="NumPy" />
-<img src="https://img.shields.io/badge/SQL-336791?style=for-the-badge&logo=postgresql&logoColor=white" alt="SQL" />
-<img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL" />
-<img src="https://img.shields.io/badge/SQLite-003B57?style=for-the-badge&logo=sqlite&logoColor=white" alt="SQLite" />
+<img src="https://img.shields.io/badge/Matplotlib-11557C?style=for-the-badge&logo=python&logoColor=white" alt="Matplotlib" />
+<img src="https://img.shields.io/badge/Seaborn-4C72B0?style=for-the-badge&logo=python&logoColor=white" alt="Seaborn" />
 <img src="https://img.shields.io/badge/statsmodels-11557C?style=for-the-badge&logo=python&logoColor=white" alt="statsmodels" />
 <img src="https://img.shields.io/badge/Plotly-3F4F75?style=for-the-badge&logo=plotly&logoColor=white" alt="Plotly" />
+<img src="https://img.shields.io/badge/Dash-008DE4?style=for-the-badge&logo=plotly&logoColor=white" alt="Dash" />
 <img src="https://img.shields.io/badge/Tableau-E97627?style=for-the-badge&logo=tableau&logoColor=white" alt="Tableau" />
 
 <br />
 
+<img src="https://img.shields.io/badge/SQL-336791?style=for-the-badge&logo=postgresql&logoColor=white" alt="SQL" />
+<img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL" />
+<img src="https://img.shields.io/badge/SQLite-003B57?style=for-the-badge&logo=sqlite&logoColor=white" alt="SQLite" />
+<img src="https://img.shields.io/badge/Neo4j-4581C3?style=for-the-badge&logo=neo4j&logoColor=white" alt="Neo4j" />
+<img src="https://img.shields.io/badge/Graph%20Analytics-10B981?style=for-the-badge&logo=neo4j&logoColor=white" alt="Graph Analytics" />
+
+<br />
+
 <img src="https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazonwebservices&logoColor=white" alt="AWS" />
+<img src="https://img.shields.io/badge/Google%20Cloud-4285F4?style=for-the-badge&logo=googlecloud&logoColor=white" alt="Google Cloud" />
+<img src="https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white" alt="Kubernetes" />
 <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker" />
 <img src="https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white" alt="FastAPI" />
 <img src="https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white" alt="Flask" />
@@ -249,10 +259,11 @@ flowchart LR
 | Capability | Tools / methods | Portfolio signal |
 |---|---|---|
 | Machine Learning | Python, PyTorch, TensorFlow, Keras, scikit-learn, evaluation metrics | Classification, regression, GANs, RL, practical ML apps |
-| Data + Statistics | Pandas, NumPy, SQL, statsmodels, Plotly/Tableau | HDB analytics, wage modelling, dashboards, validation scripts |
+| Data + Statistics | Pandas, NumPy, Matplotlib, Seaborn, statsmodels, SQL | HDB analytics, wage modelling, statistical reports, validation scripts |
 | Vision + Robotics | OpenCV, ROS, sensor fusion, satellite imagery, feature engineering | ISR, CV classification, object detection, perception pipelines |
 | Quantum AI | Qiskit, AerSimulator, parameterised quantum circuits, NISQ-aware design | HQCGAN research and arXiv preprint |
-| Systems + Cloud | Flask, FastAPI, Docker, GitHub Actions, pytest, AWS | Model serving, CI/CD, security checks, deployable apps |
+| Visual Apps + Graphs | Plotly, Dash, Tableau, Neo4j, graph analytics | Dashboards, policy intelligence, exploratory analysis, graph-backed insights |
+| Systems + Cloud | Flask, FastAPI, Docker, Kubernetes, GitHub Actions, AWS, GCP, pytest | Model serving, CI/CD, security checks, deployable apps |
 | Governance + Security | threat models, audit logs, model cards, risk controls, Rust | Responsible AI docs and secure endpoint tooling |
 
 </details>
@@ -309,8 +320,6 @@ mindmap
 <img width="98%" src="https://streak-stats.demolab.com?user=fishman7337&theme=tokyonight&hide_border=true&background=0D1117&ring=38BDF8&fire=F472B6&currStreakLabel=38BDF8" alt="GitHub streak stats for fishman7337" />
 
 <img width="98%" src="https://github-readme-activity-graph.vercel.app/graph?username=fishman7337&theme=react-dark&hide_border=true&bg_color=0D1117&color=38BDF8&line=A78BFA&point=34D399" alt="GitHub activity graph for fishman7337" />
-
-<img width="98%" src="https://github-profile-trophy.vercel.app/?username=fishman7337&theme=tokyonight&no-frame=true&no-bg=true&margin-w=15&margin-h=15&column=6" alt="GitHub profile trophies" />
 
 </div>
 
