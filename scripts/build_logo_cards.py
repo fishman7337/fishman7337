@@ -60,7 +60,7 @@ LOGOS = [
 ]
 
 
-def fetch_icon(url: str) -> tuple[str, str, str | None] | None:
+def fetch_icon(slug: str, url: str) -> tuple[str, str, str | None] | None:
     if not url:
         return None
     request = Request(url, headers={"User-Agent": "fishman7337-profile-readme"})
@@ -78,6 +78,8 @@ def fetch_icon(url: str) -> tuple[str, str, str | None] | None:
     attrs, inner = match.group(1), match.group(2)
     viewbox = re.search(r'viewBox="([^"]+)"', attrs, flags=re.I)
     inner = re.sub(r"<(title|desc|metadata)\b[^>]*>.*?</\1>", "", inner, flags=re.I | re.S)
+    if slug in {"matplotlib", "seaborn"}:
+        inner = re.sub(r'<path\s+fill="#fff"\s+d="[^"]+"\s*/>', "", inner, count=1)
     simple_icon_color = re.search(r"cdn\.simpleicons\.org/[^/]+/([0-9A-Fa-f]{3,8})", url)
     fill = f"#{simple_icon_color.group(1)}" if simple_icon_color else None
     return viewbox.group(1) if viewbox else "0 0 24 24", inner.strip(), fill
@@ -132,7 +134,7 @@ def main() -> None:
         if slug in seen:
             raise SystemExit(f"Duplicate logo slug: {slug}")
         seen.add(slug)
-        icon = fetch_icon(source)
+        icon = fetch_icon(slug, source)
         (OUT / f"{slug}.svg").write_text(card(slug, name, label, icon), encoding="utf-8")
     print(f"Generated {len(LOGOS)} logo cards in {OUT}")
 
