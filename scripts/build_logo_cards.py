@@ -26,9 +26,9 @@ LOGOS = [
     ("numpy", "NumPy", "NumPy", "https://cdn.simpleicons.org/numpy/013243", "https://numpy.org/"),
     ("matplotlib", "Matplotlib", "MPL", "https://api.iconify.design/logos:matplotlib-icon.svg", "https://matplotlib.org/"),
     ("seaborn", "Seaborn", "Seaborn", "https://api.iconify.design/logos:seaborn-icon.svg", "https://seaborn.pydata.org/"),
-    ("statsmodels", "statsmodels", "stats", "", "https://www.statsmodels.org/"),
+    ("statsmodels", "statsmodels", "stats", "https://www.statsmodels.org/stable/_images/statsmodels-logo-v2-no-text.svg", "https://www.statsmodels.org/"),
     ("plotly", "Plotly", "Plotly", "https://cdn.simpleicons.org/plotly/3F4F75", "https://plotly.com/python/"),
-    ("dash", "Dash", "Dash", "", "https://dash.plotly.com/"),
+    ("dash", "Dash", "Dash", "https://cdn.simpleicons.org/plotly/008DE4", "https://dash.plotly.com/"),
     ("tableau", "Tableau", "Tableau", "https://api.iconify.design/logos:tableau-icon.svg", "https://www.tableau.com/"),
     ("power-bi", "Power BI", "Power BI", "https://api.iconify.design/logos:microsoft-power-bi.svg", "https://powerbi.microsoft.com/"),
     ("postgresql", "PostgreSQL", "Postgres", "https://cdn.simpleicons.org/postgresql/4169E1", "https://www.postgresql.org/"),
@@ -58,7 +58,7 @@ def fetch_icon(url: str) -> tuple[str, str, str | None] | None:
         raise ValueError(f"Could not parse SVG from {url}")
     attrs, inner = match.group(1), match.group(2)
     viewbox = re.search(r'viewBox="([^"]+)"', attrs, flags=re.I)
-    inner = re.sub(r"<(title|desc)\b[^>]*>.*?</\1>", "", inner, flags=re.I | re.S)
+    inner = re.sub(r"<(title|desc|metadata)\b[^>]*>.*?</\1>", "", inner, flags=re.I | re.S)
     simple_icon_color = re.search(r"cdn\.simpleicons\.org/[^/]+/([0-9A-Fa-f]{3,8})", url)
     fill = f"#{simple_icon_color.group(1)}" if simple_icon_color else None
     return viewbox.group(1) if viewbox else "0 0 24 24", inner.strip(), fill
@@ -76,10 +76,8 @@ def card(slug: str, name: str, label: str, icon: tuple[str, str, str | None] | N
         viewbox, inner, fill = icon
         fill_attr = f' fill="{html.escape(fill)}" color="{html.escape(fill)}"' if fill else ""
         mark = f'<svg x="24" y="13" width="40" height="40" viewBox="{html.escape(viewbox)}" preserveAspectRatio="xMidYMid meet"{fill_attr}>{inner}</svg>'
-    elif slug == "dash":
-        mark = text_mark("Dash", "#38BDF8")
     else:
-        mark = text_mark("SM", "#A78BFA")
+        mark = text_mark(label, "#38BDF8")
 
     return f'''<svg xmlns="http://www.w3.org/2000/svg" width="88" height="88" viewBox="0 0 88 88" role="img" aria-labelledby="title desc">
 <title id="title">{title}</title>

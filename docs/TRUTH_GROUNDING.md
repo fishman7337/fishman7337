@@ -12,7 +12,7 @@ The README intentionally keeps claims grounded in public signals and user-provid
 
 - Username: `fishman7337`
 - Name: Goh Kun Ming
-- Role line: AI Research Intern @ RSAF RAiD (AETHER)
+- Role line: Applied AI Research Intern
 - Location: Singapore
 - ORCID link visible on GitHub
 - Public repositories and project descriptions visible on GitHub
@@ -29,4 +29,4 @@ The README intentionally keeps claims grounded in public signals and user-provid
 - No exaggerated awards, rankings, or job claims.
 - No invented metrics for model performance beyond the bounded research summary.
 - No fake endorsements.
-- No private or confidential defence details.
+- No private or confidential defence details, internal unit names, credentials, or operational specifics.

@@ -137,9 +137,9 @@
 <text id="edit-timeline-date-2" x="610" y="346" text-anchor="middle" class="mono" font-size="15" font-weight="900" fill="#C084FC">Now</text>
 </g>
 <rect x="435" y="430" width="350" height="120" rx="24" fill="rgba(16,26,53,.91)" stroke="#C084FC" stroke-opacity="0.36" filter="url(#cardShadow)"/>
-<text id="edit-timeline-title-2" x="459" y="469" class="title" font-size="24">AI Research Intern</text>
-<text id="edit-timeline-desc-2-1" x="459" y="502" class="body" font-size="16">Building research and applied AI</text>
-<text id="edit-timeline-desc-2-2" x="459" y="525" class="body" font-size="16">capability across ML, CV, sensor fusion,</text>
+<text id="edit-timeline-title-2" x="459" y="469" class="title" font-size="24">Applied AI Research</text>
+<text id="edit-timeline-desc-2-1" x="459" y="502" class="body" font-size="16">Building public-facing AI capability</text>
+<text id="edit-timeline-desc-2-2" x="459" y="525" class="body" font-size="16">across ML, CV, sensor fusion, and</text>
 </g>
 <g id="edit-timeline-item-3">
 <g id="edit-timeline-marker-3" class="pulse" style="animation-delay:0.50s">

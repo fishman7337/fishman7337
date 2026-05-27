@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="184" height="54" viewBox="0 0 184 54" role="img" aria-labelledby="title desc">
+<title id="title">ORCID</title>
+<desc id="desc">ORCID profile button</desc>
+<defs>
+  <linearGradient id="bg-orcid" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0%" stop-color="#111827"/>
+    <stop offset="52%" stop-color="#0B1F2A"/>
+    <stop offset="100%" stop-color="#061F1B"/>
+  </linearGradient>
+  <linearGradient id="stroke-orcid" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0%" stop-color="#22D3EE"/>
+    <stop offset="46%" stop-color="#A78BFA"/>
+    <stop offset="100%" stop-color="#FB7185"/>
+  </linearGradient>
+  <filter id="shadow-orcid" x="-16%" y="-32%" width="132%" height="164%">
+    <feDropShadow dx="0" dy="7" stdDeviation="7" flood-color="#020617" flood-opacity="0.45"/>
+  </filter>
+</defs>
+<rect x="2" y="2" width="180" height="50" rx="14" fill="url(#bg-orcid)" stroke="url(#stroke-orcid)" stroke-width="1.3" filter="url(#shadow-orcid)"/>
+<rect x="10" y="9" width="38" height="36" rx="11" fill="#020617" opacity="0.72"/>
+<rect x="11" y="10" width="36" height="34" rx="10" fill="#F8FAFC" opacity="0.08"/>
+<svg x="17" y="15" width="24" height="24" viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" fill="#A6CE39" color="#A6CE39"><path d="M12 0C5.372 0 0 5.372 0 12s5.372 12 12 12 12-5.372 12-12S18.628 0 12 0zM7.369 4.378c.525 0 .947.431.947.947s-.422.947-.947.947a.95.95 0 0 1-.947-.947c0-.525.422-.947.947-.947zm-.722 3.038h1.444v10.041H6.647V7.416zm3.562 0h3.9c3.712 0 5.344 2.653 5.344 5.025 0 2.578-2.016 5.025-5.325 5.025h-3.919V7.416zm1.444 1.303v7.444h2.297c3.272 0 4.022-2.484 4.022-3.722 0-2.016-1.284-3.722-4.097-3.722h-2.222z"/></svg>
+<text x="60" y="24" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="13" font-weight="800" fill="#ECFEFF">ORCID</text>
+<text x="60" y="39" font-family="JetBrains Mono, Consolas, monospace" font-size="9" font-weight="700" fill="#9EEBD9">research id</text>
+</svg>

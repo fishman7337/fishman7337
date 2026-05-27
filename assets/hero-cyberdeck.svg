@@ -127,7 +127,7 @@
 <text id="edit-hero-username" x="76" y="205" class="mono medium" fill="#22D3EE">@fishman7337</text>
 <text id="edit-hero-tagline-1" x="72" y="262" class="body small">Building research-grade AI systems that connect quantum</text>
 <text id="edit-hero-tagline-2" x="72" y="296" class="body small">ML, perception, and dependable deployment.</text>
-<text id="edit-hero-role" x="72" y="350" class="subtitle medium">AI Research Intern @ RSAF RAiD (AETHER)</text>
+<text id="edit-hero-role" x="72" y="350" class="subtitle medium">Applied AI Research Intern</text>
 <text id="edit-hero-edu" x="72" y="388" class="body small">Diploma in Applied AI &amp; Analytics @ Singapore Polytechnic</text>
 <g>
 <rect x="72" y="430" width="198" height="38" rx="19" fill="rgba(15,23,42,.72)" stroke="#22D3EE" stroke-opacity="0.36"/>

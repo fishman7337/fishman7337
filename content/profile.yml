@@ -6,7 +6,7 @@ identity:
   name: Goh Kun Ming
   username: fishman7337
   location: Singapore
-  role: AI Research Intern @ RSAF RAiD (AETHER)
+  role: Applied AI Research Intern
   education: Diploma in Applied AI & Analytics @ Singapore Polytechnic
   email: kunmingaden@gmail.com
   github: https://github.com/fishman7337
@@ -170,8 +170,8 @@ timeline:
     title: HQCGAN Preprint
     desc: Posted an arXiv preprint on Hybrid Quantum-Classical GANs and classical GAN baselines.
   - date: Now
-    title: AI Research Intern
-    desc: Building research and applied AI capability across ML, CV, sensor fusion, and quantum computing.
+    title: Applied AI Research
+    desc: Building public-facing AI capability across ML, CV, sensor fusion, and quantum computing.
   - date: 2026+
     title: Applied AI Systems
     desc: Shipped public projects across MLOps, geospatial CV, policy intelligence, dashboards, and secure tooling.

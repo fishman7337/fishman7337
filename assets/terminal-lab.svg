@@ -126,7 +126,7 @@
 <circle cx="206" cy="192" r="10" fill="#27C93F"/>
 <text x="238" y="199" class="mono" font-size="17" fill="#9EB7C7">fishman7337@research-os:~/portfolio</text>
 <text id="edit-terminal-cmd-1" x="140" y="262" class="mono" font-size="17" fill="#2DD4BF">$ whoami</text>
-<text id="edit-terminal-out-1" x="610" y="262" class="mono" font-size="15" fill="#ECFEFF">Goh Kun Ming — AI Research Intern @ RSAF RAiD (AETHER)</text>
+<text id="edit-terminal-out-1" x="610" y="262" class="mono" font-size="15" fill="#ECFEFF">Goh Kun Ming — Applied AI Research Intern</text>
 <text id="edit-terminal-cmd-2" x="140" y="310" class="mono" font-size="17" fill="#2DD4BF">$ cat focus.txt</text>
 <text id="edit-terminal-out-2" x="610" y="310" class="mono" font-size="15" fill="#ECFEFF">Quantum GANs | CV/ROS | Data Viz | Neo4j | K8s/GCP MLOps</text>
 <text id="edit-terminal-cmd-3" x="140" y="358" class="mono" font-size="17" fill="#2DD4BF">$ run experiment --mode honest-baseline</text>

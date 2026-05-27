@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="154" height="54" viewBox="0 0 154 54" role="img" aria-labelledby="title desc">
+<title id="title">FID / KID</title>
+<desc id="desc">FID / KID profile button</desc>
+<defs>
+  <linearGradient id="bg-fid-kid" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0%" stop-color="#111827"/>
+    <stop offset="52%" stop-color="#0B1F2A"/>
+    <stop offset="100%" stop-color="#061F1B"/>
+  </linearGradient>
+  <linearGradient id="stroke-fid-kid" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0%" stop-color="#22D3EE"/>
+    <stop offset="46%" stop-color="#A78BFA"/>
+    <stop offset="100%" stop-color="#FB7185"/>
+  </linearGradient>
+  <filter id="shadow-fid-kid" x="-16%" y="-32%" width="132%" height="164%">
+    <feDropShadow dx="0" dy="7" stdDeviation="7" flood-color="#020617" flood-opacity="0.45"/>
+  </filter>
+</defs>
+<rect x="2" y="2" width="150" height="50" rx="14" fill="url(#bg-fid-kid)" stroke="url(#stroke-fid-kid)" stroke-width="1.3" filter="url(#shadow-fid-kid)"/>
+<rect x="10" y="9" width="38" height="36" rx="11" fill="#020617" opacity="0.72"/>
+<rect x="11" y="10" width="36" height="34" rx="10" fill="#F8FAFC" opacity="0.08"/>
+<text x="29" y="33" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="14" font-weight="900" fill="#E0F2FE">FI</text>
+<text x="60" y="24" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="13" font-weight="800" fill="#ECFEFF">FID / KID</text>
+<text x="60" y="39" font-family="JetBrains Mono, Consolas, monospace" font-size="9" font-weight="700" fill="#9EEBD9">evaluation</text>
+</svg>

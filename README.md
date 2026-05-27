@@ -4,23 +4,29 @@
 
 <br />
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=900&size=28&duration=2450&pause=700&center=true&vCenter=true&width=1200&height=82&color=38BDF8&lines=AI+Research+Intern+%40+RSAF+RAiD+(AETHER);Applied+AI+%26+Analytics+%40+Singapore+Polytechnic;Quantum+GANs+%E2%80%A2+Computer+Vision+%E2%80%A2+Sensor+Fusion+%E2%80%A2+MLOps;Research-grade+AI+systems+with+honest+evaluation+and+strong+documentation" alt="Animated typing intro for Goh Kun Ming" />
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=900&size=28&duration=2450&pause=700&center=true&vCenter=true&width=1200&height=82&color=38BDF8&lines=Applied+AI+Research+Intern;Applied+AI+%26+Analytics+%40+Singapore+Polytechnic;Quantum+GANs+%E2%80%A2+Computer+Vision+%E2%80%A2+Sensor+Fusion+%E2%80%A2+MLOps;Research-grade+AI+systems+with+honest+evaluation+and+strong+documentation" alt="Animated typing intro for Goh Kun Ming" />
 
 <br />
 
-<a href="https://github.com/fishman7337"><img src="https://img.shields.io/badge/GitHub-fishman7337-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub fishman7337" /></a>
-<a href="https://www.linkedin.com/in/goh-kun-ming-58573430a/"><img src="https://img.shields.io/badge/LinkedIn-Goh%20Kun%20Ming-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Goh Kun Ming" /></a>
-<a href="mailto:kunmingaden@gmail.com"><img src="https://img.shields.io/badge/Email-kunmingaden%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email kunmingaden@gmail.com" /></a>
-<a href="https://orcid.org/0009-0008-7666-781X"><img src="https://img.shields.io/badge/ORCID-0009--0008--7666--781X-A6CE39?style=for-the-badge&logo=orcid&logoColor=white" alt="ORCID" /></a>
-<a href="https://arxiv.org/abs/2508.09209"><img src="https://img.shields.io/badge/arXiv-2508.09209-B31B1B?style=for-the-badge&logo=arxiv&logoColor=white" alt="arXiv 2508.09209" /></a>
+<a href="https://github.com/fishman7337"><img src="./assets/profile-buttons/github.svg" width="174" alt="GitHub fishman7337" /></a>
+<a href="https://www.linkedin.com/in/goh-kun-ming-58573430a/"><img src="./assets/profile-buttons/linkedin.svg" width="204" alt="LinkedIn Goh Kun Ming" /></a>
+<a href="mailto:kunmingaden@gmail.com"><img src="./assets/profile-buttons/email.svg" width="174" alt="Email" /></a>
+
+<br />
+
+<a href="https://orcid.org/0009-0008-7666-781X"><img src="./assets/profile-buttons/orcid.svg" width="184" alt="ORCID" /></a>
+<a href="https://arxiv.org/abs/2508.09209"><img src="./assets/profile-buttons/arxiv.svg" width="174" alt="arXiv 2508.09209" /></a>
 
 <br />
 <br />
 
-<img src="https://komarev.com/ghpvc/?username=fishman7337&label=PROFILE%20VIEWS&style=for-the-badge&color=7c3aed" alt="Profile views" />
-<img src="https://img.shields.io/github/followers/fishman7337?style=for-the-badge&logo=github&label=Followers&color=38BDF8" alt="GitHub followers" />
-<img src="https://img.shields.io/github/stars/fishman7337?affiliations=OWNER%2CCOLLABORATOR&style=for-the-badge&logo=github&label=Total%20Stars&color=22C55E" alt="GitHub stars" />
-<img src="https://img.shields.io/badge/Focus-Research%20%2B%20Systems-F472B6?style=for-the-badge" alt="Focus research plus systems" />
+<img src="./assets/profile-buttons/public-work.svg" width="184" alt="Public work" />
+<img src="./assets/profile-buttons/research-grade.svg" width="206" alt="Research grade" />
+
+<br />
+
+<img src="./assets/profile-buttons/ai-systems.svg" width="174" alt="AI systems" />
+<img src="./assets/profile-buttons/singapore.svg" width="174" alt="Singapore" />
 
 <br />
 <br />
@@ -44,7 +50,7 @@ const fishman7337 = {
   handle: "fishman7337",
   base: "Singapore",
   education: "Diploma in Applied AI & Analytics, Singapore Polytechnic",
-  currentRole: "AI Research Intern @ RSAF RAiD (AETHER)",
+  currentRole: "Applied AI Research Intern",
   publicResearch: "Quantum-Enhanced GANs preprint · arXiv:2508.09209",
   operatingMode: "research → reproducibility → evaluation → deployable systems",
   proofPoints: ["PyTorch", "Keras", "Qiskit", "Pandas/NumPy", "SQL", "AWS", "Docker", "CI/CD"]
@@ -107,12 +113,12 @@ The common thread across the work below is **quantum ML, computer vision, geospa
       </ul>
     </td>
     <td width="38%" valign="middle" align="center">
-      <a href="https://arxiv.org/abs/2508.09209"><img src="https://img.shields.io/badge/Read%20the%20preprint-arXiv%3A2508.09209-B31B1B?style=for-the-badge&logo=arxiv&logoColor=white" alt="Read the arXiv preprint" /></a>
+      <a href="https://arxiv.org/abs/2508.09209"><img src="./assets/profile-buttons/read-preprint.svg" width="226" alt="Read the arXiv preprint" /></a>
       <br /><br />
-      <img src="https://img.shields.io/badge/Domain-Quantum%20Machine%20Learning-7C3AED?style=flat-square" alt="Quantum Machine Learning" />
-      <img src="https://img.shields.io/badge/Model-GANs-2563EB?style=flat-square" alt="GANs" />
-      <img src="https://img.shields.io/badge/Tool-Qiskit-6929C4?style=flat-square" alt="Qiskit" />
-      <img src="https://img.shields.io/badge/Eval-FID%20%2F%20KID-0F766E?style=flat-square" alt="FID and KID" />
+      <img src="./assets/profile-buttons/quantum-ml.svg" width="190" alt="Quantum Machine Learning" />
+      <img src="./assets/profile-buttons/gans.svg" width="142" alt="GANs" />
+      <img src="./assets/profile-buttons/qiskit.svg" width="154" alt="Qiskit" />
+      <img src="./assets/profile-buttons/fid-kid.svg" width="154" alt="FID and KID" />
       <br /><br />
       <sub>Quantum AI × Generative Modelling × Evaluation Discipline</sub>
     </td>
@@ -301,10 +307,10 @@ mindmap
 
 <div align="center">
 
-<a href="mailto:kunmingaden@gmail.com"><img src="https://img.shields.io/badge/Email-kunmingaden%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
-<a href="https://www.linkedin.com/in/goh-kun-ming-58573430a/"><img src="https://img.shields.io/badge/LinkedIn-Goh%20Kun%20Ming-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
-<a href="https://github.com/fishman7337"><img src="https://img.shields.io/badge/GitHub-fishman7337-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" /></a>
-<a href="https://arxiv.org/abs/2508.09209"><img src="https://img.shields.io/badge/Research-arXiv%3A2508.09209-B31B1B?style=for-the-badge&logo=arxiv&logoColor=white" alt="Research arXiv" /></a>
+<a href="mailto:kunmingaden@gmail.com"><img src="./assets/profile-buttons/email.svg" width="174" alt="Email" /></a>
+<a href="https://www.linkedin.com/in/goh-kun-ming-58573430a/"><img src="./assets/profile-buttons/linkedin.svg" width="204" alt="LinkedIn" /></a>
+<a href="https://github.com/fishman7337"><img src="./assets/profile-buttons/github.svg" width="174" alt="GitHub" /></a>
+<a href="https://arxiv.org/abs/2508.09209"><img src="./assets/profile-buttons/arxiv.svg" width="174" alt="Research arXiv" /></a>
 
 <br />
 <br />
