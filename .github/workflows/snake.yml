@@ -2,7 +2,9 @@ name: Generate contribution snake
 
 on:
   schedule:
+    # Runs at 00:00 Singapore time.
     - cron: "0 0 * * *"
+      timezone: "Asia/Singapore"
   workflow_dispatch:
   push:
     branches:
@@ -14,6 +16,8 @@ jobs:
       contents: write
     runs-on: ubuntu-latest
     timeout-minutes: 10
+    env:
+      TZ: Asia/Singapore
     steps:
       - name: Generate snake SVG
         uses: Platane/snk/svg-only@v3

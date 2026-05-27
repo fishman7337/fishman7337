@@ -23,7 +23,7 @@ BUTTONS = [
     ("public-work", 184, "Public work", "portfolio ready", ""),
     ("research-grade", 206, "Research grade", "honest evaluation", ""),
     ("ai-systems", 174, "AI systems", "ML + MLOps", ""),
-    ("singapore", 174, "Singapore", "SP DAAA", ""),
+    ("singapore", 174, "Singapore", "SGT UTC+8", ""),
     ("quantum-ml", 190, "Quantum ML", "research domain", ""),
     ("gans", 142, "GANs", "model family", ""),
     ("qiskit", 154, "Qiskit", "tooling", "https://cdn.simpleicons.org/qiskit/6929C4"),

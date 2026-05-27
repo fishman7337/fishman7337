@@ -49,6 +49,7 @@ const fishman7337 = {
   name: "Goh Kun Ming",
   handle: "fishman7337",
   base: "Singapore",
+  timezone: "Asia/Singapore (SGT, UTC+08:00)",
   education: "Diploma in Applied AI & Analytics, Singapore Polytechnic",
   currentRole: "Applied AI Research Intern",
   publicResearch: "Quantum-Enhanced GANs preprint · arXiv:2508.09209",
@@ -288,10 +289,13 @@ mindmap
 
 <div align="center">
 
+<sub>Telemetry timezone: Singapore Time (SGT, UTC+08:00).</sub>
+<br /><br />
+
 <img width="98%" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=fishman7337&theme=tokyonight" alt="GitHub profile details for fishman7337" />
 
 <img width="49%" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=fishman7337&theme=tokyonight" alt="GitHub summary stats for fishman7337" />
-<img width="49%" src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=fishman7337&theme=tokyonight&utcOffset=8" alt="Productive time card for fishman7337" />
+<img width="49%" src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=fishman7337&theme=tokyonight&utcOffset=8" alt="Productive time card for fishman7337 in Singapore time" />
 
 <img width="49%" src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=fishman7337&theme=tokyonight" alt="Repositories per language for fishman7337" />
 <img width="49%" src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=fishman7337&theme=tokyonight" alt="Most committed languages for fishman7337" />
