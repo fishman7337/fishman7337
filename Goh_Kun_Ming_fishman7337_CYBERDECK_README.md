@@ -203,46 +203,50 @@ flowchart LR
 
 <div align="center">
 
-<p><b>Clickable stack map · AI kernels · statistical modelling · graph intelligence · cloud deployment</b></p>
+<p><b>Clickable stack map · rounded logo cards · no duplicate technologies</b></p>
 
-<a href="https://www.python.org/"><img src="https://cdn.simpleicons.org/python/3776AB" width="42" height="42" alt="Python" /></a>
-<a href="https://pytorch.org/"><img src="https://cdn.simpleicons.org/pytorch/EE4C2C" width="42" height="42" alt="PyTorch" /></a>
-<a href="https://www.tensorflow.org/"><img src="https://cdn.simpleicons.org/tensorflow/FF6F00" width="42" height="42" alt="TensorFlow" /></a>
-<a href="https://keras.io/"><img src="https://cdn.simpleicons.org/keras/D00000" width="42" height="42" alt="Keras" /></a>
-<a href="https://scikit-learn.org/"><img src="https://cdn.simpleicons.org/scikitlearn/F7931E" width="42" height="42" alt="scikit-learn" /></a>
-<a href="https://www.qiskit.org/"><img src="https://cdn.simpleicons.org/qiskit/6929C4" width="42" height="42" alt="Qiskit" /></a>
-<a href="https://opencv.org/"><img src="https://cdn.simpleicons.org/opencv/5C3EE8" width="42" height="42" alt="OpenCV" /></a>
-<a href="https://www.ros.org/"><img src="https://cdn.simpleicons.org/ros/22314E" width="42" height="42" alt="ROS" /></a>
-
-<br />
-<br />
-
-<a href="https://pandas.pydata.org/"><img src="https://cdn.simpleicons.org/pandas/150458" width="42" height="42" alt="Pandas" /></a>
-<a href="https://numpy.org/"><img src="https://cdn.simpleicons.org/numpy/013243" width="42" height="42" alt="NumPy" /></a>
-<a href="https://matplotlib.org/"><img src="https://api.iconify.design/logos:matplotlib-icon.svg" width="42" height="42" alt="Matplotlib" /></a>
-<a href="https://seaborn.pydata.org/"><img src="https://api.iconify.design/logos:seaborn-icon.svg" width="42" height="42" alt="Seaborn" /></a>
-<a href="https://www.statsmodels.org/"><img src="https://cdn.simpleicons.org/python/11557C" width="42" height="42" alt="statsmodels" /></a>
-<a href="https://plotly.com/python/"><img src="https://cdn.simpleicons.org/plotly/3F4F75" width="42" height="42" alt="Plotly" /></a>
-<a href="https://dash.plotly.com/"><img src="https://cdn.simpleicons.org/plotly/008DE4" width="42" height="42" alt="Dash" /></a>
-<a href="https://www.tableau.com/"><img src="https://api.iconify.design/logos:tableau-icon.svg" width="42" height="42" alt="Tableau" /></a>
-<a href="https://powerbi.microsoft.com/"><img src="https://api.iconify.design/logos:microsoft-power-bi.svg" width="42" height="42" alt="Power BI" /></a>
-
-<br />
-<br />
-
-<a href="https://www.postgresql.org/"><img src="https://cdn.simpleicons.org/postgresql/4169E1" width="42" height="42" alt="PostgreSQL" /></a>
-<a href="https://www.sqlite.org/"><img src="https://cdn.simpleicons.org/sqlite/003B57" width="42" height="42" alt="SQLite" /></a>
-<a href="https://neo4j.com/"><img src="https://cdn.simpleicons.org/neo4j/4581C3" width="42" height="42" alt="Neo4j" /></a>
-<a href="https://aws.amazon.com/"><img src="https://api.iconify.design/logos:aws.svg" width="52" height="42" alt="AWS" /></a>
-<a href="https://cloud.google.com/"><img src="https://cdn.simpleicons.org/googlecloud/4285F4" width="42" height="42" alt="Google Cloud" /></a>
-<a href="https://kubernetes.io/"><img src="https://cdn.simpleicons.org/kubernetes/326CE5" width="42" height="42" alt="Kubernetes" /></a>
-<a href="https://www.docker.com/"><img src="https://cdn.simpleicons.org/docker/2496ED" width="42" height="42" alt="Docker" /></a>
-<a href="https://fastapi.tiangolo.com/"><img src="https://cdn.simpleicons.org/fastapi/009688" width="42" height="42" alt="FastAPI" /></a>
-<a href="https://flask.palletsprojects.com/"><img src="https://cdn.simpleicons.org/flask/FFFFFF" width="42" height="42" alt="Flask" /></a>
-<a href="https://github.com/features/actions"><img src="https://cdn.simpleicons.org/githubactions/2088FF" width="42" height="42" alt="GitHub Actions" /></a>
-<a href="https://docs.pytest.org/"><img src="https://cdn.simpleicons.org/pytest/0A9EDC" width="42" height="42" alt="pytest" /></a>
-<a href="https://wandb.ai/"><img src="https://cdn.simpleicons.org/weightsandbiases/FFBE00" width="42" height="42" alt="Weights and Biases" /></a>
-<a href="https://www.rust-lang.org/"><img src="https://cdn.simpleicons.org/rust/FFFFFF" width="42" height="42" alt="Rust" /></a>
+<table>
+  <tr>
+    <td align="center" width="88"><a href="https://www.python.org/"><img src="./assets/tech-logos/python.svg" width="72" alt="Python" /></a></td>
+    <td align="center" width="88"><a href="https://pytorch.org/"><img src="./assets/tech-logos/pytorch.svg" width="72" alt="PyTorch" /></a></td>
+    <td align="center" width="88"><a href="https://www.tensorflow.org/"><img src="./assets/tech-logos/tensorflow.svg" width="72" alt="TensorFlow" /></a></td>
+    <td align="center" width="88"><a href="https://keras.io/"><img src="./assets/tech-logos/keras.svg" width="72" alt="Keras" /></a></td>
+    <td align="center" width="88"><a href="https://scikit-learn.org/"><img src="./assets/tech-logos/scikit-learn.svg" width="72" alt="scikit-learn" /></a></td>
+    <td align="center" width="88"><a href="https://www.qiskit.org/"><img src="./assets/tech-logos/qiskit.svg" width="72" alt="Qiskit" /></a></td>
+  </tr>
+  <tr>
+    <td align="center"><a href="https://opencv.org/"><img src="./assets/tech-logos/opencv.svg" width="72" alt="OpenCV" /></a></td>
+    <td align="center"><a href="https://www.ros.org/"><img src="./assets/tech-logos/ros.svg" width="72" alt="ROS" /></a></td>
+    <td align="center"><a href="https://pandas.pydata.org/"><img src="./assets/tech-logos/pandas.svg" width="72" alt="Pandas" /></a></td>
+    <td align="center"><a href="https://numpy.org/"><img src="./assets/tech-logos/numpy.svg" width="72" alt="NumPy" /></a></td>
+    <td align="center"><a href="https://matplotlib.org/"><img src="./assets/tech-logos/matplotlib.svg" width="72" alt="Matplotlib" /></a></td>
+    <td align="center"><a href="https://seaborn.pydata.org/"><img src="./assets/tech-logos/seaborn.svg" width="72" alt="Seaborn" /></a></td>
+  </tr>
+  <tr>
+    <td align="center"><a href="https://www.statsmodels.org/"><img src="./assets/tech-logos/statsmodels.svg" width="72" alt="statsmodels" /></a></td>
+    <td align="center"><a href="https://plotly.com/python/"><img src="./assets/tech-logos/plotly.svg" width="72" alt="Plotly" /></a></td>
+    <td align="center"><a href="https://dash.plotly.com/"><img src="./assets/tech-logos/dash.svg" width="72" alt="Dash" /></a></td>
+    <td align="center"><a href="https://www.tableau.com/"><img src="./assets/tech-logos/tableau.svg" width="72" alt="Tableau" /></a></td>
+    <td align="center"><a href="https://powerbi.microsoft.com/"><img src="./assets/tech-logos/power-bi.svg" width="72" alt="Power BI" /></a></td>
+    <td align="center"><a href="https://www.postgresql.org/"><img src="./assets/tech-logos/postgresql.svg" width="72" alt="PostgreSQL" /></a></td>
+  </tr>
+  <tr>
+    <td align="center"><a href="https://www.sqlite.org/"><img src="./assets/tech-logos/sqlite.svg" width="72" alt="SQLite" /></a></td>
+    <td align="center"><a href="https://neo4j.com/"><img src="./assets/tech-logos/neo4j.svg" width="72" alt="Neo4j" /></a></td>
+    <td align="center"><a href="https://aws.amazon.com/"><img src="./assets/tech-logos/aws.svg" width="72" alt="AWS" /></a></td>
+    <td align="center"><a href="https://cloud.google.com/"><img src="./assets/tech-logos/gcp.svg" width="72" alt="Google Cloud" /></a></td>
+    <td align="center"><a href="https://kubernetes.io/"><img src="./assets/tech-logos/kubernetes.svg" width="72" alt="Kubernetes" /></a></td>
+    <td align="center"><a href="https://www.docker.com/"><img src="./assets/tech-logos/docker.svg" width="72" alt="Docker" /></a></td>
+  </tr>
+  <tr>
+    <td align="center"><a href="https://fastapi.tiangolo.com/"><img src="./assets/tech-logos/fastapi.svg" width="72" alt="FastAPI" /></a></td>
+    <td align="center"><a href="https://flask.palletsprojects.com/"><img src="./assets/tech-logos/flask.svg" width="72" alt="Flask" /></a></td>
+    <td align="center"><a href="https://github.com/features/actions"><img src="./assets/tech-logos/github-actions.svg" width="72" alt="GitHub Actions" /></a></td>
+    <td align="center"><a href="https://docs.pytest.org/"><img src="./assets/tech-logos/pytest.svg" width="72" alt="pytest" /></a></td>
+    <td align="center"><a href="https://wandb.ai/"><img src="./assets/tech-logos/wandb.svg" width="72" alt="Weights and Biases" /></a></td>
+    <td align="center"><a href="https://www.rust-lang.org/"><img src="./assets/tech-logos/rust.svg" width="72" alt="Rust" /></a></td>
+  </tr>
+</table>
 
 </div>
 

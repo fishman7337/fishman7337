@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="88" height="88" viewBox="0 0 88 88" role="img" aria-labelledby="title desc">
+<title id="title">Weights and Biases</title>
+<desc id="desc">Rounded square logo card for Weights and Biases</desc>
+<defs>
+  <linearGradient id="card-bg" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0%" stop-color="#111827"/>
+    <stop offset="100%" stop-color="#06131B"/>
+  </linearGradient>
+  <linearGradient id="card-stroke" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0%" stop-color="#22D3EE"/>
+    <stop offset="52%" stop-color="#A78BFA"/>
+    <stop offset="100%" stop-color="#FB7185"/>
+  </linearGradient>
+  <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+    <feDropShadow dx="0" dy="7" stdDeviation="8" flood-color="#020617" flood-opacity="0.55"/>
+  </filter>
+</defs>
+<rect x="3" y="3" width="82" height="82" rx="20" fill="url(#card-bg)" stroke="url(#card-stroke)" stroke-width="1.4" opacity="0.98" filter="url(#shadow)"/>
+<rect x="9" y="9" width="70" height="70" rx="16" fill="#020617" opacity="0.34"/>
+<rect x="17" y="10" width="54" height="48" rx="15" fill="#F8FAFC" opacity="0.96"/>
+<rect x="17" y="10" width="54" height="48" rx="15" fill="none" stroke="#FFFFFF" stroke-opacity="0.68"/>
+<svg x="24" y="13" width="40" height="40" viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" fill="#FFBE00" color="#FFBE00"><path d="M2.48 0a1.55 1.55 0 1 0 0 3.1 1.55 1.55 0 0 0 0-3.1zm19.04 0a1.55 1.55 0 1 0 0 3.101 1.55 1.55 0 0 0 0-3.101zM12 2.295a1.55 1.55 0 1 0 0 3.1 1.55 1.55 0 0 0 0-3.1zM2.48 5.272a2.48 2.48 0 1 0 0 4.96 2.48 2.48 0 0 0 0-4.96zm19.04 0a2.48 2.48 0 1 0 0 4.96 2.48 2.48 0 0 0 0-4.96zM12 8.496a1.55 1.55 0 1 0 0 3.1 1.55 1.55 0 0 0 0-3.1zm-9.52 3.907a1.55 1.55 0 1 0 0 3.1 1.55 1.55 0 0 0 0-3.1zm19.04 0a1.55 1.55 0 1 0 0 3.102 1.55 1.55 0 0 0 0-3.102zM12 13.767a2.48 2.48 0 1 0 0 4.962 2.48 2.48 0 0 0 0-4.962zm-9.52 3.907a2.48 2.48 0 1 0 .001 4.962 2.48 2.48 0 0 0 0-4.962zm19.04.93a1.55 1.55 0 1 0 0 3.102 1.55 1.55 0 0 0 0-3.101zM12 20.9a1.55 1.55 0 1 0 0 3.1 1.55 1.55 0 0 0 0-3.1Z"/></svg>
+<text x="44" y="73" text-anchor="middle" font-family="JetBrains Mono, Consolas, monospace" font-size="8.7" font-weight="800" fill="#CFFAFE">W&amp;B</text>
+</svg>

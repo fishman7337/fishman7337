@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="88" height="88" viewBox="0 0 88 88" role="img" aria-labelledby="title desc">
+<title id="title">Power BI</title>
+<desc id="desc">Rounded square logo card for Power BI</desc>
+<defs>
+  <linearGradient id="card-bg" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0%" stop-color="#111827"/>
+    <stop offset="100%" stop-color="#06131B"/>
+  </linearGradient>
+  <linearGradient id="card-stroke" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0%" stop-color="#22D3EE"/>
+    <stop offset="52%" stop-color="#A78BFA"/>
+    <stop offset="100%" stop-color="#FB7185"/>
+  </linearGradient>
+  <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+    <feDropShadow dx="0" dy="7" stdDeviation="8" flood-color="#020617" flood-opacity="0.55"/>
+  </filter>
+</defs>
+<rect x="3" y="3" width="82" height="82" rx="20" fill="url(#card-bg)" stroke="url(#card-stroke)" stroke-width="1.4" opacity="0.98" filter="url(#shadow)"/>
+<rect x="9" y="9" width="70" height="70" rx="16" fill="#020617" opacity="0.34"/>
+<rect x="17" y="10" width="54" height="48" rx="15" fill="#F8FAFC" opacity="0.96"/>
+<rect x="17" y="10" width="54" height="48" rx="15" fill="none" stroke="#FFFFFF" stroke-opacity="0.68"/>
+<svg x="24" y="13" width="40" height="40" viewBox="0 0 256 342" preserveAspectRatio="xMidYMid meet"><defs><linearGradient id="SVGCdghnblF" x1="42.593%" x2="57.245%" y1="0%" y2="93.174%"><stop offset="0%" stop-color="#e6ad10"/><stop offset="100%" stop-color="#c87e0e"/></linearGradient><linearGradient id="SVG5tapKdof" x1="40.122%" x2="62.028%" y1="0%" y2="95.592%"><stop offset="0%" stop-color="#f6d751"/><stop offset="100%" stop-color="#e6ad10"/></linearGradient><linearGradient id="SVGRvjwscVp" x1="27.774%" x2="55.012%" y1="0%" y2="96.828%"><stop offset="0%" stop-color="#f9e589"/><stop offset="100%" stop-color="#f6d751"/></linearGradient><path id="SVGvAvgNc4T" d="M142.222 14.222C142.222 6.368 148.59 0 156.444 0h85.334C249.632 0 256 6.368 256 14.222v312.89c0 7.854-6.368 14.221-14.222 14.221H14.222C6.368 341.333 0 334.966 0 327.111V184.89c0-7.855 6.368-14.222 14.222-14.222h56.89V99.556c0-7.855 6.367-14.223 14.222-14.223h56.888z"/></defs><mask id="SVGvCV5wclL" fill="#fff"><use href="#SVGvAvgNc4T"/></mask><path fill="url(#SVGCdghnblF)" d="M256 0v341.333H142.222V0z" mask="url(#SVGvCV5wclL)"/><path fill-opacity=".2" d="M184.889 100.978v241.778H71.11v-256h99.556c7.854 0 14.222 6.367 14.222 14.222" mask="url(#SVGvCV5wclL)"/><path fill-opacity=".18" d="M184.889 106.667v241.777H71.11v-256h99.556c7.854 0 14.222 6.368 14.222 14.223" mask="url(#SVGvCV5wclL)"/><path fill="url(#SVG5tapKdof)" d="M184.889 99.556v241.777H71.11v-256h99.556c7.854 0 14.222 6.368 14.222 14.223" mask="url(#SVGvCV5wclL)"/><path fill="url(#SVGRvjwscVp)" d="M0 170.667v170.666h113.778V184.89c0-7.855-6.368-14.222-14.222-14.222z" mask="url(#SVGvCV5wclL)"/></svg>
+<text x="44" y="73" text-anchor="middle" font-family="JetBrains Mono, Consolas, monospace" font-size="8.7" font-weight="800" fill="#CFFAFE">Power BI</text>
+</svg>
