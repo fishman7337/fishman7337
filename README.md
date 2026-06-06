@@ -129,17 +129,7 @@ The common thread across the work below is **quantum ML, computer vision, geospa
 <details>
 <summary><b>🔬 Open the research mental model</b></summary>
 
-```mermaid
-flowchart LR
-  A[Research Question] --> B[Classical Baseline]
-  A --> C[Quantum Circuit Latent Prior]
-  C --> D[3 / 5 / 7 Qubit HQCGAN Variants]
-  B --> E[Training + Samples]
-  D --> E
-  E --> F[FID / KID Evaluation]
-  F --> G[Bounded Claims + Limitations]
-  G --> H[Reproducible Repository + arXiv]
-```
+<img src="./assets/research-flow.svg" alt="Research flow from question to baselines quantum priors evaluation bounded claims and public artifact" width="100%" />
 
 </details>
 
@@ -254,28 +244,7 @@ flowchart LR
 
 <img src="./assets/timeline-roadmap.svg" alt="Animated build roadmap timeline for Goh Kun Ming" width="100%" />
 
-```mermaid
-mindmap
-  root((fishman7337))
-    Applied AI Research
-      Quantum GANs
-      Honest Baselines
-      Reproducible Experiments
-    Perception Intelligence
-      Computer Vision
-      Sensor Fusion
-      Remote Sensing
-    AI Systems Engineering
-      Flask and FastAPI
-      Docker and CI/CD
-      Model Serving
-      Testing
-    Data + Governance
-      Dashboards
-      Graph Intelligence
-      RAG Safety
-      Model Cards
-```
+<img src="./assets/roadmap-mindmap.svg" alt="Stable roadmap mindmap covering research perception systems data and governance" width="100%" />
 
 ---
 

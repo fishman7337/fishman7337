@@ -1,0 +1,188 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="620" viewBox="0 0 1600 620" role="img" aria-labelledby="title desc">
+<title id="title">Roadmap mindmap</title>
+<desc id="desc">Stable visual roadmap mindmap for the profile README</desc>
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0%" stop-color="#05070F"/>
+    <stop offset="48%" stop-color="#0B1F24"/>
+    <stop offset="100%" stop-color="#111827"/>
+  </linearGradient>
+  <linearGradient id="panelGrad" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0%" stop-color="#10172A" stop-opacity="0.98"/>
+    <stop offset="100%" stop-color="#102A35" stop-opacity="0.92"/>
+  </linearGradient>
+  <linearGradient id="neon" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0%" stop-color="#22D3EE"/>
+    <stop offset="45%" stop-color="#C084FC"/>
+    <stop offset="100%" stop-color="#FB7185"/>
+  </linearGradient>
+  <linearGradient id="greenGrad" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0%" stop-color="#2DD4BF"/>
+    <stop offset="100%" stop-color="#22D3EE"/>
+  </linearGradient>
+  <linearGradient id="amberGrad" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0%" stop-color="#FBBF24"/>
+    <stop offset="100%" stop-color="#FB7185"/>
+  </linearGradient>
+  <linearGradient id="glassGrad" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0%" stop-color="#17233C" stop-opacity="0.92"/>
+    <stop offset="100%" stop-color="#06131B" stop-opacity="0.86"/>
+  </linearGradient>
+  <linearGradient id="scanGrad" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="#22D3EE" stop-opacity="0"/>
+    <stop offset="52%" stop-color="#22D3EE" stop-opacity="0.24"/>
+    <stop offset="100%" stop-color="#22D3EE" stop-opacity="0"/>
+  </linearGradient>
+  <radialGradient id="orbGlow" cx="50%" cy="50%" r="50%">
+    <stop offset="0%" stop-color="#22D3EE" stop-opacity="0.85"/>
+    <stop offset="65%" stop-color="#C084FC" stop-opacity="0.16"/>
+    <stop offset="100%" stop-color="#C084FC" stop-opacity="0"/>
+  </radialGradient>
+  <filter id="softGlow" x="-40%" y="-40%" width="180%" height="180%">
+    <feGaussianBlur stdDeviation="6" result="blur"/>
+    <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+  <filter id="cardShadow" x="-30%" y="-30%" width="160%" height="160%">
+    <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#020617" flood-opacity="0.50"/>
+  </filter>
+  <pattern id="grid" width="44" height="44" patternUnits="userSpaceOnUse">
+    <path d="M 44 0 L 0 0 0 44" fill="none" stroke="#22D3EE" stroke-opacity="0.065" stroke-width="1"/>
+  </pattern>
+  <pattern id="microGrid" width="12" height="12" patternUnits="userSpaceOnUse">
+    <path d="M 12 0 L 0 0 0 12" fill="none" stroke="#2DD4BF" stroke-opacity="0.045" stroke-width="1"/>
+  </pattern>
+  <style><![CDATA[
+    .bg { fill: url(#bg); }
+    .grid { fill: url(#grid); opacity: .95; }
+    .microGrid { fill: url(#microGrid); opacity: .70; }
+    .title { font-family: Inter, ui-sans-serif, system-ui, Segoe UI, Arial, sans-serif; font-weight: 900; letter-spacing: 0; fill: #ECFEFF; }
+    .subtitle { font-family: Inter, ui-sans-serif, system-ui, Segoe UI, Arial, sans-serif; font-weight: 700; fill: #22D3EE; }
+    .body { font-family: Inter, ui-sans-serif, system-ui, Segoe UI, Arial, sans-serif; fill: #9EB7C7; }
+    .mono { font-family: JetBrains Mono, SFMono-Regular, Consolas, Monaco, monospace; fill: #ECFEFF; }
+    .label { font-family: JetBrains Mono, SFMono-Regular, Consolas, Monaco, monospace; font-weight: 800; fill: #22D3EE; }
+    .muted { fill: #9EB7C7; }
+    .tiny { font-size: 18px; }
+    .small { font-size: 22px; }
+    .medium { font-size: 28px; }
+    .large { font-size: 46px; }
+    .huge { font-size: 72px; }
+    .chip { fill: rgba(15, 23, 42, .78); stroke: #22D3EE; stroke-opacity: .35; }
+    .panel { fill: url(#panelGrad); stroke: #22D3EE; stroke-opacity: .22; filter: url(#cardShadow); }
+    .glass { fill: url(#glassGrad); stroke: #22D3EE; stroke-opacity: .24; filter: url(#cardShadow); }
+    .hairline { stroke: #22D3EE; stroke-opacity: .28; stroke-width: 1.3; fill: none; }
+    .faintLine { stroke: #9EB7C7; stroke-opacity: .18; stroke-width: 1; fill: none; }
+    .neonStroke { stroke: url(#neon); stroke-width: 3; fill: none; filter: url(#softGlow); }
+    .glowText { fill: url(#neon); filter: url(#softGlow); }
+    .pulse { animation: pulse 2.8s ease-in-out infinite; transform-origin: center; transform-box: fill-box; }
+    .floatA { animation: floatA 8s ease-in-out infinite; transform-box: fill-box; }
+    .floatB { animation: floatB 10s ease-in-out infinite; transform-box: fill-box; }
+    .spinSlow { animation: spin 24s linear infinite; transform-origin: center; transform-box: fill-box; }
+    .spinReverse { animation: spinReverse 32s linear infinite; transform-origin: center; transform-box: fill-box; }
+    .dash { fill: none; stroke-dasharray: 16 18; animation: dash 12s linear infinite; }
+    .scan { animation: scan 6s ease-in-out infinite; }
+    .blink { animation: blink 1.2s steps(2, end) infinite; }
+    .bar { transform-origin: left center; transform-box: fill-box; animation: barLoad 3.2s ease-out both; }
+    .twinkle { animation: twinkle 3s ease-in-out infinite; }
+    .wave { animation: wave 7s ease-in-out infinite alternate; }
+    .fadeSlide { animation: fadeSlide 5s ease-in-out infinite; }
+    @keyframes pulse { 0%,100% { opacity:.55; transform:scale(1); } 50% { opacity:1; transform:scale(1.055); } }
+    @keyframes floatA { 0%,100% { transform:translateY(0px); } 50% { transform:translateY(-14px); } }
+    @keyframes floatB { 0%,100% { transform:translateY(0px); } 50% { transform:translateY(12px); } }
+    @keyframes spin { from { transform:rotate(0deg); } to { transform:rotate(360deg); } }
+    @keyframes spinReverse { from { transform:rotate(360deg); } to { transform:rotate(0deg); } }
+    @keyframes dash { to { stroke-dashoffset:-280; } }
+    @keyframes scan { 0%,100% { transform:translateY(-120px); opacity:0; } 25%,70% { opacity:.50; } 50% { transform:translateY(740px); opacity:.20; } }
+    @keyframes blink { 0%,45% { opacity: 1; } 46%,100% { opacity: 0; } }
+    @keyframes barLoad { from { transform:scaleX(.08); } to { transform:scaleX(1); } }
+    @keyframes twinkle { 0%,100% { opacity:.25; } 50% { opacity:1; } }
+    @keyframes wave { from { transform: translateX(-20px); } to { transform: translateX(20px); } }
+    @keyframes fadeSlide { 0%,100% { opacity:.28; transform:translateX(-12px); } 50% { opacity:.75; transform:translateX(12px); } }
+    @media (prefers-reduced-motion: reduce) { * { animation: none !important; } }
+  ]]></style>
+</defs>
+
+<rect width="1600" height="620" fill="#05070F"/>
+<rect class="bg" width="1600" height="620" rx="28"/>
+<rect class="grid" width="1600" height="620" rx="28"/>
+<rect class="microGrid" width="1600" height="620" rx="28"/>
+<path d="M0 0 H1600 V126 C1200 96 960 136 608 104 C320 78 192 112 0 78 Z" fill="url(#neon)" opacity="0.055"/>
+<path d="M0 500 C352 562 672 460 1088 528 C1312 564 1472 502 1600 538 V620 H0 Z" fill="url(#greenGrad)" opacity="0.05"/>
+<g opacity="0.42"><circle class="twinkle" cx="137" cy="83" r="1.6" fill="#C084FC" opacity="0.45" style="animation-delay:0.25s"/><circle class="twinkle" cx="274" cy="166" r="2.3" fill="#2DD4BF" opacity="0.45" style="animation-delay:0.50s"/><circle class="twinkle" cx="411" cy="249" r="1.0" fill="#FB7185" opacity="0.45" style="animation-delay:0.75s"/><circle class="twinkle" cx="548" cy="332" r="1.6" fill="#22D3EE" opacity="0.45" style="animation-delay:1.00s"/><circle class="twinkle" cx="685" cy="415" r="2.3" fill="#C084FC" opacity="0.45" style="animation-delay:1.25s"/><circle class="twinkle" cx="822" cy="498" r="1.0" fill="#2DD4BF" opacity="0.45" style="animation-delay:1.50s"/><circle class="twinkle" cx="959" cy="581" r="1.6" fill="#FB7185" opacity="0.45" style="animation-delay:1.75s"/><circle class="twinkle" cx="1096" cy="44" r="2.3" fill="#22D3EE" opacity="0.45" style="animation-delay:2.00s"/><circle class="twinkle" cx="1233" cy="127" r="1.0" fill="#C084FC" opacity="0.45" style="animation-delay:0.00s"/><circle class="twinkle" cx="1370" cy="210" r="1.6" fill="#2DD4BF" opacity="0.45" style="animation-delay:0.25s"/><circle class="twinkle" cx="1507" cy="293" r="2.3" fill="#FB7185" opacity="0.45" style="animation-delay:0.50s"/><circle class="twinkle" cx="44" cy="376" r="1.0" fill="#22D3EE" opacity="0.45" style="animation-delay:0.75s"/><circle class="twinkle" cx="181" cy="459" r="1.6" fill="#C084FC" opacity="0.45" style="animation-delay:1.00s"/><circle class="twinkle" cx="318" cy="542" r="2.3" fill="#2DD4BF" opacity="0.45" style="animation-delay:1.25s"/><circle class="twinkle" cx="455" cy="5" r="1.0" fill="#FB7185" opacity="0.45" style="animation-delay:1.50s"/><circle class="twinkle" cx="592" cy="88" r="1.6" fill="#22D3EE" opacity="0.45" style="animation-delay:1.75s"/><circle class="twinkle" cx="729" cy="171" r="2.3" fill="#C084FC" opacity="0.45" style="animation-delay:2.00s"/><circle class="twinkle" cx="866" cy="254" r="1.0" fill="#2DD4BF" opacity="0.45" style="animation-delay:0.00s"/><circle class="twinkle" cx="1003" cy="337" r="1.6" fill="#FB7185" opacity="0.45" style="animation-delay:0.25s"/><circle class="twinkle" cx="1140" cy="420" r="2.3" fill="#22D3EE" opacity="0.45" style="animation-delay:0.50s"/><circle class="twinkle" cx="1277" cy="503" r="1.0" fill="#C084FC" opacity="0.45" style="animation-delay:0.75s"/><circle class="twinkle" cx="1414" cy="586" r="1.6" fill="#2DD4BF" opacity="0.45" style="animation-delay:1.00s"/><circle class="twinkle" cx="1551" cy="49" r="2.3" fill="#FB7185" opacity="0.45" style="animation-delay:1.25s"/><circle class="twinkle" cx="88" cy="132" r="1.0" fill="#22D3EE" opacity="0.45" style="animation-delay:1.50s"/><circle class="twinkle" cx="225" cy="215" r="1.6" fill="#C084FC" opacity="0.45" style="animation-delay:1.75s"/><circle class="twinkle" cx="362" cy="298" r="2.3" fill="#2DD4BF" opacity="0.45" style="animation-delay:2.00s"/><circle class="twinkle" cx="499" cy="381" r="1.0" fill="#FB7185" opacity="0.45" style="animation-delay:0.00s"/><circle class="twinkle" cx="636" cy="464" r="1.6" fill="#22D3EE" opacity="0.45" style="animation-delay:0.25s"/><circle class="twinkle" cx="773" cy="547" r="2.3" fill="#C084FC" opacity="0.45" style="animation-delay:0.50s"/><circle class="twinkle" cx="910" cy="10" r="1.0" fill="#2DD4BF" opacity="0.45" style="animation-delay:0.75s"/><circle class="twinkle" cx="1047" cy="93" r="1.6" fill="#FB7185" opacity="0.45" style="animation-delay:1.00s"/><circle class="twinkle" cx="1184" cy="176" r="2.3" fill="#22D3EE" opacity="0.45" style="animation-delay:1.25s"/><circle class="twinkle" cx="1321" cy="259" r="1.0" fill="#C084FC" opacity="0.45" style="animation-delay:1.50s"/><circle class="twinkle" cx="1458" cy="342" r="1.6" fill="#2DD4BF" opacity="0.45" style="animation-delay:1.75s"/><circle class="twinkle" cx="1595" cy="425" r="2.3" fill="#FB7185" opacity="0.45" style="animation-delay:2.00s"/><circle class="twinkle" cx="132" cy="508" r="1.0" fill="#22D3EE" opacity="0.45" style="animation-delay:0.00s"/><circle class="twinkle" cx="269" cy="591" r="1.6" fill="#C084FC" opacity="0.45" style="animation-delay:0.25s"/><circle class="twinkle" cx="406" cy="54" r="2.3" fill="#2DD4BF" opacity="0.45" style="animation-delay:0.50s"/><circle class="twinkle" cx="543" cy="137" r="1.0" fill="#FB7185" opacity="0.45" style="animation-delay:0.75s"/><circle class="twinkle" cx="680" cy="220" r="1.6" fill="#22D3EE" opacity="0.45" style="animation-delay:1.00s"/><circle class="twinkle" cx="817" cy="303" r="2.3" fill="#C084FC" opacity="0.45" style="animation-delay:1.25s"/><circle class="twinkle" cx="954" cy="386" r="1.0" fill="#2DD4BF" opacity="0.45" style="animation-delay:1.50s"/><circle class="twinkle" cx="1091" cy="469" r="1.6" fill="#FB7185" opacity="0.45" style="animation-delay:1.75s"/><circle class="twinkle" cx="1228" cy="552" r="2.3" fill="#22D3EE" opacity="0.45" style="animation-delay:2.00s"/><circle class="twinkle" cx="1365" cy="15" r="1.0" fill="#C084FC" opacity="0.45" style="animation-delay:0.00s"/><circle class="twinkle" cx="1502" cy="98" r="1.6" fill="#2DD4BF" opacity="0.45" style="animation-delay:0.25s"/><circle class="twinkle" cx="39" cy="181" r="2.3" fill="#FB7185" opacity="0.45" style="animation-delay:0.50s"/><circle class="twinkle" cx="176" cy="264" r="1.0" fill="#22D3EE" opacity="0.45" style="animation-delay:0.75s"/><circle class="twinkle" cx="313" cy="347" r="1.6" fill="#C084FC" opacity="0.45" style="animation-delay:1.00s"/><circle class="twinkle" cx="450" cy="430" r="2.3" fill="#2DD4BF" opacity="0.45" style="animation-delay:1.25s"/><circle class="twinkle" cx="587" cy="513" r="1.0" fill="#FB7185" opacity="0.45" style="animation-delay:1.50s"/><circle class="twinkle" cx="724" cy="596" r="1.6" fill="#22D3EE" opacity="0.45" style="animation-delay:1.75s"/><circle class="twinkle" cx="861" cy="59" r="2.3" fill="#C084FC" opacity="0.45" style="animation-delay:2.00s"/><circle class="twinkle" cx="998" cy="142" r="1.0" fill="#2DD4BF" opacity="0.45" style="animation-delay:0.00s"/><circle class="twinkle" cx="1135" cy="225" r="1.6" fill="#FB7185" opacity="0.45" style="animation-delay:0.25s"/></g>
+<g id="ambient-circuit-traces"><path d="M72 104 h42 v18 h21" fill="none" stroke="#22D3EE" stroke-opacity="0.13" stroke-width="1.2"/><path d="M185 175 h68 v30 h34" fill="none" stroke="#2DD4BF" stroke-opacity="0.13" stroke-width="1.2"/><path d="M298 246 h94 v42 h47" fill="none" stroke="#C084FC" stroke-opacity="0.13" stroke-width="1.2"/><path d="M411 317 h120 v18 h60" fill="none" stroke="#FBBF24" stroke-opacity="0.13" stroke-width="1.2"/><path d="M524 388 h42 v30 h21" fill="none" stroke="#22D3EE" stroke-opacity="0.13" stroke-width="1.2"/><path d="M637 459 h68 v42 h34" fill="none" stroke="#2DD4BF" stroke-opacity="0.13" stroke-width="1.2"/><path d="M750 530 h94 v18 h47" fill="none" stroke="#C084FC" stroke-opacity="0.13" stroke-width="1.2"/><path d="M863 161 h120 v30 h60" fill="none" stroke="#FBBF24" stroke-opacity="0.13" stroke-width="1.2"/><path d="M976 232 h42 v42 h21" fill="none" stroke="#22D3EE" stroke-opacity="0.13" stroke-width="1.2"/><path d="M1089 303 h68 v18 h34" fill="none" stroke="#2DD4BF" stroke-opacity="0.13" stroke-width="1.2"/><path d="M1202 374 h94 v30 h47" fill="none" stroke="#C084FC" stroke-opacity="0.13" stroke-width="1.2"/><path d="M1315 445 h120 v42 h60" fill="none" stroke="#FBBF24" stroke-opacity="0.13" stroke-width="1.2"/><path d="M1428 516 h42 v18 h21" fill="none" stroke="#22D3EE" stroke-opacity="0.13" stroke-width="1.2"/><path d="M101 147 h68 v30 h34" fill="none" stroke="#2DD4BF" stroke-opacity="0.13" stroke-width="1.2"/></g>
+<path d="M28 92 V28 H92 M1508 28 H1572 V92 M28 528 V592 H92 M1508 592 H1572 V528" fill="none" stroke="url(#neon)" stroke-width="4" stroke-linecap="round" opacity="0.62"/>
+<rect class="scan" x="0" y="0" width="1600" height="136" fill="url(#scanGrad)" opacity="0.42"/>
+
+<g id="edit-mindmap-header">
+<rect x="70" y="44" width="179" height="32" rx="16" fill="rgba(2,6,23,.70)" stroke="#2DD4BF" stroke-opacity="0.34"/>
+<text id="edit-mindmap-code" x="90" y="66" class="label" font-size="14" fill="#2DD4BF">ROADMAP MAP</text>
+<text id="edit-mindmap-title" x="70" y="108" class="title large">Capability Mindmap</text>
+<text id="edit-mindmap-subtitle" x="72" y="143" class="body small">Research, perception, systems, and governance grouped into a practical build path.</text>
+<path d="M72 158 H510" class="hairline"/>
+</g>
+<circle class="pulse" cx="800" cy="330" r="84" fill="rgba(16,26,53,.92)" stroke="url(#neon)" stroke-width="4" filter="url(#cardShadow)"/>
+<circle cx="800" cy="330" r="56" fill="rgba(2,6,23,.72)" stroke="#22D3EE" stroke-opacity="0.28"/>
+<text x="800" y="322" text-anchor="middle" class="title" font-size="25">fishman7337</text>
+<text x="800" y="358" text-anchor="middle" class="mono" font-size="15" fill="#9EB7C7">AI systems map</text>
+<path class="dash" d="M800 330 C667 330, 667 251, 535 251" stroke="#22D3EE" stroke-opacity="0.70" stroke-width="3"/>
+<g id="edit-mindmap-group-1" class="floatA" style="animation-delay:0.00s">
+<rect x="105" y="165" width="430" height="172" rx="26" fill="rgba(16,26,53,.92)" stroke="#22D3EE" stroke-opacity="0.42" filter="url(#cardShadow)"/>
+<text id="edit-mindmap-title-1" x="133" y="208" class="title" font-size="26">Applied AI Research</text>
+<rect x="133" y="237" width="178" height="30" rx="15" fill="rgba(2,6,23,.72)" stroke="#22D3EE" stroke-opacity="0.28"/>
+<circle cx="150" cy="252" r="5" fill="#22D3EE" opacity="0.88"/>
+<text id="edit-mindmap-chip-1-1" x="163" y="257" class="mono" font-size="13" fill="#ECFEFF">Quantum GANs</text>
+<rect x="331" y="237" width="178" height="30" rx="15" fill="rgba(2,6,23,.72)" stroke="#22D3EE" stroke-opacity="0.28"/>
+<circle cx="348" cy="252" r="5" fill="#22D3EE" opacity="0.88"/>
+<text id="edit-mindmap-chip-1-2" x="361" y="257" class="mono" font-size="13" fill="#ECFEFF">Honest baselines</text>
+<rect x="133" y="283" width="178" height="30" rx="15" fill="rgba(2,6,23,.72)" stroke="#22D3EE" stroke-opacity="0.28"/>
+<circle cx="150" cy="298" r="5" fill="#22D3EE" opacity="0.88"/>
+<text id="edit-mindmap-chip-1-3" x="163" y="303" class="mono" font-size="13" fill="#ECFEFF">Reproducible runs</text>
+</g>
+<path class="dash" d="M800 330 C927 330, 927 251, 1055 251" stroke="#2DD4BF" stroke-opacity="0.70" stroke-width="3"/>
+<g id="edit-mindmap-group-2" class="floatA" style="animation-delay:0.18s">
+<rect x="1055" y="165" width="430" height="172" rx="26" fill="rgba(16,26,53,.92)" stroke="#2DD4BF" stroke-opacity="0.42" filter="url(#cardShadow)"/>
+<text id="edit-mindmap-title-2" x="1083" y="208" class="title" font-size="26">Perception Intelligence</text>
+<rect x="1083" y="237" width="178" height="30" rx="15" fill="rgba(2,6,23,.72)" stroke="#2DD4BF" stroke-opacity="0.28"/>
+<circle cx="1100" cy="252" r="5" fill="#2DD4BF" opacity="0.88"/>
+<text id="edit-mindmap-chip-2-1" x="1113" y="257" class="mono" font-size="13" fill="#ECFEFF">Computer vision</text>
+<rect x="1281" y="237" width="178" height="30" rx="15" fill="rgba(2,6,23,.72)" stroke="#2DD4BF" stroke-opacity="0.28"/>
+<circle cx="1298" cy="252" r="5" fill="#2DD4BF" opacity="0.88"/>
+<text id="edit-mindmap-chip-2-2" x="1311" y="257" class="mono" font-size="13" fill="#ECFEFF">Sensor fusion</text>
+<rect x="1083" y="283" width="178" height="30" rx="15" fill="rgba(2,6,23,.72)" stroke="#2DD4BF" stroke-opacity="0.28"/>
+<circle cx="1100" cy="298" r="5" fill="#2DD4BF" opacity="0.88"/>
+<text id="edit-mindmap-chip-2-3" x="1113" y="303" class="mono" font-size="13" fill="#ECFEFF">Remote sensing</text>
+</g>
+<path class="dash" d="M800 330 C667 330, 667 481, 535 481" stroke="#C084FC" stroke-opacity="0.70" stroke-width="3"/>
+<g id="edit-mindmap-group-3" class="floatA" style="animation-delay:0.36s">
+<rect x="105" y="395" width="430" height="172" rx="26" fill="rgba(16,26,53,.92)" stroke="#C084FC" stroke-opacity="0.42" filter="url(#cardShadow)"/>
+<text id="edit-mindmap-title-3" x="133" y="438" class="title" font-size="26">AI Systems Engineering</text>
+<rect x="133" y="467" width="178" height="30" rx="15" fill="rgba(2,6,23,.72)" stroke="#C084FC" stroke-opacity="0.28"/>
+<circle cx="150" cy="482" r="5" fill="#C084FC" opacity="0.88"/>
+<text id="edit-mindmap-chip-3-1" x="163" y="487" class="mono" font-size="13" fill="#ECFEFF">Flask and FastAPI</text>
+<rect x="331" y="467" width="178" height="30" rx="15" fill="rgba(2,6,23,.72)" stroke="#C084FC" stroke-opacity="0.28"/>
+<circle cx="348" cy="482" r="5" fill="#C084FC" opacity="0.88"/>
+<text id="edit-mindmap-chip-3-2" x="361" y="487" class="mono" font-size="13" fill="#ECFEFF">Docker and CI/CD</text>
+<rect x="133" y="513" width="178" height="30" rx="15" fill="rgba(2,6,23,.72)" stroke="#C084FC" stroke-opacity="0.28"/>
+<circle cx="150" cy="528" r="5" fill="#C084FC" opacity="0.88"/>
+<text id="edit-mindmap-chip-3-3" x="163" y="533" class="mono" font-size="13" fill="#ECFEFF">Model serving</text>
+<rect x="331" y="513" width="178" height="30" rx="15" fill="rgba(2,6,23,.72)" stroke="#C084FC" stroke-opacity="0.28"/>
+<circle cx="348" cy="528" r="5" fill="#C084FC" opacity="0.88"/>
+<text id="edit-mindmap-chip-3-4" x="361" y="533" class="mono" font-size="13" fill="#ECFEFF">Testing</text>
+</g>
+<path class="dash" d="M800 330 C927 330, 927 481, 1055 481" stroke="#FBBF24" stroke-opacity="0.70" stroke-width="3"/>
+<g id="edit-mindmap-group-4" class="floatA" style="animation-delay:0.54s">
+<rect x="1055" y="395" width="430" height="172" rx="26" fill="rgba(16,26,53,.92)" stroke="#FBBF24" stroke-opacity="0.42" filter="url(#cardShadow)"/>
+<text id="edit-mindmap-title-4" x="1083" y="438" class="title" font-size="26">Data + Governance</text>
+<rect x="1083" y="467" width="178" height="30" rx="15" fill="rgba(2,6,23,.72)" stroke="#FBBF24" stroke-opacity="0.28"/>
+<circle cx="1100" cy="482" r="5" fill="#FBBF24" opacity="0.88"/>
+<text id="edit-mindmap-chip-4-1" x="1113" y="487" class="mono" font-size="13" fill="#ECFEFF">Dashboards</text>
+<rect x="1281" y="467" width="178" height="30" rx="15" fill="rgba(2,6,23,.72)" stroke="#FBBF24" stroke-opacity="0.28"/>
+<circle cx="1298" cy="482" r="5" fill="#FBBF24" opacity="0.88"/>
+<text id="edit-mindmap-chip-4-2" x="1311" y="487" class="mono" font-size="13" fill="#ECFEFF">Graph intelligence</text>
+<rect x="1083" y="513" width="178" height="30" rx="15" fill="rgba(2,6,23,.72)" stroke="#FBBF24" stroke-opacity="0.28"/>
+<circle cx="1100" cy="528" r="5" fill="#FBBF24" opacity="0.88"/>
+<text id="edit-mindmap-chip-4-3" x="1113" y="533" class="mono" font-size="13" fill="#ECFEFF">RAG safety</text>
+<rect x="1281" y="513" width="178" height="30" rx="15" fill="rgba(2,6,23,.72)" stroke="#FBBF24" stroke-opacity="0.28"/>
+<circle cx="1298" cy="528" r="5" fill="#FBBF24" opacity="0.88"/>
+<text id="edit-mindmap-chip-4-4" x="1311" y="533" class="mono" font-size="13" fill="#ECFEFF">Model cards</text>
+</g>
+</svg>

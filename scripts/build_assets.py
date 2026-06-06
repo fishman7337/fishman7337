@@ -533,6 +533,75 @@ def make_timeline() -> str:
     return '\n'.join(s)
 
 
+def make_roadmap_mindmap() -> str:
+    width, height = 1600, 620
+    s = [svg_header(width, height, 'Roadmap mindmap', 'Stable visual roadmap mindmap for the profile README'), bg(width, height)]
+    s.append(section_head('mindmap', 'Capability Mindmap', 'Research, perception, systems, and governance grouped into a practical build path.', 'ROADMAP MAP'))
+    center_x, center_y = 800, 330
+    s.append(f'<circle class="pulse" cx="{center_x}" cy="{center_y}" r="84" fill="rgba(16,26,53,.92)" stroke="url(#neon)" stroke-width="4" filter="url(#cardShadow)"/>')
+    s.append(f'<circle cx="{center_x}" cy="{center_y}" r="56" fill="rgba(2,6,23,.72)" stroke="{T["cyan"]}" stroke-opacity="0.28"/>')
+    s.append(f'<text x="{center_x}" y="{center_y-8}" text-anchor="middle" class="title" font-size="25">fishman7337</text>')
+    s.append(f'<text x="{center_x}" y="{center_y+28}" text-anchor="middle" class="mono" font-size="15" fill="{T["muted"]}">AI systems map</text>')
+
+    groups = [
+        ('Applied AI Research', ['Quantum GANs', 'Honest baselines', 'Reproducible runs'], 105, 165, T['cyan']),
+        ('Perception Intelligence', ['Computer vision', 'Sensor fusion', 'Remote sensing'], 1055, 165, T['green']),
+        ('AI Systems Engineering', ['Flask and FastAPI', 'Docker and CI/CD', 'Model serving', 'Testing'], 105, 395, T['purple']),
+        ('Data + Governance', ['Dashboards', 'Graph intelligence', 'RAG safety', 'Model cards'], 1055, 395, T['amber']),
+    ]
+
+    for idx, (title, items, x, y, color) in enumerate(groups):
+        anchor_x = x + (430 if x < center_x else 0)
+        anchor_y = y + 86
+        s.append(f'<path class="dash" d="M{center_x} {center_y} C{(center_x + anchor_x)//2} {center_y}, {(center_x + anchor_x)//2} {anchor_y}, {anchor_x} {anchor_y}" stroke="{color}" stroke-opacity="0.70" stroke-width="3"/>')
+        s.append(f'<g id="edit-mindmap-group-{idx+1}" class="floatA" style="animation-delay:{idx*.18:.2f}s">')
+        s.append(f'<rect x="{x}" y="{y}" width="430" height="172" rx="26" fill="rgba(16,26,53,.92)" stroke="{color}" stroke-opacity="0.42" filter="url(#cardShadow)"/>')
+        s.append(f'<text id="edit-mindmap-title-{idx+1}" x="{x+28}" y="{y+43}" class="title" font-size="26">{esc(title)}</text>')
+        for j, item in enumerate(items):
+            chip_x = x + 28 + (j % 2) * 198
+            chip_y = y + 72 + (j // 2) * 46
+            s.append(f'<rect x="{chip_x}" y="{chip_y}" width="178" height="30" rx="15" fill="rgba(2,6,23,.72)" stroke="{color}" stroke-opacity="0.28"/>')
+            s.append(f'<circle cx="{chip_x+17}" cy="{chip_y+15}" r="5" fill="{color}" opacity="0.88"/>')
+            s.append(f'<text id="edit-mindmap-chip-{idx+1}-{j+1}" x="{chip_x+30}" y="{chip_y+20}" class="mono" font-size="13" fill="{T["text"]}">{esc(ellipsize(item, 19))}</text>')
+        s.append('</g>')
+
+    s.append(svg_footer())
+    return '\n'.join(s)
+
+
+def make_research_flow() -> str:
+    width, height = 1600, 520
+    s = [svg_header(width, height, 'Research flow', 'Stable research mental model flowchart'), bg(width, height)]
+    s.append(section_head('research-flow', 'Research Mental Model', 'From a clear question to reproducible evidence, bounded claims, and a public artifact.', 'EVIDENCE FLOW'))
+    nodes = [
+        ('Research Question', 'What should the experiment prove?', 92, 210, T['cyan']),
+        ('Classical Baseline', 'Ground the comparison first.', 370, 210, T['purple']),
+        ('Quantum Latent Prior', 'Test the hybrid circuit variant.', 648, 210, T['green']),
+        ('Training + Samples', 'Generate comparable outputs.', 926, 210, T['amber']),
+        ('FID / KID Evaluation', 'Measure quality honestly.', 1204, 210, T['pink']),
+    ]
+    for i in range(len(nodes) - 1):
+        x1 = nodes[i][2] + 220
+        y1 = nodes[i][3] + 58
+        x2 = nodes[i + 1][2] - 20
+        s.append(f'<path class="dash" d="M{x1} {y1} H{x2}" stroke="url(#neon)" stroke-width="4"/>')
+        s.append(f'<path d="M{x2-16} {y1-10} L{x2} {y1} L{x2-16} {y1+10}" fill="none" stroke="{T["cyan"]}" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>')
+    for idx, (title, subtitle, x, y, color) in enumerate(nodes):
+        s.append(f'<g id="edit-research-flow-node-{idx+1}" class="floatB" style="animation-delay:{idx*.12:.2f}s">')
+        s.append(f'<rect x="{x}" y="{y}" width="220" height="116" rx="24" fill="rgba(16,26,53,.92)" stroke="{color}" stroke-opacity="0.42" filter="url(#cardShadow)"/>')
+        s.append(f'<circle cx="{x+28}" cy="{y+32}" r="8" fill="{color}" opacity="0.9"/>')
+        s.append(f'<text id="edit-research-flow-title-{idx+1}" x="{x+48}" y="{y+39}" class="title" font-size="18">{esc(title)}</text>')
+        for j, line in enumerate(wrap(subtitle, 27)[:2]):
+            s.append(f'<text id="edit-research-flow-sub-{idx+1}-{j+1}" x="{x+24}" y="{y+74+j*21}" class="body" font-size="15">{esc(line)}</text>')
+        s.append('</g>')
+
+    s.append(f'<rect x="420" y="390" width="760" height="74" rx="28" fill="rgba(2,6,23,.58)" stroke="{T["green"]}" stroke-opacity="0.30"/>')
+    s.append(f'<text x="800" y="422" text-anchor="middle" class="title" font-size="22">Bounded Claims + Reproducible Repository + arXiv</text>')
+    s.append(f'<text x="800" y="448" text-anchor="middle" class="mono" font-size="14" fill="{T["muted"]}">publish the useful result, preserve the limitations, keep the trail auditable</text>')
+    s.append(svg_footer())
+    return '\n'.join(s)
+
+
 def make_terminal_lab() -> str:
     width, height = 1600, 560
     s = [svg_header(width, height, 'Terminal lab card', 'Animated terminal simulation card'), bg(width, height)]
@@ -581,6 +650,8 @@ def main() -> None:
         'project-nebula.svg': make_project_nebula(),
         'skill-constellation.svg': make_skill_constellation(),
         'timeline-roadmap.svg': make_timeline(),
+        'roadmap-mindmap.svg': make_roadmap_mindmap(),
+        'research-flow.svg': make_research_flow(),
         'terminal-lab.svg': make_terminal_lab(),
         'footer-wave.svg': make_footer_wave(),
     }
