@@ -1,37 +1,39 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="96" viewBox="0 0 1200 96" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="150" viewBox="0 0 1200 150" role="img" aria-labelledby="title desc">
 <title id="title">Applied AI profile intro for Goh Kun Ming</title>
-<desc id="desc">Local intro banner listing applied AI research, Singapore Polytechnic, quantum GANs, computer vision, sensor fusion, MLOps, and honest evaluation.</desc>
+<desc id="desc">Local intro banner for applied AI research, Singapore Polytechnic, quantum GANs, computer vision, sensor fusion, MLOps, and honest evaluation.</desc>
 <defs>
-  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-    <stop offset="0%" stop-color="#0D1117"/>
-    <stop offset="100%" stop-color="#111827"/>
-  </linearGradient>
-  <linearGradient id="neon" x1="0" y1="0" x2="1" y2="0">
-    <stop offset="0%" stop-color="#22D3EE"/>
-    <stop offset="48%" stop-color="#A78BFA"/>
-    <stop offset="100%" stop-color="#F472B6"/>
-  </linearGradient>
-  <style><![CDATA[
-    .title { font: 900 25px "Segoe UI", Inter, Arial, sans-serif; fill: #E5E7EB; }
-    .label { font: 800 18px Consolas, "JetBrains Mono", monospace; fill: #22D3EE; }
-    .muted { font: 700 14px Consolas, "JetBrains Mono", monospace; fill: #94A3B8; }
-    .chip { fill: #111827; stroke: #22D3EE; stroke-opacity: .32; }
-  ]]></style>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0%" stop-color="#0D1117"/>
+<stop offset="100%" stop-color="#111827"/>
+</linearGradient>
+<linearGradient id="neon" x1="0" y1="0" x2="1" y2="0">
+<stop offset="0%" stop-color="#22D3EE"/>
+<stop offset="48%" stop-color="#A78BFA"/>
+<stop offset="100%" stop-color="#F472B6"/>
+</linearGradient>
+<style><![CDATA[
+.headline{font:900 27px Segoe UI,Inter,Arial,sans-serif;fill:#E5E7EB}
+.subhead{font:800 20px Segoe UI,Inter,Arial,sans-serif;fill:#CBD5E1}
+.chipText{font:800 15px Consolas,JetBrains Mono,monospace;fill:#22D3EE}
+.note{font:700 13px Consolas,JetBrains Mono,monospace;fill:#94A3B8}
+.chip{fill:#111827;stroke:#22D3EE;stroke-opacity:.34}
+]]></style>
 </defs>
-<rect width="1200" height="96" rx="20" fill="url(#bg)"/>
-<rect x="1" y="1" width="1198" height="94" rx="19" fill="none" stroke="#263244"/>
-<path d="M24 26 H1176" stroke="url(#neon)" stroke-width="2" opacity=".78"/>
-<text x="600" y="45" text-anchor="middle" class="title">Applied AI Research Intern - Applied AI and Analytics @ Singapore Polytechnic</text>
-<g transform="translate(116 62)">
-  <rect class="chip" x="0" y="-18" width="180" height="30" rx="15"/>
-  <text x="90" y="3" text-anchor="middle" class="label">Quantum GANs</text>
-  <rect class="chip" x="204" y="-18" width="194" height="30" rx="15"/>
-  <text x="301" y="3" text-anchor="middle" class="label">Computer Vision</text>
-  <rect class="chip" x="422" y="-18" width="174" height="30" rx="15"/>
-  <text x="509" y="3" text-anchor="middle" class="label">Sensor Fusion</text>
-  <rect class="chip" x="620" y="-18" width="112" height="30" rx="15"/>
-  <text x="676" y="3" text-anchor="middle" class="label">MLOps</text>
-  <rect class="chip" x="756" y="-18" width="328" height="30" rx="15"/>
-  <text x="920" y="3" text-anchor="middle" class="muted">Research-grade systems with honest evaluation</text>
+<rect width="1200" height="150" rx="22" fill="url(#bg)"/>
+<rect x="1" y="1" width="1198" height="148" rx="21" fill="none" stroke="#263244"/>
+<path d="M34 32 H1166" stroke="url(#neon)" stroke-width="2" opacity=".78"/>
+<text x="600" y="56" text-anchor="middle" class="headline">Goh Kun Ming | Applied AI Research Intern</text>
+<text x="600" y="84" text-anchor="middle" class="subhead">Applied AI and Analytics @ Singapore Polytechnic</text>
+<g transform="translate(82 106)">
+<rect class="chip" x="0" y="-18" width="164" height="32" rx="16"/>
+<text x="82" y="3" text-anchor="middle" class="chipText">Quantum GANs</text>
+<rect class="chip" x="184" y="-18" width="180" height="32" rx="16"/>
+<text x="274" y="3" text-anchor="middle" class="chipText">Computer Vision</text>
+<rect class="chip" x="384" y="-18" width="164" height="32" rx="16"/>
+<text x="466" y="3" text-anchor="middle" class="chipText">Sensor Fusion</text>
+<rect class="chip" x="568" y="-18" width="96" height="32" rx="16"/>
+<text x="616" y="3" text-anchor="middle" class="chipText">MLOps</text>
+<rect class="chip" x="684" y="-18" width="350" height="32" rx="16"/>
+<text x="859" y="3" text-anchor="middle" class="note">Research-grade systems with honest evaluation</text>
 </g>
 </svg>

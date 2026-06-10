@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="470" height="240" viewBox="0 0 470 240" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" width="470" height="280" viewBox="0 0 470 280" role="img" aria-labelledby="title desc">
 <title id="title">Update Time by Repo</title>
 <desc id="desc">Repository pushed_at timestamps grouped by Singapore time.</desc>
 <defs>
@@ -12,50 +12,50 @@
 <stop offset="100%" stop-color="#F472B6"/>
 </linearGradient>
 <style><![CDATA[
-.title{font:800 28px Segoe UI,Inter,Arial,sans-serif;fill:#E5E7EB}
+.title{font:800 25px Segoe UI,Inter,Arial,sans-serif;fill:#E5E7EB}
 .subtitle{font:700 14px Consolas,Menlo,monospace;fill:#22D3EE}
 .label{font:700 13px Consolas,Menlo,monospace;fill:#94A3B8}
-.value{font:800 25px Segoe UI,Inter,Arial,sans-serif;fill:#E5E7EB}
-.body{font:600 14px Segoe UI,Inter,Arial,sans-serif;fill:#CBD5E1}
-.mono{font:600 12px Consolas,Menlo,monospace;fill:#94A3B8}
+.value{font:800 24px Segoe UI,Inter,Arial,sans-serif;fill:#E5E7EB}
+.body{font:600 13px Segoe UI,Inter,Arial,sans-serif;fill:#CBD5E1}
+.mono{font:600 11px Consolas,Menlo,monospace;fill:#94A3B8}
 .axis{stroke:#334155;stroke-width:1}
 ]]></style>
 </defs>
-<rect width="470" height="240" rx="18" fill="url(#bg)"/>
-<rect x="0.5" y="0.5" width="469" height="239" rx="17.5" fill="none" stroke="#263244"/>
-<path d="M28 54 H442" stroke="url(#neon)" stroke-width="2" opacity="0.7"/>
+<rect width="470" height="280" rx="18" fill="url(#bg)"/>
+<rect x="0.5" y="0.5" width="469" height="279" rx="17.5" fill="none" stroke="#263244"/>
+<path d="M28 56 H442" stroke="url(#neon)" stroke-width="2" opacity="0.7"/>
 <text x="28" y="36" class="title">Update Time by Repo</text>
-<text x="28" y="76" class="subtitle">Default-branch update hour, Singapore time</text>
-<line x1="42" y1="196" x2="434" y2="196" class="axis"/>
-<line x1="42" y1="96" x2="42" y2="196" class="axis"/>
-<rect x="42" y="196" width="13" height="0" rx="3" fill="#1E293B"/>
-<rect x="58" y="104" width="13" height="92" rx="3" fill="#22D3EE"/>
-<rect x="74" y="169" width="13" height="27" rx="3" fill="#22D3EE"/>
-<rect x="90" y="187" width="13" height="9" rx="3" fill="#22D3EE"/>
-<rect x="106" y="196" width="13" height="0" rx="3" fill="#1E293B"/>
-<rect x="122" y="196" width="13" height="0" rx="3" fill="#1E293B"/>
-<rect x="138" y="196" width="13" height="0" rx="3" fill="#1E293B"/>
-<rect x="154" y="196" width="13" height="0" rx="3" fill="#1E293B"/>
-<rect x="170" y="196" width="13" height="0" rx="3" fill="#1E293B"/>
-<rect x="186" y="187" width="13" height="9" rx="3" fill="#22D3EE"/>
-<rect x="202" y="196" width="13" height="0" rx="3" fill="#1E293B"/>
-<rect x="218" y="187" width="13" height="9" rx="3" fill="#22D3EE"/>
-<rect x="234" y="196" width="13" height="0" rx="3" fill="#1E293B"/>
-<rect x="250" y="187" width="13" height="9" rx="3" fill="#22D3EE"/>
-<rect x="266" y="196" width="13" height="0" rx="3" fill="#1E293B"/>
-<rect x="282" y="160" width="13" height="36" rx="3" fill="#22D3EE"/>
-<rect x="298" y="196" width="13" height="0" rx="3" fill="#1E293B"/>
-<rect x="314" y="187" width="13" height="9" rx="3" fill="#22D3EE"/>
-<rect x="330" y="196" width="13" height="0" rx="3" fill="#1E293B"/>
-<rect x="346" y="196" width="13" height="0" rx="3" fill="#1E293B"/>
-<rect x="362" y="196" width="13" height="0" rx="3" fill="#1E293B"/>
-<rect x="378" y="196" width="13" height="0" rx="3" fill="#1E293B"/>
-<rect x="394" y="187" width="13" height="9" rx="3" fill="#22D3EE"/>
-<rect x="410" y="187" width="13" height="9" rx="3" fill="#22D3EE"/>
-<text x="42" y="218" class="mono">0</text>
-<text x="138" y="218" class="mono">6</text>
-<text x="234" y="218" class="mono">12</text>
-<text x="330" y="218" class="mono">18</text>
-<text x="410" y="218" class="mono">23</text>
-<text x="300" y="226" class="mono">Snapshot 2026-06-11 00:13</text>
+<text x="28" y="78" class="subtitle">Default-branch update hour, Singapore time</text>
+<line x1="42" y1="216" x2="434" y2="216" class="axis"/>
+<line x1="42" y1="104" x2="42" y2="216" class="axis"/>
+<rect x="42" y="205" width="13" height="11" rx="3" fill="#22D3EE"/>
+<rect x="58" y="112" width="13" height="104" rx="3" fill="#22D3EE"/>
+<rect x="74" y="182" width="13" height="34" rx="3" fill="#22D3EE"/>
+<rect x="90" y="205" width="13" height="11" rx="3" fill="#22D3EE"/>
+<rect x="106" y="216" width="13" height="0" rx="3" fill="#1E293B"/>
+<rect x="122" y="216" width="13" height="0" rx="3" fill="#1E293B"/>
+<rect x="138" y="216" width="13" height="0" rx="3" fill="#1E293B"/>
+<rect x="154" y="216" width="13" height="0" rx="3" fill="#1E293B"/>
+<rect x="170" y="216" width="13" height="0" rx="3" fill="#1E293B"/>
+<rect x="186" y="205" width="13" height="11" rx="3" fill="#22D3EE"/>
+<rect x="202" y="216" width="13" height="0" rx="3" fill="#1E293B"/>
+<rect x="218" y="205" width="13" height="11" rx="3" fill="#22D3EE"/>
+<rect x="234" y="216" width="13" height="0" rx="3" fill="#1E293B"/>
+<rect x="250" y="205" width="13" height="11" rx="3" fill="#22D3EE"/>
+<rect x="266" y="216" width="13" height="0" rx="3" fill="#1E293B"/>
+<rect x="282" y="170" width="13" height="46" rx="3" fill="#22D3EE"/>
+<rect x="298" y="216" width="13" height="0" rx="3" fill="#1E293B"/>
+<rect x="314" y="205" width="13" height="11" rx="3" fill="#22D3EE"/>
+<rect x="330" y="216" width="13" height="0" rx="3" fill="#1E293B"/>
+<rect x="346" y="216" width="13" height="0" rx="3" fill="#1E293B"/>
+<rect x="362" y="216" width="13" height="0" rx="3" fill="#1E293B"/>
+<rect x="378" y="216" width="13" height="0" rx="3" fill="#1E293B"/>
+<rect x="394" y="205" width="13" height="11" rx="3" fill="#22D3EE"/>
+<rect x="410" y="205" width="13" height="11" rx="3" fill="#22D3EE"/>
+<text x="42" y="242" class="mono">0</text>
+<text x="138" y="242" class="mono">6</text>
+<text x="234" y="242" class="mono">12</text>
+<text x="330" y="242" class="mono">18</text>
+<text x="410" y="242" class="mono">23</text>
+<text x="286" y="262" class="mono">Snapshot 2026-06-11 01:20</text>
 </svg>
