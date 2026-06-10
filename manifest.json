@@ -10,7 +10,14 @@
     "quantum-lab.svg",
     "skill-constellation.svg",
     "terminal-lab.svg",
-    "timeline-roadmap.svg"
+    "typing-intro.svg",
+    "timeline-roadmap.svg",
+    "github-telemetry/activity-snapshot.svg",
+    "github-telemetry/language-volume.svg",
+    "github-telemetry/productive-time.svg",
+    "github-telemetry/profile-details.svg",
+    "github-telemetry/repos-per-language.svg",
+    "github-telemetry/stats.svg"
   ],
   "screenshots": [
     "browser-visual-gallery.png",

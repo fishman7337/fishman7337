@@ -4,7 +4,7 @@
 
 <br />
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=900&size=28&duration=2450&pause=700&center=true&vCenter=true&width=1200&height=82&color=38BDF8&lines=Applied+AI+Research+Intern;Applied+AI+%26+Analytics+%40+Singapore+Polytechnic;Quantum+GANs+%E2%80%A2+Computer+Vision+%E2%80%A2+Sensor+Fusion+%E2%80%A2+MLOps;Research-grade+AI+systems+with+honest+evaluation+and+strong+documentation" alt="Animated typing intro for Goh Kun Ming" />
+<img src="./assets/typing-intro.svg" alt="Applied AI intro for Goh Kun Ming" />
 
 <br />
 
@@ -259,27 +259,21 @@ The common thread across the work below is **quantum ML, computer vision, geospa
 <div align="center">
 
 <sub>Telemetry timezone: Singapore Time (SGT, UTC+08:00).</sub>
+<br />
+<sub>Cards are checked-in SVG snapshots for reliable GitHub rendering. Refresh with <code>python scripts/build_github_telemetry_cards.py</code>.</sub>
 <br /><br />
 
-<img width="98%" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=fishman7337&theme=tokyonight" alt="GitHub profile details for fishman7337" />
+<img width="98%" src="./assets/github-telemetry/profile-details.svg" alt="GitHub telemetry snapshot for fishman7337" />
 
-<img width="49%" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=fishman7337&theme=tokyonight" alt="GitHub summary stats for fishman7337" />
-<img width="49%" src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=fishman7337&theme=tokyonight&utcOffset=8" alt="Productive time card for fishman7337 in Singapore time" />
+<img width="49%" src="./assets/github-telemetry/stats.svg" alt="Repository stats for fishman7337" />
+<img width="49%" src="./assets/github-telemetry/productive-time.svg" alt="Repository update time distribution for fishman7337 in Singapore time" />
 
-<img width="49%" src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=fishman7337&theme=tokyonight" alt="Repositories per language for fishman7337" />
-<img width="49%" src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=fishman7337&theme=tokyonight" alt="Most committed languages for fishman7337" />
+<img width="49%" src="./assets/github-telemetry/repos-per-language.svg" alt="Repositories per language for fishman7337" />
+<img width="49%" src="./assets/github-telemetry/language-volume.svg" alt="Top languages by code volume for fishman7337" />
 
-<img width="98%" src="https://streak-stats.demolab.com?user=fishman7337&theme=tokyonight&hide_border=true&background=0D1117&ring=38BDF8&fire=F472B6&currStreakLabel=38BDF8" alt="GitHub streak stats for fishman7337" />
-
-<img width="98%" src="https://github-readme-activity-graph.vercel.app/graph?username=fishman7337&theme=react-dark&hide_border=true&bg_color=0D1117&color=38BDF8&line=A78BFA&point=34D399" alt="GitHub activity graph for fishman7337" />
+<img width="98%" src="./assets/github-telemetry/activity-snapshot.svg" alt="Recent repository activity snapshot for fishman7337" />
 
 </div>
-
-<div align="center">
-  <img src="https://raw.githubusercontent.com/fishman7337/fishman7337/output/github-contribution-grid-snake-dark.svg" alt="fishman7337 contribution snake animation" />
-</div>
-
----
 
 ## Contact
 
