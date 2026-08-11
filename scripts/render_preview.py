@@ -7,14 +7,15 @@ Usage:
 This script avoids browser automation. It rasterizes local SVGs with CairoSVG and builds
 preview sheets with Pillow, which makes it easy to spot overlapping text before pushing.
 """
+
 from __future__ import annotations
 
-from pathlib import Path
 import json
-import zipfile
+from pathlib import Path
 
 try:
     import cairosvg
+
     CAIRO_ERROR = None
 except (ImportError, OSError) as exc:
     cairosvg = None
@@ -32,10 +33,19 @@ SCREENSHOTS.mkdir(exist_ok=True)
 
 
 def load_font(size: int, bold: bool = False) -> ImageFont.FreeTypeFont | ImageFont.ImageFont:
+    """Load the preferred preview font with a portable fallback."""
     names = (
-        ["C:/Windows/Fonts/seguibd.ttf", "C:/Windows/Fonts/arialbd.ttf", "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf"]
+        [
+            "C:/Windows/Fonts/seguibd.ttf",
+            "C:/Windows/Fonts/arialbd.ttf",
+            "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf",
+        ]
         if bold
-        else ["C:/Windows/Fonts/segoeui.ttf", "C:/Windows/Fonts/arial.ttf", "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf"]
+        else [
+            "C:/Windows/Fonts/segoeui.ttf",
+            "C:/Windows/Fonts/arial.ttf",
+            "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf",
+        ]
     )
     for name in names:
         try:
@@ -61,12 +71,14 @@ AMBER = (251, 191, 36)
 
 
 def fit(path: Path, width: int) -> Image.Image:
+    """Load and proportionally resize an image to the requested width."""
     img = Image.open(path).convert("RGB")
     height = int(img.height * width / img.width)
     return img.resize((width, height), Image.LANCZOS)
 
 
 def badge(text: str, color: tuple[int, int, int]) -> Image.Image:
+    """Render a compact status badge for preview compositions."""
     dummy = Image.new("RGB", (10, 10), BG)
     draw = ImageDraw.Draw(dummy)
     bbox = draw.textbbox((0, 0), text, font=FONT_SMALL)
@@ -80,6 +92,7 @@ def badge(text: str, color: tuple[int, int, int]) -> Image.Image:
 
 
 def render_svgs() -> list[tuple[str, Path]]:
+    """Render generated SVG assets to PNG files for visual inspection."""
     rendered: list[tuple[str, Path]] = []
     for svg in sorted(ASSETS.glob("*.svg")):
         out = SCREENSHOTS / f"{svg.stem}.png"
@@ -96,6 +109,7 @@ def render_svgs() -> list[tuple[str, Path]]:
 
 
 def make_top_preview() -> None:
+    """Compose the primary profile preview image."""
     width = 1280
     inner = 1160
     hero = fit(SCREENSHOTS / "hero-cyberdeck.png", inner)
@@ -131,6 +145,7 @@ def make_top_preview() -> None:
 
 
 def make_contact_sheet(rendered: list[tuple[str, Path]]) -> None:
+    """Compose a labelled contact sheet from rendered SVG assets."""
     thumbs = []
     for name, png in rendered:
         img = fit(png, 560)
@@ -151,6 +166,7 @@ def make_contact_sheet(rendered: list[tuple[str, Path]]) -> None:
 
 
 def make_visual_gallery() -> None:
+    """Compose a gallery of available portfolio visuals."""
     width = 1280
     inner = 1160
     sections = [
@@ -181,11 +197,17 @@ def make_visual_gallery() -> None:
         y += parts[i].height
         canvas.paste(parts[i + 1], ((width - inner) // 2, y))
         y += parts[i + 1].height + 24
-    draw.text((60, y), "Static screenshot preview generated from local SVGs. Animations render live in GitHub-compatible SVG images.", font=FONT_SMALL, fill=MUTED)
+    draw.text(
+        (60, y),
+        "Static screenshot preview generated from local SVGs. Animations render live in GitHub-compatible SVG images.",
+        font=FONT_SMALL,
+        fill=MUTED,
+    )
     canvas.save(SCREENSHOTS / "visual-gallery-screenshot.png", quality=95)
 
 
 def main() -> None:
+    """Render SVGs and regenerate every preview composition."""
     rendered = render_svgs()
     make_top_preview()
     make_contact_sheet(rendered)

@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
 """Generate polished local SVG buttons for the profile README."""
+
 from __future__ import annotations
 
-from pathlib import Path
 import html
 import re
+from pathlib import Path
 from urllib.request import Request, urlopen
-
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "assets" / "profile-buttons"
@@ -15,11 +15,23 @@ OUT.mkdir(parents=True, exist_ok=True)
 
 BUTTONS = [
     ("github", 174, "GitHub", "fishman7337", "https://cdn.simpleicons.org/github/FFFFFF"),
-    ("linkedin", 204, "LinkedIn", "Goh Kun Ming", "https://api.iconify.design/simple-icons:linkedin.svg?color=%230A66C2"),
+    (
+        "linkedin",
+        204,
+        "LinkedIn",
+        "Goh Kun Ming",
+        "https://api.iconify.design/simple-icons:linkedin.svg?color=%230A66C2",
+    ),
     ("email", 174, "Email", "say hello", "https://cdn.simpleicons.org/gmail/EA4335"),
     ("orcid", 184, "ORCID", "research id", "https://cdn.simpleicons.org/orcid/A6CE39"),
     ("arxiv", 174, "arXiv", "2508.09209", "https://cdn.simpleicons.org/arxiv/B31B1B"),
-    ("read-preprint", 226, "Read preprint", "arXiv:2508.09209", "https://cdn.simpleicons.org/arxiv/B31B1B"),
+    (
+        "read-preprint",
+        226,
+        "Read preprint",
+        "arXiv:2508.09209",
+        "https://cdn.simpleicons.org/arxiv/B31B1B",
+    ),
     ("public-work", 184, "Public work", "portfolio ready", ""),
     ("research-grade", 206, "Research grade", "honest evaluation", ""),
     ("ai-systems", 174, "AI systems", "ML + MLOps", ""),
@@ -32,6 +44,7 @@ BUTTONS = [
 
 
 def fetch_icon(url: str) -> tuple[str, str, str | None] | None:
+    """Fetch and normalize an icon for an interactive profile button."""
     if not url:
         return None
     request = Request(url, headers={"User-Agent": "fishman7337-profile-readme"})
@@ -48,7 +61,10 @@ def fetch_icon(url: str) -> tuple[str, str, str | None] | None:
     return viewbox.group(1) if viewbox else "0 0 24 24", inner.strip(), fill
 
 
-def button(slug: str, width: int, title: str, subtitle: str, icon: tuple[str, str, str | None] | None) -> str:
+def button(
+    slug: str, width: int, title: str, subtitle: str, icon: tuple[str, str, str | None] | None
+) -> str:
+    """Build an accessible linked profile-button SVG."""
     title_esc = html.escape(title)
     subtitle_esc = html.escape(subtitle)
     if icon:
@@ -87,12 +103,15 @@ def button(slug: str, width: int, title: str, subtitle: str, icon: tuple[str, st
 
 
 def main() -> None:
+    """Generate the configured profile contact and action buttons."""
     seen = set()
     for slug, width, title, subtitle, source in BUTTONS:
         if slug in seen:
             raise SystemExit(f"Duplicate button slug: {slug}")
         seen.add(slug)
-        (OUT / f"{slug}.svg").write_text(button(slug, width, title, subtitle, fetch_icon(source)), encoding="utf-8")
+        (OUT / f"{slug}.svg").write_text(
+            button(slug, width, title, subtitle, fetch_icon(source)), encoding="utf-8"
+        )
     print(f"Generated {len(BUTTONS)} profile buttons in {OUT}")
 
 

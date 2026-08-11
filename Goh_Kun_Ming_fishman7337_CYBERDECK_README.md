@@ -9,7 +9,7 @@
 <br />
 
 <a href="https://github.com/fishman7337"><img src="./assets/profile-buttons/github.svg" width="174" alt="GitHub fishman7337" /></a>
-<a href="https://www.linkedin.com/in/goh-kun-ming-58573430a/"><img src="./assets/profile-buttons/linkedin.svg" width="204" alt="LinkedIn Goh Kun Ming" /></a>
+<a href="https://www.linkedin.com/in/gohkunming/"><img src="./assets/profile-buttons/linkedin.svg" width="204" alt="LinkedIn Goh Kun Ming" /></a>
 <a href="mailto:kunmingaden@gmail.com"><img src="./assets/profile-buttons/email.svg" width="174" alt="Email" /></a>
 
 <br />
@@ -280,7 +280,7 @@ The common thread across the work below is **quantum ML, computer vision, geospa
 <div align="center">
 
 <a href="mailto:kunmingaden@gmail.com"><img src="./assets/profile-buttons/email.svg" width="174" alt="Email" /></a>
-<a href="https://www.linkedin.com/in/goh-kun-ming-58573430a/"><img src="./assets/profile-buttons/linkedin.svg" width="204" alt="LinkedIn" /></a>
+<a href="https://www.linkedin.com/in/gohkunming/"><img src="./assets/profile-buttons/linkedin.svg" width="204" alt="LinkedIn" /></a>
 <a href="https://github.com/fishman7337"><img src="./assets/profile-buttons/github.svg" width="174" alt="GitHub" /></a>
 <a href="https://arxiv.org/abs/2508.09209"><img src="./assets/profile-buttons/arxiv.svg" width="174" alt="Research arXiv" /></a>
 

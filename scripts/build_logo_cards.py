@@ -1,13 +1,13 @@
 #!/usr/bin/env python3
 """Generate rounded square logo cards used by the profile README."""
+
 from __future__ import annotations
 
-from pathlib import Path
 import base64
 import html
 import re
+from pathlib import Path
 from urllib.request import Request, urlopen
-
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "assets" / "tech-logos"
@@ -15,52 +15,263 @@ OUT.mkdir(parents=True, exist_ok=True)
 
 
 LOGOS = [
-    ("python", "Python", "Python", "https://cdn.simpleicons.org/python/3776AB", "https://www.python.org/"),
-    ("pytorch", "PyTorch", "PyTorch", "https://cdn.simpleicons.org/pytorch/EE4C2C", "https://pytorch.org/"),
-    ("tensorflow", "TensorFlow", "TensorFlow", "https://cdn.simpleicons.org/tensorflow/FF6F00", "https://www.tensorflow.org/"),
+    (
+        "python",
+        "Python",
+        "Python",
+        "https://cdn.simpleicons.org/python/3776AB",
+        "https://www.python.org/",
+    ),
+    (
+        "pytorch",
+        "PyTorch",
+        "PyTorch",
+        "https://cdn.simpleicons.org/pytorch/EE4C2C",
+        "https://pytorch.org/",
+    ),
+    (
+        "tensorflow",
+        "TensorFlow",
+        "TensorFlow",
+        "https://cdn.simpleicons.org/tensorflow/FF6F00",
+        "https://www.tensorflow.org/",
+    ),
     ("keras", "Keras", "Keras", "https://cdn.simpleicons.org/keras/D00000", "https://keras.io/"),
-    ("scikit-learn", "scikit-learn", "scikit", "https://cdn.simpleicons.org/scikitlearn/F7931E", "https://scikit-learn.org/"),
-    ("jupyter", "Jupyter", "Jupyter", "https://cdn.simpleicons.org/jupyter/F37626", "https://jupyter.org/"),
-    ("qiskit", "Qiskit", "Qiskit", "https://cdn.simpleicons.org/qiskit/6929C4", "https://www.qiskit.org/"),
-    ("pennylane", "PennyLane", "PennyL", "https://raw.githubusercontent.com/PennyLaneAI/pennylane/master/doc/_static/logo.png", "https://pennylane.ai/"),
-    ("opencv", "OpenCV", "OpenCV", "https://cdn.simpleicons.org/opencv/5C3EE8", "https://opencv.org/"),
+    (
+        "scikit-learn",
+        "scikit-learn",
+        "scikit",
+        "https://cdn.simpleicons.org/scikitlearn/F7931E",
+        "https://scikit-learn.org/",
+    ),
+    (
+        "jupyter",
+        "Jupyter",
+        "Jupyter",
+        "https://cdn.simpleicons.org/jupyter/F37626",
+        "https://jupyter.org/",
+    ),
+    (
+        "qiskit",
+        "Qiskit",
+        "Qiskit",
+        "https://cdn.simpleicons.org/qiskit/6929C4",
+        "https://www.qiskit.org/",
+    ),
+    (
+        "pennylane",
+        "PennyLane",
+        "PennyL",
+        "https://raw.githubusercontent.com/PennyLaneAI/pennylane/master/doc/_static/logo.png",
+        "https://pennylane.ai/",
+    ),
+    (
+        "opencv",
+        "OpenCV",
+        "OpenCV",
+        "https://cdn.simpleicons.org/opencv/5C3EE8",
+        "https://opencv.org/",
+    ),
     ("ros", "ROS", "ROS", "https://cdn.simpleicons.org/ros/9DB4CF", "https://www.ros.org/"),
-    ("pandas", "Pandas", "Pandas", "https://cdn.simpleicons.org/pandas/A78BFA", "https://pandas.pydata.org/"),
+    (
+        "pandas",
+        "Pandas",
+        "Pandas",
+        "https://cdn.simpleicons.org/pandas/A78BFA",
+        "https://pandas.pydata.org/",
+    ),
     ("numpy", "NumPy", "NumPy", "https://cdn.simpleicons.org/numpy/67E8F9", "https://numpy.org/"),
-    ("matplotlib", "Matplotlib", "MPL", "https://api.iconify.design/logos:matplotlib-icon.svg", "https://matplotlib.org/"),
-    ("seaborn", "Seaborn", "Seaborn", "https://api.iconify.design/logos:seaborn-icon.svg", "https://seaborn.pydata.org/"),
-    ("statsmodels", "statsmodels", "stats", "https://www.statsmodels.org/stable/_images/statsmodels-logo-v2-no-text.svg", "https://www.statsmodels.org/"),
-    ("plotly", "Plotly", "Plotly", "https://cdn.simpleicons.org/plotly/9DB4FF", "https://plotly.com/python/"),
-    ("dash", "Dash", "Dash", "https://cdn.simpleicons.org/plotly/008DE4", "https://dash.plotly.com/"),
-    ("tableau", "Tableau", "Tableau", "https://api.iconify.design/logos:tableau-icon.svg", "https://www.tableau.com/"),
-    ("power-bi", "Power BI", "Power BI", "https://api.iconify.design/logos:microsoft-power-bi.svg", "https://powerbi.microsoft.com/"),
-    ("html5", "HTML5", "HTML5", "https://cdn.simpleicons.org/html5/E34F26", "https://developer.mozilla.org/en-US/docs/Web/HTML"),
-    ("css", "CSS", "CSS", "https://cdn.simpleicons.org/css/663399", "https://developer.mozilla.org/en-US/docs/Web/CSS"),
-    ("javascript", "JavaScript", "JS", "https://cdn.simpleicons.org/javascript/F7DF1E", "https://developer.mozilla.org/en-US/docs/Web/JavaScript"),
-    ("typescript", "TypeScript", "TS", "https://cdn.simpleicons.org/typescript/3178C6", "https://www.typescriptlang.org/"),
+    (
+        "matplotlib",
+        "Matplotlib",
+        "MPL",
+        "https://api.iconify.design/logos:matplotlib-icon.svg",
+        "https://matplotlib.org/",
+    ),
+    (
+        "seaborn",
+        "Seaborn",
+        "Seaborn",
+        "https://api.iconify.design/logos:seaborn-icon.svg",
+        "https://seaborn.pydata.org/",
+    ),
+    (
+        "statsmodels",
+        "statsmodels",
+        "stats",
+        "https://www.statsmodels.org/stable/_images/statsmodels-logo-v2-no-text.svg",
+        "https://www.statsmodels.org/",
+    ),
+    (
+        "plotly",
+        "Plotly",
+        "Plotly",
+        "https://cdn.simpleicons.org/plotly/9DB4FF",
+        "https://plotly.com/python/",
+    ),
+    (
+        "dash",
+        "Dash",
+        "Dash",
+        "https://cdn.simpleicons.org/plotly/008DE4",
+        "https://dash.plotly.com/",
+    ),
+    (
+        "tableau",
+        "Tableau",
+        "Tableau",
+        "https://api.iconify.design/logos:tableau-icon.svg",
+        "https://www.tableau.com/",
+    ),
+    (
+        "power-bi",
+        "Power BI",
+        "Power BI",
+        "https://api.iconify.design/logos:microsoft-power-bi.svg",
+        "https://powerbi.microsoft.com/",
+    ),
+    (
+        "html5",
+        "HTML5",
+        "HTML5",
+        "https://cdn.simpleicons.org/html5/E34F26",
+        "https://developer.mozilla.org/en-US/docs/Web/HTML",
+    ),
+    (
+        "css",
+        "CSS",
+        "CSS",
+        "https://cdn.simpleicons.org/css/663399",
+        "https://developer.mozilla.org/en-US/docs/Web/CSS",
+    ),
+    (
+        "javascript",
+        "JavaScript",
+        "JS",
+        "https://cdn.simpleicons.org/javascript/F7DF1E",
+        "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+    ),
+    (
+        "typescript",
+        "TypeScript",
+        "TS",
+        "https://cdn.simpleicons.org/typescript/3178C6",
+        "https://www.typescriptlang.org/",
+    ),
     ("react", "React", "React", "https://cdn.simpleicons.org/react/61DAFB", "https://react.dev/"),
     ("vue", "Vue", "Vue", "https://cdn.simpleicons.org/vuedotjs/4FC08D", "https://vuejs.org/"),
-    ("nextjs", "Next.js", "Next", "https://cdn.simpleicons.org/nextdotjs/F8FAFC", "https://nextjs.org/"),
-    ("nodejs", "Node.js", "Node", "https://cdn.simpleicons.org/nodedotjs/5FA04E", "https://nodejs.org/"),
+    (
+        "nextjs",
+        "Next.js",
+        "Next",
+        "https://cdn.simpleicons.org/nextdotjs/F8FAFC",
+        "https://nextjs.org/",
+    ),
+    (
+        "nodejs",
+        "Node.js",
+        "Node",
+        "https://cdn.simpleicons.org/nodedotjs/5FA04E",
+        "https://nodejs.org/",
+    ),
     ("vite", "Vite", "Vite", "https://cdn.simpleicons.org/vite/646CFF", "https://vite.dev/"),
-    ("tailwindcss", "Tailwind CSS", "Tailwind", "https://cdn.simpleicons.org/tailwindcss/06B6D4", "https://tailwindcss.com/"),
-    ("postgresql", "PostgreSQL", "Postgres", "https://cdn.simpleicons.org/postgresql/4169E1", "https://www.postgresql.org/"),
-    ("sqlite", "SQLite", "SQLite", "https://cdn.simpleicons.org/sqlite/7DD3FC", "https://www.sqlite.org/"),
+    (
+        "tailwindcss",
+        "Tailwind CSS",
+        "Tailwind",
+        "https://cdn.simpleicons.org/tailwindcss/06B6D4",
+        "https://tailwindcss.com/",
+    ),
+    (
+        "postgresql",
+        "PostgreSQL",
+        "Postgres",
+        "https://cdn.simpleicons.org/postgresql/4169E1",
+        "https://www.postgresql.org/",
+    ),
+    (
+        "sqlite",
+        "SQLite",
+        "SQLite",
+        "https://cdn.simpleicons.org/sqlite/7DD3FC",
+        "https://www.sqlite.org/",
+    ),
     ("neo4j", "Neo4j", "Neo4j", "https://cdn.simpleicons.org/neo4j/4581C3", "https://neo4j.com/"),
-    ("aws", "AWS", "AWS", "https://api.iconify.design/simple-icons:amazonaws.svg?color=%23FF9900", "https://aws.amazon.com/"),
-    ("gcp", "Google Cloud", "GCP", "https://cdn.simpleicons.org/googlecloud/4285F4", "https://cloud.google.com/"),
-    ("kubernetes", "Kubernetes", "K8s", "https://cdn.simpleicons.org/kubernetes/326CE5", "https://kubernetes.io/"),
-    ("docker", "Docker", "Docker", "https://cdn.simpleicons.org/docker/2496ED", "https://www.docker.com/"),
-    ("fastapi", "FastAPI", "FastAPI", "https://cdn.simpleicons.org/fastapi/009688", "https://fastapi.tiangolo.com/"),
-    ("flask", "Flask", "Flask", "https://cdn.simpleicons.org/flask/F8FAFC", "https://flask.palletsprojects.com/"),
-    ("github-actions", "GitHub Actions", "Actions", "https://cdn.simpleicons.org/githubactions/2088FF", "https://github.com/features/actions"),
-    ("pytest", "pytest", "pytest", "https://cdn.simpleicons.org/pytest/0A9EDC", "https://docs.pytest.org/"),
-    ("wandb", "Weights and Biases", "W&B", "https://cdn.simpleicons.org/weightsandbiases/FFBE00", "https://wandb.ai/"),
-    ("rust", "Rust", "Rust", "https://cdn.simpleicons.org/rust/F8FAFC", "https://www.rust-lang.org/"),
+    (
+        "aws",
+        "AWS",
+        "AWS",
+        "https://api.iconify.design/simple-icons:amazonaws.svg?color=%23FF9900",
+        "https://aws.amazon.com/",
+    ),
+    (
+        "gcp",
+        "Google Cloud",
+        "GCP",
+        "https://cdn.simpleicons.org/googlecloud/4285F4",
+        "https://cloud.google.com/",
+    ),
+    (
+        "kubernetes",
+        "Kubernetes",
+        "K8s",
+        "https://cdn.simpleicons.org/kubernetes/326CE5",
+        "https://kubernetes.io/",
+    ),
+    (
+        "docker",
+        "Docker",
+        "Docker",
+        "https://cdn.simpleicons.org/docker/2496ED",
+        "https://www.docker.com/",
+    ),
+    (
+        "fastapi",
+        "FastAPI",
+        "FastAPI",
+        "https://cdn.simpleicons.org/fastapi/009688",
+        "https://fastapi.tiangolo.com/",
+    ),
+    (
+        "flask",
+        "Flask",
+        "Flask",
+        "https://cdn.simpleicons.org/flask/F8FAFC",
+        "https://flask.palletsprojects.com/",
+    ),
+    (
+        "github-actions",
+        "GitHub Actions",
+        "Actions",
+        "https://cdn.simpleicons.org/githubactions/2088FF",
+        "https://github.com/features/actions",
+    ),
+    (
+        "pytest",
+        "pytest",
+        "pytest",
+        "https://cdn.simpleicons.org/pytest/0A9EDC",
+        "https://docs.pytest.org/",
+    ),
+    (
+        "wandb",
+        "Weights and Biases",
+        "W&B",
+        "https://cdn.simpleicons.org/weightsandbiases/FFBE00",
+        "https://wandb.ai/",
+    ),
+    (
+        "rust",
+        "Rust",
+        "Rust",
+        "https://cdn.simpleicons.org/rust/F8FAFC",
+        "https://www.rust-lang.org/",
+    ),
 ]
 
 
 def fetch_icon(slug: str, url: str) -> tuple[str, str, str | None] | None:
+    """Fetch, normalize, and cache one technology logo asset."""
     if not url:
         return None
     request = Request(url, headers={"User-Agent": "fishman7337-profile-readme"})
@@ -86,11 +297,13 @@ def fetch_icon(slug: str, url: str) -> tuple[str, str, str | None] | None:
 
 
 def text_mark(label: str, color: str = "#22D3EE") -> str:
+    """Build a compact text fallback when a logo is unavailable."""
     fs = 24 if len(label) <= 4 else 18
     return f'<text x="44" y="45" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="{fs}" font-weight="900" fill="{color}">{html.escape(label)}</text>'
 
 
 def card(slug: str, name: str, label: str, icon: tuple[str, str, str | None] | None) -> str:
+    """Build an accessible technology-logo card SVG."""
     title = html.escape(name)
     label = html.escape(label)
     if icon:
@@ -100,7 +313,7 @@ def card(slug: str, name: str, label: str, icon: tuple[str, str, str | None] | N
     else:
         mark = text_mark(label, "#38BDF8")
 
-    return f'''<svg xmlns="http://www.w3.org/2000/svg" width="88" height="88" viewBox="0 0 88 88" role="img" aria-labelledby="title desc">
+    return f"""<svg xmlns="http://www.w3.org/2000/svg" width="88" height="88" viewBox="0 0 88 88" role="img" aria-labelledby="title desc">
 <title id="title">{title}</title>
 <desc id="desc">Rounded square logo card for {title}</desc>
 <defs>
@@ -125,10 +338,11 @@ def card(slug: str, name: str, label: str, icon: tuple[str, str, str | None] | N
 {mark}
 <text x="44" y="73" text-anchor="middle" font-family="JetBrains Mono, Consolas, monospace" font-size="8.7" font-weight="800" fill="#CFFAFE">{label}</text>
 </svg>
-'''
+"""
 
 
 def main() -> None:
+    """Generate all technology-logo cards and update their manifest."""
     seen = set()
     for slug, name, label, source, _href in LOGOS:
         if slug in seen:
