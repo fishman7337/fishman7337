@@ -12,6 +12,7 @@ import html
 import json
 import os
 import urllib.error
+import urllib.parse
 import urllib.request
 from collections import Counter
 from datetime import UTC, datetime, timedelta, timezone
@@ -124,8 +125,11 @@ def github_headers() -> dict[str, str]:
 
 def fetch_json(url: str) -> object:
     """Fetch and decode one authenticated GitHub API response."""
+    parsed = urllib.parse.urlparse(url)
+    if parsed.scheme != "https" or parsed.hostname != "api.github.com":
+        raise ValueError("GitHub telemetry URLs must use https://api.github.com")
     request = urllib.request.Request(url, headers=github_headers())
-    with urllib.request.urlopen(request, timeout=20) as response:
+    with urllib.request.urlopen(request, timeout=20) as response:  # nosec B310
         return json.loads(response.read().decode("utf-8"))
 
 
@@ -161,7 +165,15 @@ def fetch_repos() -> tuple[dict[str, object], list[dict[str, object]], dict[str,
         if not repos:
             raise RuntimeError("No public repositories returned")
         return profile if isinstance(profile, dict) else {}, repos, dict(language_bytes), True
-    except Exception:
+    except (
+        json.JSONDecodeError,
+        KeyError,
+        RuntimeError,
+        TimeoutError,
+        TypeError,
+        UnicodeDecodeError,
+        urllib.error.URLError,
+    ):
         profile = {"public_repos": len(FALLBACK_REPOS), "followers": 0, "following": 0}
         return profile, FALLBACK_REPOS, FALLBACK_LANG_BYTES, False
 

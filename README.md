@@ -55,7 +55,7 @@ badges remain subject to their respective terms.
 | Evidence-backed measure | Current repository evidence |
 | --- | --- |
 | Generated profile assets | The asset builder deterministically renders **10 SVG files** from versioned profile content. |
-| Automated checks | **3 tests** cover profile data, SVG helpers, and full asset generation; CI also verifies Ruff and a clean rebuild. |
+| Automated checks | **9 tests** cover profile data, SVG helpers, deterministic generation, bounded telemetry fallback behaviour, and HTTPS-only remote assets; CI also verifies Ruff and a clean rebuild. |
 
 The qualitative outcome is a reproducible, accessibility-aware GitHub profile rather than a hand-edited collection of graphics. These figures describe repository automation, not audience reach or hiring impact.
 

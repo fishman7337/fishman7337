@@ -54,8 +54,9 @@ Also run `git diff --check`. Record exactly which commands ran, their outcomes, 
 
 ## Managed artifacts and data
 
-- Generate assets only with `python scripts/build_assets.py`; do not hand-edit generated SVGs under `assets/`.
-- After regeneration, require `git diff --exit-code -- assets` when no asset drift is expected.
+- Generate the ten versioned profile SVGs with `python scripts/build_assets.py`; do not hand-edit those generated files.
+- Refresh the six dynamic cards under `assets/github-telemetry/` with `python scripts/build_github_telemetry_cards.py`; review their time-sensitive data changes explicitly.
+- After deterministic profile regeneration, require `git diff --exit-code -- assets` when no asset drift is expected.
 
 ## Integration and claim boundaries
 

@@ -7,6 +7,7 @@ import base64
 import html
 import re
 from pathlib import Path
+from urllib.parse import urlparse
 from urllib.request import Request, urlopen
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -274,8 +275,11 @@ def fetch_icon(slug: str, url: str) -> tuple[str, str, str | None] | None:
     """Fetch, normalize, and cache one technology logo asset."""
     if not url:
         return None
+    parsed = urlparse(url)
+    if parsed.scheme != "https" or not parsed.hostname:
+        raise ValueError("Logo URLs must use HTTPS")
     request = Request(url, headers={"User-Agent": "fishman7337-profile-readme"})
-    with urlopen(request, timeout=20) as response:
+    with urlopen(request, timeout=20) as response:  # nosec B310
         payload = response.read()
         content_type = response.headers.get("Content-Type", "")
     if "image/png" in content_type or url.lower().endswith(".png"):
