@@ -9,7 +9,7 @@
 <br />
 
 <a href="https://github.com/fishman7337"><img src="./assets/profile-buttons/github.svg" width="174" alt="GitHub fishman7337" /></a>
-<a href="https://www.linkedin.com/in/goh-kun-ming-58573430a/"><img src="./assets/profile-buttons/linkedin.svg" width="204" alt="LinkedIn Goh Kun Ming" /></a>
+<a href="https://www.linkedin.com/in/gohkunming/"><img src="./assets/profile-buttons/linkedin.svg" width="204" alt="LinkedIn Goh Kun Ming" /></a>
 <a href="mailto:kunmingaden@gmail.com"><img src="./assets/profile-buttons/email.svg" width="174" alt="Email" /></a>
 
 <br />
@@ -40,7 +40,24 @@
 
 </div>
 
+## Licensing
+
+This profile repository currently does not declare a repository-wide software
+license. Copyright therefore remains with the author by default. Obtain
+permission before copying, modifying, or redistributing the generator scripts,
+written content, or generated visual assets; linked third-party services and
+badges remain subject to their respective terms.
+
 ---
+
+## Evidence and interpretation
+
+| Evidence-backed measure | Current repository evidence |
+| --- | --- |
+| Generated profile assets | The asset builder deterministically renders **10 SVG files** from versioned profile content. |
+| Automated checks | **9 tests** cover profile data, SVG helpers, deterministic generation, bounded telemetry fallback behaviour, and HTTPS-only remote assets; CI also verifies Ruff and a clean rebuild. |
+
+The qualitative outcome is a reproducible, accessibility-aware GitHub profile rather than a hand-edited collection of graphics. These figures describe repository automation, not audience reach or hiring impact.
 
 ## `~/whoami`
 
@@ -280,7 +297,7 @@ The common thread across the work below is **quantum ML, computer vision, geospa
 <div align="center">
 
 <a href="mailto:kunmingaden@gmail.com"><img src="./assets/profile-buttons/email.svg" width="174" alt="Email" /></a>
-<a href="https://www.linkedin.com/in/goh-kun-ming-58573430a/"><img src="./assets/profile-buttons/linkedin.svg" width="204" alt="LinkedIn" /></a>
+<a href="https://www.linkedin.com/in/gohkunming/"><img src="./assets/profile-buttons/linkedin.svg" width="204" alt="LinkedIn" /></a>
 <a href="https://github.com/fishman7337"><img src="./assets/profile-buttons/github.svg" width="174" alt="GitHub" /></a>
 <a href="https://arxiv.org/abs/2508.09209"><img src="./assets/profile-buttons/arxiv.svg" width="174" alt="Research arXiv" /></a>
 

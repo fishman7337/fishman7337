@@ -4,7 +4,7 @@ The README intentionally keeps claims grounded in public signals and user-provid
 
 ## User-provided
 
-- LinkedIn URL: `https://www.linkedin.com/in/goh-kun-ming-58573430a/`
+- LinkedIn URL: `https://www.linkedin.com/in/gohkunming/`
 - GitHub URL: `https://github.com/fishman7337`
 - Email: `kunmingaden@gmail.com`
 

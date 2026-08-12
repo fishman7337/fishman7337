@@ -7,16 +7,23 @@ on:
       - "content/profile.yml"
       - "scripts/build_assets.py"
 
+permissions:
+  contents: read
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
 jobs:
   build-assets:
+    timeout-minutes: 30
     runs-on: ubuntu-latest
     permissions:
       contents: write
     env:
       TZ: Asia/Singapore
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6.1.0
+      - uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6.3.0
         with:
           python-version: "3.12"
       - name: Install dependencies
@@ -24,7 +31,7 @@ jobs:
       - name: Generate SVG assets
         run: python scripts/build_assets.py
       - name: Commit generated assets
-        uses: stefanzweifel/git-auto-commit-action@v5
+        uses: stefanzweifel/git-auto-commit-action@4a55954c782fc1ea30b9056cd3e7a2b40ca8887d # v7.2.0
         with:
           commit_message: "chore: rebuild editable profile SVG assets"
           file_pattern: "assets/*.svg"
