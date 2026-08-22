@@ -11,9 +11,9 @@ This bundle is designed so the SVGs are not painful to update.
 python scripts/build_assets.py
 ```
 
-That regenerates the five Signal Garden SVGs under `assets/`.
+That regenerates the eleven Signal Garden SVGs under `assets/`.
 
-The integrated hero is generated from `assets/signal-garden-hero-v2.png`; keep that source file in place when rebuilding.
+The integrated hero and research centerpiece are generated from `assets/signal-garden-hero-v2.png` and `assets/research-seed-lab-v1.png`; keep both source files in place when rebuilding.
 
 ## Direct SVG editing path
 

@@ -75,7 +75,7 @@ def test_main_generates_well_formed_svg_assets(
     assets.main()
 
     generated = sorted(tmp_path.glob("*.svg"))
-    assert len(generated) == 5
+    assert len(generated) == 11
     for path in generated:
         root = ET.parse(path).getroot()
         assert root.tag.endswith("svg")
@@ -87,9 +87,11 @@ def test_readme_uses_the_signal_garden_visual_system() -> None:
 
     for asset in [
         "hero-signal-garden.svg",
-        "focus-garden.svg",
-        "project-garden.svg",
-        "research-loop.svg",
+        "studio-manifesto.svg",
+        "project-01-hybrid-quantum-classical-gan-research.svg",
+        "project-06-sp-daaa-bed-ca-fitnessquest.svg",
+        "research-observatory.svg",
+        "craft-map.svg",
         "signal-footer.svg",
     ]:
         assert f"./assets/{asset}" in readme

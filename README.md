@@ -13,156 +13,143 @@
 <a href="https://orcid.org/0009-0008-7666-781X"><img src="./assets/profile-buttons/orcid.svg" width="184" alt="ORCID researcher profile" /></a>
 <a href="https://arxiv.org/abs/2508.09209"><img src="./assets/profile-buttons/arxiv.svg" width="174" alt="Read the arXiv preprint" /></a>
 
-<br /><br />
+<br />
 
-<a href="#what-im-growing">What I’m growing</a> ·
-<a href="#selected-work">Selected work</a> ·
-<a href="#research-spotlight">Research</a> ·
-<a href="#tool-garden">Tools</a> ·
-<a href="#how-i-work">Process</a> ·
-<a href="#say-hello">Contact</a>
+<sub><b>SINGAPORE</b> · APPLIED AI & ANALYTICS · BUILDING IN PUBLIC</sub>
+
+<br />
+
+<a href="#a-studio-for-curious-ideas">Studio</a> ·
+<a href="#work-worth-opening">Selected work</a> ·
+<a href="#one-experiment-in-depth">Research note</a> ·
+<a href="#the-craft-behind-the-code">Craft</a> ·
+<a href="#open-source-footprint">Open source</a> ·
+<a href="#start-a-conversation">Contact</a>
 
 </div>
 
----
+## A studio for curious ideas
 
-## Hello
+I’m Kun Ming. I enjoy the whole arc of making with machine learning: finding the right question, understanding the data, building a baseline, testing the interesting idea, and shaping the useful part into software people can actually explore.
 
-I’m Kun Ming, an Applied AI & Analytics student in Singapore. I like the whole path from an interesting question to a working artifact: understanding the data, establishing a baseline, experimenting carefully, and turning the useful parts into something other people can inspect and use.
+<img src="./assets/studio-manifesto.svg" width="100%" alt="An editorial manifesto about turning questions into evidence, experiments, and approachable tools" />
 
-> My favourite projects sit where rigorous experiments meet playful, approachable software.
+The projects below are less a list of technologies than a record of how I think: **curious about the idea, sceptical about the claim, and serious about the artifact.**
 
-## What I’m growing
+## Work worth opening
 
-<img src="./assets/focus-garden.svg" width="100%" alt="Explore, Model, Build, and Share — four stages for growing an idea" />
-
-## Selected work
-
-<img src="./assets/project-garden.svg" width="100%" alt="Animated constellation of six selected projects in quantum ML, vision, creative ML, algorithms, applied ML, and full-stack development" />
+Six projects, six different ways to move from a question to something inspectable. Every specimen opens its repository.
 
 <table>
   <tr>
     <td width="50%" valign="top">
-      <h3>🫧 <a href="https://github.com/fishman7337/hybrid-quantum-classical-gan-research">HQCGAN Research</a></h3>
-      <p>Classical and hybrid quantum-classical GAN experiments with noisy circuit priors, FID/KID evaluation, tests, and a public preprint.</p>
+      <a href="https://github.com/fishman7337/hybrid-quantum-classical-gan-research"><img src="./assets/project-01-hybrid-quantum-classical-gan-research.svg" width="100%" alt="HQCGAN Research project specimen" /></a>
+      <h3><a href="https://github.com/fishman7337/hybrid-quantum-classical-gan-research">HQCGAN Research ↗</a></h3>
+      <p>A classical baseline compared with 3-, 5-, and 7-qubit hybrid variants using noisy circuit priors, reproducible configuration, and FID/KID evaluation.</p>
       <p><code>Qiskit</code> <code>TensorFlow</code> <code>GANs</code> <code>arXiv</code></p>
     </td>
     <td width="50%" valign="top">
-      <h3>🍃 <a href="https://github.com/fishman7337/leaf-object-detection">Leaf Object Detection</a></h3>
-      <p>A reproducible YOLO pipeline for data preparation, annotation validation, training, ONNX export, and browser inference.</p>
-      <p><code>Python</code> <code>YOLO</code> <code>ONNX</code> <code>CV</code></p>
+      <a href="https://github.com/fishman7337/leaf-object-detection"><img src="./assets/project-02-leaf-object-detection.svg" width="100%" alt="Leaf Object Detection project specimen" /></a>
+      <h3><a href="https://github.com/fishman7337/leaf-object-detection">Leaf Object Detection ↗</a></h3>
+      <p>A reproducible path from annotation validation and YOLO training to ONNX export and browser inference.</p>
+      <p><code>Python</code> <code>YOLO</code> <code>ONNX</code> <code>Computer vision</code></p>
     </td>
   </tr>
   <tr>
     <td width="50%" valign="top">
-      <h3>🌙 <a href="https://github.com/fishman7337/sp-daaa-dsaa-ca1-haiku-generator">HaikuForge AI</a></h3>
-      <p>A 5–7–5-aware haiku lab with Markov generation, poetic transformations, batch permutations, and WAV narration.</p>
+      <a href="https://github.com/fishman7337/sp-daaa-dsaa-ca1-haiku-generator"><img src="./assets/project-03-sp-daaa-dsaa-ca1-haiku-generator.svg" width="100%" alt="HaikuForge AI project specimen" /></a>
+      <h3><a href="https://github.com/fishman7337/sp-daaa-dsaa-ca1-haiku-generator">HaikuForge AI ↗</a></h3>
+      <p>A playful 5–7–5-aware writing lab with Markov generation, poetic transformations, batch variation, and WAV narration.</p>
       <p><code>NLP</code> <code>Markov chains</code> <code>Audio</code> <code>Python</code></p>
     </td>
     <td width="50%" valign="top">
-      <h3>📰 <a href="https://github.com/fishman7337/sp-daaa-dsaa-ca2-newspaper-restoration">Newspaper Restoration</a></h3>
-      <p>An explainable historical-text toolkit using prefix tries, wildcard restoration, edit-distance search, and graph visualisation.</p>
+      <a href="https://github.com/fishman7337/sp-daaa-dsaa-ca2-newspaper-restoration"><img src="./assets/project-04-sp-daaa-dsaa-ca2-newspaper-restoration.svg" width="100%" alt="Newspaper Restoration project specimen" /></a>
+      <h3><a href="https://github.com/fishman7337/sp-daaa-dsaa-ca2-newspaper-restoration">Newspaper Restoration ↗</a></h3>
+      <p>An explainable historical-text toolkit built from prefix tries, wildcard recovery, edit-distance search, and graph visualisation.</p>
       <p><code>Tries</code> <code>Algorithms</code> <code>NetworkX</code> <code>pytest</code></p>
     </td>
   </tr>
   <tr>
     <td width="50%" valign="top">
-      <h3>🚕 <a href="https://github.com/fishman7337/sp-daaa-pai-ca2-gobest-trip-safety-predictor">GoBest Trip Predictor</a></h3>
-      <p>An educational offline desktop ML app with batch inference, feedback collection, lightweight drift checks, and packaged smoke tests.</p>
-      <p><code>CustomTkinter</code> <code>scikit-learn</code> <code>PyInstaller</code></p>
+      <a href="https://github.com/fishman7337/sp-daaa-pai-ca2-gobest-trip-safety-predictor"><img src="./assets/project-05-sp-daaa-pai-ca2-gobest-trip-safety-predictor.svg" width="100%" alt="GoBest Trip Predictor project specimen" /></a>
+      <h3><a href="https://github.com/fishman7337/sp-daaa-pai-ca2-gobest-trip-safety-predictor">GoBest Trip Predictor ↗</a></h3>
+      <p>An offline desktop ML application with batch inference, feedback capture, lightweight drift checks, and packaged smoke tests.</p>
+      <p><code>scikit-learn</code> <code>CustomTkinter</code> <code>PyInstaller</code></p>
     </td>
     <td width="50%" valign="top">
-      <h3>🏃 <a href="https://github.com/fishman7337/sp-daaa-bed-ca-fitnessquest">FitnessQuest</a></h3>
-      <p>A gamified fitness web app with authenticated APIs, responsive flows, security regression tests, and browser automation.</p>
+      <a href="https://github.com/fishman7337/sp-daaa-bed-ca-fitnessquest"><img src="./assets/project-06-sp-daaa-bed-ca-fitnessquest.svg" width="100%" alt="FitnessQuest project specimen" /></a>
+      <h3><a href="https://github.com/fishman7337/sp-daaa-bed-ca-fitnessquest">FitnessQuest ↗</a></h3>
+      <p>A gamified fitness product with authenticated APIs, responsive journeys, regression coverage, and browser automation.</p>
       <p><code>Express</code> <code>MySQL</code> <code>JWT</code> <code>Playwright</code></p>
     </td>
   </tr>
 </table>
 
 <details>
-<summary><b>Open a few more builds</b></summary>
+<summary><b>More from the workbench</b></summary>
 
 <br />
 
-| Project | What it explores |
+| Project | The question behind it |
 | --- | --- |
-| [EstateScope AI](https://github.com/fishman7337/sp-daaa-doaa-ca1-housing-price-ml-application) | Housing-value modelling across tabular, text, and image signals |
-| [VeggieAI](https://github.com/fishman7337/sp-daaa-doaa-ca2-vegetable-classification-application) | Image classification, model serving, CI, Docker, and application workflows |
-| [Movie Sentiment AI](https://github.com/fishman7337/sp-daaa-dele-ca1-movie-review-sentiment-analysis) | SimpleRNN, LSTM, and GRU workflows for sentiment and rating prediction |
-| [Pendulum Reinforcement Learning](https://github.com/fishman7337/sp-daaa-dele-ca2-pendulum-reinforcement-learning) | Control-task experimentation with DQN-style learning |
-| [HDB Price Dashboard](https://github.com/fishman7337/sp-daaa-davi-ca1-hdb-price-dashboard) | Singapore resale-price cleaning, analysis, validation, and dashboards |
+| [EstateScope AI](https://github.com/fishman7337/sp-daaa-doaa-ca1-housing-price-ml-application) | How can tabular, text, and image signals meet in one housing-value workflow? |
+| [VeggieAI](https://github.com/fishman7337/sp-daaa-doaa-ca2-vegetable-classification-application) | What does it take to move image classification from model to tested application? |
+| [Movie Sentiment AI](https://github.com/fishman7337/sp-daaa-dele-ca1-movie-review-sentiment-analysis) | How do recurrent architectures differ on sentiment and rating prediction? |
+| [Pendulum Reinforcement Learning](https://github.com/fishman7337/sp-daaa-dele-ca2-pendulum-reinforcement-learning) | How can a control task make reinforcement-learning trade-offs visible? |
+| [HDB Price Dashboard](https://github.com/fishman7337/sp-daaa-davi-ca1-hdb-price-dashboard) | How can Singapore resale data become a validated, explorable story? |
 
 </details>
 
-## Research spotlight
+## One experiment, in depth
+
+<a href="https://arxiv.org/abs/2508.09209"><img src="./assets/research-observatory.svg" width="100%" alt="Conceptual quantum seed laboratory and evidence-bounded summary of the HQCGAN research" /></a>
 
 <table>
   <tr>
-    <td width="64%" valign="top">
-      <h3>Quantum-Enhanced Generative Adversarial Networks</h3>
-      <p>My public preprint compares a classical GAN with 3-, 5-, and 7-qubit hybrid variants that use parameterised quantum circuits as latent priors.</p>
-      <ul>
-        <li>Binary MNIST digits 0 and 1 under constrained latent dimensions.</li>
-        <li>Qiskit AerSimulator with realistic noise models.</li>
-        <li>FID and KID for image-quality evaluation.</li>
-        <li>Reproducibility helpers, configuration, tests, and explicit limitations.</li>
-      </ul>
-      <p>The classical baseline led overall; the value of the study is the comparison, the reproducible trail, and a bounded look at what near-term hybrid approaches can and cannot do.</p>
+    <td width="33%" valign="top">
+      <h3>The question</h3>
+      <p>Can noisy parameterised quantum circuits serve as useful latent priors for image generation under constrained settings?</p>
     </td>
-    <td width="36%" valign="middle" align="center">
-      <a href="https://arxiv.org/abs/2508.09209"><img src="./assets/profile-buttons/read-preprint.svg" width="226" alt="Read the public preprint" /></a>
-      <br /><br />
-      <img src="./assets/profile-buttons/quantum-ml.svg" width="190" alt="Quantum machine learning" />
-      <img src="./assets/profile-buttons/qiskit.svg" width="154" alt="Qiskit" />
-      <img src="./assets/profile-buttons/fid-kid.svg" width="154" alt="FID and KID" />
+    <td width="33%" valign="top">
+      <h3>The comparison</h3>
+      <p>A classical GAN and 3-, 5-, and 7-qubit hybrid variants on binary MNIST digits 0 and 1, evaluated with FID and KID.</p>
+    </td>
+    <td width="33%" valign="top">
+      <h3>The honest result</h3>
+      <p>The classical baseline led overall. The useful contribution is the reproducible comparison and a bounded account of the hybrid approach.</p>
     </td>
   </tr>
 </table>
 
-## Tool garden
-
 <div align="center">
 
-<p><b>AI + ML</b></p>
-
-<a href="https://www.python.org/"><img src="./assets/tech-logos/python.svg" width="68" height="68" alt="Python" /></a>
-<a href="https://pytorch.org/"><img src="./assets/tech-logos/pytorch.svg" width="68" height="68" alt="PyTorch" /></a>
-<a href="https://www.tensorflow.org/"><img src="./assets/tech-logos/tensorflow.svg" width="68" height="68" alt="TensorFlow" /></a>
-<a href="https://keras.io/"><img src="./assets/tech-logos/keras.svg" width="68" height="68" alt="Keras" /></a>
-<a href="https://scikit-learn.org/"><img src="./assets/tech-logos/scikit-learn.svg" width="68" height="68" alt="scikit-learn" /></a>
-<a href="https://qiskit.org/"><img src="./assets/tech-logos/qiskit.svg" width="68" height="68" alt="Qiskit" /></a>
-<a href="https://opencv.org/"><img src="./assets/tech-logos/opencv.svg" width="68" height="68" alt="OpenCV" /></a>
-
-<p><b>Data + product</b></p>
-
-<a href="https://pandas.pydata.org/"><img src="./assets/tech-logos/pandas.svg" width="68" height="68" alt="Pandas" /></a>
-<a href="https://numpy.org/"><img src="./assets/tech-logos/numpy.svg" width="68" height="68" alt="NumPy" /></a>
-<a href="https://plotly.com/python/"><img src="./assets/tech-logos/plotly.svg" width="68" height="68" alt="Plotly" /></a>
-<a href="https://flask.palletsprojects.com/"><img src="./assets/tech-logos/flask.svg" width="68" height="68" alt="Flask" /></a>
-<a href="https://fastapi.tiangolo.com/"><img src="./assets/tech-logos/fastapi.svg" width="68" height="68" alt="FastAPI" /></a>
-<a href="https://nodejs.org/"><img src="./assets/tech-logos/nodejs.svg" width="68" height="68" alt="Node.js" /></a>
-<a href="https://react.dev/"><img src="./assets/tech-logos/react.svg" width="68" height="68" alt="React" /></a>
-<a href="https://www.postgresql.org/"><img src="./assets/tech-logos/postgresql.svg" width="68" height="68" alt="PostgreSQL" /></a>
-
-<p><b>Delivery + quality</b></p>
-
-<a href="https://www.docker.com/"><img src="./assets/tech-logos/docker.svg" width="68" height="68" alt="Docker" /></a>
-<a href="https://github.com/features/actions"><img src="./assets/tech-logos/github-actions.svg" width="68" height="68" alt="GitHub Actions" /></a>
-<a href="https://docs.pytest.org/"><img src="./assets/tech-logos/pytest.svg" width="68" height="68" alt="pytest" /></a>
+<a href="https://arxiv.org/abs/2508.09209"><img src="./assets/profile-buttons/read-preprint.svg" width="226" alt="Read the public preprint" /></a>
+&nbsp;
+<a href="https://github.com/fishman7337/hybrid-quantum-classical-gan-research"><img src="./assets/profile-buttons/github.svg" width="174" alt="Open the research repository" /></a>
 
 </div>
 
-## How I work
+## The craft behind the code
 
-<img src="./assets/research-loop.svg" width="100%" alt="Question, Baseline, Experiment, Evaluate, Share — an evidence-first research loop" />
+<img src="./assets/craft-map.svg" width="100%" alt="Ask, Model, Shape, and Ship — a connected map of the tools behind the work" />
 
-- **Start with the question.** The model comes after the problem and the data are understood.
-- **Keep a baseline nearby.** Complexity has to earn its place.
-- **Make the path reproducible.** Configs, tests, seeds, and docs are part of the artifact.
-- **Report limits with the result.** A useful claim includes its boundary.
-- **Turn experiments into tools.** The best ideas become something inspectable and approachable.
+<details>
+<summary><b>Open the toolbox</b></summary>
 
-## Contribution garden
+<br />
+
+| Layer | Tools I reach for |
+| --- | --- |
+| Modelling | `Python` · `PyTorch` · `TensorFlow` · `Keras` · `scikit-learn` · `Qiskit` · `OpenCV` |
+| Data + visualisation | `Pandas` · `NumPy` · `SQL` · `Matplotlib` · `Plotly` · `Tableau` |
+| Product | `Flask` · `FastAPI` · `Node.js` · `React` · `PostgreSQL` |
+| Delivery | `pytest` · `Playwright` · `Ruff` · `Docker` · `GitHub Actions` |
+
+</details>
+
+> **Working rule:** complexity has to earn its place. A good project leaves behind the question, baseline, configuration, tests, limitations, and a path for someone else to inspect it.
+
+## Open-source footprint
 
 <div align="center">
 
@@ -179,13 +166,13 @@ I’m Kun Ming, an Applied AI & Analytics student in Singapore. I like the whole
 
 <br />
 
-<sub>Telemetry is a checked-in snapshot generated from public GitHub metadata; it is descriptive, not a measure of impact.</sub>
+<sub>Checked-in public metadata snapshot. Descriptive—not a measure of impact.</sub>
 
 </div>
 
-## Say hello
+## Start a conversation
 
-I’m always happy to talk about careful ML experiments, creative computing, reproducibility, and building better learning projects.
+If you’re exploring careful ML experiments, creative computation, computer vision, quantum ML, or ways to turn a model into a better learning product, I’d be glad to compare notes.
 
 <div align="center">
 

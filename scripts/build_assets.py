@@ -13,6 +13,7 @@ import yaml
 ROOT = Path(__file__).resolve().parents[1]
 ASSETS = ROOT / "assets"
 HERO_SOURCE = ASSETS / "signal-garden-hero-v2.png"
+RESEARCH_SOURCE = ASSETS / "research-seed-lab-v1.png"
 PROFILE = yaml.safe_load((ROOT / "content" / "profile.yml").read_text(encoding="utf-8"))
 IDENTITY = PROFILE["identity"]
 THEME = PROFILE["theme"]
@@ -72,6 +73,7 @@ def svg_open(height: int, title: str, description: str) -> list[str]:
         "</filter>",
         "<style><![CDATA[",
         ".title{font:800 52px Inter,Segoe UI,Arial,sans-serif;fill:#F7FAFF;letter-spacing:-1.8px}",
+        ".display{font:800 42px Inter,Segoe UI,Arial,sans-serif;fill:#F7FAFF;letter-spacing:-1.4px}",
         ".section{font:800 30px Inter,Segoe UI,Arial,sans-serif;fill:#F7FAFF;letter-spacing:-.6px}",
         ".cardTitle{font:750 20px Inter,Segoe UI,Arial,sans-serif;fill:#F7FAFF}",
         ".body{font:500 16px Inter,Segoe UI,Arial,sans-serif;fill:#A8B4D1}",
@@ -209,114 +211,194 @@ def make_hero() -> str:
     return svg_close(parts)
 
 
-def make_focus_garden() -> str:
-    """Build four animated focus cards from the profile source."""
+def make_manifesto() -> str:
+    """Build the asymmetric editorial introduction panel."""
     parts = svg_open(
-        380,
-        "How Goh Kun Ming grows ideas",
-        "Four focus cards covering exploration, modelling, product building, and sharing open work.",
+        430,
+        "Goh Kun Ming's working manifesto",
+        "An editorial introduction about turning questions into evidence, experiments, and useful software.",
     )
     parts.extend(
         [
-            '<text x="54" y="62" class="section">How I grow an idea</text>',
-            '<text x="54" y="91" class="body">A small loop for turning curiosity into something useful.</text>',
-            '<path d="M88 304 C246 242 330 352 480 290 S744 226 890 290 S1054 338 1160 260" class="mesh dash"/>',
+            '<rect x="48" y="46" width="675" height="338" rx="30" class="glassBright" filter="url(#soft)"/>',
+            '<text x="82" y="92" class="mono">THE MESSY MIDDLE</text>',
+            '<text x="80" y="153" class="display">I like the moment</text>',
+            '<text x="80" y="202" class="display">when a question</text>',
+            '<text x="80" y="251" class="display">becomes a tool.</text>',
+            '<text x="82" y="302" class="body">Data first. Baseline nearby. Claims kept honest.</text>',
+            '<text x="82" y="330" class="body">Then make the useful part approachable.</text>',
+            '<path d="M82 357 H638" stroke="url(#signal)" stroke-width="3" stroke-linecap="round" class="dash"/>',
         ]
     )
-    colors = [THEME["cyan"], THEME["purple"], THEME["coral"], THEME["green"]]
-    for index, (card_data, color) in enumerate(zip(PROFILE["focus_cards"], colors, strict=True)):
-        x = 54 + index * 286
-        css = "driftA" if index % 2 == 0 else "driftB"
-        parts.extend(
-            [
-                f'<g class="{css}" filter="url(#soft)">',
-                f'<rect x="{x}" y="126" width="250" height="164" rx="24" class="glass"/>',
-                f'<circle cx="{x + 34}" cy="160" r="10" fill="{color}" opacity=".9" filter="url(#glow)"/>',
-                f'<text x="{x + 56}" y="166" class="mono">{esc(card_data["label"])}</text>',
-                f'<text x="{x + 24}" y="207" class="cardTitle">{esc(card_data["title"])}</text>',
-            ]
-        )
-        parts.extend(text_block(wrap(card_data["desc"], 30)[:3], x + 24, 238, 20, "small"))
-        parts.append("</g>")
-    return svg_close(parts)
-
-
-def make_project_garden() -> str:
-    """Build a glowing project constellation without organization-coded imagery."""
-    projects = PROFILE["projects"][:6]
-    positions = [(54, 78), (54, 226), (54, 374), (886, 78), (886, 226), (886, 374)]
-    anchors = [(314, 128), (314, 276), (314, 424), (886, 128), (886, 276), (886, 424)]
-    parts = svg_open(
-        540,
-        "Selected project Signal Garden",
-        "Animated constellation of six public machine-learning, algorithms, and product projects.",
-    )
-    parts.extend(
-        [
-            '<text x="54" y="50" class="section">Selected work · a living project garden</text>',
-            '<circle cx="600" cy="276" r="108" fill="url(#orb)" opacity=".72" filter="url(#glow)" class="pulse"/>',
-            '<g class="spin"><ellipse cx="600" cy="276" rx="174" ry="68" class="mesh"/><ellipse cx="600" cy="276" rx="68" ry="174" class="mesh" transform="rotate(24 600 276)"/></g>',
-            f'<text x="600" y="269" text-anchor="middle" class="mono">@{esc(IDENTITY["username"])}</text>',
-            '<text x="600" y="297" text-anchor="middle" class="small">research · tools · products</text>',
-        ]
-    )
-    for index, (project, (x, y), (ax, ay)) in enumerate(
-        zip(projects, positions, anchors, strict=True)
-    ):
-        color = [THEME["cyan"], THEME["purple"], THEME["coral"], THEME["green"]][index % 4]
-        curve_x = 470 if ax < 600 else 730
-        parts.extend(
-            [
-                f'<path d="M600 276 C{curve_x} 276 {curve_x} {ay} {ax} {ay}" class="mesh dash"/>',
-                f'<circle cx="{ax}" cy="{ay}" r="6" fill="{color}" filter="url(#glow)" class="pulse"/>',
-                f'<g class="{"driftA" if index % 2 == 0 else "driftB"}" filter="url(#soft)">',
-                f'<rect x="{x}" y="{y}" width="260" height="100" rx="21" class="glass"/>',
-                f'<rect x="{x + 16}" y="{y + 15}" width="86" height="23" rx="11.5" fill="{color}" fill-opacity=".13" stroke="{color}" stroke-opacity=".42"/>',
-                f'<text x="{x + 59}" y="{y + 31}" text-anchor="middle" class="small" fill="{color}">{esc(project["theme"])}</text>',
-                f'<text x="{x + 18}" y="{y + 61}" class="cardTitle">{esc(ellipsize(project["name"], 24))}</text>',
-                f'<text x="{x + 18}" y="{y + 84}" class="small">{esc(ellipsize(project["stack"], 36))}</text>',
-                "</g>",
-            ]
-        )
-    return svg_close(parts)
-
-
-def make_research_loop() -> str:
-    """Build the evidence-first research loop with a moving signal particle."""
-    stages = [
-        ("01", "Question", "Make it specific"),
-        ("02", "Baseline", "Start honestly"),
-        ("03", "Experiment", "Keep it reproducible"),
-        ("04", "Evaluate", "Measure + limit"),
-        ("05", "Share", "Publish the trail"),
+    notes = [
+        ("NOW", "Applied AI &amp; Analytics", "Learning in Singapore", THEME["cyan"]),
+        ("CURIOUS ABOUT", "Generative AI · Vision", "Quantum ML · Data products", THEME["purple"]),
+        ("DEFAULT MODE", "Build → test → explain", "Share the evidence trail", THEME["coral"]),
     ]
-    parts = svg_open(
-        300,
-        "Evidence-first research loop",
-        "Question, baseline, experiment, evaluation, and sharing connected by an animated signal path.",
-    )
-    parts.extend(
-        [
-            '<text x="54" y="57" class="section">My research loop</text>',
-            '<text x="54" y="86" class="body">Good work should leave a trail that someone else can follow.</text>',
-            '<path id="flow" d="M116 190 C260 120 328 248 462 190 S676 132 804 190 S1002 238 1090 190" fill="none" stroke="url(#signal)" stroke-width="4" stroke-linecap="round" opacity=".5"/>',
-            f'<circle r="8" fill="{THEME["cyan"]}" filter="url(#glow)"><animateMotion dur="8s" repeatCount="indefinite" path="M116 190 C260 120 328 248 462 190 S676 132 804 190 S1002 238 1090 190"/></circle>',
-        ]
-    )
-    for index, (number, label, note) in enumerate(stages):
-        x = 34 + index * 231
-        y = 126 if index % 2 == 0 else 180
-        color = [THEME["cyan"], THEME["purple"], THEME["coral"], THEME["green"]][index % 4]
+    for index, (label, title, note, color) in enumerate(notes):
+        y = 46 + index * 116
         parts.extend(
             [
                 f'<g class="{"driftA" if index % 2 == 0 else "driftB"}">',
-                f'<rect x="{x}" y="{y}" width="198" height="90" rx="20" class="glassBright"/>',
-                f'<text x="{x + 18}" y="{y + 27}" class="mono" fill="{color}">{number}</text>',
-                f'<text x="{x + 18}" y="{y + 54}" class="cardTitle">{label}</text>',
-                f'<text x="{x + 18}" y="{y + 76}" class="small">{note}</text>',
+                f'<rect x="755" y="{y}" width="397" height="96" rx="24" class="glass"/>',
+                f'<rect x="755" y="{y}" width="6" height="96" rx="3" fill="{color}" opacity=".86"/>',
+                f'<circle cx="790" cy="{y + 28}" r="7" fill="{color}" filter="url(#glow)"/>',
+                f'<text x="811" y="{y + 33}" class="mono">{label}</text>',
+                f'<text x="788" y="{y + 62}" class="cardTitle">{title}</text>',
+                f'<text x="788" y="{y + 83}" class="small">{note}</text>',
                 "</g>",
             ]
         )
+    return svg_close(parts)
+
+
+def project_art(index: int, color: str) -> list[str]:
+    """Return a distinct animated visual metaphor for one project specimen."""
+    if index == 0:
+        return [
+            '<circle cx="936" cy="190" r="92" fill="url(#orb)" opacity=".82" filter="url(#glow)" class="pulse"/>',
+            '<g class="spin"><ellipse cx="936" cy="190" rx="148" ry="54" class="mesh"/><ellipse cx="936" cy="190" rx="54" ry="148" class="mesh" transform="rotate(28 936 190)"/></g>',
+            '<path d="M850 190 Q936 118 1022 190 T1194 190" class="mesh dash"/>',
+        ]
+    if index == 1:
+        return [
+            f'<path d="M908 314 C782 222 814 92 1088 70 C1094 242 1028 330 908 314Z" fill="{color}" fill-opacity=".13" stroke="{color}" stroke-width="3"/>',
+            '<path d="M846 300 C928 242 1000 170 1082 82 M926 230 L868 178 M968 188 L1022 138" class="mesh dash"/>',
+            '<rect x="825" y="112" width="116" height="96" rx="12" fill="none" stroke="#F7FAFF" stroke-opacity=".52" class="driftA"/>',
+            '<rect x="970" y="198" width="124" height="92" rx="12" fill="none" stroke="#F7FAFF" stroke-opacity=".34" class="driftB"/>',
+        ]
+    if index == 2:
+        return [
+            f'<circle cx="927" cy="170" r="106" fill="{color}" fill-opacity=".13"/>',
+            '<circle cx="965" cy="136" r="104" fill="#080C1D"/>',
+            '<path d="M808 270 Q926 196 1100 242" class="mesh dash"/>',
+            '<g class="driftA" stroke="#F7FAFF" stroke-linecap="round"><path d="M830 304h72"/><path d="M928 304h104"/><path d="M1056 304h72"/></g>',
+            f'<circle cx="818" cy="88" r="8" fill="{color}" class="pulse" filter="url(#glow)"/>',
+        ]
+    if index == 3:
+        return [
+            '<g class="driftB"><rect x="824" y="68" width="254" height="276" rx="16" class="glassBright"/><path d="M858 112h168M858 146h142M858 180h176M858 214h116" stroke="#A8B4D1" stroke-width="9" stroke-linecap="round" opacity=".42"/></g>',
+            '<path d="M950 228v44M950 272l-64 44M950 272l64 44M886 316l-42 30M886 316l34 34M1014 316l-34 34M1014 316l46 30" class="mesh dash"/>',
+            f'<circle cx="950" cy="228" r="9" fill="{color}" class="pulse"/>',
+        ]
+    if index == 4:
+        return [
+            '<path d="M786 298 C838 210 912 286 952 190 S1050 98 1138 136" fill="none" stroke="url(#signal)" stroke-width="9" stroke-linecap="round" class="dash"/>',
+            '<path d="M798 98h126l40 54h154v180H798Z" fill="#111A30" stroke="#A8B4D1" stroke-opacity=".24"/>',
+            f'<circle cx="798" cy="298" r="17" fill="{color}" filter="url(#glow)" class="pulse"/><circle cx="1138" cy="136" r="17" fill="{color}" filter="url(#glow)" class="pulse"/>',
+        ]
+    return [
+        '<circle cx="954" cy="196" r="128" fill="none" stroke="#A8B4D1" stroke-opacity=".2" stroke-width="28"/>',
+        f'<path d="M954 68 A128 128 0 1 1 836 246" fill="none" stroke="{color}" stroke-width="28" stroke-linecap="round" filter="url(#glow)" class="pulse"/>',
+        '<path d="M778 254h72l28-66 52 122 38-84 32 28h134" fill="none" stroke="url(#signal)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" class="dash"/>',
+    ]
+
+
+def make_project_specimen(project: dict[str, str], index: int) -> str:
+    """Build one readable, clickable project-card illustration."""
+    color = [THEME["cyan"], THEME["purple"], THEME["coral"], THEME["green"]][index % 4]
+    parts = svg_open(
+        420,
+        f"{project['name']} project specimen",
+        f"Animated visual card for {project['name']}, a {project['theme']} project.",
+    )
+    parts.extend(
+        [
+            f'<text x="54" y="58" class="mono">SPECIMEN / {index + 1:02d}</text>',
+            f'<rect x="54" y="82" width="148" height="30" rx="15" fill="{color}" fill-opacity=".13" stroke="{color}" stroke-opacity=".48"/>',
+            f'<text x="128" y="102" text-anchor="middle" class="small" fill="{color}">{esc(project["theme"])}</text>',
+            f'<text x="52" y="285" class="display">{esc(project["name"])}</text>',
+            f'<text x="54" y="326" class="body">{esc(ellipsize(project["desc"], 68))}</text>',
+            f'<text x="54" y="368" class="mono">{esc(ellipsize(project["stack"].upper(), 58))}</text>',
+            '<path d="M54 392 H1146" stroke="url(#signal)" stroke-width="3" stroke-linecap="round" class="dash"/>',
+        ]
+    )
+    parts.extend(project_art(index, color))
+    return svg_close(parts)
+
+
+def make_research_observatory() -> str:
+    """Build the research centerpiece around the conceptual generated artwork."""
+    image_data = base64.b64encode(RESEARCH_SOURCE.read_bytes()).decode("ascii")
+    parts = [
+        '<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1200" height="600" viewBox="0 0 1200 600" role="img" aria-labelledby="title desc">',
+        '<title id="title">Quantum-enhanced generative models research note</title>',
+        '<desc id="desc">Conceptual glass seed laboratory beside a concise, evidence-bounded summary of Goh Kun Ming’s HQCGAN research.</desc>',
+        '<defs><linearGradient id="shade" x1="0" y1="0" x2="1" y2="0"><stop offset=".35" stop-color="#020617" stop-opacity="0"/><stop offset=".58" stop-color="#020617" stop-opacity=".8"/><stop offset="1" stop-color="#020617" stop-opacity=".99"/></linearGradient>',
+        '<linearGradient id="line" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#38D9F5"/><stop offset=".55" stop-color="#A78BFA"/><stop offset="1" stop-color="#FB8B7B"/></linearGradient>',
+        '<filter id="rg" x="-100%" y="-100%" width="300%" height="300%"><feGaussianBlur stdDeviation="6" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>',
+        '<clipPath id="rc"><rect width="1200" height="600" rx="30"/></clipPath>',
+        "<style><![CDATA[.rt{font:800 45px Inter,Segoe UI,Arial,sans-serif;fill:#F8FAFC;letter-spacing:-1.4px}.rb{font:500 16px Inter,Segoe UI,Arial,sans-serif;fill:#C2CCE1}.rm{font:700 12px JetBrains Mono,Consolas,monospace;fill:#C8F8FF;letter-spacing:1.35px}.dash{stroke-dasharray:8 12;animation:d 13s linear infinite}.pulse{animation:p 3.6s ease-in-out infinite;transform-box:fill-box;transform-origin:center}@keyframes d{to{stroke-dashoffset:-360}}@keyframes p{0%,100%{opacity:.45;transform:scale(.9)}50%{opacity:1;transform:scale(1.12)}}@media(prefers-reduced-motion:reduce){*{animation:none!important}}]]></style></defs>",
+        '<g clip-path="url(#rc)">',
+        f'<image width="1200" height="600" preserveAspectRatio="xMidYMid slice" xlink:href="data:image/png;base64,{image_data}"/>',
+        '<rect width="1200" height="600" fill="url(#shade)"/>',
+        '<path d="M72 510 C250 438 360 548 542 478 S812 426 1138 470" fill="none" stroke="url(#line)" stroke-width="3" stroke-opacity=".48" class="dash"/>',
+        '<circle cx="198" cy="474" r="7" fill="#38D9F5" filter="url(#rg)" class="pulse"/><circle cx="514" cy="488" r="7" fill="#A78BFA" filter="url(#rg)" class="pulse"/>',
+        '<text x="698" y="78" class="rm">RESEARCH NOTE / ARXIV 2508.09209</text>',
+        '<text x="696" y="145" class="rt">Quantum-enhanced</text><text x="696" y="198" class="rt">generative models</text>',
+        '<text x="698" y="246" class="rb">A reproducible comparison—not a victory lap.</text>',
+        '<text x="698" y="273" class="rb">The classical baseline led overall.</text>',
+    ]
+    metrics = [
+        ("CLASSICAL BASELINE", "comparison anchor", THEME["cyan"]),
+        ("3 · 5 · 7 QUBITS", "hybrid variants", THEME["purple"]),
+        ("BINARY MNIST", "digits 0 and 1", THEME["coral"]),
+        ("FID + KID", "image quality", THEME["green"]),
+    ]
+    for index, (label, note, color) in enumerate(metrics):
+        x = 698 + (index % 2) * 224
+        y = 310 + (index // 2) * 84
+        parts.extend(
+            [
+                f'<rect x="{x}" y="{y}" width="206" height="66" rx="16" fill="#0A1021" fill-opacity=".86" stroke="{color}" stroke-opacity=".42"/>',
+                f'<text x="{x + 15}" y="{y + 26}" class="rm" fill="{color}">{label}</text>',
+                f'<text x="{x + 15}" y="{y + 49}" class="rb">{note}</text>',
+            ]
+        )
+    parts.extend(
+        [
+            '<text x="698" y="511" class="rb">Tests · configs · paper source · documented limitations</text>',
+            '<text x="698" y="552" class="rm">CONCEPTUAL VISUAL · RESULTS LIVE IN THE PAPER</text>',
+            '</g><rect x="1" y="1" width="1198" height="598" rx="29" fill="none" stroke="#A9B8D4" stroke-opacity=".2"/>',
+        ]
+    )
+    return svg_close(parts)
+
+
+def make_craft_map() -> str:
+    """Build a compact map of the tools used across the making process."""
+    stages = [
+        ("01", "Ask", "Data · notebooks · baselines", THEME["cyan"]),
+        ("02", "Model", "PyTorch · TensorFlow · Qiskit", THEME["purple"]),
+        ("03", "Shape", "Python · FastAPI · React · Plotly", THEME["coral"]),
+        ("04", "Ship", "pytest · Actions · Docker · Playwright", THEME["green"]),
+    ]
+    parts = svg_open(
+        470,
+        "Craft map from question to shipped artifact",
+        "Four connected stages and representative tools used to ask, model, shape, and ship projects.",
+    )
+    parts.extend(
+        [
+            '<text x="54" y="62" class="section">The craft map</text>',
+            '<text x="54" y="93" class="body">Tools are supporting characters. The through-line is the way the work gets made.</text>',
+            '<path d="M118 258 C252 144 366 352 506 238 S744 142 874 248 S1044 340 1120 218" class="mesh dash" stroke-width="4"/>',
+        ]
+    )
+    for index, (number, title, tools_text, color) in enumerate(stages):
+        x = 54 + index * 286
+        y = 146 if index % 2 == 0 else 226
+        parts.extend(
+            [
+                f'<g class="{"driftA" if index % 2 == 0 else "driftB"}">',
+                f'<rect x="{x}" y="{y}" width="250" height="150" rx="24" class="glassBright" filter="url(#soft)"/>',
+                f'<circle cx="{x + 30}" cy="{y + 31}" r="10" fill="{color}" filter="url(#glow)" class="pulse"/>',
+                f'<text x="{x + 52}" y="{y + 36}" class="mono">{number}</text>',
+                f'<text x="{x + 24}" y="{y + 81}" class="section">{title}</text>',
+            ]
+        )
+        parts.extend(text_block(wrap(tools_text, 28), x + 24, y + 112, 21, "small"))
+        parts.append("</g>")
     return svg_close(parts)
 
 
@@ -346,11 +428,15 @@ def main() -> None:
     ASSETS.mkdir(parents=True, exist_ok=True)
     generated = {
         "hero-signal-garden.svg": make_hero(),
-        "focus-garden.svg": make_focus_garden(),
-        "project-garden.svg": make_project_garden(),
-        "research-loop.svg": make_research_loop(),
+        "studio-manifesto.svg": make_manifesto(),
+        "research-observatory.svg": make_research_observatory(),
+        "craft-map.svg": make_craft_map(),
         "signal-footer.svg": make_signal_footer(),
     }
+    for index, project in enumerate(PROFILE["projects"][:6]):
+        generated[f"project-{index + 1:02d}-{project['repo']}.svg"] = make_project_specimen(
+            project, index
+        )
     for filename, content in generated.items():
         (ASSETS / filename).write_text(content + "\n", encoding="utf-8")
         print(f"wrote {ASSETS / filename}")

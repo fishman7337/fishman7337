@@ -54,7 +54,7 @@ Also run `git diff --check`. Record exactly which commands ran, their outcomes, 
 
 ## Managed artifacts and data
 
-- Generate the five versioned Signal Garden SVGs with `python scripts/build_assets.py`; do not hand-edit those generated files.
+- Generate the eleven versioned Signal Garden SVGs with `python scripts/build_assets.py`; do not hand-edit those generated files.
 - Refresh the six dynamic cards under `assets/github-telemetry/` with `python scripts/build_github_telemetry_cards.py`; review their time-sensitive data changes explicitly.
 - After deterministic profile regeneration, require `git diff --exit-code -- assets` when no asset drift is expected.
 
@@ -62,7 +62,7 @@ Also run `git diff --check`. Record exactly which commands ran, their outcomes, 
 
 - The generated profile assets are repository automation outputs, not evidence of audience reach or hiring impact.
 - No repository-wide license is granted; obtain permission before reusing code, written content, or generated assets.
-- **Verified local capability:** Python 3.11/3.12; 5 generated SVG assets reproduce without drift.
+- **Verified local capability:** Python 3.11/3.12/3.13; 11 generated SVG assets reproduce without drift.
 - **Known boundary:** No repository-wide license; permission required for reuse.
 
 ## Code, documentation, and evidence standards

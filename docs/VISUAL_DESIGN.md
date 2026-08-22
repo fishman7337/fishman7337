@@ -21,18 +21,38 @@ Lighting/mood: Cyan, electric blue, violet, and a tiny coral accent against near
 Constraints: No text, no letters, no logos, no watermark, and no people. Avoid dense detail on the left, symmetrical centre placement, or stock futurist clichés.
 ```
 
+## Research artwork
+
+`assets/research-seed-lab-v1.png` was generated in the same visual language and embedded into `assets/research-observatory.svg`. It is explicitly labelled as a conceptual visual; measured results remain in the paper.
+
+Final prompt:
+
+```text
+Use case: stylized-concept
+Asset type: conceptual research centerpiece background for a GitHub profile README
+Input images: Image 1 is a style, palette, and material reference only; create a new composition and new subject.
+Primary request: Create an art-directed 3D "quantum seed laboratory" that conceptually represents a careful comparison between classical and hybrid quantum generative models. It must feel like the same Signal Garden world, with scientific restraint and a clear focal hierarchy.
+Scene/backdrop: Deep midnight-indigo studio void, subtle glass work-surface, very faint atmospheric particles.
+Subject: On the left 48–52%, one elegant translucent seed-shaped glass chamber containing a small luminous neural lattice and a few tiny monochrome pixel tiles suggesting binary image generation. Three small orbiting glass nodes with distinct simple ring counts suggest 3, 5, and 7 model variants without using labels. A thin flowing ribbon enters the chamber and a restrained set of output tiles leaves it. This is conceptual artwork, not a data chart.
+Style/medium: Premium cinematic 3D render; realistic glass, pearlescent filaments, fine wireframe, editorial science-visualisation polish; consistent with Image 1.
+Composition/framing: Wide 2:1 banner. Keep the complete visual subject on the left half. Reserve the right 42–46% as calm dark negative space suitable for typography and a small metrics panel. Generous safe margins and no important elements at the edges.
+Lighting/mood: Cyan and violet glass light with a restrained coral accent; quietly curious, precise, credible, sophisticated.
+Constraints: No text, no letters, no numbers, no equations, no logos, no watermark, no people. Do not imply measured results or performance. Avoid clutter, dashboards, interfaces, stock cyberpunk motifs, or symmetrical centre placement.
+```
+
 ## Generated SVG system
 
-`python scripts/build_assets.py` produces five deterministic, accessible SVGs:
+`python scripts/build_assets.py` produces eleven deterministic, accessible SVGs:
 
 - `hero-signal-garden.svg`
-- `focus-garden.svg`
-- `project-garden.svg`
-- `research-loop.svg`
+- `studio-manifesto.svg`
+- six `project-*.svg` specimens
+- `research-observatory.svg`
+- `craft-map.svg`
 - `signal-footer.svg`
 
-They use native SVG, embedded raster artwork, CSS animation, and one SMIL motion path. No JavaScript or external network resource is required. A reduced-motion media query disables decorative animation for visitors who request it.
+They use native SVG, embedded raster artwork, and CSS animation. No JavaScript or external network resource is required. A reduced-motion media query disables decorative animation for visitors who request it.
 
 ## GitHub 3D limitation
 
-Normal GitHub README rendering cannot host an interactive WebGL canvas or an embedded 3D model viewer. The generated hero provides the 3D depth, while the SVG assets add lightweight mesh motion that remains compatible with GitHub's image rendering.
+Normal GitHub README rendering cannot host an interactive WebGL canvas or an embedded 3D model viewer. The generated hero and research centerpiece provide the 3D depth, while the SVG assets add lightweight mesh motion that remains compatible with GitHub's image rendering.

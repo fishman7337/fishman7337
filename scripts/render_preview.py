@@ -45,9 +45,17 @@ def main() -> None:
     inner_width = WIDTH - PADDING * 2
     images = [
         render_svg(ASSETS / "hero-signal-garden.svg", inner_width),
-        render_svg(ASSETS / "focus-garden.svg", inner_width),
-        render_svg(ASSETS / "project-garden.svg", inner_width),
-        render_svg(ASSETS / "research-loop.svg", inner_width),
+        render_svg(ASSETS / "studio-manifesto.svg", inner_width),
+        render_svg(ASSETS / "project-01-hybrid-quantum-classical-gan-research.svg", inner_width),
+        render_svg(ASSETS / "project-02-leaf-object-detection.svg", inner_width),
+        render_svg(ASSETS / "project-03-sp-daaa-dsaa-ca1-haiku-generator.svg", inner_width),
+        render_svg(ASSETS / "project-04-sp-daaa-dsaa-ca2-newspaper-restoration.svg", inner_width),
+        render_svg(
+            ASSETS / "project-05-sp-daaa-pai-ca2-gobest-trip-safety-predictor.svg", inner_width
+        ),
+        render_svg(ASSETS / "project-06-sp-daaa-bed-ca-fitnessquest.svg", inner_width),
+        render_svg(ASSETS / "research-observatory.svg", inner_width),
+        render_svg(ASSETS / "craft-map.svg", inner_width),
         render_svg(ASSETS / "signal-footer.svg", inner_width),
     ]
     height = PADDING * 2 + sum(image.height for image in images) + GAP * (len(images) - 1)
