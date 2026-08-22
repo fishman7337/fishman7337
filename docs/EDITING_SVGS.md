@@ -11,7 +11,9 @@ This bundle is designed so the SVGs are not painful to update.
 python scripts/build_assets.py
 ```
 
-That regenerates every SVG under `assets/`.
+That regenerates the five Signal Garden SVGs under `assets/`.
+
+The integrated hero is generated from `assets/signal-garden-hero-v2.png`; keep that source file in place when rebuilding.
 
 ## Direct SVG editing path
 
@@ -20,7 +22,6 @@ You can also open `assets/*.svg` directly in VS Code, Figma, Illustrator, or Ink
 The SVGs intentionally use:
 
 - Native `<text>` elements, not converted outlines.
-- Stable IDs like `edit-hero-name`, `edit-project-name-1`, and `edit-terminal-cmd-1`.
 - Self-contained CSS animations inside the SVG.
 - No JavaScript and no external resources.
 
@@ -32,4 +33,6 @@ The SVGs intentionally use:
 
 ## Animation control
 
-Animations live in the `<style>` block inside each SVG. Search for class names like `.pulse`, `.dash`, `.scan`, `.floatA`, `.floatB`, `.blink`, `.wave`, and edit timing from there.
+Animations live in the shared `<style>` block produced by `scripts/build_assets.py`.
+The main motion classes are `.pulse`, `.dash`, `.driftA`, `.driftB`, and `.spin`.
+The SVGs also honour `prefers-reduced-motion`.

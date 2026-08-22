@@ -75,11 +75,28 @@ def test_main_generates_well_formed_svg_assets(
     assets.main()
 
     generated = sorted(tmp_path.glob("*.svg"))
-    assert len(generated) == 10
+    assert len(generated) == 5
     for path in generated:
         root = ET.parse(path).getroot()
         assert root.tag.endswith("svg")
         assert root.attrib["viewBox"]
+
+
+def test_readme_uses_the_signal_garden_visual_system() -> None:
+    readme = (REPO_ROOT / "README.md").read_text(encoding="utf-8")
+
+    for asset in [
+        "hero-signal-garden.svg",
+        "focus-garden.svg",
+        "project-garden.svg",
+        "research-loop.svg",
+        "signal-footer.svg",
+    ]:
+        assert f"./assets/{asset}" in readme
+
+    assert "Applied AI & Analytics Student" in (REPO_ROOT / "content" / "profile.yml").read_text(
+        encoding="utf-8"
+    )
 
 
 def test_telemetry_fetch_uses_offline_fallback_for_network_errors(

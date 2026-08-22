@@ -37,7 +37,7 @@ Then regenerate the SVGs:
 python scripts/build_assets.py
 ```
 
-## 4. Enable GitHub Actions for the snake animation
+## 4. Enable GitHub Actions for the contribution animation
 
 The bundle includes:
 
@@ -45,7 +45,7 @@ The bundle includes:
 .github/workflows/snake.yml
 ```
 
-After the workflow runs, you can uncomment the contribution snake section in `README.md`.
+After the workflow runs, the contribution animation referenced by `README.md` is available from the `output` branch.
 
 ## 5. Optional local preview
 
@@ -55,4 +55,4 @@ Run:
 python scripts/render_preview.py
 ```
 
-It creates preview screenshots under `screenshots/`.
+Where Cairo is available, it creates `screenshots/signal-garden-preview.png` for visual QA. Otherwise, open `preview/visual-gallery.html` in a browser; it uses the same checked-in assets without a native rendering dependency.

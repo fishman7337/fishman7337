@@ -12,7 +12,7 @@ The README intentionally keeps claims grounded in public signals and user-provid
 
 - Username: `fishman7337`
 - Name: Goh Kun Ming
-- Role line: Applied AI Research Intern
+- Current public framing: Applied AI & Analytics student
 - Location: Singapore
 - ORCID link visible on GitHub
 - Public repositories and project descriptions visible on GitHub
@@ -29,4 +29,4 @@ The README intentionally keeps claims grounded in public signals and user-provid
 - No exaggerated awards, rankings, or job claims.
 - No invented metrics for model performance beyond the bounded research summary.
 - No fake endorsements.
-- No private or confidential defence details, internal unit names, credentials, or operational specifics.
+- No implied endorsement by an employer, client, school, or other institution.

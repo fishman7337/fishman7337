@@ -67,22 +67,22 @@ FALLBACK_REPOS = [
         "pushed_at": "2026-06-10T00:00:00Z",
     },
     {
-        "name": "ISR",
+        "name": "leaf-object-detection",
         "language": "Python",
         "stargazers_count": 0,
         "forks_count": 0,
         "pushed_at": "2026-06-10T00:00:00Z",
     },
     {
-        "name": "global-security-policy-intelligence",
+        "name": "sp-daaa-dsaa-ca1-haiku-generator",
         "language": "Python",
         "stargazers_count": 0,
         "forks_count": 0,
         "pushed_at": "2026-06-10T00:00:00Z",
     },
     {
-        "name": "yubikey-secure-endpoint-system",
-        "language": "Rust",
+        "name": "sp-daaa-dsaa-ca2-newspaper-restoration",
+        "language": "Python",
         "stargazers_count": 0,
         "forks_count": 0,
         "pushed_at": "2026-06-10T00:00:00Z",
@@ -91,9 +91,23 @@ FALLBACK_REPOS = [
 
 FALLBACK_LANG_BYTES = {
     "Jupyter Notebook": 72,
-    "Python": 24,
-    "Rust": 3,
+    "Python": 27,
     "HTML": 1,
+}
+
+DISPLAY_REPOS = {
+    "fishman7337",
+    "hybrid-quantum-classical-gan-research",
+    "leaf-object-detection",
+    "sp-daaa-dsaa-ca1-haiku-generator",
+    "sp-daaa-dsaa-ca2-newspaper-restoration",
+    "sp-daaa-pai-ca2-gobest-trip-safety-predictor",
+    "sp-daaa-bed-ca-fitnessquest",
+    "sp-daaa-doaa-ca1-housing-price-ml-application",
+    "sp-daaa-doaa-ca2-vegetable-classification-application",
+    "sp-daaa-dele-ca1-movie-review-sentiment-analysis",
+    "sp-daaa-dele-ca2-pendulum-reinforcement-learning",
+    "sp-daaa-davi-ca1-hdb-price-dashboard",
 }
 
 
@@ -108,6 +122,11 @@ def ellipsize(value: str, limit: int) -> str:
     if len(value) <= limit:
         return value
     return value[: limit - 1].rstrip() + "..."
+
+
+def display_repos(repos: list[dict[str, object]]) -> list[dict[str, object]]:
+    """Return repositories selected for named display on the public profile."""
+    return [repo for repo in repos if str(repo.get("name")) in DISPLAY_REPOS]
 
 
 def github_headers() -> dict[str, str]:
@@ -283,7 +302,7 @@ def build_intro() -> None:
     parts = [
         '<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="150" viewBox="0 0 1200 150" role="img" aria-labelledby="title desc">',
         '<title id="title">Applied AI profile intro for Goh Kun Ming</title>',
-        '<desc id="desc">Local intro banner for applied AI research, Singapore Polytechnic, quantum GANs, computer vision, sensor fusion, MLOps, and honest evaluation.</desc>',
+        '<desc id="desc">Local intro banner for an Applied AI and Analytics student exploring generative AI, computer vision, quantum machine learning, and useful data products.</desc>',
         "<defs>",
         '<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">',
         f'<stop offset="0%" stop-color="{COLORS["bg"]}"/>',
@@ -305,7 +324,7 @@ def build_intro() -> None:
         '<rect width="1200" height="150" rx="22" fill="url(#bg)"/>',
         '<rect x="1" y="1" width="1198" height="148" rx="21" fill="none" stroke="#263244"/>',
         '<path d="M34 32 H1166" stroke="url(#neon)" stroke-width="2" opacity=".78"/>',
-        '<text x="600" y="56" text-anchor="middle" class="headline">Goh Kun Ming | Applied AI Research Intern</text>',
+        '<text x="600" y="56" text-anchor="middle" class="headline">Goh Kun Ming | Applied AI &amp; Analytics Student</text>',
         '<text x="600" y="84" text-anchor="middle" class="subhead">Applied AI and Analytics @ Singapore Polytechnic</text>',
         '<g transform="translate(82 106)">',
         '<rect class="chip" x="0" y="-18" width="164" height="32" rx="16"/>',
@@ -313,11 +332,11 @@ def build_intro() -> None:
         '<rect class="chip" x="184" y="-18" width="180" height="32" rx="16"/>',
         '<text x="274" y="3" text-anchor="middle" class="chipText">Computer Vision</text>',
         '<rect class="chip" x="384" y="-18" width="164" height="32" rx="16"/>',
-        '<text x="466" y="3" text-anchor="middle" class="chipText">Sensor Fusion</text>',
+        '<text x="466" y="3" text-anchor="middle" class="chipText">Creative ML</text>',
         '<rect class="chip" x="568" y="-18" width="96" height="32" rx="16"/>',
         '<text x="616" y="3" text-anchor="middle" class="chipText">MLOps</text>',
         '<rect class="chip" x="684" y="-18" width="350" height="32" rx="16"/>',
-        '<text x="859" y="3" text-anchor="middle" class="note">Research-grade systems with honest evaluation</text>',
+        '<text x="859" y="3" text-anchor="middle" class="note">Curious experiments, honest evaluation, useful tools</text>',
         "</g>",
     ]
     svg_close(parts, ROOT / "assets" / "typing-intro.svg")
@@ -332,7 +351,9 @@ def build_profile_details(
 ) -> None:
     """Generate the profile identity and repository-overview card."""
     top_languages = sorted(language_bytes.items(), key=lambda item: item[1], reverse=True)[:5]
-    recent = sorted(repos, key=lambda repo: str(repo.get("pushed_at") or ""), reverse=True)[:4]
+    recent = sorted(
+        display_repos(repos), key=lambda repo: str(repo.get("pushed_at") or ""), reverse=True
+    )[:4]
     parts = svg_open(
         960,
         440,
@@ -480,7 +501,9 @@ def build_language_volume(language_bytes: dict[str, int], generated: str) -> Non
 
 def build_activity_snapshot(repos: list[dict[str, object]], generated: str) -> None:
     """Generate a recent repository-activity snapshot."""
-    recent = sorted(repos, key=lambda repo: str(repo.get("pushed_at") or ""), reverse=True)[:7]
+    recent = sorted(
+        display_repos(repos), key=lambda repo: str(repo.get("pushed_at") or ""), reverse=True
+    )[:7]
     parts = svg_open(
         960,
         330,
@@ -515,7 +538,6 @@ def main() -> None:
     OUT.mkdir(parents=True, exist_ok=True)
     profile, repos, language_bytes, live = fetch_repos()
     generated = datetime.now(SGT).strftime("%Y-%m-%d %H:%M")
-    build_intro()
     build_profile_details(profile, repos, language_bytes, generated, live)
     build_stats(profile, repos, generated)
     build_productive_time(repos, generated)

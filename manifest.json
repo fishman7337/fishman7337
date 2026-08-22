@@ -1,37 +1,21 @@
 {
-  "name": "fishman7337-profile-readme-cyberdeck",
+  "name": "fishman7337-profile-readme-signal-garden",
   "username": "fishman7337",
   "profile_source": "content/profile.yml",
+  "source_assets": [
+    "signal-garden-hero-v2.png"
+  ],
   "generated_assets": [
-    "footer-wave.svg",
-    "hero-cyberdeck.svg",
-    "mission-control.svg",
-    "project-nebula.svg",
-    "quantum-lab.svg",
-    "skill-constellation.svg",
-    "terminal-lab.svg",
-    "typing-intro.svg",
-    "timeline-roadmap.svg",
+    "hero-signal-garden.svg",
+    "focus-garden.svg",
+    "project-garden.svg",
+    "research-loop.svg",
+    "signal-footer.svg",
     "github-telemetry/activity-snapshot.svg",
     "github-telemetry/language-volume.svg",
     "github-telemetry/productive-time.svg",
     "github-telemetry/profile-details.svg",
     "github-telemetry/repos-per-language.svg",
     "github-telemetry/stats.svg"
-  ],
-  "screenshots": [
-    "browser-visual-gallery.png",
-    "footer-wave.png",
-    "github-style-top-preview.png",
-    "hero-cyberdeck.png",
-    "mission-control.png",
-    "project-nebula.png",
-    "quantum-lab.png",
-    "readme-public-gallery-qa.png",
-    "skill-constellation.png",
-    "svg-contact-sheet.png",
-    "terminal-lab.png",
-    "timeline-roadmap.png",
-    "visual-gallery-screenshot.png"
   ]
 }
