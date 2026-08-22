@@ -8,16 +8,10 @@
   ],
   "generated_assets": [
     "hero-curiosity-workshop.svg",
-    "workbench-now.svg",
+    "hero-curiosity-workshop-mobile.svg",
     "project-cabinet.svg",
     "making-machine.svg",
-    "current-curiosities.svg",
     "workshop-footer.svg",
-    "github-telemetry/activity-snapshot.svg",
-    "github-telemetry/language-volume.svg",
-    "github-telemetry/productive-time.svg",
-    "github-telemetry/profile-details.svg",
-    "github-telemetry/repos-per-language.svg",
-    "github-telemetry/stats.svg"
+    "workshop-footer-mobile.svg"
   ]
 }

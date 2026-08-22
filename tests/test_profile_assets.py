@@ -87,11 +87,11 @@ def test_readme_uses_the_curiosity_workshop_visual_system() -> None:
 
     for asset in [
         "hero-curiosity-workshop.svg",
-        "workbench-now.svg",
+        "hero-curiosity-workshop-mobile.svg",
         "project-cabinet.svg",
         "making-machine.svg",
-        "current-curiosities.svg",
         "workshop-footer.svg",
+        "workshop-footer-mobile.svg",
     ]:
         assert f"./assets/{asset}" in readme
 

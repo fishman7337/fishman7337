@@ -11,8 +11,8 @@ identity:
   email: kunmingaden@gmail.com
   github: https://github.com/fishman7337
   linkedin: https://www.linkedin.com/in/gohkunming/
-  tagline: I turn curious questions into experiments, and experiments into things people can explore.
-  motto: Stay curious. Make it clear. Leave it useful.
+  tagline: I build machine-learning systems you can inspect, test, and use.
+  motto: Curious by default. Clear by design.
 
 signals:
   - Generative Systems

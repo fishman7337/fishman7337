@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="430" viewBox="0 0 1200 430" role="img" aria-labelledby="title desc"><title id="title">How an idea leaves the workshop</title><desc id="desc">An animated assembly line moves from question through data, baseline, experiment, product, and sharing.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="430" viewBox="0 0 1200 430" role="img" aria-labelledby="title desc"><title id="title">From question to useful</title><desc id="desc">An animated path moves through question, data, baseline, experiment, product, and sharing.</desc>
 <defs>
   <linearGradient id="night" x1="0" y1="0" x2="1" y2="1">
     <stop offset="0" stop-color="#080B12"/>
@@ -10,17 +10,6 @@
     <stop offset=".5" stop-color="#B89DFF"/>
     <stop offset="1" stop-color="#FF9B7A"/>
   </linearGradient>
-  <linearGradient id="copper" x1="0" y1="0" x2="1" y2="1">
-    <stop offset="0" stop-color="#F2C76E"/>
-    <stop offset=".5" stop-color="#D99362"/>
-    <stop offset="1" stop-color="#FF9B7A"/>
-  </linearGradient>
-  <radialGradient id="globe" cx="35%" cy="28%" r="75%">
-    <stop offset="0" stop-color="#F3EBDD"/>
-    <stop offset=".18" stop-color="#63D9D1" stop-opacity=".95"/>
-    <stop offset=".62" stop-color="#B89DFF" stop-opacity=".58"/>
-    <stop offset="1" stop-color="#131523" stop-opacity=".2"/>
-  </radialGradient>
   <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
     <path d="M32 0H0V32" fill="none" stroke="#F3EBDD" stroke-opacity=".045"/>
   </pattern>
@@ -32,27 +21,23 @@
     <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
   </filter>
   <style><![CDATA[
-    .display{font:800 55px Inter,Segoe UI,Arial,sans-serif;fill:#FFF9EF;letter-spacing:-2px}
-    .title{font:800 38px Inter,Segoe UI,Arial,sans-serif;fill:#FFF9EF;letter-spacing:-1px}
-    .section{font:780 27px Inter,Segoe UI,Arial,sans-serif;fill:#FFF9EF;letter-spacing:-.45px}
-    .cardTitle{font:760 20px Inter,Segoe UI,Arial,sans-serif;fill:#FFF9EF}
-    .body{font:500 16px Inter,Segoe UI,Arial,sans-serif;fill:#B9B3AC}
-    .small{font:560 13px Inter,Segoe UI,Arial,sans-serif;fill:#B9B3AC}
-    .mono{font:700 12px 'JetBrains Mono',Consolas,monospace;fill:#F3EBDD;letter-spacing:1.5px}
-    .panel{fill:#171923;fill-opacity:.9;stroke:#F3EBDD;stroke-opacity:.13}
+    .display{font:800 58px Inter,Segoe UI,Arial,sans-serif;fill:#FFF9EF;letter-spacing:-2px}
+    .mobileDisplay{font:800 64px Inter,Segoe UI,Arial,sans-serif;fill:#FFF9EF;letter-spacing:-2px}
+    .title{font:800 40px Inter,Segoe UI,Arial,sans-serif;fill:#FFF9EF;letter-spacing:-1px}
+    .section{font:780 28px Inter,Segoe UI,Arial,sans-serif;fill:#FFF9EF;letter-spacing:-.45px}
+    .body{font:520 18px Inter,Segoe UI,Arial,sans-serif;fill:#B9B3AC}
+    .mobileBody{font:520 25px Inter,Segoe UI,Arial,sans-serif;fill:#B9B3AC}
+    .small{font:570 15px Inter,Segoe UI,Arial,sans-serif;fill:#B9B3AC}
+    .mono{font:720 13px 'JetBrains Mono',Consolas,monospace;fill:#F3EBDD;letter-spacing:1.5px}
     .wire{fill:none;stroke:url(#signal);stroke-width:2;stroke-linecap:round}
     .dash{stroke-dasharray:8 13;animation:dash 13s linear infinite}
     .floatA{animation:floatA 6.5s ease-in-out infinite;transform-box:fill-box;transform-origin:center}
     .floatB{animation:floatB 8s ease-in-out infinite;transform-box:fill-box;transform-origin:center}
     .pulse{animation:pulse 3.2s ease-in-out infinite;transform-box:fill-box;transform-origin:center}
-    .spin{animation:spin 24s linear infinite;transform-box:fill-box;transform-origin:center}
-    .scan{animation:scan 5.5s ease-in-out infinite}
     @keyframes dash{to{stroke-dashoffset:-420}}
-    @keyframes floatA{0%,100%{transform:translateY(0)}50%{transform:translateY(-9px)}}
+    @keyframes floatA{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
     @keyframes floatB{0%,100%{transform:translateY(0)}50%{transform:translateY(7px)}}
     @keyframes pulse{0%,100%{opacity:.55;transform:scale(.94)}50%{opacity:1;transform:scale(1.08)}}
-    @keyframes spin{to{transform:rotate(360deg)}}
-    @keyframes scan{0%,100%{opacity:.15;transform:translateX(-35px)}50%{opacity:.72;transform:translateX(35px)}}
     @media(prefers-reduced-motion:reduce){*{animation:none!important}}
   ]]></style>
-</defs><rect width="1200" height="430" rx="28" fill="url(#night)"/><rect width="1200" height="430" rx="28" fill="url(#grid)"/><rect x="1" y="1" width="1198" height="428" rx="27" fill="none" stroke="#F3EBDD" stroke-opacity=".14"/><text x="54" y="56" class="mono">THE MAKING MACHINE / 06 STATIONS</text><text x="54" y="106" class="title">A question is only the beginning.</text><text x="55" y="137" class="body">The interesting work is turning it into evidence, an artifact, and a path someone else can follow.</text><path id="route" d="M92 280 C226 193 340 350 474 262 S704 183 838 270 S1008 334 1110 245" fill="none" stroke="#F3EBDD" stroke-opacity=".16" stroke-width="34" stroke-linecap="round"/><path d="M92 280 C226 193 340 350 474 262 S704 183 838 270 S1008 334 1110 245" class="wire dash" stroke-width="3"/><g class="floatA"><circle cx="92" cy="280" r="32" fill="#171923" stroke="#63D9D1" stroke-opacity=".72" filter="url(#soft)"/><circle cx="92" cy="280" r="10" fill="#63D9D1" fill-opacity=".86" class="pulse"/><text x="92" y="342" text-anchor="middle" class="mono">01</text><text x="92" y="364" text-anchor="middle" class="small">Question</text></g><g class="floatB"><circle cx="290" cy="252" r="32" fill="#171923" stroke="#75A9FF" stroke-opacity=".72" filter="url(#soft)"/><circle cx="290" cy="252" r="10" fill="#75A9FF" fill-opacity=".86" class="pulse"/><text x="290" y="314" text-anchor="middle" class="mono">02</text><text x="290" y="336" text-anchor="middle" class="small">Data</text></g><g class="floatA"><circle cx="474" cy="262" r="32" fill="#171923" stroke="#B89DFF" stroke-opacity=".72" filter="url(#soft)"/><circle cx="474" cy="262" r="10" fill="#B89DFF" fill-opacity=".86" class="pulse"/><text x="474" y="324" text-anchor="middle" class="mono">03</text><text x="474" y="346" text-anchor="middle" class="small">Baseline</text></g><g class="floatB"><circle cx="672" cy="229" r="32" fill="#171923" stroke="#FF9B7A" stroke-opacity=".72" filter="url(#soft)"/><circle cx="672" cy="229" r="10" fill="#FF9B7A" fill-opacity=".86" class="pulse"/><text x="672" y="291" text-anchor="middle" class="mono">04</text><text x="672" y="313" text-anchor="middle" class="small">Experiment</text></g><g class="floatA"><circle cx="838" cy="270" r="32" fill="#171923" stroke="#F2C76E" stroke-opacity=".72" filter="url(#soft)"/><circle cx="838" cy="270" r="10" fill="#F2C76E" fill-opacity=".86" class="pulse"/><text x="838" y="332" text-anchor="middle" class="mono">05</text><text x="838" y="354" text-anchor="middle" class="small">Product</text></g><g class="floatB"><circle cx="1110" cy="245" r="32" fill="#171923" stroke="#8FBE72" stroke-opacity=".72" filter="url(#soft)"/><circle cx="1110" cy="245" r="10" fill="#8FBE72" fill-opacity=".86" class="pulse"/><text x="1110" y="307" text-anchor="middle" class="mono">06</text><text x="1110" y="329" text-anchor="middle" class="small">Share</text></g><circle r="9" fill="#FFF9EF" filter="url(#glow)"><animateMotion dur="8s" repeatCount="indefinite" rotate="auto"><mpath href="#route"/></animateMotion></circle><text x="54" y="399" class="mono">COMPLEXITY HAS TO EARN ITS PLACE</text></svg>
+</defs><rect width="1200" height="430" rx="28" fill="url(#night)"/><rect width="1200" height="430" rx="28" fill="url(#grid)"/><rect x="1" y="1" width="1198" height="428" rx="27" fill="none" stroke="#F3EBDD" stroke-opacity=".14"/><text x="54" y="57" class="mono">FROM QUESTION TO USEFUL / 06 STAGES</text><text x="54" y="110" class="title">The model is only the middle.</text><text x="55" y="145" class="body">Good work also explains where it came from and how someone else can try it.</text><path id="route" d="M92 280C226 193 340 350 474 262S704 183 838 270S1008 334 1110 245" fill="none" stroke="#F3EBDD" stroke-opacity=".16" stroke-width="34" stroke-linecap="round"/><path d="M92 280C226 193 340 350 474 262S704 183 838 270S1008 334 1110 245" class="wire dash" stroke-width="3"/><g class="floatA"><circle cx="92" cy="280" r="33" fill="#171923" stroke="#63D9D1" stroke-opacity=".75" filter="url(#soft)"/><circle cx="92" cy="280" r="10" fill="#63D9D1" class="pulse"/><text x="92" y="341" text-anchor="middle" class="mono">01</text><text x="92" y="365" text-anchor="middle" class="small">Question</text></g><g class="floatB"><circle cx="290" cy="252" r="33" fill="#171923" stroke="#75A9FF" stroke-opacity=".75" filter="url(#soft)"/><circle cx="290" cy="252" r="10" fill="#75A9FF" class="pulse"/><text x="290" y="313" text-anchor="middle" class="mono">02</text><text x="290" y="337" text-anchor="middle" class="small">Data</text></g><g class="floatA"><circle cx="474" cy="262" r="33" fill="#171923" stroke="#B89DFF" stroke-opacity=".75" filter="url(#soft)"/><circle cx="474" cy="262" r="10" fill="#B89DFF" class="pulse"/><text x="474" y="323" text-anchor="middle" class="mono">03</text><text x="474" y="347" text-anchor="middle" class="small">Baseline</text></g><g class="floatB"><circle cx="672" cy="229" r="33" fill="#171923" stroke="#FF9B7A" stroke-opacity=".75" filter="url(#soft)"/><circle cx="672" cy="229" r="10" fill="#FF9B7A" class="pulse"/><text x="672" y="290" text-anchor="middle" class="mono">04</text><text x="672" y="314" text-anchor="middle" class="small">Experiment</text></g><g class="floatA"><circle cx="838" cy="270" r="33" fill="#171923" stroke="#F2C76E" stroke-opacity=".75" filter="url(#soft)"/><circle cx="838" cy="270" r="10" fill="#F2C76E" class="pulse"/><text x="838" y="331" text-anchor="middle" class="mono">05</text><text x="838" y="355" text-anchor="middle" class="small">Product</text></g><g class="floatB"><circle cx="1110" cy="245" r="33" fill="#171923" stroke="#8FBE72" stroke-opacity=".75" filter="url(#soft)"/><circle cx="1110" cy="245" r="10" fill="#8FBE72" class="pulse"/><text x="1110" y="306" text-anchor="middle" class="mono">06</text><text x="1110" y="330" text-anchor="middle" class="small">Share</text></g><circle r="9" fill="#FFF9EF" filter="url(#glow)"><animateMotion dur="8s" repeatCount="indefinite" rotate="auto"><mpath href="#route"/></animateMotion></circle><text x="54" y="402" class="mono">QUESTION · EVIDENCE · ARTIFACT · HANDOFF</text></svg>

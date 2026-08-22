@@ -13,7 +13,7 @@ python scripts/build_assets.py
 
 That regenerates the six Curiosity Workshop SVGs under `assets/`.
 
-The integrated hero and project cabinet are generated from `assets/curiosity-workshop-hero-v1.png` and `assets/project-cabinet-v1.png`; keep both source files in place when rebuilding.
+The responsive heroes and project cabinet are generated from `assets/curiosity-workshop-hero-v1.png` and `assets/project-cabinet-v1.png`; keep both source files in place when rebuilding.
 
 ## Direct SVG editing path
 

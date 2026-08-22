@@ -4,7 +4,7 @@ The profile is designed as a tactile creative-computing atelier rather than a co
 
 ## Hero artwork
 
-<code>assets/curiosity-workshop-hero-v1.png</code> was created with the built-in OpenAI image-generation tool and is embedded into <code>assets/hero-curiosity-workshop.svg</code>. The SVG adds accessible identity copy and lightweight decorative motion.
+<code>assets/curiosity-workshop-hero-v1.png</code> was created with the built-in OpenAI image-generation tool and is embedded into both desktop and mobile hero compositions. The narrow composition uses a taller layout and deliberate crop instead of shrinking desktop typography.
 
 Final prompt:
 
@@ -47,14 +47,14 @@ Avoid: generic cyberpunk neon, chaotic clutter, random floating icons, inaccessi
 <code>python scripts/build_assets.py</code> produces six deterministic, accessible SVGs:
 
 - <code>hero-curiosity-workshop.svg</code>
-- <code>workbench-now.svg</code>
+- <code>hero-curiosity-workshop-mobile.svg</code>
 - <code>project-cabinet.svg</code>
 - <code>making-machine.svg</code>
-- <code>current-curiosities.svg</code>
 - <code>workshop-footer.svg</code>
+- <code>workshop-footer-mobile.svg</code>
 
 They use native SVG, embedded raster artwork, CSS/SMIL motion, no JavaScript, and no external network resource. A reduced-motion media query disables decorative animation when requested.
 
 ## Why the 3D is rendered
 
-Normal GitHub README rendering cannot host an interactive WebGL canvas or embedded model viewer. The two generated stills provide convincing 3D depth, the SVG layer adds motion, and the expandable project drawers provide reliable interaction inside GitHub.
+Normal GitHub README rendering cannot host an interactive WebGL canvas or embedded model viewer. The two generated stills provide convincing 3D depth, the SVG layer adds motion, and the expandable project drawers provide reliable interaction inside GitHub. Native Markdown carries most explanatory copy so it remains readable in both GitHub themes and at narrow widths.

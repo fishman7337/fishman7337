@@ -45,11 +45,11 @@ def main() -> None:
     inner_width = WIDTH - PADDING * 2
     images = [
         render_svg(ASSETS / "hero-curiosity-workshop.svg", inner_width),
-        render_svg(ASSETS / "workbench-now.svg", inner_width),
+        render_svg(ASSETS / "hero-curiosity-workshop-mobile.svg", inner_width // 2),
         render_svg(ASSETS / "project-cabinet.svg", inner_width),
         render_svg(ASSETS / "making-machine.svg", inner_width),
-        render_svg(ASSETS / "current-curiosities.svg", inner_width),
         render_svg(ASSETS / "workshop-footer.svg", inner_width),
+        render_svg(ASSETS / "workshop-footer-mobile.svg", inner_width // 2),
     ]
     height = PADDING * 2 + sum(image.height for image in images) + GAP * (len(images) - 1)
     canvas = Image.new("RGB", (WIDTH, height), BACKGROUND)
