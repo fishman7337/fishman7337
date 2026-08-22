@@ -75,30 +75,44 @@ def test_main_generates_well_formed_svg_assets(
     assets.main()
 
     generated = sorted(tmp_path.glob("*.svg"))
-    assert len(generated) == 11
+    assert len(generated) == 6
     for path in generated:
         root = ET.parse(path).getroot()
         assert root.tag.endswith("svg")
         assert root.attrib["viewBox"]
 
 
-def test_readme_uses_the_signal_garden_visual_system() -> None:
+def test_readme_uses_the_curiosity_workshop_visual_system() -> None:
     readme = (REPO_ROOT / "README.md").read_text(encoding="utf-8")
 
     for asset in [
-        "hero-signal-garden.svg",
-        "studio-manifesto.svg",
-        "project-01-hybrid-quantum-classical-gan-research.svg",
-        "project-06-sp-daaa-bed-ca-fitnessquest.svg",
-        "research-observatory.svg",
-        "craft-map.svg",
-        "signal-footer.svg",
+        "hero-curiosity-workshop.svg",
+        "workbench-now.svg",
+        "project-cabinet.svg",
+        "making-machine.svg",
+        "current-curiosities.svg",
+        "workshop-footer.svg",
     ]:
         assert f"./assets/{asset}" in readme
 
     assert "Applied AI & Analytics Student" in (REPO_ROOT / "content" / "profile.yml").read_text(
         encoding="utf-8"
     )
+    assert readme.count("<details") >= 8
+
+
+def test_profile_does_not_use_retired_identity_framing() -> None:
+    """Keep earlier affiliations and paper-index branding out of the profile."""
+    paths = [
+        REPO_ROOT / "README.md",
+        REPO_ROOT / "content" / "profile.yml",
+        REPO_ROOT / "scripts" / "build_assets.py",
+    ]
+    retired = ("ra" + "id", "rs" + "af", "ae" + "ther", "ar" + "xiv", "or" + "cid")
+
+    for path in paths:
+        text = path.read_text(encoding="utf-8").lower()
+        assert all(term not in text for term in retired)
 
 
 def test_telemetry_fetch_uses_offline_fallback_for_network_errors(

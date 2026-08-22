@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="390" viewBox="0 0 1200 390" role="img" aria-labelledby="title desc"><title id="title">On the workbench</title><desc id="desc">Three cards describe what Kun Ming is learning, building, and optimising for.</desc>
+<defs>
+  <linearGradient id="night" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#080B12"/>
+    <stop offset=".58" stop-color="#141522"/>
+    <stop offset="1" stop-color="#211A25"/>
+  </linearGradient>
+  <linearGradient id="signal" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#63D9D1"/>
+    <stop offset=".5" stop-color="#B89DFF"/>
+    <stop offset="1" stop-color="#FF9B7A"/>
+  </linearGradient>
+  <linearGradient id="copper" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#F2C76E"/>
+    <stop offset=".5" stop-color="#D99362"/>
+    <stop offset="1" stop-color="#FF9B7A"/>
+  </linearGradient>
+  <radialGradient id="globe" cx="35%" cy="28%" r="75%">
+    <stop offset="0" stop-color="#F3EBDD"/>
+    <stop offset=".18" stop-color="#63D9D1" stop-opacity=".95"/>
+    <stop offset=".62" stop-color="#B89DFF" stop-opacity=".58"/>
+    <stop offset="1" stop-color="#131523" stop-opacity=".2"/>
+  </radialGradient>
+  <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+    <path d="M32 0H0V32" fill="none" stroke="#F3EBDD" stroke-opacity=".045"/>
+  </pattern>
+  <filter id="soft" x="-30%" y="-30%" width="160%" height="170%">
+    <feDropShadow dx="0" dy="16" stdDeviation="18" flood-color="#02040A" flood-opacity=".58"/>
+  </filter>
+  <filter id="glow" x="-100%" y="-100%" width="300%" height="300%">
+    <feGaussianBlur stdDeviation="6" result="b"/>
+    <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+  <style><![CDATA[
+    .display{font:800 55px Inter,Segoe UI,Arial,sans-serif;fill:#FFF9EF;letter-spacing:-2px}
+    .title{font:800 38px Inter,Segoe UI,Arial,sans-serif;fill:#FFF9EF;letter-spacing:-1px}
+    .section{font:780 27px Inter,Segoe UI,Arial,sans-serif;fill:#FFF9EF;letter-spacing:-.45px}
+    .cardTitle{font:760 20px Inter,Segoe UI,Arial,sans-serif;fill:#FFF9EF}
+    .body{font:500 16px Inter,Segoe UI,Arial,sans-serif;fill:#B9B3AC}
+    .small{font:560 13px Inter,Segoe UI,Arial,sans-serif;fill:#B9B3AC}
+    .mono{font:700 12px 'JetBrains Mono',Consolas,monospace;fill:#F3EBDD;letter-spacing:1.5px}
+    .panel{fill:#171923;fill-opacity:.9;stroke:#F3EBDD;stroke-opacity:.13}
+    .wire{fill:none;stroke:url(#signal);stroke-width:2;stroke-linecap:round}
+    .dash{stroke-dasharray:8 13;animation:dash 13s linear infinite}
+    .floatA{animation:floatA 6.5s ease-in-out infinite;transform-box:fill-box;transform-origin:center}
+    .floatB{animation:floatB 8s ease-in-out infinite;transform-box:fill-box;transform-origin:center}
+    .pulse{animation:pulse 3.2s ease-in-out infinite;transform-box:fill-box;transform-origin:center}
+    .spin{animation:spin 24s linear infinite;transform-box:fill-box;transform-origin:center}
+    .scan{animation:scan 5.5s ease-in-out infinite}
+    @keyframes dash{to{stroke-dashoffset:-420}}
+    @keyframes floatA{0%,100%{transform:translateY(0)}50%{transform:translateY(-9px)}}
+    @keyframes floatB{0%,100%{transform:translateY(0)}50%{transform:translateY(7px)}}
+    @keyframes pulse{0%,100%{opacity:.55;transform:scale(.94)}50%{opacity:1;transform:scale(1.08)}}
+    @keyframes spin{to{transform:rotate(360deg)}}
+    @keyframes scan{0%,100%{opacity:.15;transform:translateX(-35px)}50%{opacity:.72;transform:translateX(35px)}}
+    @media(prefers-reduced-motion:reduce){*{animation:none!important}}
+  ]]></style>
+</defs><rect width="1200" height="390" rx="28" fill="url(#night)"/><rect width="1200" height="390" rx="28" fill="url(#grid)"/><rect x="1" y="1" width="1198" height="388" rx="27" fill="none" stroke="#F3EBDD" stroke-opacity=".14"/><text x="54" y="56" class="mono">ON THE WORKBENCH / NOW</text><text x="54" y="105" class="title">Learning is the input. Useful things are the output.</text><text x="55" y="136" class="body">A small studio for careful experiments, approachable tools, and visible reasoning.</text><g transform="translate(54 180)"><g class="floatA"><rect width="342" height="150" rx="24" class="panel" filter="url(#soft)"/><path d="M0 20L22 0l22 20-22 20Z" transform="translate(25 24) scale(.68)" fill="#63D9D1" fill-opacity=".17" stroke="#63D9D1" stroke-width="2"/><text x="84" y="43" class="mono" fill="#63D9D1">01 / APPLIED AI &amp; ANALYTICS</text><text x="24" y="86" class="cardTitle">Learning deeply</text><text x="24" y="113" class="small">Building foundations across modelling,</text><text x="24" y="134" class="small">data, software, and evaluation.</text></g></g><g transform="translate(428 180)"><g class="floatB"><rect width="342" height="150" rx="24" class="panel" filter="url(#soft)"/><path d="M0 0h44v44H0z" transform="translate(25 24) scale(.68)" fill="#B89DFF" fill-opacity=".17" stroke="#B89DFF" stroke-width="2"/><text x="84" y="43" class="mono" fill="#B89DFF">02 / EXPERIMENTS + PRODUCTS</text><text x="24" y="86" class="cardTitle">Building openly</text><text x="24" y="113" class="small">Keeping the reasoning, tests, and</text><text x="24" y="134" class="small">trade-offs close to the artifact.</text></g></g><g transform="translate(802 180)"><g class="floatA"><rect width="342" height="150" rx="24" class="panel" filter="url(#soft)"/><path d="M22 0a22 22 0 1 1-.1 0Z" transform="translate(25 24) scale(.68)" fill="#FF9B7A" fill-opacity=".17" stroke="#FF9B7A" stroke-width="2"/><text x="84" y="43" class="mono" fill="#FF9B7A">03 / CLARITY + USEFULNESS</text><text x="24" y="86" class="cardTitle">Optimising for</text><text x="24" y="113" class="small">Making technical work easier to inspect,</text><text x="24" y="134" class="small">understand, and try.</text></g></g><path d="M45 354H1155" stroke="url(#signal)" stroke-opacity=".42" class="dash"/><circle cx="1072" cy="354" r="6" fill="#F2C76E" class="pulse" filter="url(#glow)"/></svg>

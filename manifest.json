@@ -1,23 +1,18 @@
 {
-  "name": "fishman7337-profile-readme-signal-garden",
+  "name": "fishman7337-profile-readme-curiosity-workshop",
   "username": "fishman7337",
   "profile_source": "content/profile.yml",
   "source_assets": [
-    "signal-garden-hero-v2.png",
-    "research-seed-lab-v1.png"
+    "curiosity-workshop-hero-v1.png",
+    "project-cabinet-v1.png"
   ],
   "generated_assets": [
-    "hero-signal-garden.svg",
-    "studio-manifesto.svg",
-    "project-01-hybrid-quantum-classical-gan-research.svg",
-    "project-02-leaf-object-detection.svg",
-    "project-03-sp-daaa-dsaa-ca1-haiku-generator.svg",
-    "project-04-sp-daaa-dsaa-ca2-newspaper-restoration.svg",
-    "project-05-sp-daaa-pai-ca2-gobest-trip-safety-predictor.svg",
-    "project-06-sp-daaa-bed-ca-fitnessquest.svg",
-    "research-observatory.svg",
-    "craft-map.svg",
-    "signal-footer.svg",
+    "hero-curiosity-workshop.svg",
+    "workbench-now.svg",
+    "project-cabinet.svg",
+    "making-machine.svg",
+    "current-curiosities.svg",
+    "workshop-footer.svg",
     "github-telemetry/activity-snapshot.svg",
     "github-telemetry/language-volume.svg",
     "github-telemetry/productive-time.svg",

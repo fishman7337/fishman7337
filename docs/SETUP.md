@@ -55,4 +55,4 @@ Run:
 python scripts/render_preview.py
 ```
 
-Where Cairo is available, it creates `screenshots/signal-garden-preview.png` for visual QA. Otherwise, open `preview/visual-gallery.html` in a browser; it uses the same checked-in assets without a native rendering dependency.
+Where Cairo is available, it creates `screenshots/curiosity-workshop-preview.png` for visual QA. Otherwise, open `preview/visual-gallery.html` in a browser; it uses the same checked-in assets without a native rendering dependency.

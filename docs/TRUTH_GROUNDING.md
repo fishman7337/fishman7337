@@ -1,32 +1,30 @@
 # Truth grounding notes
 
-The README intentionally keeps claims grounded in public signals and user-provided information.
+The README keeps claims grounded in public project signals and user-provided information.
 
 ## User-provided
 
-- LinkedIn URL: `https://www.linkedin.com/in/gohkunming/`
-- GitHub URL: `https://github.com/fishman7337`
-- Email: `kunmingaden@gmail.com`
+- LinkedIn URL: <code>https://www.linkedin.com/in/gohkunming/</code>
+- GitHub URL: <code>https://github.com/fishman7337</code>
+- Email: <code>kunmingaden@gmail.com</code>
 
 ## Public GitHub profile signals checked
 
-- Username: `fishman7337`
+- Username: <code>fishman7337</code>
 - Name: Goh Kun Ming
 - Current public framing: Applied AI & Analytics student
 - Location: Singapore
-- ORCID link visible on GitHub
 - Public repositories and project descriptions visible on GitHub
 
-## Public research signal checked
+## Project evidence checked
 
-- arXiv: `2508.09209`
-- Title: `Quantum-Enhanced Generative Adversarial Networks: Comparative Analysis of Classical and Hybrid Quantum-Classical Generative Adversarial Networks`
-- Author: Kun Ming Goh
-- Claims included in the README are aligned with the public abstract: classical GAN comparison, 3/5/7-qubit HQCGAN variants, Qiskit AerSimulator, binary MNIST, FID/KID evaluation.
+- The six featured repositories are public.
+- Project descriptions remain bounded to capabilities represented in the repository documentation.
+- The hybrid generative-model project is presented as one build among many, with no identity or performance claim inferred from it.
 
 ## Deliberately avoided
 
 - No exaggerated awards, rankings, or job claims.
-- No invented metrics for model performance beyond the bounded research summary.
+- No invented metrics for model performance.
 - No fake endorsements.
 - No implied endorsement by an employer, client, school, or other institution.

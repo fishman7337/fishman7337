@@ -11,9 +11,9 @@ This bundle is designed so the SVGs are not painful to update.
 python scripts/build_assets.py
 ```
 
-That regenerates the eleven Signal Garden SVGs under `assets/`.
+That regenerates the six Curiosity Workshop SVGs under `assets/`.
 
-The integrated hero and research centerpiece are generated from `assets/signal-garden-hero-v2.png` and `assets/research-seed-lab-v1.png`; keep both source files in place when rebuilding.
+The integrated hero and project cabinet are generated from `assets/curiosity-workshop-hero-v1.png` and `assets/project-cabinet-v1.png`; keep both source files in place when rebuilding.
 
 ## Direct SVG editing path
 
@@ -34,5 +34,5 @@ The SVGs intentionally use:
 ## Animation control
 
 Animations live in the shared `<style>` block produced by `scripts/build_assets.py`.
-The main motion classes are `.pulse`, `.dash`, `.driftA`, `.driftB`, and `.spin`.
+The main motion classes are `.pulse`, `.dash`, `.floatA`, `.floatB`, `.spin`, and `.scan`.
 The SVGs also honour `prefers-reduced-motion`.

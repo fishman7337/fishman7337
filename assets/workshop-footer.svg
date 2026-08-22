@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="190" viewBox="0 0 1200 190" role="img" aria-labelledby="title desc"><title id="title">Workshop closing note</title><desc id="desc">A warm animated light path with a motto about curiosity, clarity, and usefulness.</desc>
+<defs>
+  <linearGradient id="night" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#080B12"/>
+    <stop offset=".58" stop-color="#141522"/>
+    <stop offset="1" stop-color="#211A25"/>
+  </linearGradient>
+  <linearGradient id="signal" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#63D9D1"/>
+    <stop offset=".5" stop-color="#B89DFF"/>
+    <stop offset="1" stop-color="#FF9B7A"/>
+  </linearGradient>
+  <linearGradient id="copper" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#F2C76E"/>
+    <stop offset=".5" stop-color="#D99362"/>
+    <stop offset="1" stop-color="#FF9B7A"/>
+  </linearGradient>
+  <radialGradient id="globe" cx="35%" cy="28%" r="75%">
+    <stop offset="0" stop-color="#F3EBDD"/>
+    <stop offset=".18" stop-color="#63D9D1" stop-opacity=".95"/>
+    <stop offset=".62" stop-color="#B89DFF" stop-opacity=".58"/>
+    <stop offset="1" stop-color="#131523" stop-opacity=".2"/>
+  </radialGradient>
+  <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+    <path d="M32 0H0V32" fill="none" stroke="#F3EBDD" stroke-opacity=".045"/>
+  </pattern>
+  <filter id="soft" x="-30%" y="-30%" width="160%" height="170%">
+    <feDropShadow dx="0" dy="16" stdDeviation="18" flood-color="#02040A" flood-opacity=".58"/>
+  </filter>
+  <filter id="glow" x="-100%" y="-100%" width="300%" height="300%">
+    <feGaussianBlur stdDeviation="6" result="b"/>
+    <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+  <style><![CDATA[
+    .display{font:800 55px Inter,Segoe UI,Arial,sans-serif;fill:#FFF9EF;letter-spacing:-2px}
+    .title{font:800 38px Inter,Segoe UI,Arial,sans-serif;fill:#FFF9EF;letter-spacing:-1px}
+    .section{font:780 27px Inter,Segoe UI,Arial,sans-serif;fill:#FFF9EF;letter-spacing:-.45px}
+    .cardTitle{font:760 20px Inter,Segoe UI,Arial,sans-serif;fill:#FFF9EF}
+    .body{font:500 16px Inter,Segoe UI,Arial,sans-serif;fill:#B9B3AC}
+    .small{font:560 13px Inter,Segoe UI,Arial,sans-serif;fill:#B9B3AC}
+    .mono{font:700 12px 'JetBrains Mono',Consolas,monospace;fill:#F3EBDD;letter-spacing:1.5px}
+    .panel{fill:#171923;fill-opacity:.9;stroke:#F3EBDD;stroke-opacity:.13}
+    .wire{fill:none;stroke:url(#signal);stroke-width:2;stroke-linecap:round}
+    .dash{stroke-dasharray:8 13;animation:dash 13s linear infinite}
+    .floatA{animation:floatA 6.5s ease-in-out infinite;transform-box:fill-box;transform-origin:center}
+    .floatB{animation:floatB 8s ease-in-out infinite;transform-box:fill-box;transform-origin:center}
+    .pulse{animation:pulse 3.2s ease-in-out infinite;transform-box:fill-box;transform-origin:center}
+    .spin{animation:spin 24s linear infinite;transform-box:fill-box;transform-origin:center}
+    .scan{animation:scan 5.5s ease-in-out infinite}
+    @keyframes dash{to{stroke-dashoffset:-420}}
+    @keyframes floatA{0%,100%{transform:translateY(0)}50%{transform:translateY(-9px)}}
+    @keyframes floatB{0%,100%{transform:translateY(0)}50%{transform:translateY(7px)}}
+    @keyframes pulse{0%,100%{opacity:.55;transform:scale(.94)}50%{opacity:1;transform:scale(1.08)}}
+    @keyframes spin{to{transform:rotate(360deg)}}
+    @keyframes scan{0%,100%{opacity:.15;transform:translateX(-35px)}50%{opacity:.72;transform:translateX(35px)}}
+    @media(prefers-reduced-motion:reduce){*{animation:none!important}}
+  ]]></style>
+</defs><rect width="1200" height="190" rx="28" fill="url(#night)"/><rect width="1200" height="190" rx="28" fill="url(#grid)"/><rect x="1" y="1" width="1198" height="188" rx="27" fill="none" stroke="#F3EBDD" stroke-opacity=".14"/><path d="M0 138C168 38 294 178 452 108S724 48 874 116s222 50 326-30" class="wire dash" stroke-width="3" opacity=".72"/><path d="M0 168C170 86 322 197 500 136s300-34 448 14 188 20 252-8" class="wire dash" opacity=".34"/><circle cx="119" cy="108" r="7" fill="#63D9D1" class="pulse" filter="url(#glow)"/><circle cx="1080" cy="102" r="7" fill="#FF9B7A" class="pulse" filter="url(#glow)"/><text x="600" y="80" text-anchor="middle" class="section">Stay curious. Make it clear. Leave it useful.</text><text x="600" y="112" text-anchor="middle" class="body">Thanks for looking around the workshop.</text></svg>

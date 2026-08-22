@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Render a compact visual QA preview of the Signal Garden profile assets."""
+"""Render a compact visual QA preview of the Curiosity Workshop assets."""
 
 from __future__ import annotations
 
@@ -44,19 +44,12 @@ def main() -> None:
     SCREENSHOTS.mkdir(parents=True, exist_ok=True)
     inner_width = WIDTH - PADDING * 2
     images = [
-        render_svg(ASSETS / "hero-signal-garden.svg", inner_width),
-        render_svg(ASSETS / "studio-manifesto.svg", inner_width),
-        render_svg(ASSETS / "project-01-hybrid-quantum-classical-gan-research.svg", inner_width),
-        render_svg(ASSETS / "project-02-leaf-object-detection.svg", inner_width),
-        render_svg(ASSETS / "project-03-sp-daaa-dsaa-ca1-haiku-generator.svg", inner_width),
-        render_svg(ASSETS / "project-04-sp-daaa-dsaa-ca2-newspaper-restoration.svg", inner_width),
-        render_svg(
-            ASSETS / "project-05-sp-daaa-pai-ca2-gobest-trip-safety-predictor.svg", inner_width
-        ),
-        render_svg(ASSETS / "project-06-sp-daaa-bed-ca-fitnessquest.svg", inner_width),
-        render_svg(ASSETS / "research-observatory.svg", inner_width),
-        render_svg(ASSETS / "craft-map.svg", inner_width),
-        render_svg(ASSETS / "signal-footer.svg", inner_width),
+        render_svg(ASSETS / "hero-curiosity-workshop.svg", inner_width),
+        render_svg(ASSETS / "workbench-now.svg", inner_width),
+        render_svg(ASSETS / "project-cabinet.svg", inner_width),
+        render_svg(ASSETS / "making-machine.svg", inner_width),
+        render_svg(ASSETS / "current-curiosities.svg", inner_width),
+        render_svg(ASSETS / "workshop-footer.svg", inner_width),
     ]
     height = PADDING * 2 + sum(image.height for image in images) + GAP * (len(images) - 1)
     canvas = Image.new("RGB", (WIDTH, height), BACKGROUND)
@@ -66,7 +59,7 @@ def main() -> None:
         canvas.paste(image, (PADDING, y))
         y += image.height + GAP
     draw.rounded_rectangle((8, 8, WIDTH - 9, height - 9), radius=22, outline="#30363D", width=2)
-    destination = SCREENSHOTS / "signal-garden-preview.png"
+    destination = SCREENSHOTS / "curiosity-workshop-preview.png"
     canvas.save(destination, optimize=True)
     print(f"wrote {destination}")
 

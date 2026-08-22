@@ -11,79 +11,86 @@ identity:
   email: kunmingaden@gmail.com
   github: https://github.com/fishman7337
   linkedin: https://www.linkedin.com/in/gohkunming/
-  orcid: https://orcid.org/0009-0008-7666-781X
-  arxiv: https://arxiv.org/abs/2508.09209
-  tagline: Turning curious questions into reproducible ML experiments, creative tools, and useful data products.
-  motto: Stay curious. Measure honestly. Build with care.
+  tagline: I turn curious questions into experiments, and experiments into things people can explore.
+  motto: Stay curious. Make it clear. Leave it useful.
 
 signals:
-  - Generative AI
+  - Generative Systems
   - Computer Vision
-  - Quantum ML
+  - Algorithms
   - Data Products
-  - MLOps
   - Creative Coding
+  - Product Engineering
 
-research:
-  title: Quantum-Enhanced GANs
-  subtitle: Classical and Hybrid Quantum-Classical Generative Adversarial Networks
-  arxiv_id: "2508.09209"
-  summary: A reproducible comparison of classical GAN baselines and noisy quantum-circuit latent priors.
-  bullets:
-    - Classical GAN compared with 3-, 5-, and 7-qubit HQCGAN variants
-    - Qiskit AerSimulator with realistic noise models
-    - Binary MNIST digits 0 and 1 under constrained latent dimensions
-    - FID and KID evaluation with bounded claims and documented limitations
+workbench:
+  - title: Learning deeply
+    label: Applied AI & Analytics
+    desc: Building foundations across modelling, data, software, and evaluation.
+  - title: Building openly
+    label: Experiments + products
+    desc: Keeping the reasoning, tests, and trade-offs close to the artifact.
+  - title: Optimising for
+    label: Clarity + usefulness
+    desc: Making technical work easier to inspect, understand, and try.
 
-focus_cards:
-  - title: Explore
-    label: Questions
-    desc: Find a worthwhile question and understand the data before choosing a model.
-  - title: Model
-    label: Experiments
-    desc: Build honest baselines, test assumptions, and keep the comparison reproducible.
-  - title: Build
-    label: Products
-    desc: Turn useful ideas into approachable apps, pipelines, and documented workflows.
-  - title: Share
-    label: Open work
-    desc: Publish the reasoning, limitations, and artifacts that make the work reviewable.
+process:
+  - Question
+  - Data
+  - Baseline
+  - Experiment
+  - Product
+  - Share
+
+curiosities:
+  - title: Generative systems
+    desc: Small, inspectable experiments that make model behaviour easier to reason about.
+  - title: Computer vision
+    desc: Reliable paths from messy data and validation to inference people can actually use.
+  - title: Human-friendly ML
+    desc: Interfaces and explanations that help a model become a useful learning object.
 
 projects:
-  - name: HQCGAN Research
+  - name: Hybrid Generative Models
     repo: hybrid-quantum-classical-gan-research
-    theme: Quantum ML
-    desc: Classical and hybrid quantum-classical GAN experiments with reproducible evaluation.
-    stack: Qiskit · TensorFlow · FID/KID · arXiv
+    theme: Generative ML
+    question: What changes when a classical image generator receives a circuit-based latent prior?
+    desc: A reproducible comparison of classical and hybrid generative-model variants with bounded evaluation.
+    stack: Qiskit · TensorFlow · FID/KID · Reproducibility
   - name: Leaf Object Detection
     repo: leaf-object-detection
     theme: Computer Vision
+    question: How do you make the entire detection pipeline trustworthy, not just the training run?
     desc: Reproducible YOLO data preparation, validation, training, export, and browser-inference tooling.
     stack: Python · YOLO · ONNX · Computer Vision
   - name: HaikuForge AI
     repo: sp-daaa-dsaa-ca1-haiku-generator
     theme: Creative ML
+    question: Can a constrained text generator feel playful while keeping its rules visible?
     desc: Syllable-aware Markov generation, poetic transformations, batch permutations, and WAV narration.
     stack: Python · Markov Chains · Audio · NLP
   - name: Newspaper Restoration
     repo: sp-daaa-dsaa-ca2-newspaper-restoration
     theme: Algorithms
-    desc: Explainable text restoration with prefix tries, wildcard matching, fuzzy search, and graph visualisation.
+    question: How can damaged historical text be restored through explainable search structures?
+    desc: Prefix tries, wildcard matching, fuzzy search, and graph visualisation in one restoration toolkit.
     stack: Python · Tries · Edit Distance · NetworkX
   - name: GoBest Trip Predictor
     repo: sp-daaa-pai-ca2-gobest-trip-safety-predictor
     theme: Applied ML
-    desc: An educational offline desktop ML app with batch inference, feedback, drift checks, and packaged tests.
+    question: What does it take to package a prediction workflow for reliable offline use?
+    desc: A desktop ML app with batch inference, feedback, drift checks, and packaged smoke tests.
     stack: Python · CustomTkinter · scikit-learn · PyInstaller
   - name: FitnessQuest
     repo: sp-daaa-bed-ca-fitnessquest
     theme: Full-Stack
-    desc: A gamified fitness web app with authenticated APIs, browser tests, and responsive user journeys.
+    question: How can a fitness journey become engaging without hiding the engineering underneath?
+    desc: A gamified web app with authenticated APIs, browser tests, and responsive user journeys.
     stack: Node.js · Express · MySQL · Playwright
   - name: EstateScope AI
     repo: sp-daaa-doaa-ca1-housing-price-ml-application
     theme: Multimodal ML
-    desc: A housing-value application combining tabular, text, and image signals with deployment documentation.
+    question: How can tabular, text, and image signals meet in one housing-value workflow?
+    desc: A housing-value application with multimodal modelling and deployment documentation.
     stack: Flask · scikit-learn · NLP · CNN
 
 skills:
@@ -117,30 +124,18 @@ skills:
     - Reproducibility
     - Documentation
 
-timeline:
-  - date: "2024"
-    title: Started building
-    desc: Learned to turn analysis, web development, and machine learning coursework into working artifacts.
-  - date: "2025"
-    title: Published research
-    desc: Released an arXiv preprint comparing classical and hybrid quantum-classical GANs.
-  - date: Now
-    title: Growing the garden
-    desc: Building approachable AI tools across vision, language, data, and product engineering.
-  - date: Next
-    title: Deeper experiments
-    desc: More reproducible research, stronger evaluation, and more useful open-source releases.
-
 theme:
-  bg0: "#040714"
-  bg1: "#10132A"
-  panel: "#12182C"
-  panel2: "#17213A"
-  cyan: "#38D9F5"
-  blue: "#60A5FA"
-  purple: "#A78BFA"
-  pink: "#F472B6"
-  coral: "#FB8B7B"
-  green: "#5EEAD4"
-  text: "#F7FAFF"
-  muted: "#A8B4D1"
+  bg0: "#080B12"
+  bg1: "#141522"
+  panel: "#171923"
+  panel2: "#20212E"
+  cyan: "#63D9D1"
+  blue: "#75A9FF"
+  purple: "#B89DFF"
+  coral: "#FF9B7A"
+  copper: "#D99362"
+  amber: "#F2C76E"
+  green: "#8FBE72"
+  paper: "#F3EBDD"
+  text: "#FFF9EF"
+  muted: "#B9B3AC"

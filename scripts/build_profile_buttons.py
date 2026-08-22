@@ -24,23 +24,6 @@ BUTTONS = [
         "https://api.iconify.design/simple-icons:linkedin.svg?color=%230A66C2",
     ),
     ("email", 174, "Email", "say hello", "https://cdn.simpleicons.org/gmail/EA4335"),
-    ("orcid", 184, "ORCID", "research id", "https://cdn.simpleicons.org/orcid/A6CE39"),
-    ("arxiv", 174, "arXiv", "2508.09209", "https://cdn.simpleicons.org/arxiv/B31B1B"),
-    (
-        "read-preprint",
-        226,
-        "Read preprint",
-        "arXiv:2508.09209",
-        "https://cdn.simpleicons.org/arxiv/B31B1B",
-    ),
-    ("public-work", 184, "Public work", "portfolio ready", ""),
-    ("research-grade", 206, "Research grade", "honest evaluation", ""),
-    ("ai-systems", 174, "AI systems", "ML + MLOps", ""),
-    ("singapore", 174, "Singapore", "SGT UTC+8", ""),
-    ("quantum-ml", 190, "Quantum ML", "research domain", ""),
-    ("gans", 142, "GANs", "model family", ""),
-    ("qiskit", 154, "Qiskit", "tooling", "https://cdn.simpleicons.org/qiskit/6929C4"),
-    ("fid-kid", 154, "FID / KID", "evaluation", ""),
 ]
 
 
@@ -83,25 +66,25 @@ def button(
 <desc id="desc">{title_esc} profile button</desc>
 <defs>
   <linearGradient id="bg-{slug}" x1="0" y1="0" x2="1" y2="1">
-    <stop offset="0%" stop-color="#111827"/>
-    <stop offset="52%" stop-color="#0B1F2A"/>
-    <stop offset="100%" stop-color="#061F1B"/>
+    <stop offset="0%" stop-color="#1B1A22"/>
+    <stop offset="55%" stop-color="#11151D"/>
+    <stop offset="100%" stop-color="#17131A"/>
   </linearGradient>
   <linearGradient id="stroke-{slug}" x1="0" y1="0" x2="1" y2="0">
-    <stop offset="0%" stop-color="#22D3EE"/>
-    <stop offset="46%" stop-color="#A78BFA"/>
-    <stop offset="100%" stop-color="#FB7185"/>
+    <stop offset="0%" stop-color="#63D9D1"/>
+    <stop offset="48%" stop-color="#D99362"/>
+    <stop offset="100%" stop-color="#FF9B7A"/>
   </linearGradient>
   <filter id="shadow-{slug}" x="-16%" y="-32%" width="132%" height="164%">
     <feDropShadow dx="0" dy="7" stdDeviation="7" flood-color="#020617" flood-opacity="0.45"/>
   </filter>
 </defs>
 <rect x="2" y="2" width="{width - 4}" height="50" rx="14" fill="url(#bg-{slug})" stroke="url(#stroke-{slug})" stroke-width="1.3" filter="url(#shadow-{slug})"/>
-<rect x="10" y="9" width="38" height="36" rx="11" fill="#020617" opacity="0.72"/>
-<rect x="11" y="10" width="36" height="34" rx="10" fill="#F8FAFC" opacity="0.08"/>
+<rect x="10" y="9" width="38" height="36" rx="11" fill="#080B12" opacity="0.86"/>
+<rect x="11" y="10" width="36" height="34" rx="10" fill="#F3EBDD" opacity="0.07"/>
 {mark}
-<text x="60" y="24" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="13" font-weight="800" fill="#ECFEFF">{title_esc}</text>
-<text x="60" y="39" font-family="JetBrains Mono, Consolas, monospace" font-size="9" font-weight="700" fill="#9EEBD9">{subtitle_esc}</text>
+<text x="60" y="24" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="13" font-weight="800" fill="#FFF9EF">{title_esc}</text>
+<text x="60" y="39" font-family="JetBrains Mono, Consolas, monospace" font-size="9" font-weight="700" fill="#B9B3AC">{subtitle_esc}</text>
 </svg>
 '''
 
