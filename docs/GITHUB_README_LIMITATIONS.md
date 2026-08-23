@@ -10,4 +10,4 @@ This bundle uses GitHub-compatible methods:
 - Expandable details and summary sections.
 - CSS/SMIL-style animation inside self-contained SVG files.
 
-Interactive WebGL scenes, embedded 3D model viewers, custom JavaScript, and pointer-driven 3D controls are not supported in a normal GitHub profile README. The Spatial Portfolio therefore combines rendered 3D scenes, animated SVG meshes, linked STL/OBJ files, and native expandable drawers that work reliably inside GitHub.
+Interactive WebGL scenes, embedded 3D model viewers, custom JavaScript, and pointer-driven 3D controls are not supported inside a normal GitHub profile README. The Spatial Portfolio therefore combines rendered 3D scenes, animated SVG meshes, linked STL/OBJ files, and native expandable drawers. Opening the linked STL page uses GitHub's separate interactive model preview with solid, surface-angle, and wireframe modes.

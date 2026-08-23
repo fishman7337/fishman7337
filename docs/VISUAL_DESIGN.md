@@ -121,4 +121,4 @@ The STL and OBJ contain 1,728 vertices and 3,456 triangular faces. The SVG proje
 
 ## GitHub rendering boundary
 
-A normal GitHub README cannot host a JavaScript/WebGL model viewer. The profile therefore uses rendered 3D scenes and animated SVG mesh overlays inside the README, then links the actual model files for inspection or download. Native Markdown carries the long-form copy so it remains readable in both GitHub themes and at narrow widths.
+A normal GitHub README cannot host a JavaScript/WebGL model viewer. The profile therefore uses rendered 3D scenes and animated SVG mesh overlays inside the README, then links the actual STL to GitHub's separate interactive model preview and provides the OBJ for download. Native Markdown carries the long-form copy so it remains readable in both GitHub themes and at narrow widths.

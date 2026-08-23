@@ -139,7 +139,7 @@ The shape below is not a mock-up. It is generated from a parametric **(2, 3) tor
 </a>
 
 <p align="center">
-  <a href="./assets/models/curiosity-knot.stl"><b>Open the STL mesh</b></a>
+  <a href="./assets/models/curiosity-knot.stl"><b>Open the interactive 3D viewer</b></a>
   &nbsp;·&nbsp;
   <a href="./assets/models/curiosity-knot.obj"><b>Download the OBJ model</b></a>
   &nbsp;·&nbsp;
