@@ -75,23 +75,26 @@ def test_main_generates_well_formed_svg_assets(
     assets.main()
 
     generated = sorted(tmp_path.glob("*.svg"))
-    assert len(generated) == 6
+    assert len(generated) == 8
     for path in generated:
         root = ET.parse(path).getroot()
         assert root.tag.endswith("svg")
         assert root.attrib["viewBox"]
 
 
-def test_readme_uses_the_curiosity_workshop_visual_system() -> None:
+def test_readme_uses_the_spatial_portfolio_visual_system() -> None:
     readme = (REPO_ROOT / "README.md").read_text(encoding="utf-8")
 
     for asset in [
-        "hero-curiosity-workshop.svg",
-        "hero-curiosity-workshop-mobile.svg",
-        "project-cabinet.svg",
-        "making-machine.svg",
-        "workshop-footer.svg",
-        "workshop-footer-mobile.svg",
+        "spatial-hero.svg",
+        "spatial-hero-mobile.svg",
+        "world-generative-vision.svg",
+        "world-language-memory.svg",
+        "world-movement-products.svg",
+        "curiosity-knot-wireframe.svg",
+        "tool-constellation.svg",
+        "spatial-footer.svg",
+        "spatial-footer-mobile.svg",
     ]:
         assert f"./assets/{asset}" in readme
 
@@ -101,12 +104,42 @@ def test_readme_uses_the_curiosity_workshop_visual_system() -> None:
     assert readme.count("<details") >= 8
 
 
+def test_3d_mesh_generation_is_well_formed(tmp_path: Path, monkeypatch: pytest.MonkeyPatch) -> None:
+    mesh = load_script("build_3d_mesh.py")
+    models = tmp_path / "models"
+    monkeypatch.setattr(mesh, "ASSETS", tmp_path)
+    monkeypatch.setattr(mesh, "MODELS", models)
+
+    mesh.main()
+
+    stl = (models / "curiosity-knot.stl").read_text(encoding="ascii")
+    obj = (models / "curiosity-knot.obj").read_text(encoding="ascii")
+    preview = tmp_path / "curiosity-knot-wireframe.svg"
+
+    assert stl.startswith("solid curiosity_knot")
+    assert stl.count("facet normal") == 3456
+    assert sum(line.startswith("v ") for line in obj.splitlines()) == 1728
+    assert sum(line.startswith("f ") for line in obj.splitlines()) == 3456
+    assert ET.parse(preview).getroot().tag.endswith("svg")
+
+
+def test_readme_mesh_claims_match_the_generator() -> None:
+    readme = (REPO_ROOT / "README.md").read_text(encoding="utf-8")
+
+    assert "1,728 vertices" in readme
+    assert "3,456 triangular faces" in readme
+    assert "./assets/models/curiosity-knot.stl" in readme
+    assert "./assets/models/curiosity-knot.obj" in readme
+
+
 def test_profile_does_not_use_retired_identity_framing() -> None:
     """Keep earlier affiliations and paper-index branding out of the profile."""
     paths = [
         REPO_ROOT / "README.md",
         REPO_ROOT / "content" / "profile.yml",
         REPO_ROOT / "scripts" / "build_assets.py",
+        REPO_ROOT / "manifest.json",
+        *sorted((REPO_ROOT / "docs").glob("*.md")),
     ]
     retired = ("ra" + "id", "rs" + "af", "ae" + "ther", "ar" + "xiv", "or" + "cid")
 

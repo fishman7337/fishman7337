@@ -6,6 +6,8 @@ on:
     paths:
       - "content/profile.yml"
       - "scripts/build_assets.py"
+      - "scripts/build_3d_mesh.py"
+      - "assets/*-v1.png"
 
 permissions:
   contents: read
@@ -29,9 +31,11 @@ jobs:
       - name: Install dependencies
         run: pip install pyyaml
       - name: Generate SVG assets
-        run: python scripts/build_assets.py
+        run: |
+          python scripts/build_assets.py
+          python scripts/build_3d_mesh.py
       - name: Commit generated assets
         uses: stefanzweifel/git-auto-commit-action@4a55954c782fc1ea30b9056cd3e7a2b40ca8887d # v7.2.0
         with:
           commit_message: "chore: rebuild editable profile SVG assets"
-          file_pattern: "assets/*.svg"
+          file_pattern: "assets/*.svg assets/models/*.stl assets/models/*.obj"

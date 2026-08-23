@@ -58,4 +58,5 @@ jobs:
       - name: Verify committed SVG assets are current
         run: |
           python scripts/build_assets.py
+          python scripts/build_3d_mesh.py
           git diff --exit-code -- assets

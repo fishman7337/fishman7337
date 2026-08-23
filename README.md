@@ -1,8 +1,8 @@
 <div align="center">
 
 <picture>
-  <source media="(max-width: 600px)" srcset="./assets/hero-curiosity-workshop-mobile.svg" />
-  <img src="./assets/hero-curiosity-workshop.svg" width="100%" alt="Goh Kun Ming — Applied AI and Analytics student beside a tactile 3D creative-computing workbench" />
+  <source media="(max-width: 600px)" srcset="./assets/spatial-hero-mobile.svg" />
+  <img src="./assets/spatial-hero.svg" width="100%" alt="Goh Kun Ming — Applied AI and Analytics student in a cinematic spatial portfolio of glass, mesh, data, and product forms" />
 </picture>
 
 <p>
@@ -13,114 +13,112 @@
   <a href="mailto:kunmingaden@gmail.com"><b>Email</b></a>
 </p>
 
+<p><b>I like the space between an interesting model and a genuinely useful tool.</b></p>
+
 </div>
 
-## Hello — I’m Kun Ming.
+I’m **Kun Ming**, an Applied AI & Analytics student in Singapore. I build experiments that keep their reasoning visible: the question, the baseline, the evidence, the limitations, and the path from notebook to something another person can actually try.
 
-I build machine-learning systems that are easier to **inspect, test, and use**. I enjoy the complete journey: finding the useful question, understanding the data, building the honest baseline, testing the interesting idea, and turning the result into software someone else can explore.
+This profile is arranged as **three connected worlds** rather than a wall of badges. Each world pairs two builds that share a deeper question.
 
-Right now I’m studying **Applied AI & Analytics in Singapore** and building across generative systems, computer vision, algorithms, data products, and product engineering.
+## 01 / Generative vision
 
-## Six builds. Six questions.
+<img src="./assets/world-generative-vision.svg" width="100%" alt="A cinematic generative-model sculpture connected by luminous mesh to a geometric leaf detection rig" />
 
-<picture>
-  <img src="./assets/project-cabinet.svg" width="100%" alt="A tactile 3D cabinet containing six exhibits for generative models, leaf detection, creative writing, text restoration, trip planning, and fitness software" />
-</picture>
-
-The visual is the index. Open any drawer for the question, the build, and the code.
+**What if we could see both the model’s possibility and the pipeline’s proof?**
 
 <details>
-<summary><b>01 · Hybrid Generative Models</b></summary>
+<summary><b>Hybrid Generative Models</b> — comparing classical and circuit-based latent priors</summary>
 
 <br />
 
-**Question:** What changes when a classical image generator receives a circuit-based latent prior?
-
-A reproducible comparison of a classical baseline and several hybrid variants, with shared configuration, controlled evaluation, and documented limits.
+One controlled question, several model variants, shared configuration, and bounded evaluation. The interesting part is not novelty by itself; it is whether the comparison remains reproducible and interpretable.
 
 <code>Qiskit</code> · <code>TensorFlow</code> · <code>GANs</code> · <code>FID / KID</code>
 
-**[Open repository →](https://github.com/fishman7337/hybrid-quantum-classical-gan-research)**
+**[Explore the experiment →](https://github.com/fishman7337/hybrid-quantum-classical-gan-research)**
 
 </details>
 
 <details>
-<summary><b>02 · Leaf Object Detection</b></summary>
+<summary><b>Leaf Object Detection</b> — making the whole vision pipeline inspectable</summary>
 
 <br />
 
-**Question:** How do you make the entire detection workflow trustworthy, not just the training run?
+Annotation checks, dataset preparation, training, evaluation, ONNX export, and browser inference connected as one reproducible path—not a training notebook floating on its own.
 
-Annotation checks, dataset preparation, YOLO training, evaluation, ONNX export, and browser inference connected in one reproducible path.
+<code>Python</code> · <code>YOLO</code> · <code>ONNX</code> · <code>Browser inference</code>
 
-<code>Python</code> · <code>YOLO</code> · <code>ONNX</code> · <code>Computer vision</code>
-
-**[Open repository →](https://github.com/fishman7337/leaf-object-detection)**
+**[Explore the pipeline →](https://github.com/fishman7337/leaf-object-detection)**
 
 </details>
 
+## 02 / Language & memory
+
+<img src="./assets/world-language-memory.svg" width="100%" alt="Warm paper poetry curling through a luminous graph into a restored archival document" />
+
+**Can an algorithm preserve structure without sanding away character?**
+
 <details>
-<summary><b>03 · HaikuForge AI</b></summary>
+<summary><b>HaikuForge AI</b> — constrained generation that keeps its rules visible</summary>
 
 <br />
 
-**Question:** Can a constrained text generator feel playful while keeping its rules visible?
-
-A compact creative system combining syllable-aware Markov generation, poetic transformations, batch variation, and WAV narration.
+A playful language system built from syllable-aware Markov generation, poetic transformations, controlled batch variation, and WAV narration.
 
 <code>Python</code> · <code>Markov chains</code> · <code>NLP</code> · <code>Audio</code>
 
-**[Open repository →](https://github.com/fishman7337/sp-daaa-dsaa-ca1-haiku-generator)**
+**[Open the forge →](https://github.com/fishman7337/sp-daaa-dsaa-ca1-haiku-generator)**
 
 </details>
 
 <details>
-<summary><b>04 · Newspaper Restoration</b></summary>
+<summary><b>Newspaper Restoration</b> — explainable search for damaged text</summary>
 
 <br />
 
-**Question:** How can damaged historical text be restored through explainable search structures?
-
-A restoration toolkit built from prefix tries, wildcard recovery, edit-distance search, and graph visualisation.
+Prefix tries, wildcard recovery, edit-distance search, and graph visualisation combine into a restoration toolkit whose decisions can be followed rather than merely accepted.
 
 <code>Tries</code> · <code>Edit distance</code> · <code>NetworkX</code> · <code>pytest</code>
 
-**[Open repository →](https://github.com/fishman7337/sp-daaa-dsaa-ca2-newspaper-restoration)**
+**[Inspect the restoration toolkit →](https://github.com/fishman7337/sp-daaa-dsaa-ca2-newspaper-restoration)**
 
 </details>
 
+## 03 / Movement & products
+
+<img src="./assets/world-movement-products.svg" width="100%" alt="A coral route moving across dark topographic terrain into a glass product progress ring" />
+
+**How does a prediction become an experience people can navigate?**
+
 <details>
-<summary><b>05 · GoBest Trip Predictor</b></summary>
+<summary><b>GoBest Trip Predictor</b> — packaging prediction for reliable offline use</summary>
 
 <br />
 
-**Question:** What does it take to package a prediction workflow for reliable offline use?
-
-A desktop ML application with batch inference, feedback capture, lightweight drift checks, packaging, and smoke tests.
+A desktop ML application with batch inference, feedback capture, lightweight drift checks, packaging, and smoke tests—the less glamorous work that makes a model usable.
 
 <code>scikit-learn</code> · <code>CustomTkinter</code> · <code>PyInstaller</code>
 
-**[Open repository →](https://github.com/fishman7337/sp-daaa-pai-ca2-gobest-trip-safety-predictor)**
+**[Take the route →](https://github.com/fishman7337/sp-daaa-pai-ca2-gobest-trip-safety-predictor)**
 
 </details>
 
 <details>
-<summary><b>06 · FitnessQuest</b></summary>
+<summary><b>FitnessQuest</b> — turning progress into a responsive product journey</summary>
 
 <br />
-
-**Question:** How can a fitness journey become engaging without hiding the engineering underneath?
 
 A gamified web application with authenticated APIs, a relational data layer, responsive journeys, and automated browser flows.
 
 <code>Node.js</code> · <code>Express</code> · <code>MySQL</code> · <code>Playwright</code>
 
-**[Open repository →](https://github.com/fishman7337/sp-daaa-bed-ca-fitnessquest)**
+**[Enter the quest →](https://github.com/fishman7337/sp-daaa-bed-ca-fitnessquest)**
 
 </details>
 
 <details>
-<summary><b>More experiments</b></summary>
+<summary><b>More experiments in the orbit</b></summary>
 
 <br />
 
@@ -132,41 +130,51 @@ A gamified web application with authenticated APIs, a relational data layer, res
 
 </details>
 
-## How I turn curiosity into software
+## The build mesh
 
-<img src="./assets/making-machine.svg" width="100%" alt="An animated path carries an idea through question, data, baseline, experiment, product, and sharing" />
+The shape below is not a mock-up. It is generated from a parametric **(2, 3) torus-knot tube**: 1,728 vertices and 3,456 triangular faces. It stands for the way I work—question, data, baseline, experiment, product, and sharing are separate strands, but the useful artifact is one continuous object.
 
-The stages are intentionally ordinary. They stop an interesting model from being mistaken for a finished product.
+<a href="./assets/models/curiosity-knot.stl">
+  <img src="./assets/curiosity-knot-wireframe.svg" width="100%" alt="Animated wireframe preview of the downloadable Curiosity Knot 3D mesh" />
+</a>
 
-> **Working rule:** complexity has to earn its place. A good build leaves behind the question, baseline, configuration, tests, limitations, and a path for someone else to try it.
+<p align="center">
+  <a href="./assets/models/curiosity-knot.stl"><b>Open the STL mesh</b></a>
+  &nbsp;·&nbsp;
+  <a href="./assets/models/curiosity-knot.obj"><b>Download the OBJ model</b></a>
+  &nbsp;·&nbsp;
+  <a href="./scripts/build_3d_mesh.py"><b>Read the generator</b></a>
+</p>
 
-## What I keep coming back to
+> **Working rule:** complexity has to earn its place. A strong build leaves behind the question, baseline, configuration, tests, limitations, and a path for someone else to try it.
 
-- **Generative systems** — small, inspectable experiments that make model behaviour easier to reason about.
-- **Computer vision** — reliable paths from messy data and validation to inference people can actually use.
-- **Human-friendly ML** — interfaces and explanations that turn models into useful learning objects.
+## Tool constellation
+
+<img src="./assets/tool-constellation.svg" width="100%" alt="A cinematic constellation connecting model, data, product, and delivery tools as one system" />
+
+I care less about collecting tools than about connecting them into a clear path from evidence to experience.
 
 <details>
-<summary><b>Toolbox</b></summary>
+<summary><b>Open the toolbox</b></summary>
 
 <br />
 
-- **Modelling:** <code>Python</code> · <code>PyTorch</code> · <code>TensorFlow</code> · <code>Keras</code> · <code>scikit-learn</code> · <code>Qiskit</code> · <code>OpenCV</code>
+- **Models:** <code>Python</code> · <code>PyTorch</code> · <code>TensorFlow</code> · <code>Keras</code> · <code>scikit-learn</code> · <code>Qiskit</code> · <code>OpenCV</code>
 - **Data:** <code>Pandas</code> · <code>NumPy</code> · <code>SQL</code> · <code>Matplotlib</code> · <code>Plotly</code> · <code>Tableau</code>
-- **Product:** <code>Flask</code> · <code>FastAPI</code> · <code>Node.js</code> · <code>React</code> · <code>PostgreSQL</code>
+- **Products:** <code>Flask</code> · <code>FastAPI</code> · <code>Node.js</code> · <code>React</code> · <code>PostgreSQL</code>
 - **Delivery:** <code>pytest</code> · <code>Playwright</code> · <code>Ruff</code> · <code>Docker</code> · <code>GitHub Actions</code>
 
 </details>
 
 ## Open work, clearly explained
 
-I prefer repositories that preserve the reasoning—not just the final screenshot. That means reproducible setup, tests, limitations, and enough context for another person to inspect the work.
+I prefer repositories that preserve the reasoning—not just the final screenshot. That means reproducible setup, tests, honest limitations, and enough context for another person to inspect the work.
 
-**[Browse all repositories →](https://github.com/fishman7337?tab=repositories)**
+**[Browse every repository →](https://github.com/fishman7337?tab=repositories)**
 
-## Say hello
+## Let’s compare notes
 
-If you are exploring careful ML experiments, creative computation, computer vision, or better ways to turn a model into a useful product, I’d be glad to compare notes.
+If you are exploring careful ML experiments, creative computation, computer vision, or better ways to turn a model into a useful product, I’d be glad to hear from you.
 
 <p align="center">
   <a href="mailto:kunmingaden@gmail.com"><b>Email</b></a>
@@ -177,6 +185,8 @@ If you are exploring careful ML experiments, creative computation, computer visi
 </p>
 
 <picture>
-  <source media="(max-width: 600px)" srcset="./assets/workshop-footer-mobile.svg" />
-  <img src="./assets/workshop-footer.svg" width="100%" alt="Curious by default. Clear by design." />
+  <source media="(max-width: 600px)" srcset="./assets/spatial-footer-mobile.svg" />
+  <img src="./assets/spatial-footer.svg" width="100%" alt="An open luminous orbit closing the spatial portfolio" />
 </picture>
+
+<p align="center"><sub>Curious by default. Clear by design.</sub></p>

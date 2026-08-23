@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Render a compact visual QA preview of the Curiosity Workshop assets."""
+"""Render a compact visual QA preview of the Spatial Portfolio assets."""
 
 from __future__ import annotations
 
@@ -44,12 +44,15 @@ def main() -> None:
     SCREENSHOTS.mkdir(parents=True, exist_ok=True)
     inner_width = WIDTH - PADDING * 2
     images = [
-        render_svg(ASSETS / "hero-curiosity-workshop.svg", inner_width),
-        render_svg(ASSETS / "hero-curiosity-workshop-mobile.svg", inner_width // 2),
-        render_svg(ASSETS / "project-cabinet.svg", inner_width),
-        render_svg(ASSETS / "making-machine.svg", inner_width),
-        render_svg(ASSETS / "workshop-footer.svg", inner_width),
-        render_svg(ASSETS / "workshop-footer-mobile.svg", inner_width // 2),
+        render_svg(ASSETS / "spatial-hero.svg", inner_width),
+        render_svg(ASSETS / "spatial-hero-mobile.svg", inner_width // 2),
+        render_svg(ASSETS / "world-generative-vision.svg", inner_width),
+        render_svg(ASSETS / "world-language-memory.svg", inner_width),
+        render_svg(ASSETS / "world-movement-products.svg", inner_width),
+        render_svg(ASSETS / "curiosity-knot-wireframe.svg", inner_width),
+        render_svg(ASSETS / "tool-constellation.svg", inner_width),
+        render_svg(ASSETS / "spatial-footer.svg", inner_width),
+        render_svg(ASSETS / "spatial-footer-mobile.svg", inner_width // 2),
     ]
     height = PADDING * 2 + sum(image.height for image in images) + GAP * (len(images) - 1)
     canvas = Image.new("RGB", (WIDTH, height), BACKGROUND)
@@ -59,7 +62,7 @@ def main() -> None:
         canvas.paste(image, (PADDING, y))
         y += image.height + GAP
     draw.rounded_rectangle((8, 8, WIDTH - 9, height - 9), radius=22, outline="#30363D", width=2)
-    destination = SCREENSHOTS / "curiosity-workshop-preview.png"
+    destination = SCREENSHOTS / "spatial-portfolio-preview.png"
     canvas.save(destination, optimize=True)
     print(f"wrote {destination}")
 

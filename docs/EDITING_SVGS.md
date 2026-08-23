@@ -9,11 +9,12 @@ This bundle is designed so the SVGs are not painful to update.
 
 ```bash
 python scripts/build_assets.py
+python scripts/build_3d_mesh.py
 ```
 
-That regenerates the six Curiosity Workshop SVGs under `assets/`.
+The first command regenerates the eight Spatial Portfolio scene wrappers. The second regenerates the Curiosity Knot STL, OBJ, and animated wireframe preview.
 
-The responsive heroes and project cabinet are generated from `assets/curiosity-workshop-hero-v1.png` and `assets/project-cabinet-v1.png`; keep both source files in place when rebuilding.
+The responsive artwork is generated from the five `assets/*-v1.png` scene sources listed in `manifest.json`; keep those source files in place when rebuilding.
 
 ## Direct SVG editing path
 
@@ -34,5 +35,5 @@ The SVGs intentionally use:
 ## Animation control
 
 Animations live in the shared `<style>` block produced by `scripts/build_assets.py`.
-The main motion classes are `.pulse`, `.dash`, `.floatA`, `.floatB`, `.spin`, and `.scan`.
+The main motion classes are `.pulse`, `.dash`, `.draw`, `.orbit`, `.orbitReverse`, `.float`, and `.scan`.
 The SVGs also honour `prefers-reduced-motion`.

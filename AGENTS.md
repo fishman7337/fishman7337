@@ -43,6 +43,7 @@ python -m compileall scripts tests
 
 ```text
 python scripts/build_assets.py
+python scripts/build_3d_mesh.py
 git diff --exit-code -- assets
 ```
 
@@ -54,14 +55,15 @@ Also run `git diff --check`. Record exactly which commands ran, their outcomes, 
 
 ## Managed artifacts and data
 
-- Generate the six versioned Curiosity Workshop SVGs with `python scripts/build_assets.py`; do not hand-edit those generated files.
+- Generate the eight versioned Spatial Portfolio SVGs with `python scripts/build_assets.py`; do not hand-edit those generated files.
+- Generate the Curiosity Knot STL, OBJ, and wireframe preview with `python scripts/build_3d_mesh.py`.
 - After deterministic profile regeneration, require `git diff --exit-code -- assets` when no asset drift is expected.
 
 ## Integration and claim boundaries
 
 - The generated profile assets are repository automation outputs, not evidence of audience reach or hiring impact.
 - No repository-wide license is granted; obtain permission before reusing code, written content, or generated assets.
-- **Verified local capability:** Python 3.11/3.12/3.13; 6 generated SVG assets reproduce without drift.
+- **Verified local capability:** Python 3.11/3.12/3.13; 9 generated SVG assets and 2 model files reproduce without drift.
 - **Known boundary:** No repository-wide license; permission required for reuse.
 
 ## Code, documentation, and evidence standards

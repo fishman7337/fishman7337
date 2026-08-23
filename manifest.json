@@ -1,17 +1,25 @@
 {
-  "name": "fishman7337-profile-readme-curiosity-workshop",
+  "name": "fishman7337-profile-readme-spatial-portfolio",
   "username": "fishman7337",
   "profile_source": "content/profile.yml",
   "source_assets": [
-    "curiosity-workshop-hero-v1.png",
-    "project-cabinet-v1.png"
+    "spatial-portfolio-hero-v1.png",
+    "world-generative-vision-v1.png",
+    "world-language-memory-v1.png",
+    "world-movement-products-v1.png",
+    "tool-constellation-v1.png"
   ],
   "generated_assets": [
-    "hero-curiosity-workshop.svg",
-    "hero-curiosity-workshop-mobile.svg",
-    "project-cabinet.svg",
-    "making-machine.svg",
-    "workshop-footer.svg",
-    "workshop-footer-mobile.svg"
+    "spatial-hero.svg",
+    "spatial-hero-mobile.svg",
+    "world-generative-vision.svg",
+    "world-language-memory.svg",
+    "world-movement-products.svg",
+    "curiosity-knot-wireframe.svg",
+    "tool-constellation.svg",
+    "spatial-footer.svg",
+    "spatial-footer-mobile.svg",
+    "models/curiosity-knot.stl",
+    "models/curiosity-knot.obj"
   ]
 }

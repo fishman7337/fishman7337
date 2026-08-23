@@ -35,19 +35,12 @@ Then regenerate the SVGs:
 
 ```bash
 python scripts/build_assets.py
+python scripts/build_3d_mesh.py
 ```
 
-## 4. Enable GitHub Actions for the contribution animation
+The first command rebuilds the responsive scene wrappers. The second rebuilds the STL, OBJ, and animated wireframe preview from the parametric mesh source.
 
-The bundle includes:
-
-```text
-.github/workflows/snake.yml
-```
-
-After the workflow runs, the contribution animation referenced by `README.md` is available from the `output` branch.
-
-## 5. Optional local preview
+## 4. Optional local preview
 
 Run:
 
@@ -55,4 +48,4 @@ Run:
 python scripts/render_preview.py
 ```
 
-Where Cairo is available, it creates `screenshots/curiosity-workshop-preview.png` for visual QA. Otherwise, open `preview/visual-gallery.html` in a browser; it uses the same checked-in assets without a native rendering dependency.
+Where Cairo is available, it creates `screenshots/spatial-portfolio-preview.png` for visual QA. Otherwise, open `preview/visual-gallery.html` in a browser; it uses the same checked-in assets without a native rendering dependency.

@@ -27,6 +27,7 @@ Before opening a pull request, run the applicable heavier validation below. Comm
 
 ```text
 python scripts/build_assets.py
+python scripts/build_3d_mesh.py
 git diff --exit-code -- assets
 ```
 

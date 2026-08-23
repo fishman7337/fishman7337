@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="210" viewBox="0 0 1200 210" role="img" aria-labelledby="title desc"><title id="title">An open orbit</title><desc id="desc">A luminous animated mesh orbit closes the spatial portfolio.</desc>
+<defs>
+  <linearGradient id="signal" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#63D9D1"/>
+    <stop offset=".52" stop-color="#B89DFF"/>
+    <stop offset="1" stop-color="#FF9B7A"/>
+  </linearGradient>
+  <linearGradient id="copper" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#F0B07F"/>
+    <stop offset=".5" stop-color="#D37A4C"/>
+    <stop offset="1" stop-color="#7A3F30"/>
+  </linearGradient>
+  <radialGradient id="vignette">
+    <stop offset="55%" stop-color="#050814" stop-opacity="0"/>
+    <stop offset="100%" stop-color="#02040A" stop-opacity=".72"/>
+  </radialGradient>
+  <pattern id="microGrid" width="36" height="36" patternUnits="userSpaceOnUse">
+    <path d="M36 0H0V36" fill="none" stroke="#EAF4FF" stroke-opacity=".035"/>
+  </pattern>
+  <filter id="glow" x="-150%" y="-150%" width="400%" height="400%">
+    <feGaussianBlur stdDeviation="6" result="blur"/>
+    <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+  <filter id="soft" x="-30%" y="-30%" width="160%" height="160%">
+    <feDropShadow dx="0" dy="14" stdDeviation="18" flood-color="#00030A" flood-opacity=".72"/>
+  </filter>
+  <style><![CDATA[
+    .display{font:800 61px Inter,Segoe UI,Arial,sans-serif;fill:#FFF9EF;letter-spacing:-2.2px}
+    .mobileDisplay{font:800 67px Inter,Segoe UI,Arial,sans-serif;fill:#FFF9EF;letter-spacing:-2px}
+    .role{font:720 27px Inter,Segoe UI,Arial,sans-serif;fill:#E8E4F3;letter-spacing:-.35px}
+    .body{font:520 20px Inter,Segoe UI,Arial,sans-serif;fill:#C9C6D4}
+    .mobileBody{font:520 28px Inter,Segoe UI,Arial,sans-serif;fill:#C9C6D4}
+    .mono{font:700 13px 'JetBrains Mono',Consolas,monospace;fill:#F3EBDD;letter-spacing:1.8px}
+    .wire{fill:none;stroke:url(#signal);stroke-linecap:round;stroke-linejoin:round}
+    .dash{stroke-dasharray:9 15;animation:dash 16s linear infinite}
+    .draw{stroke-dasharray:420;animation:draw 8s ease-in-out infinite}
+    .orbit{animation:orbit 17s linear infinite;transform-box:fill-box;transform-origin:center}
+    .orbitReverse{animation:orbitReverse 24s linear infinite;transform-box:fill-box;transform-origin:center}
+    .float{animation:float 7s ease-in-out infinite;transform-box:fill-box;transform-origin:center}
+    .pulse{animation:pulse 3.4s ease-in-out infinite;transform-box:fill-box;transform-origin:center}
+    .scan{animation:scan 7.5s ease-in-out infinite}
+    @keyframes dash{to{stroke-dashoffset:-480}}
+    @keyframes draw{0%,100%{stroke-dashoffset:420;opacity:.15}50%{stroke-dashoffset:0;opacity:.82}}
+    @keyframes orbit{to{transform:rotate(360deg)}}
+    @keyframes orbitReverse{to{transform:rotate(-360deg)}}
+    @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+    @keyframes pulse{0%,100%{opacity:.45;transform:scale(.86)}50%{opacity:1;transform:scale(1.12)}}
+    @keyframes scan{0%,100%{transform:translateX(-26%);opacity:0}45%,55%{opacity:.32}50%{transform:translateX(126%)}}
+    @media(prefers-reduced-motion:reduce){*{animation:none!important}}
+  ]]></style>
+</defs><rect width="1200" height="210" rx="28" fill="#050814"/><rect width="1200" height="210" fill="url(#microGrid)" opacity=".72"/><g class="orbit"><ellipse cx="600" cy="105" rx="250" ry="56" fill="none" stroke="url(#signal)" stroke-width="3" stroke-dasharray="8 14"/></g><g class="orbitReverse"><ellipse cx="600" cy="105" rx="322" ry="36" fill="none" stroke="url(#copper)" stroke-opacity=".55" stroke-width="1.5" stroke-dasharray="2 11"/></g><path d="M0 141C300 19 900 217 1200 71" class="wire dash" stroke-width="2" opacity=".55"/><circle cx="600" cy="105" r="10" fill="#FFF9EF" class="pulse" filter="url(#glow)"/><rect x="1" y="1" width="1198" height="208" rx="27" fill="none" stroke="#E9F3FF" stroke-opacity=".15"/></svg>

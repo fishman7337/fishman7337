@@ -1,60 +1,124 @@
-# Curiosity Workshop visual design
+# Spatial Portfolio visual design
 
-The profile is designed as a tactile creative-computing atelier rather than a conventional technology résumé. Warm paper, copper, dark wood, frosted glass, cyan, violet, coral, and plant green create one consistent material world.
+The profile is designed as a cinematic gallery of connected project worlds. Obsidian space, cyan and ultraviolet edge light, warm copper, ivory paper, translucent glass, ceramic, and fine luminous mesh form one material language across every scene.
+
+All five raster scenes were created with the built-in OpenAI image-generation tool. They contain no copy; readable text remains native in the README or in responsive SVG typography.
 
 ## Hero artwork
 
-<code>assets/curiosity-workshop-hero-v1.png</code> was created with the built-in OpenAI image-generation tool and is embedded into both desktop and mobile hero compositions. The narrow composition uses a taller layout and deliberate crop instead of shrinking desktop typography.
+Source: `assets/spatial-portfolio-hero-v1.png`
 
-Final prompt:
-
-~~~text
+```text
 Use case: stylized-concept
 Asset type: text-safe GitHub profile README hero background
-Primary request: Create a premium isometric 3D “curiosity workshop” for an applied AI and analytics student—a creative computing atelier where ideas become experiments and useful tools.
-Scene/backdrop: midnight-navy studio void with a subtle matte floor and a few suspended dust particles.
-Subject: on the right 55–60%, one coherent sculptural workbench/diorama containing translucent notebook or data sheets, a geometric leaf specimen, a small pixel-tile panel, an elegant route/path object, a soft waveform ribbon, modular code-like blocks, and a tiny living plant. Objects should feel intentionally composed and symbolic, not like a cluttered desk.
-Style/medium: high-end editorial 3D render, isometric three-quarter view, tactile glass, frosted acrylic, anodized metal, warm paper, soft clay accents; sophisticated product-visualisation polish.
-Composition/framing: very wide 3:1 banner. Reserve the left 40–42% as genuinely calm dark negative space for typography. Keep the complete workbench on the center-right with safe margins.
-Lighting/mood: warm ivory and copper practical light balanced with cyan, violet, and restrained coral accents; curious, welcoming, crafted, quietly futuristic.
-Constraints: no text, no letters, no logos, no watermark, no people, no military, institutional, surveillance, aircraft, or defense motifs; no dashboards or fake UI.
-Avoid: generic cyberpunk neon clutter, symmetrical center placement, floating random icons, stock technology wallpaper.
-~~~
+Primary request: Create a cinematic 3D “spatial portfolio” for an applied AI and analytics builder—a coherent orbiting studio where questions become experiments and useful software.
+Scene/backdrop: deep obsidian-navy void with a matte architectural floor, subtle perspective, and sparse dust-like particles.
+Subject: on the right 58–62 percent, one strong sculptural system: a translucent glass torus surrounding a luminous generative lattice, folded paper and data surfaces, one geometric leaf plane, a ribbon-like waveform, small route nodes, and modular product blocks, all mechanically connected as one kinetic-looking museum installation rather than scattered icons.
+Style/medium: premium cinematic editorial 3D render, precise Houdini and Octane-style product visualization, realistic glass, anodized metal, woven mesh, ceramic, warm paper, and fine wireframe.
+Composition/framing: very wide 3:1 banner. Reserve the left 38–40 percent as calm, nearly empty dark space for identity typography. Keep the full sculpture on center-right, no cropping, generous safe margins.
+Lighting/mood: controlled studio lighting; cyan and ultraviolet edge light with copper and amber practical highlights and restrained coral; intelligent, bold, highly crafted, not corporate.
+Color palette: obsidian #050814, deep navy #0a1430, cyan #42d8ff, violet #8f70ff, copper #d88a4e, coral #ff6f61, warm ivory #f3e7d3.
+Constraints: no text, letters, numbers, logos, watermark, people, dashboards, fake UI, weapons, aircraft, military, institutional, surveillance, defense, prior-affiliation branding, research-index branding, or academic-identifier motifs.
+Avoid: generic cyberpunk neon, stock technology wallpaper, scattered floating icons, excessive bloom, symmetrical center placement, toy-like proportions.
+```
 
-## Project-cabinet artwork
+## Generative Vision world
 
-<code>assets/project-cabinet-v1.png</code> uses the hero as its visual-system reference. It is embedded in <code>assets/project-cabinet.svg</code> and paired with six native GitHub <code>&lt;details&gt;</code> drawers in the README.
+Source: `assets/world-generative-vision-v1.png`. The hero image was supplied as Image 1.
 
-Final prompt:
-
-~~~text
-Image 1 is the exact visual-system reference for materials, palette, lighting, and editorial 3D polish.
-
+```text
+Use Image 1 only as the exact visual and material style reference.
 Use case: stylized-concept
-Asset type: GitHub profile README project-collection centerpiece
-Primary request: Create a premium 3D museum cabinet of exactly six creative-computing project specimens, in the same tactile curiosity-workshop world as Image 1.
-Scene/backdrop: midnight-navy atelier void with a matte floor and subtle warm practical lighting.
-Subject: one coherent modular display cabinet arranged as two columns by three rows, with all six open compartments clearly separated and fully visible. Each compartment contains exactly one distinctive symbolic exhibit: (1) a translucent neural orb with a few elegant circuit-like rings for generative models, (2) a geometric green leaf inside precise framing corners for visual detection, (3) folded paper strips and a small crescent for a haiku-making tool, (4) layered archival paper connected by branching threads for newspaper restoration, (5) a sculptural route path with waypoints for trip planning, and (6) a friendly progress ring with a subtle pulse ribbon for a fitness quest.
-Style/medium: high-end editorial isometric 3D render; frosted glass, warm paper, anodized metal, dark wood, porcelain and soft clay; use the same cyan, violet, coral, copper, ivory, and plant-green accents as Image 1.
-Composition/framing: wide 2:1 composition, cabinet centered, all six compartments readable at a glance, generous safe margins. Slight three-quarter/isometric view, but front faces remain clear.
-Lighting/mood: warm, crafted, intelligent, playful without becoming toy-like; gallery lighting with soft shadows.
-Constraints: exactly six compartments; no text, no letters, no labels, no logos, no watermark, no people, no weapons, aircraft, military, institutional, surveillance, or defense motifs; no fake dashboard.
-Avoid: generic cyberpunk neon, chaotic clutter, random floating icons, inaccessible dark-on-dark compartments, stock technology wallpaper.
-~~~
+Asset type: wide 3D editorial chapter artwork for a GitHub profile README
+Primary request: Create the “Generative Vision” project world—two distinct research artifacts joined into one museum-scale physical system.
+Scene/backdrop: the same obsidian-navy studio void and matte architectural plinth as Image 1.
+Subject: on the left, a luminous generative model represented as an elegant nested translucent seed with folded probability surfaces, orbit lines, and one bright latent core; on the right, a sculptural geometric leaf suspended inside a precise open detection frame with a few subtle anchor points. Connect them with a flowing cyan-to-violet woven mesh so the whole scene reads as one installation.
+Style/medium: match Image 1 exactly—premium cinematic Houdini/Octane-style 3D, realistic glass, anodized metal, fine wireframe, warm paper, ceramic.
+Composition/framing: very wide 2:1 panorama, both artifacts large and readable at thumbnail size, no text-safe zone needed, generous outer margins, strong depth but clean silhouette.
+Lighting/mood: cyan and ultraviolet edge lighting with copper and restrained coral accents, controlled bloom, sophisticated and curious.
+Constraints: no text, letters, numbers, labels, logos, watermark, people, dashboards, fake UI, weapons, aircraft, military, institutional, surveillance, prior-affiliation branding, research-index branding, or academic-identifier motifs.
+Avoid: generic cyberpunk, stock technology icons, clutter, tiny details as the main subject, split-screen composition, cartoon style.
+```
+
+## Language and Memory world
+
+Source: `assets/world-language-memory-v1.png`. The hero image was supplied as Image 1.
+
+```text
+Use Image 1 only as the exact visual and material style reference.
+Use case: stylized-concept
+Asset type: wide 3D editorial chapter artwork for a GitHub profile README
+Primary request: Create the “Language and Memory” project world—poetry generation and historical newspaper restoration as one tactile archival installation.
+Scene/backdrop: the same deep obsidian-navy studio void with a low museum plinth.
+Subject: a flowing crescent of warm ivory paper ribbons on the left, folded like a delicate generative poem; on the right, fragmented archival newspaper sheets physically reassembling into a clean page. Between them, a copper-violet graph of threads and nodes forms a graceful trie-like bridge, with small glass lenses restoring damaged areas. The papers must contain abstract line textures only, never legible words.
+Style/medium: match Image 1 exactly—premium cinematic editorial 3D, warm paper fibers, translucent glass, anodized metal, fine luminous mesh, realistic tactile detail.
+Composition/framing: very wide 2:1 panorama, clear left-to-right story, large readable forms, generous margins, no split-screen border.
+Lighting/mood: cyan and ultraviolet rim light, warm copper practical lights, restrained coral, intelligent and poetic rather than nostalgic.
+Constraints: no readable text, letters, numbers, logos, watermark, people, dashboards, fake UI, weapons, aircraft, military, institutional, surveillance, prior-affiliation branding, research-index branding, or academic-identifier motifs.
+Avoid: literal book cover, library stock image, cluttered collage, illegible fake typography, cartoon style, excessive sepia.
+```
+
+## Movement and Products world
+
+Source: `assets/world-movement-products-v1.png`. The hero image was supplied as Image 1.
+
+```text
+Use Image 1 only as the exact visual and material style reference.
+Use case: stylized-concept
+Asset type: wide 3D editorial chapter artwork for a GitHub profile README
+Primary request: Create the “Movement and Products” project world—route planning and a gamified fitness product embodied as one sculptural landscape.
+Scene/backdrop: the same obsidian-navy studio void and circular architectural platform.
+Subject: on the left and through the center, a dark ceramic topographic terrain with one luminous coral route threading through cyan waypoints; on the right, a refined glass progress ring surrounding stacked modular product blocks and a small energetic pulse ribbon. Make the route flow physically into the progress ring so the system reads as a single story from movement to product.
+Style/medium: match Image 1 exactly—premium cinematic product visualization, glass, anodized metal, woven luminous mesh, ceramic, precise fine wireframes.
+Composition/framing: very wide 2:1 panorama, low oblique camera, large clean forms readable when displayed at 800 pixels wide, balanced depth and safe margins.
+Lighting/mood: cyan/violet edge light, copper reflections, focused coral route, bold but restrained.
+Constraints: no text, letters, numbers, labels, maps with real place names, logos, watermark, people, dashboards, fake UI, weapons, aircraft, military, institutional, surveillance, prior-affiliation branding, research-index branding, or academic-identifier motifs.
+Avoid: generic fitness watch advertisement, map screenshot, glowing globe, clutter, toy-like game pieces, cartoon style.
+```
+
+## Tool Constellation artwork
+
+Source: `assets/tool-constellation-v1.png`. The hero image was supplied as Image 1.
+
+```text
+Use Image 1 only as the exact visual and material style reference.
+Use case: stylized-concept
+Asset type: wide 3D editorial “tool constellation” artwork for a GitHub profile README
+Primary request: Create a sophisticated physical constellation showing how models, data, product craft, and delivery connect—without using brand logos or text.
+Scene/backdrop: the same deep obsidian-navy studio void with a dark circular plinth.
+Subject: four clearly distinct but connected sculptural zones arranged as an asymmetric constellation: a translucent woven neural form for models; stacked glass data strata for data; modular ceramic interface blocks for product; and a copper orbital rail with small deployment nodes for delivery. Join all four with one elegant luminous mesh and a few floating glass beads. No recognizable app icons.
+Style/medium: match Image 1 exactly—premium cinematic Houdini/Octane-style editorial 3D, realistic glass, anodized metal, ceramic, woven mesh, controlled particles.
+Composition/framing: very wide 2:1 panorama, one cohesive installation, large readable zones, generous margins, sophisticated asymmetry.
+Lighting/mood: cyan and ultraviolet edge light with copper and restrained coral accents, calm precision, highly crafted.
+Constraints: no text, letters, numbers, labels, logos, watermark, people, dashboards, fake UI, weapons, aircraft, military, institutional, surveillance, prior-affiliation branding, research-index branding, or academic-identifier motifs.
+Avoid: logo cloud, scattered icons, generic circuit board, cyberpunk city, clutter, excessive bloom, cartoon style.
+```
 
 ## Generated SVG system
 
-<code>python scripts/build_assets.py</code> produces six deterministic, accessible SVGs:
+`python scripts/build_assets.py` produces eight deterministic, accessible, self-contained SVGs:
 
-- <code>hero-curiosity-workshop.svg</code>
-- <code>hero-curiosity-workshop-mobile.svg</code>
-- <code>project-cabinet.svg</code>
-- <code>making-machine.svg</code>
-- <code>workshop-footer.svg</code>
-- <code>workshop-footer-mobile.svg</code>
+- `spatial-hero.svg`
+- `spatial-hero-mobile.svg`
+- `world-generative-vision.svg`
+- `world-language-memory.svg`
+- `world-movement-products.svg`
+- `tool-constellation.svg`
+- `spatial-footer.svg`
+- `spatial-footer-mobile.svg`
 
-They use native SVG, embedded raster artwork, CSS/SMIL motion, no JavaScript, and no external network resource. A reduced-motion media query disables decorative animation when requested.
+The wrappers embed the source art, add animated scan lines, mesh paths, orbiting nodes, and responsive compositions, and honour `prefers-reduced-motion`. They contain no JavaScript or external network resources.
 
-## Why the 3D is rendered
+## Real 3D mesh
 
-Normal GitHub README rendering cannot host an interactive WebGL canvas or embedded model viewer. The two generated stills provide convincing 3D depth, the SVG layer adds motion, and the expandable project drawers provide reliable interaction inside GitHub. Native Markdown carries most explanatory copy so it remains readable in both GitHub themes and at narrow widths.
+`python scripts/build_3d_mesh.py` builds a closed parametric (2, 3) torus-knot tube as:
+
+- `assets/models/curiosity-knot.stl`
+- `assets/models/curiosity-knot.obj`
+- `assets/curiosity-knot-wireframe.svg`
+
+The STL and OBJ contain 1,728 vertices and 3,456 triangular faces. The SVG projects the same vertices from three yaw angles and cross-fades between them for a lightweight three-dimensional turntable effect.
+
+## GitHub rendering boundary
+
+A normal GitHub README cannot host a JavaScript/WebGL model viewer. The profile therefore uses rendered 3D scenes and animated SVG mesh overlays inside the README, then links the actual model files for inspection or download. Native Markdown carries the long-form copy so it remains readable in both GitHub themes and at narrow widths.

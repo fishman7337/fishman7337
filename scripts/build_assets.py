@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate the responsive visual assets for the GitHub profile."""
+"""Generate the responsive Spatial Portfolio SVG assets."""
 
 from __future__ import annotations
 
@@ -19,7 +19,7 @@ THEME = PROFILE["theme"]
 
 
 def esc(value: object) -> str:
-    """Escape a value for safe SVG text insertion."""
+    """Escape a value for safe SVG insertion."""
     return html.escape(str(value), quote=True)
 
 
@@ -40,47 +40,55 @@ def image_data(filename: str) -> str:
 
 
 def defs() -> str:
-    """Return the shared visual language and reduced-motion CSS."""
+    """Return the shared spatial-portfolio gradients, filters, and motion."""
     return f"""
 <defs>
-  <linearGradient id="night" x1="0" y1="0" x2="1" y2="1">
-    <stop offset="0" stop-color="{THEME["bg0"]}"/>
-    <stop offset=".58" stop-color="{THEME["bg1"]}"/>
-    <stop offset="1" stop-color="#211A25"/>
-  </linearGradient>
-  <linearGradient id="signal" x1="0" y1="0" x2="1" y2="0">
+  <linearGradient id="signal" x1="0" y1="0" x2="1" y2="1">
     <stop offset="0" stop-color="{THEME["cyan"]}"/>
-    <stop offset=".5" stop-color="{THEME["purple"]}"/>
+    <stop offset=".52" stop-color="{THEME["purple"]}"/>
     <stop offset="1" stop-color="{THEME["coral"]}"/>
   </linearGradient>
-  <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
-    <path d="M32 0H0V32" fill="none" stroke="#F3EBDD" stroke-opacity=".045"/>
+  <linearGradient id="copper" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#F0B07F"/>
+    <stop offset=".5" stop-color="#D37A4C"/>
+    <stop offset="1" stop-color="#7A3F30"/>
+  </linearGradient>
+  <radialGradient id="vignette">
+    <stop offset="55%" stop-color="#050814" stop-opacity="0"/>
+    <stop offset="100%" stop-color="#02040A" stop-opacity=".72"/>
+  </radialGradient>
+  <pattern id="microGrid" width="36" height="36" patternUnits="userSpaceOnUse">
+    <path d="M36 0H0V36" fill="none" stroke="#EAF4FF" stroke-opacity=".035"/>
   </pattern>
-  <filter id="soft" x="-30%" y="-30%" width="160%" height="170%">
-    <feDropShadow dx="0" dy="16" stdDeviation="18" flood-color="#02040A" flood-opacity=".58"/>
+  <filter id="glow" x="-150%" y="-150%" width="400%" height="400%">
+    <feGaussianBlur stdDeviation="6" result="blur"/>
+    <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
   </filter>
-  <filter id="glow" x="-100%" y="-100%" width="300%" height="300%">
-    <feGaussianBlur stdDeviation="6" result="b"/>
-    <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+  <filter id="soft" x="-30%" y="-30%" width="160%" height="160%">
+    <feDropShadow dx="0" dy="14" stdDeviation="18" flood-color="#00030A" flood-opacity=".72"/>
   </filter>
   <style><![CDATA[
-    .display{{font:800 58px Inter,Segoe UI,Arial,sans-serif;fill:{THEME["text"]};letter-spacing:-2px}}
-    .mobileDisplay{{font:800 64px Inter,Segoe UI,Arial,sans-serif;fill:{THEME["text"]};letter-spacing:-2px}}
-    .title{{font:800 40px Inter,Segoe UI,Arial,sans-serif;fill:{THEME["text"]};letter-spacing:-1px}}
-    .section{{font:780 28px Inter,Segoe UI,Arial,sans-serif;fill:{THEME["text"]};letter-spacing:-.45px}}
-    .body{{font:520 18px Inter,Segoe UI,Arial,sans-serif;fill:{THEME["muted"]}}}
-    .mobileBody{{font:520 25px Inter,Segoe UI,Arial,sans-serif;fill:{THEME["muted"]}}}
-    .small{{font:570 15px Inter,Segoe UI,Arial,sans-serif;fill:{THEME["muted"]}}}
-    .mono{{font:720 13px 'JetBrains Mono',Consolas,monospace;fill:{THEME["paper"]};letter-spacing:1.5px}}
-    .wire{{fill:none;stroke:url(#signal);stroke-width:2;stroke-linecap:round}}
-    .dash{{stroke-dasharray:8 13;animation:dash 13s linear infinite}}
-    .floatA{{animation:floatA 6.5s ease-in-out infinite;transform-box:fill-box;transform-origin:center}}
-    .floatB{{animation:floatB 8s ease-in-out infinite;transform-box:fill-box;transform-origin:center}}
-    .pulse{{animation:pulse 3.2s ease-in-out infinite;transform-box:fill-box;transform-origin:center}}
-    @keyframes dash{{to{{stroke-dashoffset:-420}}}}
-    @keyframes floatA{{0%,100%{{transform:translateY(0)}}50%{{transform:translateY(-8px)}}}}
-    @keyframes floatB{{0%,100%{{transform:translateY(0)}}50%{{transform:translateY(7px)}}}}
-    @keyframes pulse{{0%,100%{{opacity:.55;transform:scale(.94)}}50%{{opacity:1;transform:scale(1.08)}}}}
+    .display{{font:800 61px Inter,Segoe UI,Arial,sans-serif;fill:#FFF9EF;letter-spacing:-2.2px}}
+    .mobileDisplay{{font:800 67px Inter,Segoe UI,Arial,sans-serif;fill:#FFF9EF;letter-spacing:-2px}}
+    .role{{font:720 27px Inter,Segoe UI,Arial,sans-serif;fill:#E8E4F3;letter-spacing:-.35px}}
+    .body{{font:520 20px Inter,Segoe UI,Arial,sans-serif;fill:#C9C6D4}}
+    .mobileBody{{font:520 28px Inter,Segoe UI,Arial,sans-serif;fill:#C9C6D4}}
+    .mono{{font:700 13px 'JetBrains Mono',Consolas,monospace;fill:#F3EBDD;letter-spacing:1.8px}}
+    .wire{{fill:none;stroke:url(#signal);stroke-linecap:round;stroke-linejoin:round}}
+    .dash{{stroke-dasharray:9 15;animation:dash 16s linear infinite}}
+    .draw{{stroke-dasharray:420;animation:draw 8s ease-in-out infinite}}
+    .orbit{{animation:orbit 17s linear infinite;transform-box:fill-box;transform-origin:center}}
+    .orbitReverse{{animation:orbitReverse 24s linear infinite;transform-box:fill-box;transform-origin:center}}
+    .float{{animation:float 7s ease-in-out infinite;transform-box:fill-box;transform-origin:center}}
+    .pulse{{animation:pulse 3.4s ease-in-out infinite;transform-box:fill-box;transform-origin:center}}
+    .scan{{animation:scan 7.5s ease-in-out infinite}}
+    @keyframes dash{{to{{stroke-dashoffset:-480}}}}
+    @keyframes draw{{0%,100%{{stroke-dashoffset:420;opacity:.15}}50%{{stroke-dashoffset:0;opacity:.82}}}}
+    @keyframes orbit{{to{{transform:rotate(360deg)}}}}
+    @keyframes orbitReverse{{to{{transform:rotate(-360deg)}}}}
+    @keyframes float{{0%,100%{{transform:translateY(0)}}50%{{transform:translateY(-10px)}}}}
+    @keyframes pulse{{0%,100%{{opacity:.45;transform:scale(.86)}}50%{{opacity:1;transform:scale(1.12)}}}}
+    @keyframes scan{{0%,100%{{transform:translateX(-26%);opacity:0}}45%,55%{{opacity:.32}}50%{{transform:translateX(126%)}}}}
     @media(prefers-reduced-motion:reduce){{*{{animation:none!important}}}}
   ]]></style>
 </defs>"""
@@ -95,24 +103,31 @@ def svg_open(title: str, description: str, width: int, height: int) -> str:
     )
 
 
-def frame(width: int, height: int, radius: int = 28) -> str:
-    """Draw the shared night backdrop and hairline frame."""
+def image_layer(filename: str, width: int, height: int, anchor: str = "xMidYMid") -> str:
+    """Embed a generated scene with a consistent crop."""
     return (
-        f'<rect width="{width}" height="{height}" rx="{radius}" fill="url(#night)"/>'
-        f'<rect width="{width}" height="{height}" rx="{radius}" fill="url(#grid)"/>'
-        f'<rect x="1" y="1" width="{width - 2}" height="{height - 2}" rx="{radius - 1}" '
-        'fill="none" stroke="#F3EBDD" stroke-opacity=".14"/>'
+        f'<image href="{image_data(filename)}" width="{width}" height="{height}" '
+        f'preserveAspectRatio="{anchor} slice"/>'
     )
 
 
-def text_lines(
-    lines: list[str],
-    *,
-    x: int,
-    y: int,
-    line_height: int,
-    css_class: str,
-) -> str:
+def frame(width: int, height: int, radius: int = 28) -> str:
+    """Draw the shared gallery frame, vignette, and corner marks."""
+    return "".join(
+        [
+            f'<rect width="{width}" height="{height}" fill="url(#microGrid)"/>',
+            f'<rect width="{width}" height="{height}" fill="url(#vignette)"/>',
+            f'<rect x="1" y="1" width="{width - 2}" height="{height - 2}" rx="{radius}" '
+            'fill="none" stroke="#E9F3FF" stroke-opacity=".16"/>',
+            '<path d="M30 76V30H76M1124 30h46v46" fill="none" stroke="#F3EBDD" '
+            'stroke-opacity=".36" stroke-width="2"/>',
+            f'<path d="M30 {height - 76}v46h46M{width - 76} {height - 30}h46v-46" '
+            'fill="none" stroke="#F3EBDD" stroke-opacity=".22" stroke-width="2"/>',
+        ]
+    )
+
+
+def text_lines(lines: list[str], *, x: int, y: int, line_height: int, css_class: str) -> str:
     """Render wrapped text as individually positioned SVG text nodes."""
     return "".join(
         f'<text x="{x}" y="{y + index * line_height}" class="{css_class}">{esc(line)}</text>'
@@ -121,208 +136,163 @@ def text_lines(
 
 
 def make_hero() -> str:
-    """Build the concise desktop identity hero."""
-    svg = [
-        svg_open(
-            f"{IDENTITY['name']} · Ideas to useful tools",
-            "A tactile three-dimensional creative-computing workbench with a concise introduction.",
-            1200,
-            420,
-        ),
-        f'<image href="{image_data("curiosity-workshop-hero-v1.png")}" width="1200" height="420" '
-        'preserveAspectRatio="xMidYMid slice"/>',
-        '<linearGradient id="heroShade" x1="0" y1="0" x2=".78" y2="0">'
-        '<stop offset="0" stop-color="#080B12" stop-opacity=".99"/>'
-        '<stop offset=".5" stop-color="#080B12" stop-opacity=".9"/>'
-        '<stop offset=".82" stop-color="#080B12" stop-opacity=".08"/>'
-        '<stop offset="1" stop-color="#080B12" stop-opacity="0"/></linearGradient>',
-        '<rect width="1200" height="420" fill="url(#heroShade)"/>',
-        '<rect x="54" y="46" width="246" height="30" rx="15" fill="#F3EBDD" fill-opacity=".08" '
-        'stroke="#D99362" stroke-opacity=".72"/>',
-        '<circle cx="74" cy="61" r="4" fill="#FF9B7A" class="pulse"/>',
-        '<text x="89" y="66" class="mono">IDEAS → EVIDENCE → TOOLS</text>',
-        f'<text x="54" y="156" class="display">{esc(IDENTITY["name"])}</text>',
-        f'<text x="57" y="199" class="section">{esc(IDENTITY["role"])}</text>',
-        text_lines(wrap(IDENTITY["tagline"], 40), x=57, y=249, line_height=29, css_class="body"),
-        '<g transform="translate(56 324)">',
-    ]
-    for index, label in enumerate(["GENERATIVE", "VISION", "ALGORITHMS", "PRODUCT"]):
-        x = index * 122
-        svg.extend(
-            [
-                f'<rect x="{x}" width="110" height="34" rx="17" fill="#171923" '
-                'stroke="#F3EBDD" stroke-opacity=".2"/>',
-                f'<text x="{x + 55}" y="22" text-anchor="middle" class="mono" '
-                f'font-size="10">{esc(label)}</text>',
-            ]
-        )
-    svg.extend(
+    """Build the desktop spatial-portfolio identity hero."""
+    return "".join(
         [
+            svg_open(
+                f"{IDENTITY['name']} · Spatial Portfolio",
+                "A cinematic glass-and-mesh installation representing applied AI, analytics, and product craft.",
+                1200,
+                470,
+            ),
+            image_layer("spatial-portfolio-hero-v1.png", 1200, 470, "xMidYMid"),
+            '<linearGradient id="heroShade" x1="0" y1="0" x2=".72" y2="0">'
+            '<stop offset="0" stop-color="#03050C" stop-opacity=".99"/>'
+            '<stop offset=".54" stop-color="#050814" stop-opacity=".9"/>'
+            '<stop offset=".84" stop-color="#050814" stop-opacity=".08"/>'
+            '<stop offset="1" stop-color="#050814" stop-opacity="0"/></linearGradient>',
+            '<rect width="1200" height="470" fill="url(#heroShade)"/>',
+            '<g transform="translate(56 48)">',
+            '<circle cx="7" cy="7" r="6" fill="#63D9D1" class="pulse" filter="url(#glow)"/>',
+            '<text x="27" y="12" class="mono">SPATIAL PORTFOLIO / SINGAPORE</text>',
+            f'<text x="0" y="112" class="display">{esc(IDENTITY["name"])}</text>',
+            f'<text x="2" y="156" class="role">{esc(IDENTITY["role"])}</text>',
+            text_lines(wrap(IDENTITY["tagline"], 36), x=2, y=213, line_height=30, css_class="body"),
+            '<path d="M2 300C118 246 232 344 382 282" class="wire dash" stroke-width="2" opacity=".85"/>',
+            '<circle cx="2" cy="300" r="5" fill="#63D9D1" class="pulse" filter="url(#glow)"/>',
+            '<circle cx="382" cy="282" r="5" fill="#FF9B7A" class="pulse" filter="url(#glow)"/>',
+            '<text x="2" y="352" class="mono">MODELS · DATA · PRODUCTS · DELIVERY</text>',
             "</g>",
-            '<path d="M58 385C202 351 330 411 492 370" class="wire dash" opacity=".64"/>',
-            '<circle cx="58" cy="385" r="5" fill="#63D9D1" filter="url(#glow)" class="pulse"/>',
-            '<circle cx="492" cy="370" r="5" fill="#FF9B7A" filter="url(#glow)" class="pulse"/>',
-            '<rect x="1" y="1" width="1198" height="418" rx="27" fill="none" '
-            'stroke="#F3EBDD" stroke-opacity=".16"/>',
+            '<g class="orbit" opacity=".72"><ellipse cx="872" cy="222" rx="258" ry="104" '
+            'fill="none" stroke="url(#signal)" stroke-width="1.5" stroke-dasharray="5 14"/></g>',
+            frame(1200, 470),
             "</svg>",
         ]
     )
-    return "".join(svg)
 
 
 def make_mobile_hero() -> str:
-    """Build a portrait composition with readable typography for narrow screens."""
+    """Build a portrait hero with typography sized for narrow GitHub layouts."""
     return "".join(
         [
             svg_open(
-                f"{IDENTITY['name']} · Applied AI and Analytics",
-                "A mobile-first introduction above a cropped three-dimensional creative-computing workbench.",
+                f"{IDENTITY['name']} · Spatial Portfolio",
+                "A mobile introduction above a cinematic glass-and-mesh AI installation.",
                 760,
-                760,
+                820,
             ),
-            frame(760, 760, 34),
-            '<rect x="46" y="44" width="314" height="38" rx="19" fill="#F3EBDD" fill-opacity=".08" '
-            'stroke="#D99362" stroke-opacity=".72"/>',
-            '<circle cx="70" cy="63" r="5" fill="#FF9B7A" class="pulse"/>',
-            '<text x="91" y="69" class="mono" font-size="16">IDEAS → EVIDENCE → TOOLS</text>',
-            f'<text x="46" y="170" class="mobileDisplay">{esc(IDENTITY["name"])}</text>',
-            f'<text x="49" y="217" class="section" font-size="32">{esc(IDENTITY["role"])}</text>',
+            '<rect width="760" height="820" rx="34" fill="#050814"/>',
+            '<g transform="translate(46 48)">',
+            '<circle cx="8" cy="8" r="7" fill="#63D9D1" class="pulse" filter="url(#glow)"/>',
+            '<text x="32" y="14" class="mono" font-size="17">SPATIAL PORTFOLIO / SINGAPORE</text>',
+            f'<text x="0" y="119" class="mobileDisplay">{esc(IDENTITY["name"])}</text>',
+            f'<text x="2" y="169" class="role" font-size="31">{esc(IDENTITY["role"])}</text>',
             text_lines(
-                wrap(IDENTITY["tagline"], 33),
-                x=49,
-                y=270,
-                line_height=34,
+                wrap(IDENTITY["tagline"], 31),
+                x=2,
+                y=224,
+                line_height=37,
                 css_class="mobileBody",
             ),
-            '<clipPath id="mobileScene"><rect x="24" y="350" width="712" height="374" rx="28"/></clipPath>',
-            '<g clip-path="url(#mobileScene)">',
-            f'<image href="{image_data("curiosity-workshop-hero-v1.png")}" x="24" y="350" '
-            'width="712" height="374" preserveAspectRatio="xMaxYMid slice"/>',
-            '<linearGradient id="sceneFade" x1="0" y1="0" x2="0" y2=".4">'
-            '<stop offset="0" stop-color="#080B12" stop-opacity=".72"/>'
-            '<stop offset="1" stop-color="#080B12" stop-opacity="0"/></linearGradient>',
-            '<rect x="24" y="350" width="712" height="160" fill="url(#sceneFade)"/>',
             "</g>",
-            '<rect x="24" y="350" width="712" height="374" rx="28" fill="none" '
-            'stroke="#F3EBDD" stroke-opacity=".16"/>',
+            '<clipPath id="mobileCrop"><rect x="24" y="358" width="712" height="426" rx="28"/></clipPath>',
+            '<g clip-path="url(#mobileCrop)">',
+            f'<image href="{image_data("spatial-portfolio-hero-v1.png")}" x="24" y="358" '
+            'width="712" height="426" preserveAspectRatio="xMaxYMid slice"/>',
+            '<linearGradient id="mobileFade" x1="0" y1="0" x2="0" y2=".4">'
+            '<stop offset="0" stop-color="#050814" stop-opacity=".72"/>'
+            '<stop offset="1" stop-color="#050814" stop-opacity="0"/></linearGradient>',
+            '<rect x="24" y="358" width="712" height="150" fill="url(#mobileFade)"/>',
+            '<path d="M80 706C220 590 330 774 510 638S680 588 754 644" class="wire dash" '
+            'stroke-width="3" opacity=".75"/>',
+            "</g>",
+            '<rect x="24" y="358" width="712" height="426" rx="28" fill="none" '
+            'stroke="#E9F3FF" stroke-opacity=".17"/>',
+            '<rect x="1" y="1" width="758" height="818" rx="33" fill="none" '
+            'stroke="#E9F3FF" stroke-opacity=".15"/>',
             "</svg>",
         ]
     )
 
 
-def make_cabinet() -> str:
-    """Present the six project exhibits without competing overlay copy."""
+WORLD_PATHS = {
+    "generative": [
+        "M52 426C218 282 330 484 514 340S816 246 1150 372",
+        "M102 118C330 34 486 184 632 118S894 92 1094 154",
+    ],
+    "language": [
+        "M50 358C236 182 364 452 564 290S872 188 1140 302",
+        "M164 90C312 176 436 84 602 148S876 220 1048 108",
+    ],
+    "movement": [
+        "M42 442C214 322 278 438 458 326S766 220 1162 330",
+        "M110 150C252 62 404 186 580 130S924 68 1084 180",
+    ],
+    "tools": [
+        "M52 420C254 238 356 478 574 310S882 214 1144 340",
+        "M104 124C278 38 414 206 606 116S884 72 1100 170",
+    ],
+}
+
+
+def make_world(filename: str, title: str, description: str, variant: str) -> str:
+    """Wrap one generated project world in an animated spatial viewport."""
+    height = 560 if variant != "tools" else 590
+    paths = WORLD_PATHS[variant]
+    return "".join(
+        [
+            svg_open(title, description, 1200, height),
+            image_layer(filename, 1200, height),
+            '<linearGradient id="scanLight" x1="0" y1="0" x2="1" y2="0">'
+            '<stop offset="0" stop-color="#63D9D1" stop-opacity="0"/>'
+            '<stop offset=".5" stop-color="#B89DFF" stop-opacity=".72"/>'
+            '<stop offset="1" stop-color="#FF9B7A" stop-opacity="0"/></linearGradient>',
+            '<rect x="-260" y="0" width="250" height="100%" fill="url(#scanLight)" '
+            'class="scan" opacity=".18"/>',
+            f'<path d="{paths[0]}" class="wire draw" stroke-width="2.4" opacity=".76"/>',
+            f'<path d="{paths[1]}" class="wire dash" stroke-width="1.5" opacity=".52"/>',
+            '<g class="orbitReverse" opacity=".62"><ellipse cx="600" cy="285" rx="462" ry="178" '
+            'fill="none" stroke="url(#signal)" stroke-width="1.2" stroke-dasharray="3 18"/></g>',
+            '<g class="float">',
+            '<circle cx="118" cy="124" r="6" fill="#63D9D1" class="pulse" filter="url(#glow)"/>',
+            '<circle cx="1066" cy="182" r="6" fill="#FF9B7A" class="pulse" filter="url(#glow)"/>',
+            '<circle cx="684" cy="458" r="5" fill="#B89DFF" class="pulse" filter="url(#glow)"/>',
+            "</g>",
+            frame(1200, height),
+            "</svg>",
+        ]
+    )
+
+
+def make_footer(width: int, height: int, mobile: bool = False) -> str:
+    """Build the closing animated portal without embedding small copy."""
+    center_x = width // 2
+    center_y = height // 2
+    rx = 250 if not mobile else 180
+    ry = 56 if not mobile else 70
+    outer_ry = ry - 20 if not mobile else ry - 26
     return "".join(
         [
             svg_open(
-                "Six selected project exhibits",
-                "A six-compartment three-dimensional cabinet representing six software projects.",
-                1200,
-                600,
+                "An open orbit",
+                "A luminous animated mesh orbit closes the spatial portfolio.",
+                width,
+                height,
             ),
-            f'<image href="{image_data("project-cabinet-v1.png")}" width="1200" height="600" '
-            'preserveAspectRatio="xMidYMid slice"/>',
-            '<path d="M56 56H300" stroke="url(#signal)" stroke-width="3" class="dash" opacity=".72"/>',
-            '<text x="56" y="87" class="mono">SIX BUILDS / SIX QUESTIONS</text>',
-            '<rect x="1" y="1" width="1198" height="598" rx="27" fill="none" '
-            'stroke="#F3EBDD" stroke-opacity=".17"/>',
-            "</svg>",
-        ]
-    )
-
-
-def make_machine() -> str:
-    """Animate one idea through six honest stages of making."""
-    steps = PROFILE["process"]
-    svg = [
-        svg_open(
-            "From question to useful",
-            "An animated path moves through question, data, baseline, experiment, product, and sharing.",
-            1200,
-            430,
-        ),
-        frame(1200, 430),
-        '<text x="54" y="57" class="mono">FROM QUESTION TO USEFUL / 06 STAGES</text>',
-        '<text x="54" y="110" class="title">The model is only the middle.</text>',
-        '<text x="55" y="145" class="body">Good work also explains where it came from and how someone else can try it.</text>',
-        '<path id="route" d="M92 280C226 193 340 350 474 262S704 183 838 270S1008 334 1110 245" '
-        'fill="none" stroke="#F3EBDD" stroke-opacity=".16" stroke-width="34" stroke-linecap="round"/>',
-        '<path d="M92 280C226 193 340 350 474 262S704 183 838 270S1008 334 1110 245" '
-        'class="wire dash" stroke-width="3"/>',
-    ]
-    positions = [(92, 280), (290, 252), (474, 262), (672, 229), (838, 270), (1110, 245)]
-    colors = [
-        THEME["cyan"],
-        THEME["blue"],
-        THEME["purple"],
-        THEME["coral"],
-        THEME["amber"],
-        THEME["green"],
-    ]
-    for index, ((x, y), label, color) in enumerate(zip(positions, steps, colors, strict=True)):
-        drift = "floatA" if index % 2 == 0 else "floatB"
-        svg.extend(
-            [
-                f'<g class="{drift}">',
-                f'<circle cx="{x}" cy="{y}" r="33" fill="#171923" stroke="{color}" '
-                'stroke-opacity=".75" filter="url(#soft)"/>',
-                f'<circle cx="{x}" cy="{y}" r="10" fill="{color}" class="pulse"/>',
-                f'<text x="{x}" y="{y + 61}" text-anchor="middle" class="mono">{index + 1:02d}</text>',
-                f'<text x="{x}" y="{y + 85}" text-anchor="middle" class="small">{esc(label)}</text>',
-                "</g>",
-            ]
-        )
-    svg.extend(
-        [
-            '<circle r="9" fill="#FFF9EF" filter="url(#glow)">'
-            '<animateMotion dur="8s" repeatCount="indefinite" rotate="auto">'
-            '<mpath href="#route"/></animateMotion></circle>',
-            '<text x="54" y="402" class="mono">QUESTION · EVIDENCE · ARTIFACT · HANDOFF</text>',
-            "</svg>",
-        ]
-    )
-    return "".join(svg)
-
-
-def make_footer() -> str:
-    """Close the desktop profile with one restrained line."""
-    return "".join(
-        [
-            svg_open(
-                "Curious by default. Clear by design.",
-                "An animated line closes the profile.",
-                1200,
-                170,
-            ),
-            frame(1200, 170),
-            '<path d="M0 130C168 30 294 170 452 100S724 40 874 108s222 50 326-30" '
-            'class="wire dash" stroke-width="3" opacity=".7"/>',
-            '<circle cx="119" cy="100" r="7" fill="#63D9D1" class="pulse" filter="url(#glow)"/>',
-            '<circle cx="1080" cy="94" r="7" fill="#FF9B7A" class="pulse" filter="url(#glow)"/>',
-            f'<text x="600" y="77" text-anchor="middle" class="section">{esc(IDENTITY["motto"])}</text>',
-            '<text x="600" y="109" text-anchor="middle" class="body">Thanks for looking around.</text>',
-            "</svg>",
-        ]
-    )
-
-
-def make_mobile_footer() -> str:
-    """Close the narrow profile with readable type and subtle motion."""
-    return "".join(
-        [
-            svg_open(
-                "Curious by default. Clear by design.",
-                "A mobile closing note with an animated line.",
-                760,
-                250,
-            ),
-            frame(760, 250, 30),
-            '<path d="M0 190C120 100 224 226 352 165S566 118 760 182" '
-            'class="wire dash" stroke-width="3" opacity=".7"/>',
-            '<circle cx="88" cy="158" r="8" fill="#63D9D1" class="pulse" filter="url(#glow)"/>',
-            '<circle cx="674" cy="166" r="8" fill="#FF9B7A" class="pulse" filter="url(#glow)"/>',
-            f'<text x="380" y="83" text-anchor="middle" class="title">{esc(IDENTITY["motto"])}</text>',
-            '<text x="380" y="124" text-anchor="middle" class="mobileBody">Thanks for looking around.</text>',
+            f'<rect width="{width}" height="{height}" rx="28" fill="#050814"/>',
+            f'<rect width="{width}" height="{height}" fill="url(#microGrid)" opacity=".72"/>',
+            f'<g class="orbit"><ellipse cx="{center_x}" cy="{center_y}" rx="{rx}" ry="{ry}" '
+            'fill="none" stroke="url(#signal)" stroke-width="3" stroke-dasharray="8 14"/></g>',
+            f'<g class="orbitReverse"><ellipse cx="{center_x}" cy="{center_y}" rx="{rx + 72}" '
+            f'ry="{outer_ry}" fill="none" stroke="url(#copper)" '
+            'stroke-opacity=".55" stroke-width="1.5" stroke-dasharray="2 11"/></g>',
+            f'<path d="M0 {center_y + 36}C{center_x // 2} {center_y - 86} '
+            f'{center_x + center_x // 2} {center_y + 112} {width} {center_y - 34}" '
+            'class="wire dash" stroke-width="2" opacity=".55"/>',
+            f'<circle cx="{center_x}" cy="{center_y}" r="10" fill="#FFF9EF" class="pulse" '
+            'filter="url(#glow)"/>',
+            f'<rect x="1" y="1" width="{width - 2}" height="{height - 2}" rx="27" '
+            'fill="none" stroke="#E9F3FF" stroke-opacity=".15"/>',
             "</svg>",
         ]
     )
@@ -332,16 +302,38 @@ def main() -> None:
     """Generate every deterministic responsive profile SVG."""
     ASSETS.mkdir(parents=True, exist_ok=True)
     generated = {
-        "hero-curiosity-workshop.svg": make_hero(),
-        "hero-curiosity-workshop-mobile.svg": make_mobile_hero(),
-        "project-cabinet.svg": make_cabinet(),
-        "making-machine.svg": make_machine(),
-        "workshop-footer.svg": make_footer(),
-        "workshop-footer-mobile.svg": make_mobile_footer(),
+        "spatial-hero.svg": make_hero(),
+        "spatial-hero-mobile.svg": make_mobile_hero(),
+        "world-generative-vision.svg": make_world(
+            "world-generative-vision-v1.png",
+            "Generative vision",
+            "A glass generative seed flows through a woven mesh into a geometric leaf detection rig.",
+            "generative",
+        ),
+        "world-language-memory.svg": make_world(
+            "world-language-memory-v1.png",
+            "Language and memory",
+            "Paper poetry curls into an archival restoration structure through a luminous graph.",
+            "language",
+        ),
+        "world-movement-products.svg": make_world(
+            "world-movement-products-v1.png",
+            "Movement and products",
+            "A luminous route crosses ceramic terrain and becomes a glass product progress ring.",
+            "movement",
+        ),
+        "tool-constellation.svg": make_world(
+            "tool-constellation-v1.png",
+            "Tool constellation",
+            "Models, data, product craft, and delivery form one connected spatial system.",
+            "tools",
+        ),
+        "spatial-footer.svg": make_footer(1200, 210),
+        "spatial-footer-mobile.svg": make_footer(760, 250, mobile=True),
     }
     for filename, document in generated.items():
         (ASSETS / filename).write_text(document, encoding="utf-8")
-    print(f"Generated {len(generated)} responsive profile SVGs in {ASSETS}")
+    print(f"Generated {len(generated)} responsive Spatial Portfolio SVGs in {ASSETS}")
 
 
 if __name__ == "__main__":
