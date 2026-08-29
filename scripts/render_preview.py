@@ -46,9 +46,11 @@ def main() -> None:
     images = [
         render_svg(ASSETS / "spatial-hero.svg", inner_width),
         render_svg(ASSETS / "spatial-hero-mobile.svg", inner_width // 2),
+        render_svg(ASSETS / "capability-map.svg", inner_width),
+        render_svg(ASSETS / "capability-map-mobile.svg", inner_width // 2),
         render_svg(ASSETS / "world-generative-vision.svg", inner_width),
-        render_svg(ASSETS / "world-language-memory.svg", inner_width),
-        render_svg(ASSETS / "world-movement-products.svg", inner_width),
+        render_svg(ASSETS / "world-data-intelligence.svg", inner_width),
+        render_svg(ASSETS / "world-ai-product-system.svg", inner_width),
         render_svg(ASSETS / "curiosity-knot-wireframe.svg", inner_width),
         render_svg(ASSETS / "tool-constellation.svg", inner_width),
         render_svg(ASSETS / "spatial-footer.svg", inner_width),

@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="1040" viewBox="0 0 760 1040" role="img" aria-labelledby="title desc"><title id="title">Capability system</title><desc id="desc">Four connected capabilities: AI systems, data intelligence, product engineering, and reliable delivery.</desc>
+<defs>
+  <linearGradient id="signal" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#63D9D1"/>
+    <stop offset=".52" stop-color="#B89DFF"/>
+    <stop offset="1" stop-color="#FF9B7A"/>
+  </linearGradient>
+  <linearGradient id="copper" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#F0B07F"/>
+    <stop offset=".5" stop-color="#D37A4C"/>
+    <stop offset="1" stop-color="#7A3F30"/>
+  </linearGradient>
+  <radialGradient id="vignette">
+    <stop offset="55%" stop-color="#050814" stop-opacity="0"/>
+    <stop offset="100%" stop-color="#02040A" stop-opacity=".72"/>
+  </radialGradient>
+  <pattern id="microGrid" width="36" height="36" patternUnits="userSpaceOnUse">
+    <path d="M36 0H0V36" fill="none" stroke="#EAF4FF" stroke-opacity=".035"/>
+  </pattern>
+  <filter id="glow" x="-150%" y="-150%" width="400%" height="400%">
+    <feGaussianBlur stdDeviation="6" result="blur"/>
+    <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+  <filter id="soft" x="-30%" y="-30%" width="160%" height="160%">
+    <feDropShadow dx="0" dy="14" stdDeviation="18" flood-color="#00030A" flood-opacity=".72"/>
+  </filter>
+  <style><![CDATA[
+    .display{font:800 61px Inter,Segoe UI,Arial,sans-serif;fill:#FFF9EF;letter-spacing:-2.2px}
+    .mobileDisplay{font:800 67px Inter,Segoe UI,Arial,sans-serif;fill:#FFF9EF;letter-spacing:-2px}
+    .role{font:720 27px Inter,Segoe UI,Arial,sans-serif;fill:#E8E4F3;letter-spacing:-.35px}
+    .body{font:520 20px Inter,Segoe UI,Arial,sans-serif;fill:#C9C6D4}
+    .mobileBody{font:520 28px Inter,Segoe UI,Arial,sans-serif;fill:#C9C6D4}
+    .mono{font:700 13px 'JetBrains Mono',Consolas,monospace;fill:#F3EBDD;letter-spacing:1.8px}
+    .capTitle{font:760 24px Inter,Segoe UI,Arial,sans-serif;fill:#FFF9EF;letter-spacing:-.4px}
+    .capBody{font:520 16px Inter,Segoe UI,Arial,sans-serif;fill:#C9C6D4}
+    .capLabel{font:750 11px 'JetBrains Mono',Consolas,monospace;fill:#63D9D1;letter-spacing:1.6px}
+    .capCard{fill:#111725;fill-opacity:.9;stroke:#E9F3FF;stroke-opacity:.16}
+    .wire{fill:none;stroke:url(#signal);stroke-linecap:round;stroke-linejoin:round}
+    .dash{stroke-dasharray:9 15;animation:dash 16s linear infinite}
+    .draw{stroke-dasharray:420;animation:draw 8s ease-in-out infinite}
+    .orbit{animation:orbit 17s linear infinite;transform-box:fill-box;transform-origin:center}
+    .orbitReverse{animation:orbitReverse 24s linear infinite;transform-box:fill-box;transform-origin:center}
+    .float{animation:float 7s ease-in-out infinite;transform-box:fill-box;transform-origin:center}
+    .pulse{animation:pulse 3.4s ease-in-out infinite;transform-box:fill-box;transform-origin:center}
+    .scan{animation:scan 7.5s ease-in-out infinite}
+    .breathe{animation:breathe 5.5s ease-in-out infinite;transform-box:fill-box;transform-origin:center}
+    @keyframes dash{to{stroke-dashoffset:-480}}
+    @keyframes draw{0%,100%{stroke-dashoffset:420;opacity:.15}50%{stroke-dashoffset:0;opacity:.82}}
+    @keyframes orbit{to{transform:rotate(360deg)}}
+    @keyframes orbitReverse{to{transform:rotate(-360deg)}}
+    @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+    @keyframes pulse{0%,100%{opacity:.45;transform:scale(.86)}50%{opacity:1;transform:scale(1.12)}}
+    @keyframes scan{0%,100%{transform:translateX(-26%);opacity:0}45%,55%{opacity:.32}50%{transform:translateX(126%)}}
+    @keyframes breathe{0%,100%{opacity:.62}50%{opacity:1}}
+    @media(prefers-reduced-motion:reduce){*{animation:none!important}}
+  ]]></style>
+</defs><rect width="760" height="1040" rx="30" fill="#050814"/><rect width="760" height="1040" fill="url(#microGrid)" opacity=".86"/><radialGradient id="capGlow"><stop offset="0" stop-color="#75A9FF" stop-opacity=".25"/><stop offset="1" stop-color="#050814" stop-opacity="0"/></radialGradient><ellipse cx="380" cy="520" rx="289" ry="437" fill="url(#capGlow)"/><path d="M380 92V126" class="wire dash" stroke-width="2" opacity=".7"/><circle r="5" fill="#FFF9EF" filter="url(#glow)"><animateMotion dur="6s" repeatCount="indefinite" path="M380 92V126"/></circle><path d="M380 316V344" class="wire dash" stroke-width="2" opacity=".7"/><circle r="5" fill="#FFF9EF" filter="url(#glow)"><animateMotion dur="6s" repeatCount="indefinite" path="M380 316V344"/></circle><path d="M380 534V562" class="wire dash" stroke-width="2" opacity=".7"/><circle r="5" fill="#FFF9EF" filter="url(#glow)"><animateMotion dur="6s" repeatCount="indefinite" path="M380 534V562"/></circle><path d="M380 752V780" class="wire dash" stroke-width="2" opacity=".7"/><circle r="5" fill="#FFF9EF" filter="url(#glow)"><animateMotion dur="6s" repeatCount="indefinite" path="M380 752V780"/></circle><text x="48" y="52" class="capTitle" font-size="32">One connected capability system</text><text x="48" y="86" class="capBody" font-size="22">From evidence and models to products people can use.</text><g class="breathe" style="animation-delay:0s"><rect x="48" y="126" width="664" height="190" rx="24" class="capCard" filter="url(#soft)"/><rect x="70" y="148" width="36" height="5" rx="2.5" fill="url(#signal)"/><text x="70" y="174" class="capLabel">AI SYSTEMS</text><text x="70" y="204" class="capTitle" font-size="29">Models that stay inspectable</text><text x="70" y="245" class="capBody" font-size="21">ML · deep learning · computer vision · RAG</text><text x="70" y="271" class="capBody" font-size="21">Evaluation · baselines · model cards · limitations</text></g><g class="breathe" style="animation-delay:0.8s"><rect x="48" y="344" width="664" height="190" rx="24" class="capCard" filter="url(#soft)"/><rect x="70" y="366" width="36" height="5" rx="2.5" fill="url(#signal)"/><text x="70" y="392" class="capLabel">DATA INTELLIGENCE</text><text x="70" y="422" class="capTitle" font-size="29">Evidence into decisions</text><text x="70" y="463" class="capBody" font-size="21">ETL · SQL · analytics · forecasting · dashboards</text><text x="70" y="489" class="capBody" font-size="21">Data contracts · governance · visual explanation</text></g><g class="breathe" style="animation-delay:1.6s"><rect x="48" y="562" width="664" height="190" rx="24" class="capCard" filter="url(#soft)"/><rect x="70" y="584" width="36" height="5" rx="2.5" fill="url(#signal)"/><text x="70" y="610" class="capLabel">PRODUCT ENGINEERING</text><text x="70" y="640" class="capTitle" font-size="29">From notebook to interface</text><text x="70" y="681" class="capBody" font-size="21">FastAPI · Flask · React · Node.js · PostgreSQL</text><text x="70" y="707" class="capBody" font-size="21">Auth · roles · APIs · responsive user journeys</text></g><g class="breathe" style="animation-delay:2.4s"><rect x="48" y="780" width="664" height="190" rx="24" class="capCard" filter="url(#soft)"/><rect x="70" y="802" width="36" height="5" rx="2.5" fill="url(#signal)"/><text x="70" y="828" class="capLabel">RELIABLE DELIVERY</text><text x="70" y="858" class="capTitle" font-size="29">Proof around the product</text><text x="70" y="899" class="capBody" font-size="21">pytest · Playwright · Docker · CI/CD</text><text x="70" y="925" class="capBody" font-size="21">Reproducible setup · documentation · monitoring</text></g><rect x="1" y="1" width="758" height="1038" rx="29" fill="none" stroke="#E9F3FF" stroke-opacity=".16"/></svg>

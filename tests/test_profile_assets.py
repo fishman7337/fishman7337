@@ -54,8 +54,11 @@ def test_profile_content_has_required_identity_and_project_evidence() -> None:
     assert content["identity"]["name"] == "Goh Kun Ming"
     assert content["identity"]["username"] == "fishman7337"
     assert content["theme"]["cyan"].startswith("#")
-    assert len(content["projects"]) >= 3
+    assert len(content["projects"]) >= 6
     assert all(project.get("name") and project.get("desc") for project in content["projects"])
+    assert len(content["capabilities"]) == 4
+    assert len(content["experience"]) == 3
+    assert len(content["credentials"]) >= 5
 
 
 def test_text_helpers_escape_and_bound_content() -> None:
@@ -75,7 +78,7 @@ def test_main_generates_well_formed_svg_assets(
     assets.main()
 
     generated = sorted(tmp_path.glob("*.svg"))
-    assert len(generated) == 8
+    assert len(generated) == 10
     for path in generated:
         root = ET.parse(path).getroot()
         assert root.tag.endswith("svg")
@@ -88,9 +91,11 @@ def test_readme_uses_the_spatial_portfolio_visual_system() -> None:
     for asset in [
         "spatial-hero.svg",
         "spatial-hero-mobile.svg",
+        "capability-map.svg",
+        "capability-map-mobile.svg",
         "world-generative-vision.svg",
-        "world-language-memory.svg",
-        "world-movement-products.svg",
+        "world-data-intelligence.svg",
+        "world-ai-product-system.svg",
         "curiosity-knot-wireframe.svg",
         "tool-constellation.svg",
         "spatial-footer.svg",
@@ -101,7 +106,20 @@ def test_readme_uses_the_spatial_portfolio_visual_system() -> None:
     assert "Applied AI & Analytics Student" in (REPO_ROOT / "content" / "profile.yml").read_text(
         encoding="utf-8"
     )
-    assert readme.count("<details") >= 8
+    assert readme.count("<details") >= 14
+    assert "What I bring to a team" in readme
+    assert "Experience in practice" in readme
+    assert "public LinkedIn experience" in readme
+
+
+def test_employer_facing_claims_have_public_evidence_links() -> None:
+    """Keep experience and project claims connected to public records."""
+    readme = (REPO_ROOT / "README.md").read_text(encoding="utf-8")
+
+    assert "https://www.linkedin.com/in/gohkunming/details/experience/" in readme
+    assert "https://www.linkedin.com/in/gohkunming/details/certifications/" in readme
+    assert readme.count("https://github.com/fishman7337/") >= 12
+    assert "business-impact claims" in readme
 
 
 def test_3d_mesh_generation_is_well_formed(tmp_path: Path, monkeypatch: pytest.MonkeyPatch) -> None:

@@ -74,6 +74,10 @@ def defs() -> str:
     .body{{font:520 20px Inter,Segoe UI,Arial,sans-serif;fill:#C9C6D4}}
     .mobileBody{{font:520 28px Inter,Segoe UI,Arial,sans-serif;fill:#C9C6D4}}
     .mono{{font:700 13px 'JetBrains Mono',Consolas,monospace;fill:#F3EBDD;letter-spacing:1.8px}}
+    .capTitle{{font:760 24px Inter,Segoe UI,Arial,sans-serif;fill:#FFF9EF;letter-spacing:-.4px}}
+    .capBody{{font:520 16px Inter,Segoe UI,Arial,sans-serif;fill:#C9C6D4}}
+    .capLabel{{font:750 11px 'JetBrains Mono',Consolas,monospace;fill:#63D9D1;letter-spacing:1.6px}}
+    .capCard{{fill:#111725;fill-opacity:.9;stroke:#E9F3FF;stroke-opacity:.16}}
     .wire{{fill:none;stroke:url(#signal);stroke-linecap:round;stroke-linejoin:round}}
     .dash{{stroke-dasharray:9 15;animation:dash 16s linear infinite}}
     .draw{{stroke-dasharray:420;animation:draw 8s ease-in-out infinite}}
@@ -82,6 +86,7 @@ def defs() -> str:
     .float{{animation:float 7s ease-in-out infinite;transform-box:fill-box;transform-origin:center}}
     .pulse{{animation:pulse 3.4s ease-in-out infinite;transform-box:fill-box;transform-origin:center}}
     .scan{{animation:scan 7.5s ease-in-out infinite}}
+    .breathe{{animation:breathe 5.5s ease-in-out infinite;transform-box:fill-box;transform-origin:center}}
     @keyframes dash{{to{{stroke-dashoffset:-480}}}}
     @keyframes draw{{0%,100%{{stroke-dashoffset:420;opacity:.15}}50%{{stroke-dashoffset:0;opacity:.82}}}}
     @keyframes orbit{{to{{transform:rotate(360deg)}}}}
@@ -89,6 +94,7 @@ def defs() -> str:
     @keyframes float{{0%,100%{{transform:translateY(0)}}50%{{transform:translateY(-10px)}}}}
     @keyframes pulse{{0%,100%{{opacity:.45;transform:scale(.86)}}50%{{opacity:1;transform:scale(1.12)}}}}
     @keyframes scan{{0%,100%{{transform:translateX(-26%);opacity:0}}45%,55%{{opacity:.32}}50%{{transform:translateX(126%)}}}}
+    @keyframes breathe{{0%,100%{{opacity:.62}}50%{{opacity:1}}}}
     @media(prefers-reduced-motion:reduce){{*{{animation:none!important}}}}
   ]]></style>
 </defs>"""
@@ -161,7 +167,7 @@ def make_hero() -> str:
             '<path d="M2 300C118 246 232 344 382 282" class="wire dash" stroke-width="2" opacity=".85"/>',
             '<circle cx="2" cy="300" r="5" fill="#63D9D1" class="pulse" filter="url(#glow)"/>',
             '<circle cx="382" cy="282" r="5" fill="#FF9B7A" class="pulse" filter="url(#glow)"/>',
-            '<text x="2" y="352" class="mono">MODELS · DATA · PRODUCTS · DELIVERY</text>',
+            '<text x="2" y="352" class="mono">ML · DATA · FULL-STACK · EVALUATION</text>',
             "</g>",
             '<g class="orbit" opacity=".72"><ellipse cx="872" cy="222" rx="258" ry="104" '
             'fill="none" stroke="url(#signal)" stroke-width="1.5" stroke-dasharray="5 14"/></g>',
@@ -235,6 +241,97 @@ WORLD_PATHS = {
 }
 
 
+def capability_card(
+    item: dict[str, object], *, x: int, y: int, width: int, mobile: bool = False
+) -> str:
+    """Render one capability card from the public profile source of truth."""
+    height = 172 if not mobile else 190
+    title_y = y + 70 if not mobile else y + 78
+    body_y = y + 108 if not mobile else y + 119
+    title_size = 24 if not mobile else 29
+    body_size = 16 if not mobile else 21
+    lines = item["lines"]
+    return "".join(
+        [
+            f'<g class="breathe" style="animation-delay:{esc(item["delay"])}s">',
+            f'<rect x="{x}" y="{y}" width="{width}" height="{height}" rx="24" class="capCard" filter="url(#soft)"/>',
+            f'<rect x="{x + 22}" y="{y + 22}" width="36" height="5" rx="2.5" fill="url(#signal)"/>',
+            f'<text x="{x + 22}" y="{y + 48}" class="capLabel">{esc(item["label"])}</text>',
+            f'<text x="{x + 22}" y="{title_y}" class="capTitle" font-size="{title_size}">{esc(item["title"])}</text>',
+            f'<text x="{x + 22}" y="{body_y}" class="capBody" font-size="{body_size}">{esc(lines[0])}</text>',
+            f'<text x="{x + 22}" y="{body_y + (26 if mobile else 23)}" class="capBody" font-size="{body_size}">{esc(lines[1])}</text>',
+            "</g>",
+        ]
+    )
+
+
+def make_capability_map(*, mobile: bool = False) -> str:
+    """Build the animated employer-facing capability system."""
+    items = PROFILE["capabilities"]
+    if mobile:
+        width, height = 760, 1040
+        card_width = 664
+        positions = [(48, 126), (48, 344), (48, 562), (48, 780)]
+        paths = [
+            "M380 92V126",
+            "M380 316V344",
+            "M380 534V562",
+            "M380 752V780",
+        ]
+    else:
+        width, height = 1200, 560
+        card_width = 494
+        positions = [(54, 94), (652, 94), (54, 312), (652, 312)]
+        paths = [
+            "M600 280C520 222 536 180 548 180",
+            "M600 280C680 222 664 180 652 180",
+            "M600 280C520 338 536 398 548 398",
+            "M600 280C680 338 664 398 652 398",
+        ]
+    parts = [
+        svg_open(
+            "Capability system",
+            "Four connected capabilities: AI systems, data intelligence, product engineering, and reliable delivery.",
+            width,
+            height,
+        ),
+        f'<rect width="{width}" height="{height}" rx="30" fill="#050814"/>',
+        f'<rect width="{width}" height="{height}" fill="url(#microGrid)" opacity=".86"/>',
+        '<radialGradient id="capGlow"><stop offset="0" stop-color="#75A9FF" stop-opacity=".25"/><stop offset="1" stop-color="#050814" stop-opacity="0"/></radialGradient>',
+        f'<ellipse cx="{width // 2}" cy="{height // 2}" rx="{width * 0.38:.0f}" ry="{height * 0.42:.0f}" fill="url(#capGlow)"/>',
+    ]
+    for path in paths:
+        parts.append(f'<path d="{path}" class="wire dash" stroke-width="2" opacity=".7"/>')
+        parts.append(
+            f'<circle r="5" fill="#FFF9EF" filter="url(#glow)"><animateMotion dur="6s" repeatCount="indefinite" path="{path}"/></circle>'
+        )
+    if not mobile:
+        parts.extend(
+            [
+                '<g transform="translate(600 280)">',
+                '<circle r="60" fill="#0D1422" stroke="url(#signal)" stroke-width="2" filter="url(#soft)"/>',
+                '<g class="orbit"><circle cx="0" cy="-76" r="6" fill="#63D9D1" filter="url(#glow)"/></g>',
+                '<text x="0" y="-8" text-anchor="middle" class="capLabel">FROM QUESTION</text>',
+                '<text x="0" y="18" text-anchor="middle" class="capLabel" fill="#FFF9EF">TO USEFUL SYSTEM</text>',
+                "</g>",
+            ]
+        )
+    else:
+        parts.extend(
+            [
+                '<text x="48" y="52" class="capTitle" font-size="32">One connected capability system</text>',
+                '<text x="48" y="86" class="capBody" font-size="22">From evidence and models to products people can use.</text>',
+            ]
+        )
+    for item, (x, y) in zip(items, positions, strict=True):
+        parts.append(capability_card(item, x=x, y=y, width=card_width, mobile=mobile))
+    parts.append(
+        f'<rect x="1" y="1" width="{width - 2}" height="{height - 2}" rx="29" fill="none" stroke="#E9F3FF" stroke-opacity=".16"/>'
+    )
+    parts.append("</svg>")
+    return "".join(parts)
+
+
 def make_world(filename: str, title: str, description: str, variant: str) -> str:
     """Wrap one generated project world in an animated spatial viewport."""
     height = 560 if variant != "tools" else 590
@@ -304,22 +401,24 @@ def main() -> None:
     generated = {
         "spatial-hero.svg": make_hero(),
         "spatial-hero-mobile.svg": make_mobile_hero(),
+        "capability-map.svg": make_capability_map(),
+        "capability-map-mobile.svg": make_capability_map(mobile=True),
         "world-generative-vision.svg": make_world(
             "world-generative-vision-v1.png",
             "Generative vision",
             "A glass generative seed flows through a woven mesh into a geometric leaf detection rig.",
             "generative",
         ),
-        "world-language-memory.svg": make_world(
-            "world-language-memory-v1.png",
-            "Language and memory",
-            "Paper poetry curls into an archival restoration structure through a luminous graph.",
+        "world-data-intelligence.svg": make_world(
+            "world-data-intelligence-v2.png",
+            "Data intelligence",
+            "Evidence flows across a dark analytical landscape into clear decision signals.",
             "language",
         ),
-        "world-movement-products.svg": make_world(
-            "world-movement-products-v1.png",
-            "Movement and products",
-            "A luminous route crosses ceramic terrain and becomes a glass product progress ring.",
+        "world-ai-product-system.svg": make_world(
+            "world-ai-product-system-v2.png",
+            "AI product systems",
+            "Inputs, models, retrieval, interfaces, testing, and delivery form one connected product system.",
             "movement",
         ),
         "tool-constellation.svg": make_world(

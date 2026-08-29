@@ -1,4 +1,4 @@
-# fishman7337 GitHub Profile README visual source of truth
+# fishman7337 GitHub Profile README public source of truth
 # Edit this file first, then run: python scripts/build_assets.py
 
 identity:
@@ -7,31 +7,106 @@ identity:
   location: Singapore
   timezone: Asia/Singapore (SGT, UTC+08:00)
   role: Applied AI & Analytics Student
-  education: Diploma in Applied AI & Analytics @ Singapore Polytechnic
+  education: Year 3, Diploma in Applied AI & Analytics @ Singapore Polytechnic
   email: kunmingaden@gmail.com
   github: https://github.com/fishman7337
   linkedin: https://www.linkedin.com/in/gohkunming/
-  tagline: I build machine-learning systems you can inspect, test, and use.
+  tagline: AI systems, data products, and reliable delivery—from evidence to experience.
   motto: Curious by default. Clear by design.
 
-signals:
-  - Generative Systems
-  - Computer Vision
-  - Algorithms
-  - Data Products
-  - Creative Coding
-  - Product Engineering
+positioning:
+  headline: Applied AI systems builder with a research mindset and a product-engineering habit.
+  summary: >-
+    Kun Ming works across data engineering, analytics, machine learning, deep learning,
+    retrieval-augmented generation, full-stack development, evaluation, and delivery.
+  interests:
+    - Intelligent systems
+    - AI safety and governance
+    - Quantum computing
+    - Teaching and mentoring
 
-workbench:
-  - title: Learning deeply
-    label: Applied AI & Analytics
-    desc: Building foundations across modelling, data, software, and evaluation.
-  - title: Building openly
-    label: Experiments + products
-    desc: Keeping the reasoning, tests, and trade-offs close to the artifact.
-  - title: Optimising for
-    label: Clarity + usefulness
-    desc: Making technical work easier to inspect, understand, and try.
+signals:
+  - AI Systems
+  - Data Intelligence
+  - Product Engineering
+  - Model Evaluation
+  - Responsible AI
+  - Research Communication
+
+capabilities:
+  - label: AI SYSTEMS
+    title: Models that stay inspectable
+    lines:
+      - ML · deep learning · computer vision · RAG
+      - Evaluation · baselines · model cards · limitations
+    delay: 0
+  - label: DATA INTELLIGENCE
+    title: Evidence into decisions
+    lines:
+      - ETL · SQL · analytics · forecasting · dashboards
+      - Data contracts · governance · visual explanation
+    delay: 0.8
+  - label: PRODUCT ENGINEERING
+    title: From notebook to interface
+    lines:
+      - FastAPI · Flask · React · Node.js · PostgreSQL
+      - Auth · roles · APIs · responsive user journeys
+    delay: 1.6
+  - label: RELIABLE DELIVERY
+    title: Proof around the product
+    lines:
+      - pytest · Playwright · Docker · CI/CD
+      - Reproducible setup · documentation · monitoring
+    delay: 2.4
+
+experience:
+  - role: AI & Data Solutions Researcher
+    organisation: Singapore Polytechnic
+    dates: Mar 2026
+    type: Part-time
+    scope: >-
+      Applied AI and systems analysis for a multi-role operational platform spanning
+      32 routes, 4 roles, and 11 workflow domains.
+    evidence:
+      - 39-table Supabase architecture with 30 migrations, 175 row-level security policies, and 5 serverless functions
+      - 3 assisted workflows and a GPT-4.1 conversational assistant grounded in 14 documents and 1 institutional website
+      - 238 tests, 31 browser end-to-end scenarios, and 4 continuous-delivery workflows
+  - role: Student Developer
+    organisation: Singapore Polytechnic
+    dates: Sep 2025 – Mar 2026
+    scope: >-
+      Built an institutional retrieval-augmented application using hybrid search,
+      reranking, metadata constraints, and hallucination grading.
+    evidence:
+      - Claude 3 Haiku and Cohere embeddings through Amazon Bedrock, with pgvector, BM25, and reciprocal-rank fusion
+      - 53 FastAPI endpoints, 7 Next.js pages, and an architecture spanning 27 AWS services
+      - 312 pytest definitions across 72 files, 11 browser scenarios, and a 30-page deployment and maintenance guide
+  - role: Co-Founder, Data & Intelligent Systems
+    organisation: Wagglo SG
+    dates: Feb 2026 – Mar 2026
+    scope: >-
+      Led the data design for a pet-owner matching concept, from market research to
+      an evidence-gated compatibility and recommendation framework.
+    evidence:
+      - Top-K recommendation design with 9 weighted compatibility dimensions and 8 behavioural event types
+      - Analysed 104 survey responses into 102 clean records to shape product priorities
+
+credentials:
+  - name: Quantum Computing For Everyone - An Introduction
+    issuer: Fractal
+    issued: Jul 2026
+  - name: Ethical AI - AI Essentials For Everyone
+    issuer: University of Cambridge
+    issued: Jun 2026
+  - name: Introduction to Complexity Science
+    issuer: Nanyang Technological University Singapore
+    issued: Jun 2026
+  - name: Advanced Deep Learning with Keras
+    issuer: DataCamp
+    issued: Mar 2026
+  - name: Fundamentals of Deep Learning
+    issuer: NVIDIA
+    issued: Feb 2026
 
 process:
   - Question
@@ -41,56 +116,36 @@ process:
   - Product
   - Share
 
-curiosities:
-  - title: Generative systems
-    desc: Small, inspectable experiments that make model behaviour easier to reason about.
-  - title: Computer vision
-    desc: Reliable paths from messy data and validation to inference people can actually use.
-  - title: Human-friendly ML
-    desc: Interfaces and explanations that help a model become a useful learning object.
-
 projects:
   - name: Hybrid Generative Models
     repo: hybrid-quantum-classical-gan-research
     theme: Generative ML
-    question: What changes when a classical image generator receives a circuit-based latent prior?
-    desc: A reproducible comparison of classical and hybrid generative-model variants with bounded evaluation.
-    stack: Qiskit · TensorFlow · FID/KID · Reproducibility
+    desc: Classical GAN and 3-, 5-, and 7-qubit hybrid latent-prior experiments with PSD-safe evaluation utilities and 21 tests.
+    stack: Qiskit · TensorFlow · GANs · FID/KID
   - name: Leaf Object Detection
     repo: leaf-object-detection
     theme: Computer Vision
-    question: How do you make the entire detection pipeline trustworthy, not just the training run?
-    desc: Reproducible YOLO data preparation, validation, training, export, and browser-inference tooling.
-    stack: Python · YOLO · ONNX · Computer Vision
-  - name: HaikuForge AI
-    repo: sp-daaa-dsaa-ca1-haiku-generator
-    theme: Creative ML
-    question: Can a constrained text generator feel playful while keeping its rules visible?
-    desc: Syllable-aware Markov generation, poetic transformations, batch permutations, and WAV narration.
-    stack: Python · Markov Chains · Audio · NLP
-  - name: Newspaper Restoration
-    repo: sp-daaa-dsaa-ca2-newspaper-restoration
-    theme: Algorithms
-    question: How can damaged historical text be restored through explainable search structures?
-    desc: Prefix tries, wildcard matching, fuzzy search, and graph visualisation in one restoration toolkit.
-    stack: Python · Tries · Edit Distance · NetworkX
-  - name: GoBest Trip Predictor
-    repo: sp-daaa-pai-ca2-gobest-trip-safety-predictor
-    theme: Applied ML
-    question: What does it take to package a prediction workflow for reliable offline use?
-    desc: A desktop ML app with batch inference, feedback, drift checks, and packaged smoke tests.
-    stack: Python · CustomTkinter · scikit-learn · PyInstaller
-  - name: FitnessQuest
-    repo: sp-daaa-bed-ca-fitnessquest
-    theme: Full-Stack
-    question: How can a fitness journey become engaging without hiding the engineering underneath?
-    desc: A gamified web app with authenticated APIs, browser tests, and responsive user journeys.
-    stack: Node.js · Express · MySQL · Playwright
+    desc: A YOLO preparation-to-browser pipeline with a recorded 57,164-image dataset run, ONNX export, and 12 tests.
+    stack: Python · YOLO · ONNX · TensorFlow.js
+  - name: HDB Price Dashboard
+    repo: sp-daaa-davi-ca1-hdb-price-dashboard
+    theme: Data Visualisation
+    desc: Singapore resale analytics over 202,461 canonical cleaned records and a 216,695-row location-enriched table.
+    stack: Python · Tableau · Geospatial data · Testing
+  - name: Student Risk Analytics
+    repo: sp-daaa-davi-ca2-student-performance-dashboard
+    theme: Decision Support
+    desc: A reusable Dash application for latest-semester GPA and attendance analysis, with eight automated tests.
+    stack: Dash · Plotly · Pandas · pytest
+  - name: VeggieAI
+    repo: sp-daaa-doaa-ca2-vegetable-classification-application
+    theme: Applied AI Product
+    desc: A split Flask and model-service produce platform with 217 backend tests, 22 model tests, and coverage gates.
+    stack: Flask · TensorFlow · SQLite · Docker
   - name: EstateScope AI
     repo: sp-daaa-doaa-ca1-housing-price-ml-application
     theme: Multimodal ML
-    question: How can tabular, text, and image signals meet in one housing-value workflow?
-    desc: A housing-value application with multimodal modelling and deployment documentation.
+    desc: A tested property-price prototype combining structured, language, and image modelling in a Flask application.
     stack: Flask · scikit-learn · NLP · CNN
 
 skills:
@@ -102,27 +157,34 @@ skills:
     - scikit-learn
     - Qiskit
     - OpenCV
+    - RAG
   Data & Visualisation:
     - Pandas
     - NumPy
+    - SQL
+    - ETL
     - Matplotlib
     - Plotly
     - Tableau
-    - SQL
+    - Power BI
   Product Engineering:
-    - Flask
     - FastAPI
-    - Node.js
+    - Flask
     - React
+    - Next.js
+    - Node.js
     - PostgreSQL
-    - Docker
+    - Supabase
+    - REST APIs
   Quality & Delivery:
-    - GitHub Actions
     - pytest
     - Playwright
-    - Ruff
-    - Reproducibility
+    - Docker
+    - GitHub Actions
+    - CI/CD
+    - AWS
     - Documentation
+    - Model and data governance
 
 theme:
   bg0: "#080B12"

@@ -40,40 +40,38 @@ Constraints: no text, letters, numbers, labels, logos, watermark, people, dashbo
 Avoid: generic cyberpunk, stock technology icons, clutter, tiny details as the main subject, split-screen composition, cartoon style.
 ```
 
-## Language and Memory world
+## Data Intelligence world
 
-Source: `assets/world-language-memory-v1.png`. The hero image was supplied as Image 1.
+Source: `assets/world-data-intelligence-v2.png`.
 
 ```text
-Use Image 1 only as the exact visual and material style reference.
 Use case: stylized-concept
-Asset type: wide 3D editorial chapter artwork for a GitHub profile README
-Primary request: Create the “Language and Memory” project world—poetry generation and historical newspaper restoration as one tactile archival installation.
-Scene/backdrop: the same deep obsidian-navy studio void with a low museum plinth.
-Subject: a flowing crescent of warm ivory paper ribbons on the left, folded like a delicate generative poem; on the right, fragmented archival newspaper sheets physically reassembling into a clean page. Between them, a copper-violet graph of threads and nodes forms a graceful trie-like bridge, with small glass lenses restoring damaged areas. The papers must contain abstract line textures only, never legible words.
-Style/medium: match Image 1 exactly—premium cinematic editorial 3D, warm paper fibers, translucent glass, anodized metal, fine luminous mesh, realistic tactile detail.
-Composition/framing: very wide 2:1 panorama, clear left-to-right story, large readable forms, generous margins, no split-screen border.
-Lighting/mood: cyan and ultraviolet rim light, warm copper practical lights, restrained coral, intelligent and poetic rather than nostalgic.
-Constraints: no readable text, letters, numbers, logos, watermark, people, dashboards, fake UI, weapons, aircraft, military, institutional, surveillance, prior-affiliation branding, research-index branding, or academic-identifier motifs.
-Avoid: literal book cover, library stock image, cluttered collage, illegible fake typography, cartoon style, excessive sepia.
+Asset type: wide cinematic GitHub profile README section background
+Primary request: Create a premium, employer-facing 3D spatial artwork representing data intelligence and decision support.
+Scene/backdrop: deep midnight navy gallery space with a dark topographic Singapore-inspired data landscape, translucent glass data slabs, luminous analytical paths, clustered points, clean graph arcs, and one calm decision beacon emerging from the evidence.
+Subject: a coherent data-to-insight system, not a generic dashboard screenshot.
+Style/medium: high-end editorial 3D render, elegant glassmorphism, ceramic and brushed metal materials, precise scientific visualisation, sophisticated product-design portfolio aesthetic.
+Composition/framing: wide landscape composition, strong depth, balanced left and right focal areas, and generous dark negative space around the edges.
+Lighting/mood: restrained cyan, electric blue, warm coral, and soft violet light on a nearly black background; cinematic, intelligent, and confident.
+Constraints: no people, logos, readable text, numbers, brand marks, watermark, browser UI, or holographic clutter.
+Avoid: neon overload, busy science-fiction interfaces, stock illustration, noisy particles, and tiny labels.
 ```
 
-## Movement and Products world
+## AI Product System world
 
-Source: `assets/world-movement-products-v1.png`. The hero image was supplied as Image 1.
+Source: `assets/world-ai-product-system-v2.png`.
 
 ```text
-Use Image 1 only as the exact visual and material style reference.
 Use case: stylized-concept
-Asset type: wide 3D editorial chapter artwork for a GitHub profile README
-Primary request: Create the “Movement and Products” project world—route planning and a gamified fitness product embodied as one sculptural landscape.
-Scene/backdrop: the same obsidian-navy studio void and circular architectural platform.
-Subject: on the left and through the center, a dark ceramic topographic terrain with one luminous coral route threading through cyan waypoints; on the right, a refined glass progress ring surrounding stacked modular product blocks and a small energetic pulse ribbon. Make the route flow physically into the progress ring so the system reads as a single story from movement to product.
-Style/medium: match Image 1 exactly—premium cinematic product visualization, glass, anodized metal, woven luminous mesh, ceramic, precise fine wireframes.
-Composition/framing: very wide 2:1 panorama, low oblique camera, large clean forms readable when displayed at 800 pixels wide, balanced depth and safe margins.
-Lighting/mood: cyan/violet edge light, copper reflections, focused coral route, bold but restrained.
-Constraints: no text, letters, numbers, labels, maps with real place names, logos, watermark, people, dashboards, fake UI, weapons, aircraft, military, institutional, surveillance, prior-affiliation branding, research-index branding, or academic-identifier motifs.
-Avoid: generic fitness watch advertisement, map screenshot, glowing globe, clutter, toy-like game pieces, cartoon style.
+Asset type: wide cinematic GitHub profile README section background
+Primary request: Create a premium 3D spatial artwork representing an end-to-end applied AI product, from messy inputs through models and retrieval into a reliable interface and delivery pipeline.
+Scene/backdrop: a deep midnight gallery containing a left-to-right system: a glass aperture and data fragments flow into a restrained neural mesh, then a retrieval lattice and API bridge, finally arriving at a clean product portal; testing and delivery appear as rings and checkpoints.
+Subject: one cohesive trustworthy AI system showing engineering connection rather than isolated technology icons.
+Style/medium: high-end editorial 3D render using glass, brushed metal, ceramic, and fine mesh.
+Composition/framing: wide landscape with three clear stages, strong depth, and dark breathing room around the outer edges.
+Lighting/mood: confident, rigorous, and inventive; restrained cyan and blue with warm coral and violet accents.
+Constraints: no people, logos, readable text, numbers, brand marks, watermark, or literal browser screenshot.
+Avoid: neon clutter, a generic robot brain, stock illustration, floating code, and noisy particles.
 ```
 
 ## Tool Constellation artwork
@@ -96,13 +94,15 @@ Avoid: logo cloud, scattered icons, generic circuit board, cyberpunk city, clutt
 
 ## Generated SVG system
 
-`python scripts/build_assets.py` produces eight deterministic, accessible, self-contained SVGs:
+`python scripts/build_assets.py` produces ten deterministic, accessible, self-contained SVGs:
 
 - `spatial-hero.svg`
 - `spatial-hero-mobile.svg`
+- `capability-map.svg`
+- `capability-map-mobile.svg`
 - `world-generative-vision.svg`
-- `world-language-memory.svg`
-- `world-movement-products.svg`
+- `world-data-intelligence.svg`
+- `world-ai-product-system.svg`
 - `tool-constellation.svg`
 - `spatial-footer.svg`
 - `spatial-footer-mobile.svg`
