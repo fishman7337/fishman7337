@@ -253,9 +253,10 @@ def capability_card(
     lines = item["lines"]
     return "".join(
         [
-            f'<g class="breathe" style="animation-delay:{esc(item["delay"])}s">',
+            "<g>",
             f'<rect x="{x}" y="{y}" width="{width}" height="{height}" rx="24" class="capCard" filter="url(#soft)"/>',
-            f'<rect x="{x + 22}" y="{y + 22}" width="36" height="5" rx="2.5" fill="url(#signal)"/>',
+            f'<rect x="{x + 22}" y="{y + 22}" width="36" height="5" rx="2.5" fill="url(#signal)" '
+            f'class="breathe" style="animation-delay:{esc(item["delay"])}s"/>',
             f'<text x="{x + 22}" y="{y + 48}" class="capLabel">{esc(item["label"])}</text>',
             f'<text x="{x + 22}" y="{title_y}" class="capTitle" font-size="{title_size}">{esc(item["title"])}</text>',
             f'<text x="{x + 22}" y="{body_y}" class="capBody" font-size="{body_size}">{esc(lines[0])}</text>',
