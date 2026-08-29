@@ -11,6 +11,17 @@ This document records the public evidence used for the employer-facing GitHub pr
 | Year 3 Diploma in Applied AI & Analytics student at Singapore Polytechnic | [LinkedIn profile](https://www.linkedin.com/in/gohkunming/) |
 | Public contact email | [GitHub profile](https://github.com/fishman7337) |
 
+## Biography and direction
+
+The expanded biography is a first-person restatement of the public LinkedIn About section, supported by the breadth of public repository work.
+
+- Technical scope: data engineering and analysis, machine learning, deep learning, model evaluation, conversational and retrieval-based AI, end-to-end applications, and software delivery.
+- Research interests: intelligent systems, AI safety and governance, quantum computing, and reliability, interpretability, and responsibility in AI systems.
+- Systems interests: problem formulation, data quality, model architecture, robustness, scalability, evaluation, and the path from an experiment to a usable application.
+- Longer-term direction: AI academia, teaching, and mentoring.
+
+The README does not infer personality traits, availability, employment preferences, awards, or impact. Statements about working style are bounded to repeated practices visible in public repositories: baselines, testing, documentation, limitations, data validation, architecture notes, and reproducible setup.
+
 ## Positioning and skills
 
 The introduction is a concise restatement of the public LinkedIn About section and the technologies demonstrated in public repositories.

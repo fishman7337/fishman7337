@@ -59,6 +59,9 @@ def test_profile_content_has_required_identity_and_project_evidence() -> None:
     assert len(content["capabilities"]) == 4
     assert len(content["experience"]) == 3
     assert len(content["credentials"]) >= 5
+    assert len(content["approach"]) == 6
+    assert len(content["collaboration"]["strengths"]) >= 5
+    assert "AI academia" in content["about"]["long_term_direction"]
 
 
 def test_text_helpers_escape_and_bound_content() -> None:
@@ -110,6 +113,26 @@ def test_readme_uses_the_spatial_portfolio_visual_system() -> None:
     assert "What I bring to a team" in readme
     assert "Experience in practice" in readme
     assert "public LinkedIn experience" in readme
+
+
+def test_readme_has_substantive_public_biography() -> None:
+    """Keep the profile person-led instead of relying on artwork alone."""
+    readme = (REPO_ROOT / "README.md").read_text(encoding="utf-8")
+
+    for section in [
+        "## About me",
+        "### A quick read",
+        "## How I approach a problem",
+        "## What teammates can expect from me",
+        "## Learning and research direction",
+        "### Problems I want to keep exploring",
+        "### The environments where I contribute best",
+    ]:
+        assert section in readme
+
+    assert "AI academia" in readme
+    assert "teaching and mentoring" in readme.lower()
+    assert "<details open>" in readme
 
 
 def test_employer_facing_claims_have_public_evidence_links() -> None:

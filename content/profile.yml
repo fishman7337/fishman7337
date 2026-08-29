@@ -25,6 +25,49 @@ positioning:
     - Quantum computing
     - Teaching and mentoring
 
+about:
+  present: >-
+    Year 3 Diploma in Applied AI & Analytics student at Singapore Polytechnic,
+    based in Singapore.
+  technical_scope: >-
+    Works across data engineering and analysis, machine learning, deep learning,
+    model evaluation, computer vision, retrieval-augmented and conversational AI,
+    full-stack development, cloud services, testing, and delivery.
+  research_perspective: >-
+    Interested in problem formulation, data quality, model architecture,
+    interpretability, reliability, robustness, scalability, and responsible use.
+  long_term_direction: >-
+    Hopes to contribute to AI academia while continuing to build applied systems,
+    with teaching and mentoring as part of that direction.
+
+approach:
+  - title: Start with the decision
+    desc: Identify the user, constraint, decision, and useful outcome before choosing an algorithm.
+  - title: Treat data quality as part of the model
+    desc: Make provenance, missingness, leakage, definitions, and validation explicit.
+  - title: Build a baseline first
+    desc: Require evidence before adding architectural complexity.
+  - title: Connect the whole path
+    desc: Consider how ingestion, modelling, retrieval, APIs, interfaces, roles, and deployment interact.
+  - title: Design for failure
+    desc: Address robustness, uncertainty, access control, fallbacks, and limitations.
+  - title: Leave an inspectable trail
+    desc: Preserve tests, documentation, evaluation artifacts, and handover notes.
+
+collaboration:
+  strengths:
+    - Research-and-systems thinking
+    - Explicit assumptions and evaluation criteria
+    - Honest documentation of limitations and trade-offs
+    - Attention to data, testing, deployment, and maintenance layers
+    - Technical communication through diagrams and structured documentation
+  best_fit:
+    - Applied AI systems
+    - Data products and decision support
+    - Research engineering and evaluation
+    - Responsible AI and governance
+    - Technically grounded experimentation
+
 signals:
   - AI Systems
   - Data Intelligence

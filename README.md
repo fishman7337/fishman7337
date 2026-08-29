@@ -19,13 +19,35 @@
 
 </div>
 
-## Hello — I’m Kun Ming.
+## About me
 
-I’m a **Year 3 Diploma in Applied AI & Analytics student at Singapore Polytechnic**, based in Singapore. I build across data engineering, analytics, machine learning, deep learning, retrieval-augmented generation, full-stack applications, and the quality work that helps those systems hold together.
+I’m **Goh Kun Ming**, a Year 3 student in the **Diploma in Applied AI & Analytics at Singapore Polytechnic**, based in Singapore. I am developing toward the kind of AI practitioner who can move between research questions, data, models, software systems, and the people who eventually have to understand or use what was built.
 
-My interests sit where **research thinking meets useful software**: framing the right question, making data trustworthy, comparing models honestly, designing for real users, and leaving enough evidence for another person to inspect the result. I’m especially interested in intelligent systems, AI safety and governance, quantum computing, and—over the longer term—teaching and mentoring.
+My technical experience spans **data engineering and analysis, machine learning, deep learning, model evaluation, computer vision, conversational and retrieval-based AI, full-stack development, and cloud delivery**. I enjoy working across those boundaries because the most interesting problems rarely stop at a notebook: they continue into data contracts, APIs, interfaces, testing, deployment, monitoring, documentation, and governance.
 
-> **The short version:** I do not want the model to be the whole story. I want the data, decisions, interface, tests, limitations, and handover to be visible too.
+My research interests include **intelligent systems, AI safety and governance, quantum computing, and complexity science**. Across those areas, I keep returning to the same questions: Is the problem framed well? Is the evidence trustworthy? Can the system explain where its answer came from? Does it remain useful outside the happy path? Can someone else inspect, reproduce, and improve it?
+
+Longer term, I hope to contribute to **AI academia** while continuing to build applied systems. Teaching and mentoring matter to that direction: I want to become good not only at developing technical ideas, but also at making them understandable to other people.
+
+### A quick read
+
+- **Based in:** Singapore
+- **Studying:** Year 3, Diploma in Applied AI & Analytics at Singapore Polytechnic
+- **Technical range:** data pipelines → analytics → ML/DL → RAG → APIs → interfaces → testing and delivery
+- **Research interests:** intelligent systems · responsible AI · quantum computing · complexity science
+- **Working style:** evidence-led, systems-minded, documentation-conscious, and curious about first principles
+- **Long-term direction:** AI research, academia, teaching, and mentoring
+
+> **The short version:** I do not want the model to be the whole story. I want the question, data, decisions, interface, tests, limitations, and handover to be visible too.
+
+## How I approach a problem
+
+1. **Start with the decision, not the algorithm.** I first ask who needs the result, what they need to decide, and what a useful answer would look like.
+2. **Treat data quality as part of the model.** Provenance, missingness, leakage, definitions, and validation matter before architecture selection.
+3. **Build a baseline before adding complexity.** A sophisticated system should earn its additional moving parts through evidence.
+4. **Connect the whole path.** I think about how ingestion, modelling, retrieval, APIs, interfaces, roles, and deployment affect one another.
+5. **Design for failure as well as success.** Robustness, uncertainty, access control, fallbacks, and limitations deserve explicit treatment.
+6. **Leave an inspectable trail.** Tests, documentation, evaluation artifacts, and handover notes make the work easier to trust and extend.
 
 ## What I bring to a team
 
@@ -34,7 +56,7 @@ My interests sit where **research thinking meets useful software**: framing the 
   <img src="./assets/capability-map.svg" width="100%" alt="Animated capability map connecting AI systems, data intelligence, product engineering, and reliable delivery" />
 </picture>
 
-<details>
+<details open>
 <summary><b>AI systems & evaluation</b> — models with visible assumptions and evidence</summary>
 
 <br />
@@ -45,7 +67,7 @@ Machine learning, deep learning, computer vision, NLP, RAG, forecasting, reinfor
 
 </details>
 
-<details>
+<details open>
 <summary><b>Data intelligence</b> — turning messy evidence into useful decisions</summary>
 
 <br />
@@ -56,7 +78,7 @@ Data cleaning, ETL, relational modelling, exploratory analysis, statistical reas
 
 </details>
 
-<details>
+<details open>
 <summary><b>Product engineering</b> — moving from notebook to a usable system</summary>
 
 <br />
@@ -67,7 +89,7 @@ API design, authentication and roles, retrieval pipelines, database-backed workf
 
 </details>
 
-<details>
+<details open>
 <summary><b>Quality & delivery</b> — proof around the product</summary>
 
 <br />
@@ -78,7 +100,18 @@ Unit, API, integration, security, and browser-flow testing; Docker; continuous d
 
 </details>
 
+## What teammates can expect from me
+
+- **A research-and-systems perspective.** I like understanding why an approach should work, then following it through the architecture needed to make it useful.
+- **Questions before assumptions.** I try to make the target, constraints, evaluation criteria, and failure modes explicit before optimising a solution.
+- **Visible trade-offs.** I would rather document a limitation or uncertain result than hide it behind polished presentation.
+- **Attention to the less glamorous layers.** Data cleaning, access rules, tests, deployment notes, and maintenance documentation are part of the build.
+- **Communication as an engineering skill.** I use diagrams, model cards, data contracts, examples, and structured documentation to make technical decisions easier to review.
+- **Curiosity beyond one speciality.** My work moves across algorithms, analytics, ML, deep learning, language systems, vision, web products, cloud services, and emerging computation.
+
 ## Experience in practice
+
+My recent experience has given me practice at three different scales: an institutional AI product, a multi-role data and workflow platform, and an early-stage recommendation concept. Together they strengthened my ability to move between research, engineering, product questions, and verification.
 
 These are concise highlights from my [public LinkedIn experience](https://www.linkedin.com/in/gohkunming/details/experience/). The numbers describe documented build scope and verification—not business-impact claims.
 
@@ -234,6 +267,26 @@ A tested Flask prototype that brings structured, language, and image modelling i
 
 </details>
 
+## Learning and research direction
+
+My recent learning has been deliberately broader than a single model family. I am building a foundation for studying AI as both a **technical system** and a **human responsibility**.
+
+- **Responsible AI and governance:** fairness, accountability, transparency, privacy, safety, data governance, and responsible decision-making.
+- **Deep learning:** neural-network fundamentals, optimisation, evaluation, multi-input and multi-output architectures, embeddings, and practical model development.
+- **Quantum computing:** qubits, superposition, entanglement, quantum gates and circuits, Qiskit, and the relationship between classical and quantum approaches.
+- **Complex systems:** emergence, resilience, networks, tipping points, agent-based modelling, and how interconnected systems behave under change.
+- **Research communication:** explaining assumptions, methods, evidence, limitations, and implications in a form that technical and non-technical readers can follow.
+
+Selected public credentials:
+
+- **Quantum Computing For Everyone — An Introduction**, Fractal, Jul 2026
+- **Ethical AI — AI Essentials For Everyone**, University of Cambridge, Jun 2026
+- **Introduction to Complexity Science**, Nanyang Technological University Singapore, Jun 2026
+- **Advanced Deep Learning with Keras**, DataCamp, Mar 2026
+- **Fundamentals of Deep Learning**, NVIDIA, Feb 2026
+
+**[View the public credential record →](https://www.linkedin.com/in/gohkunming/details/certifications/)**
+
 ## A real 3D artifact
 
 This is not a mock-up. The shape is generated from a parametric **(2, 3) torus-knot tube**: **1,728 vertices and 3,456 triangular faces**. It represents how I prefer to work—question, data, baseline, experiment, product, and sharing are distinct strands, but the useful artifact is one continuous system.
@@ -258,20 +311,17 @@ I like ambitious ideas, but I trust them more when the path is explicit:
 
 **Question → data → baseline → experiment → product → evidence → handover**
 
-<details>
-<summary><b>Selected learning signals</b> — public credentials behind the curiosity</summary>
+### Problems I want to keep exploring
 
-<br />
+- How can retrieval and conversational AI remain grounded, useful, and honest about uncertainty?
+- How should evaluation change when an AI system includes data pipelines, retrieval, interfaces, and human decisions—not only a model?
+- How can multimodal systems combine structured data, language, images, and sensor-like signals without losing interpretability?
+- Where can quantum or hybrid methods be compared with classical baselines in a bounded, reproducible way?
+- How can technical tools also become better learning objects for students, practitioners, and decision-makers?
 
-- **Quantum Computing For Everyone — An Introduction**, Fractal, Jul 2026
-- **Ethical AI — AI Essentials For Everyone**, University of Cambridge, Jun 2026
-- **Introduction to Complexity Science**, Nanyang Technological University Singapore, Jun 2026
-- **Advanced Deep Learning with Keras**, DataCamp, Mar 2026
-- **Fundamentals of Deep Learning**, NVIDIA, Feb 2026
+### The environments where I contribute best
 
-**[View the public credential record →](https://www.linkedin.com/in/gohkunming/details/certifications/)**
-
-</details>
+I am most interested in work where the problem is not fully solved by choosing a model: the data needs structure, the system crosses multiple layers, reliability matters, and the final result must be communicated clearly. That includes applied AI, data products, research engineering, evaluation, responsible-AI work, and technically grounded experimentation.
 
 <details>
 <summary><b>How the claims on this profile are grounded</b></summary>
