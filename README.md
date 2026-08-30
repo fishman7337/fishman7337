@@ -6,18 +6,38 @@
 </picture>
 
 <p>
-  <a href="https://github.com/fishman7337"><b>GitHub</b></a>
+  <a href="https://github.com/fishman7337"><b>GitHub profile</b></a>
   &nbsp;·&nbsp;
-  <a href="https://www.linkedin.com/in/gohkunming/"><b>LinkedIn</b></a>
+  <a href="https://www.linkedin.com/in/gohkunming/"><b>LinkedIn profile</b></a>
   &nbsp;·&nbsp;
-  <a href="mailto:kunmingaden@gmail.com"><b>Email</b></a>
+  <a href="mailto:kunmingaden@gmail.com"><b>Email Kun Ming</b></a>
   &nbsp;·&nbsp;
-  <a href="https://github.com/fishman7337?tab=repositories"><b>All projects</b></a>
+  <a href="https://github.com/fishman7337?tab=repositories"><b>Browse all projects</b></a>
 </p>
 
 <p><b>AI systems · Data products · Full-stack delivery · Responsible engineering</b></p>
 
 </div>
+
+## Navigate this profile
+
+<p align="center">
+  <a href="#about-me"><b>About</b></a>
+  &nbsp;·&nbsp;
+  <a href="#how-i-approach-a-problem"><b>Approach</b></a>
+  &nbsp;·&nbsp;
+  <a href="#what-i-bring-to-a-team"><b>Skills</b></a>
+  &nbsp;·&nbsp;
+  <a href="#experience-in-practice"><b>Experience</b></a>
+  &nbsp;·&nbsp;
+  <a href="#selected-work"><b>Projects</b></a>
+  &nbsp;·&nbsp;
+  <a href="#learning-and-research-direction"><b>Learning</b></a>
+  &nbsp;·&nbsp;
+  <a href="#lets-compare-notes"><b>Contact</b></a>
+</p>
+
+> **Designed to be read, not merely viewed.** Every essential detail is available as native text; the artwork is supplementary. Motion stops when reduced motion is requested, and the expandable sections use keyboard-operable GitHub controls. **[Read the accessibility notes →](./docs/ACCESSIBILITY.md)**
 
 ## About me
 
@@ -53,7 +73,7 @@ Longer term, I hope to contribute to **AI academia** while continuing to build a
 
 <picture>
   <source media="(max-width: 600px)" srcset="./assets/capability-map-mobile.svg" />
-  <img src="./assets/capability-map.svg" width="100%" alt="Animated capability map connecting AI systems, data intelligence, product engineering, and reliable delivery" />
+  <img src="./assets/capability-map.svg" width="100%" alt="Four connected capability areas: AI systems, data intelligence, product engineering, and reliable delivery" />
 </picture>
 
 <details open>
@@ -348,7 +368,7 @@ If you are evaluating my work for a role, exploring a collaboration, or simply w
 
 <picture>
   <source media="(max-width: 600px)" srcset="./assets/spatial-footer-mobile.svg" />
-  <img src="./assets/spatial-footer.svg" width="100%" alt="An open luminous orbit closing the spatial portfolio" />
+  <img src="./assets/spatial-footer.svg" width="100%" alt="" />
 </picture>
 
 <p align="center"><sub>Curious by default. Clear by design.</sub></p>

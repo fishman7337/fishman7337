@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import importlib.util
+import re
 import xml.etree.ElementTree as ET
 from pathlib import Path
 
@@ -133,6 +134,80 @@ def test_readme_has_substantive_public_biography() -> None:
     assert "AI academia" in readme
     assert "teaching and mentoring" in readme.lower()
     assert "<details open>" in readme
+
+
+def test_readme_has_an_accessible_native_text_reading_path() -> None:
+    """Keep essential profile navigation and content outside the artwork."""
+    readme = (REPO_ROOT / "README.md").read_text(encoding="utf-8")
+
+    for anchor in [
+        "#about-me",
+        "#how-i-approach-a-problem",
+        "#what-i-bring-to-a-team",
+        "#experience-in-practice",
+        "#selected-work",
+        "#learning-and-research-direction",
+        "#lets-compare-notes",
+    ]:
+        assert f'href="{anchor}"' in readme
+
+    assert "Designed to be read, not merely viewed" in readme
+    assert "./docs/ACCESSIBILITY.md" in readme
+    assert "click here" not in readme.lower()
+
+
+def test_readme_images_have_intentional_alt_text() -> None:
+    """Require useful text alternatives, with one explicitly decorative footer."""
+    readme = (REPO_ROOT / "README.md").read_text(encoding="utf-8")
+    image_tags = re.findall(r"<img\b[^>]*>", readme)
+
+    assert len(image_tags) == 8
+    for tag in image_tags:
+        assert re.search(r'\balt="[^"]*"', tag)
+
+    empty_alts = [tag for tag in image_tags if 'alt=""' in tag]
+    assert len(empty_alts) == 1
+    assert "spatial-footer.svg" in empty_alts[0]
+
+
+def test_generated_readme_svgs_have_accessible_metadata_and_reduced_motion() -> None:
+    """Protect direct-open SVG semantics and motion preferences."""
+    readme = (REPO_ROOT / "README.md").read_text(encoding="utf-8")
+    asset_names = set(re.findall(r"\./assets/([\w-]+\.svg)", readme))
+
+    assert len(asset_names) == 11
+    for asset_name in asset_names:
+        svg = (REPO_ROOT / "assets" / asset_name).read_text(encoding="utf-8")
+        root = ET.fromstring(svg)
+        assert root.attrib.get("role") == "img"
+        assert root.find("{http://www.w3.org/2000/svg}title") is not None
+        assert root.find("{http://www.w3.org/2000/svg}desc") is not None
+        assert "prefers-reduced-motion:reduce" in svg
+        assert "<animate" not in svg
+
+
+def test_core_visual_palette_has_enhanced_text_contrast() -> None:
+    """Keep the primary SVG text pairings above a 7:1 contrast ratio."""
+
+    def luminance(hex_color: str) -> float:
+        channels = [int(hex_color[index : index + 2], 16) / 255 for index in (1, 3, 5)]
+        linear = [
+            channel / 12.92 if channel <= 0.04045 else ((channel + 0.055) / 1.055) ** 2.4
+            for channel in channels
+        ]
+        return 0.2126 * linear[0] + 0.7152 * linear[1] + 0.0722 * linear[2]
+
+    def contrast(foreground: str, background: str) -> float:
+        lighter, darker = sorted((luminance(foreground), luminance(background)), reverse=True)
+        return (lighter + 0.05) / (darker + 0.05)
+
+    for foreground, background in [
+        ("#FFF9EF", "#050814"),
+        ("#C9C6D4", "#050814"),
+        ("#63D9D1", "#111725"),
+        ("#FFF9EF", "#111725"),
+    ]:
+        assert contrast(foreground, background) >= 7
 
 
 def test_employer_facing_claims_have_public_evidence_links() -> None:

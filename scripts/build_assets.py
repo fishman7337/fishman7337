@@ -75,8 +75,12 @@ def defs() -> str:
     .mobileBody{{font:520 28px Inter,Segoe UI,Arial,sans-serif;fill:#C9C6D4}}
     .mono{{font:700 13px 'JetBrains Mono',Consolas,monospace;fill:#F3EBDD;letter-spacing:1.8px}}
     .capTitle{{font:760 24px Inter,Segoe UI,Arial,sans-serif;fill:#FFF9EF;letter-spacing:-.4px}}
-    .capBody{{font:520 16px Inter,Segoe UI,Arial,sans-serif;fill:#C9C6D4}}
-    .capLabel{{font:750 11px 'JetBrains Mono',Consolas,monospace;fill:#63D9D1;letter-spacing:1.6px}}
+    .capBody{{font:520 17px Inter,Segoe UI,Arial,sans-serif;fill:#C9C6D4}}
+    .capLabel{{font:750 13px 'JetBrains Mono',Consolas,monospace;fill:#63D9D1;letter-spacing:1.4px}}
+    .coreLabel{{font:750 9px 'JetBrains Mono',Consolas,monospace;fill:#63D9D1;letter-spacing:1.2px}}
+    .mobileCapTitle{{font:760 31px Inter,Segoe UI,Arial,sans-serif;fill:#FFF9EF;letter-spacing:-.4px}}
+    .mobileCapBody{{font:520 22px Inter,Segoe UI,Arial,sans-serif;fill:#C9C6D4}}
+    .mobileCapLabel{{font:750 15px 'JetBrains Mono',Consolas,monospace;fill:#63D9D1;letter-spacing:1.5px}}
     .capCard{{fill:#111725;fill-opacity:.9;stroke:#E9F3FF;stroke-opacity:.16}}
     .wire{{fill:none;stroke:url(#signal);stroke-linecap:round;stroke-linejoin:round}}
     .dash{{stroke-dasharray:9 15;animation:dash 16s linear infinite}}
@@ -248,8 +252,9 @@ def capability_card(
     height = 172 if not mobile else 190
     title_y = y + 70 if not mobile else y + 78
     body_y = y + 108 if not mobile else y + 119
-    title_size = 24 if not mobile else 29
-    body_size = 16 if not mobile else 21
+    title_class = "mobileCapTitle" if mobile else "capTitle"
+    body_class = "mobileCapBody" if mobile else "capBody"
+    label_class = "mobileCapLabel" if mobile else "capLabel"
     lines = item["lines"]
     return "".join(
         [
@@ -257,10 +262,10 @@ def capability_card(
             f'<rect x="{x}" y="{y}" width="{width}" height="{height}" rx="24" class="capCard" filter="url(#soft)"/>',
             f'<rect x="{x + 22}" y="{y + 22}" width="36" height="5" rx="2.5" fill="url(#signal)" '
             f'class="breathe" style="animation-delay:{esc(item["delay"])}s"/>',
-            f'<text x="{x + 22}" y="{y + 48}" class="capLabel">{esc(item["label"])}</text>',
-            f'<text x="{x + 22}" y="{title_y}" class="capTitle" font-size="{title_size}">{esc(item["title"])}</text>',
-            f'<text x="{x + 22}" y="{body_y}" class="capBody" font-size="{body_size}">{esc(lines[0])}</text>',
-            f'<text x="{x + 22}" y="{body_y + (26 if mobile else 23)}" class="capBody" font-size="{body_size}">{esc(lines[1])}</text>',
+            f'<text x="{x + 22}" y="{y + 48}" class="{label_class}">{esc(item["label"])}</text>',
+            f'<text x="{x + 22}" y="{title_y}" class="{title_class}">{esc(item["title"])}</text>',
+            f'<text x="{x + 22}" y="{body_y}" class="{body_class}">{esc(lines[0])}</text>',
+            f'<text x="{x + 22}" y="{body_y + (28 if mobile else 24)}" class="{body_class}">{esc(lines[1])}</text>',
             "</g>",
         ]
     )
@@ -303,25 +308,22 @@ def make_capability_map(*, mobile: bool = False) -> str:
     ]
     for path in paths:
         parts.append(f'<path d="{path}" class="wire dash" stroke-width="2" opacity=".7"/>')
-        parts.append(
-            f'<circle r="5" fill="#FFF9EF" filter="url(#glow)"><animateMotion dur="6s" repeatCount="indefinite" path="{path}"/></circle>'
-        )
     if not mobile:
         parts.extend(
             [
                 '<g transform="translate(600 280)">',
                 '<circle r="60" fill="#0D1422" stroke="url(#signal)" stroke-width="2" filter="url(#soft)"/>',
                 '<g class="orbit"><circle cx="0" cy="-76" r="6" fill="#63D9D1" filter="url(#glow)"/></g>',
-                '<text x="0" y="-8" text-anchor="middle" class="capLabel">FROM QUESTION</text>',
-                '<text x="0" y="18" text-anchor="middle" class="capLabel" fill="#FFF9EF">TO USEFUL SYSTEM</text>',
+                '<text x="0" y="-8" text-anchor="middle" class="coreLabel">FROM QUESTION</text>',
+                '<text x="0" y="18" text-anchor="middle" class="coreLabel" fill="#FFF9EF">TO USEFUL SYSTEM</text>',
                 "</g>",
             ]
         )
     else:
         parts.extend(
             [
-                '<text x="48" y="52" class="capTitle" font-size="32">One connected capability system</text>',
-                '<text x="48" y="86" class="capBody" font-size="22">From evidence and models to products people can use.</text>',
+                '<text x="48" y="52" class="mobileCapTitle">One connected capability system</text>',
+                '<text x="48" y="86" class="mobileCapBody">From evidence and models to products people can use.</text>',
             ]
         )
     for item, (x, y) in zip(items, positions, strict=True):

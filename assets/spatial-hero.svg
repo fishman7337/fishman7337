@@ -32,8 +32,12 @@
     .mobileBody{font:520 28px Inter,Segoe UI,Arial,sans-serif;fill:#C9C6D4}
     .mono{font:700 13px 'JetBrains Mono',Consolas,monospace;fill:#F3EBDD;letter-spacing:1.8px}
     .capTitle{font:760 24px Inter,Segoe UI,Arial,sans-serif;fill:#FFF9EF;letter-spacing:-.4px}
-    .capBody{font:520 16px Inter,Segoe UI,Arial,sans-serif;fill:#C9C6D4}
-    .capLabel{font:750 11px 'JetBrains Mono',Consolas,monospace;fill:#63D9D1;letter-spacing:1.6px}
+    .capBody{font:520 17px Inter,Segoe UI,Arial,sans-serif;fill:#C9C6D4}
+    .capLabel{font:750 13px 'JetBrains Mono',Consolas,monospace;fill:#63D9D1;letter-spacing:1.4px}
+    .coreLabel{font:750 9px 'JetBrains Mono',Consolas,monospace;fill:#63D9D1;letter-spacing:1.2px}
+    .mobileCapTitle{font:760 31px Inter,Segoe UI,Arial,sans-serif;fill:#FFF9EF;letter-spacing:-.4px}
+    .mobileCapBody{font:520 22px Inter,Segoe UI,Arial,sans-serif;fill:#C9C6D4}
+    .mobileCapLabel{font:750 15px 'JetBrains Mono',Consolas,monospace;fill:#63D9D1;letter-spacing:1.5px}
     .capCard{fill:#111725;fill-opacity:.9;stroke:#E9F3FF;stroke-opacity:.16}
     .wire{fill:none;stroke:url(#signal);stroke-linecap:round;stroke-linejoin:round}
     .dash{stroke-dasharray:9 15;animation:dash 16s linear infinite}
