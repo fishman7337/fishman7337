@@ -1,374 +1,376 @@
-<div align="center">
-
 <picture>
-  <source media="(max-width: 600px)" srcset="./assets/spatial-hero-mobile.svg" />
-  <img src="./assets/spatial-hero.svg" width="100%" alt="Goh Kun Ming — Applied AI and Analytics student building connected systems across models, data, products, and reliable delivery" />
+  <source media="(max-width: 600px) and (prefers-reduced-motion: no-preference)" srcset="./assets/profile-hero-mobile.gif" />
+  <source media="(prefers-reduced-motion: no-preference)" srcset="./assets/profile-hero.gif" />
+  <source media="(max-width: 600px)" srcset="./assets/profile-hero-mobile-static.png" />
+  <img src="./assets/profile-hero-static.png" width="100%" alt="Goh Kun Ming — researching intelligence and building useful AI. Animated isometric blocks and a mathematical signal field connect my creative and technical interests." />
 </picture>
-
-<p>
-  <a href="https://github.com/fishman7337"><b>GitHub profile</b></a>
-  &nbsp;·&nbsp;
-  <a href="https://www.linkedin.com/in/gohkunming/"><b>LinkedIn profile</b></a>
-  &nbsp;·&nbsp;
-  <a href="mailto:kunmingaden@gmail.com"><b>Email Kun Ming</b></a>
-  &nbsp;·&nbsp;
-  <a href="https://github.com/fishman7337?tab=repositories"><b>Browse all projects</b></a>
-</p>
-
-<p><b>AI systems · Data products · Full-stack delivery · Responsible engineering</b></p>
-
-</div>
-
-## Navigate this profile
 
 <p align="center">
-  <a href="#about-me"><b>About</b></a>
+  <a href="https://gohkunming.dev/"><b>Explore my website</b></a>
   &nbsp;·&nbsp;
-  <a href="#how-i-approach-a-problem"><b>Approach</b></a>
+  <a href="https://gohkunming.dev/documents/resume/goh-kun-ming-resume.pdf"><b>Résumé (PDF)</b></a>
   &nbsp;·&nbsp;
-  <a href="#what-i-bring-to-a-team"><b>Skills</b></a>
+  <a href="https://www.linkedin.com/in/gohkunming/"><b>LinkedIn</b></a>
   &nbsp;·&nbsp;
-  <a href="#experience-in-practice"><b>Experience</b></a>
-  &nbsp;·&nbsp;
-  <a href="#selected-work"><b>Projects</b></a>
-  &nbsp;·&nbsp;
-  <a href="#learning-and-research-direction"><b>Learning</b></a>
-  &nbsp;·&nbsp;
-  <a href="#lets-compare-notes"><b>Contact</b></a>
+  <a href="mailto:kunmingaden@gmail.com"><b>Email me</b></a>
 </p>
 
-> **Designed to be read, not merely viewed.** Every essential detail is available as native text; the artwork is supplementary. Motion stops when reduced motion is requested, and the expandable sections use keyboard-operable GitHub controls. **[Read the accessibility notes →](./docs/ACCESSIBILITY.md)**
+# Researching intelligence. Building useful AI.
 
-## About me
+I'm **Goh Kun Ming**, a **Research Engineer intern at NCS · Pragnition Labs** and a **Year 3 Applied AI & Analytics student at Singapore Polytechnic**, based in Singapore.
 
-I’m **Goh Kun Ming**, a Year 3 student in the **Diploma in Applied AI & Analytics at Singapore Polytechnic**, based in Singapore. I am developing toward the kind of AI practitioner who can move between research questions, data, models, software systems, and the people who eventually have to understand or use what was built.
+I work across **machine learning, computer vision, retrieval-augmented AI, and data products**. I enjoy taking a research question through the whole build: preparing data, comparing models, evaluating limitations, and connecting the result to an application someone can use. My longer-term direction is **AI research and academia**, including teaching and mentoring.
 
-My technical experience spans **data engineering and analysis, machine learning, deep learning, model evaluation, computer vision, conversational and retrieval-based AI, full-stack development, and cloud delivery**. I enjoy working across those boundaries because the most interesting problems rarely stop at a notebook: they continue into data contracts, APIs, interfaces, testing, deployment, monitoring, documentation, and governance.
+**Explore my work for research engineering, applied AI/ML, and data-product opportunities.**
 
-My research interests include **intelligent systems, AI safety and governance, quantum computing, and complexity science**. Across those areas, I keep returning to the same questions: Is the problem framed well? Is the evidence trustworthy? Can the system explain where its answer came from? Does it remain useful outside the happy path? Can someone else inspect, reproduce, and improve it?
+<p>
+  <a href="#selected-work">Selected work</a> &nbsp;/&nbsp;
+  <a href="#more-projects">More projects</a> &nbsp;/&nbsp;
+  <a href="#experience">Experience</a> &nbsp;/&nbsp;
+  <a href="#technical-toolkit">Technical toolkit</a> &nbsp;/&nbsp;
+  <a href="#how-i-build">How I build</a> &nbsp;/&nbsp;
+  <a href="#beyond-the-projects">Beyond the projects</a> &nbsp;/&nbsp;
+  <a href="#lets-connect">Contact</a>
+</p>
 
-Longer term, I hope to contribute to **AI academia** while continuing to build applied systems. Teaching and mentoring matter to that direction: I want to become good not only at developing technical ideas, but also at making them understandable to other people.
+## Where I can contribute
 
-### A quick read
-
-- **Based in:** Singapore
-- **Studying:** Year 3, Diploma in Applied AI & Analytics at Singapore Polytechnic
-- **Technical range:** data pipelines → analytics → ML/DL → RAG → APIs → interfaces → testing and delivery
-- **Research interests:** intelligent systems · responsible AI · quantum computing · complexity science
-- **Working style:** evidence-led, systems-minded, documentation-conscious, and curious about first principles
-- **Long-term direction:** AI research, academia, teaching, and mentoring
-
-> **The short version:** I do not want the model to be the whole story. I want the question, data, decisions, interface, tests, limitations, and handover to be visible too.
-
-## How I approach a problem
-
-1. **Start with the decision, not the algorithm.** I first ask who needs the result, what they need to decide, and what a useful answer would look like.
-2. **Treat data quality as part of the model.** Provenance, missingness, leakage, definitions, and validation matter before architecture selection.
-3. **Build a baseline before adding complexity.** A sophisticated system should earn its additional moving parts through evidence.
-4. **Connect the whole path.** I think about how ingestion, modelling, retrieval, APIs, interfaces, roles, and deployment affect one another.
-5. **Design for failure as well as success.** Robustness, uncertainty, access control, fallbacks, and limitations deserve explicit treatment.
-6. **Leave an inspectable trail.** Tests, documentation, evaluation artifacts, and handover notes make the work easier to trust and extend.
-
-## What I bring to a team
-
-<picture>
-  <source media="(max-width: 600px)" srcset="./assets/capability-map-mobile.svg" />
-  <img src="./assets/capability-map.svg" width="100%" alt="Four connected capability areas: AI systems, data intelligence, product engineering, and reliable delivery" />
-</picture>
-
-<details open>
-<summary><b>AI systems & evaluation</b> — models with visible assumptions and evidence</summary>
-
-<br />
-
-Machine learning, deep learning, computer vision, NLP, RAG, forecasting, reinforcement learning, and bounded quantum-ML experiments. I care about baselines, split discipline, reproducible configuration, fit-for-purpose metrics, model cards, and honest limitations.
-
-<code>Python</code> · <code>PyTorch</code> · <code>TensorFlow</code> · <code>Keras</code> · <code>scikit-learn</code> · <code>Qiskit</code> · <code>OpenCV</code>
-
-</details>
-
-<details open>
-<summary><b>Data intelligence</b> — turning messy evidence into useful decisions</summary>
-
-<br />
-
-Data cleaning, ETL, relational modelling, exploratory analysis, statistical reasoning, clustering, forecasting, geospatial work, and decision-support dashboards. I aim to preserve provenance and define what every metric actually means.
-
-<code>Pandas</code> · <code>NumPy</code> · <code>SQL</code> · <code>PySpark</code> · <code>Plotly</code> · <code>Tableau</code> · <code>Power BI</code>
-
-</details>
-
-<details open>
-<summary><b>Product engineering</b> — moving from notebook to a usable system</summary>
-
-<br />
-
-API design, authentication and roles, retrieval pipelines, database-backed workflows, responsive interfaces, and deployment-ready documentation. The goal is an understandable product journey—not a model wrapped in a thin demo.
-
-<code>FastAPI</code> · <code>Flask</code> · <code>React</code> · <code>Next.js</code> · <code>Node.js</code> · <code>PostgreSQL</code> · <code>Supabase</code>
-
-</details>
-
-<details open>
-<summary><b>Quality & delivery</b> — proof around the product</summary>
-
-<br />
-
-Unit, API, integration, security, and browser-flow testing; Docker; continuous delivery; documentation; data contracts; and model/data governance. I treat reproducibility and handover as product features.
-
-<code>pytest</code> · <code>Playwright</code> · <code>Docker</code> · <code>GitHub Actions</code> · <code>AWS</code>
-
-</details>
-
-## What teammates can expect from me
-
-- **A research-and-systems perspective.** I like understanding why an approach should work, then following it through the architecture needed to make it useful.
-- **Questions before assumptions.** I try to make the target, constraints, evaluation criteria, and failure modes explicit before optimising a solution.
-- **Visible trade-offs.** I would rather document a limitation or uncertain result than hide it behind polished presentation.
-- **Attention to the less glamorous layers.** Data cleaning, access rules, tests, deployment notes, and maintenance documentation are part of the build.
-- **Communication as an engineering skill.** I use diagrams, model cards, data contracts, examples, and structured documentation to make technical decisions easier to review.
-- **Curiosity beyond one speciality.** My work moves across algorithms, analytics, ML, deep learning, language systems, vision, web products, cloud services, and emerging computation.
-
-## Experience in practice
-
-My recent experience has given me practice at three different scales: an institutional AI product, a multi-role data and workflow platform, and an early-stage recommendation concept. Together they strengthened my ability to move between research, engineering, product questions, and verification.
-
-These are concise highlights from my [public LinkedIn experience](https://www.linkedin.com/in/gohkunming/details/experience/). The numbers describe documented build scope and verification—not business-impact claims.
-
-<details open>
-<summary><b>AI & Data Solutions Researcher · Singapore Polytechnic</b> — Mar 2026, part-time</summary>
-
-<br />
-
-Applied AI and systems analysis for a multi-role operational platform spanning **32 routes, 4 roles, and 11 workflow domains**.
-
-- Designed a Supabase architecture with **39 tables, 30 migrations, 175 row-level security policies, and 5 serverless functions**.
-- Added three assisted workflows and a conversational assistant grounded in **14 documents and one institutional website**.
-- Built a verification layer of **238 tests, 31 browser end-to-end scenarios, and four continuous-delivery workflows**.
-
-</details>
-
-<details>
-<summary><b>Student Developer · Singapore Polytechnic</b> — Sep 2025 to Mar 2026</summary>
-
-<br />
-
-Built an institutional RAG application using hybrid retrieval, query reformulation, reciprocal-rank fusion, reranking, metadata constraints, and hallucination grading.
-
-- Integrated Claude 3 Haiku and Cohere embeddings through Amazon Bedrock with pgvector and BM25.
-- Delivered **53 FastAPI endpoints, seven Next.js pages, and an architecture spanning 27 AWS services**.
-- Documented **312 pytest definitions across 72 files**, 11 browser scenarios, and a 30-page deployment and maintenance guide.
-
-</details>
-
-<details>
-<summary><b>Co-Founder, Data & Intelligent Systems · Wagglo SG</b> — Feb to Mar 2026</summary>
-
-<br />
-
-Led the data design for a pet-owner matching concept, from market research to an evidence-gated recommendation framework.
-
-- Designed a Top-K compatibility system using **nine weighted dimensions** and **eight behavioural event types**.
-- Analysed **104 survey responses into 102 clean records** to shape product priorities and product-risk decisions.
-
-</details>
+| Focus | What I work on | Evidence to explore |
+| :--- | :--- | :--- |
+| **Research & evaluation** | Hypothesis-driven experiments, classical baselines, generative modelling, and bounded quantum-ML comparisons | [Hybrid generative models](https://github.com/fishman7337/hybrid-quantum-classical-gan-research) |
+| **Applied AI systems** | Vision pipelines, model serving, APIs, and user-facing applications | [EstateScope AI](https://github.com/fishman7337/sp-daaa-doaa-ca1-housing-price-ml-application) · [VeggieAI](https://github.com/fishman7337/sp-daaa-doaa-ca2-vegetable-classification-application) |
+| **Data & decisions** | Data validation, exploratory analysis, statistical reasoning, and clear visual explanations | [HDB resale analytics](https://github.com/fishman7337/sp-daaa-davi-ca1-hdb-price-dashboard) |
 
 ## Selected work
 
-The projects below are public, inspectable, and chosen to show range: research experiments, data products, and end-to-end AI applications.
+Five projects spanning generative research, AI applications, housing analytics, property-price prediction, and time-series forecasting. Explore the linked repositories for methods and results.
 
-### 01 / Models & perception
+### 01 · Hybrid generative models
 
-<img src="./assets/world-generative-vision.svg" width="100%" alt="A cinematic generative-model sculpture connected by luminous mesh to a geometric leaf detection rig" />
+<a href="https://github.com/fishman7337/hybrid-quantum-classical-gan-research">
+  <picture>
+    <source media="(max-width: 600px) and (prefers-reduced-motion: no-preference)" srcset="./assets/portfolio-quantum-mobile.gif" />
+    <source media="(prefers-reduced-motion: no-preference)" srcset="./assets/portfolio-quantum.gif" />
+    <source media="(max-width: 600px)" srcset="./assets/portfolio-quantum-mobile-static.png" />
+    <img src="./assets/portfolio-quantum-static.png" width="100%" alt="Hybrid generative models: alternative classical and quantum latent priors feed a classical GAN generator for comparison on binary MNIST." />
+  </picture>
+</a>
 
-**How can model experimentation stay reproducible from configuration to evaluation?**
+**Research question:** how do classical and circuit-based latent priors compare in a generative model?
 
-<details>
-<summary><b>Hybrid Generative Models</b> — classical and circuit-based latent priors</summary>
+Compared a classical GAN with **3-, 5-, and 7-qubit hybrid variants on binary MNIST**, with shared configuration and FID/KID evaluation utilities. The repository documents the comparison, reproducibility steps, and limitations.
 
-<br />
+`Python` · `TensorFlow` · `Qiskit` · `Optuna`
 
-A controlled comparison of a classical GAN with 3-, 5-, and 7-qubit hybrid latent-prior variants, supported by PSD-safe FID/KID utilities and **21 tests**.
+**[Explore the experiments →](https://github.com/fishman7337/hybrid-quantum-classical-gan-research)**
 
-<code>Qiskit</code> · <code>TensorFlow</code> · <code>GANs</code> · <code>FID / KID</code>
+### 02 · EstateScope AI · Housing-price prediction
 
-**[Explore the experiment →](https://github.com/fishman7337/hybrid-quantum-classical-gan-research)**
+<a href="https://github.com/fishman7337/sp-daaa-doaa-ca1-housing-price-ml-application">
+  <picture>
+    <source media="(max-width: 600px) and (prefers-reduced-motion: no-preference)" srcset="./assets/portfolio-housing-mobile.gif" />
+    <source media="(prefers-reduced-motion: no-preference)" srcset="./assets/portfolio-housing.gif" />
+    <source media="(max-width: 600px)" srcset="./assets/portfolio-housing-mobile-static.png" />
+    <img src="./assets/portfolio-housing-static.png" width="100%" alt="EstateScope AI: structured housing attributes and optional listing text and images produce separate estimates; available estimates are averaged into a property-price prediction." />
+  </picture>
+</a>
 
-</details>
+**Modelling focus:** estimate property prices from complementary input types.
 
-<details>
-<summary><b>Leaf Object Detection</b> — preparation, validation, export, browser inference</summary>
+Built a Flask prototype for US property-price estimation using structured attributes and optional listing descriptions and images. The application exposes per-modality estimates, combines available inputs, and supports authenticated prediction history and housing analytics. The repository documents held-out evaluation of the NLP component.
 
-<br />
+`Python` · `Flask` · `scikit-learn` · `TensorFlow` · `SQLite` · `Docker`
 
-A single-class YOLO pipeline with a recorded **57,164-image / 63,225-box** preparation run, ONNX export, a browser demo, and **12 tests**.
+**[Explore the prediction application →](https://github.com/fishman7337/sp-daaa-doaa-ca1-housing-price-ml-application)**
 
-<code>Python</code> · <code>YOLO</code> · <code>ONNX</code> · <code>TensorFlow.js</code>
+### 03 · VeggieAI
 
-**[Inspect the pipeline →](https://github.com/fishman7337/leaf-object-detection)**
+<a href="https://github.com/fishman7337/sp-daaa-doaa-ca2-vegetable-classification-application">
+  <picture>
+    <source media="(max-width: 600px) and (prefers-reduced-motion: no-preference)" srcset="./assets/portfolio-product-mobile.gif" />
+    <source media="(prefers-reduced-motion: no-preference)" srcset="./assets/portfolio-product.gif" />
+    <source media="(max-width: 600px)" srcset="./assets/portfolio-product-mobile-static.png" />
+    <img src="./assets/portfolio-product-static.png" width="100%" alt="VeggieAI: an image request passes through a Flask API to model serving and a prediction, with a separate SQLite history branch." />
+  </picture>
+</a>
 
-</details>
+**Product focus:** connect image classification to a usable, testable application.
 
-### 02 / Data & decisions
+Built a Flask application with separate model serving, authentication, prediction history, a model registry, and Docker tooling. CI includes backend and model-service tests, registry validation, and local stack smoke checks.
 
-<img src="./assets/world-data-intelligence.svg" width="100%" alt="A cinematic data-intelligence landscape of analytical glass, evidence paths, clustered signals, and a decision beacon" />
-
-**How does a large dataset become a decision someone can understand?**
-
-<details>
-<summary><b>HDB Price Dashboard</b> — Singapore resale data as an explorable story</summary>
-
-<br />
-
-Resale analytics over **202,461 canonical cleaned records**, plus a **216,695-row location-enriched table**, with geospatial work, visual explanation, and reproducibility checks.
-
-<code>Python</code> · <code>Tableau</code> · <code>Geospatial data</code> · <code>Data cleaning</code>
-
-**[Explore the analysis →](https://github.com/fishman7337/sp-daaa-davi-ca1-hdb-price-dashboard)**
-
-</details>
-
-<details>
-<summary><b>Student Risk Analytics</b> — transparent rules for intervention support</summary>
-
-<br />
-
-A reusable Dash application for latest-semester GPA and attendance analysis, designed around clear segmentation logic and covered by **eight automated tests**.
-
-<code>Dash</code> · <code>Plotly</code> · <code>Pandas</code> · <code>pytest</code>
-
-**[Open the dashboard repository →](https://github.com/fishman7337/sp-daaa-davi-ca2-student-performance-dashboard)**
-
-</details>
-
-### 03 / AI products & delivery
-
-<img src="./assets/world-ai-product-system.svg" width="100%" alt="A cinematic applied-AI product system connecting inputs, models, retrieval, APIs, testing, and a polished interface" />
-
-**What turns an AI prototype into a system another person can actually use?**
-
-<details>
-<summary><b>VeggieAI</b> — image classification as a governed application</summary>
-
-<br />
-
-A split Flask and model-service produce platform with authentication, prediction history, deployment tooling, **217 backend tests, 22 model tests**, and coverage gates.
-
-<code>Flask</code> · <code>TensorFlow</code> · <code>SQLite</code> · <code>Docker</code>
+`Flask` · `TensorFlow Serving` · `SQLite` · `Docker` · `GitHub Actions`
 
 **[Explore the application →](https://github.com/fishman7337/sp-daaa-doaa-ca2-vegetable-classification-application)**
 
-</details>
+### 04 · HDB resale analytics
 
-<details>
-<summary><b>EstateScope AI</b> — multimodal property-price modelling</summary>
-
-<br />
-
-A tested Flask prototype that brings structured, language, and image modelling into one property-value workflow, with explicit held-out evaluation and deployment documentation.
-
-<code>Flask</code> · <code>scikit-learn</code> · <code>NLP</code> · <code>CNN</code>
-
-**[Inspect the system →](https://github.com/fishman7337/sp-daaa-doaa-ca1-housing-price-ml-application)**
-
-</details>
-
-<details>
-<summary><b>More public work</b> — language, forecasting, clustering, full-stack, and packaged ML</summary>
-
-<br />
-
-- [Energy Consumption Forecast](https://github.com/fishman7337/sp-daaa-aiml-ca2-energy-consumption-forecast) — ARIMA/SARIMAX forecasting with continuity validation and 43 tests.
-- [HaikuForge AI](https://github.com/fishman7337/sp-daaa-dsaa-ca1-haiku-generator) — constrained Markov generation with WAV narration.
-- [Newspaper Restoration](https://github.com/fishman7337/sp-daaa-dsaa-ca2-newspaper-restoration) — tries, wildcard recovery, edit-distance search, and graph visualisation.
-- [Customer Clustering & Interpretation](https://github.com/fishman7337/sp-daaa-aiml-ca2-customer-clustering-and-interpretation) — K-Means, agglomerative clustering, and DBSCAN.
-- [GoBest Trip Predictor](https://github.com/fishman7337/sp-daaa-pai-ca2-gobest-trip-safety-predictor) — offline batch inference, packaging, and smoke testing.
-- [FitnessQuest](https://github.com/fishman7337/sp-daaa-bed-ca-fitnessquest) — authenticated APIs and responsive browser journeys.
-
-</details>
-
-## Learning and research direction
-
-My recent learning has been deliberately broader than a single model family. I am building a foundation for studying AI as both a **technical system** and a **human responsibility**.
-
-- **Responsible AI and governance:** fairness, accountability, transparency, privacy, safety, data governance, and responsible decision-making.
-- **Deep learning:** neural-network fundamentals, optimisation, evaluation, multi-input and multi-output architectures, embeddings, and practical model development.
-- **Quantum computing:** qubits, superposition, entanglement, quantum gates and circuits, Qiskit, and the relationship between classical and quantum approaches.
-- **Complex systems:** emergence, resilience, networks, tipping points, agent-based modelling, and how interconnected systems behave under change.
-- **Research communication:** explaining assumptions, methods, evidence, limitations, and implications in a form that technical and non-technical readers can follow.
-
-Selected public credentials:
-
-- **Quantum Computing For Everyone — An Introduction**, Fractal, Jul 2026
-- **Ethical AI — AI Essentials For Everyone**, University of Cambridge, Jun 2026
-- **Introduction to Complexity Science**, Nanyang Technological University Singapore, Jun 2026
-- **Advanced Deep Learning with Keras**, DataCamp, Mar 2026
-- **Fundamentals of Deep Learning**, NVIDIA, Feb 2026
-
-**[View the public credential record →](https://www.linkedin.com/in/gohkunming/details/certifications/)**
-
-## A real 3D artifact
-
-This is not a mock-up. The shape is generated from a parametric **(2, 3) torus-knot tube**: **1,728 vertices and 3,456 triangular faces**. It represents how I prefer to work—question, data, baseline, experiment, product, and sharing are distinct strands, but the useful artifact is one continuous system.
-
-<a href="./assets/models/curiosity-knot.stl">
-  <img src="./assets/curiosity-knot-wireframe.svg" width="100%" alt="Animated wireframe preview of the downloadable Curiosity Knot 3D mesh" />
+<a href="https://github.com/fishman7337/sp-daaa-davi-ca1-hdb-price-dashboard">
+  <picture>
+    <source media="(max-width: 600px) and (prefers-reduced-motion: no-preference)" srcset="./assets/portfolio-data-mobile.gif" />
+    <source media="(prefers-reduced-motion: no-preference)" srcset="./assets/portfolio-data.gif" />
+    <source media="(max-width: 600px)" srcset="./assets/portfolio-data-mobile-static.png" />
+    <img src="./assets/portfolio-data-static.png" width="100%" alt="HDB resale analytics: cleaned housing records flow into aggregation and Tableau views of prices, leases, flat types and location." />
+  </picture>
 </a>
 
-<p align="center">
-  <a href="./assets/models/curiosity-knot.stl"><b>Open the interactive 3D viewer</b></a>
-  &nbsp;·&nbsp;
-  <a href="./assets/models/curiosity-knot.obj"><b>Download the OBJ model</b></a>
-  &nbsp;·&nbsp;
-  <a href="./scripts/build_3d_mesh.py"><b>Read the generator</b></a>
-</p>
+**Decision focus:** make Singapore housing data easier to explore and explain.
 
-## How I work
+Prepared a cleaned dataset of **202,461 resale records** and Tableau views covering prices, lease tenure, flat types, and location. The repository preserves cleaning, geospatial enrichment, and validation steps so the analysis can be inspected and reproduced.
 
-<img src="./assets/tool-constellation.svg" width="100%" alt="A cinematic constellation connecting model, data, product, and delivery tools as one system" />
+`Python` · `pandas` · `Tableau` · `Geospatial analysis`
 
-I like ambitious ideas, but I trust them more when the path is explicit:
+**[Explore the analysis →](https://github.com/fishman7337/sp-daaa-davi-ca1-hdb-price-dashboard)**
 
-**Question → data → baseline → experiment → product → evidence → handover**
+### 05 · Energy consumption forecasting
 
-### Problems I want to keep exploring
+<a href="https://github.com/fishman7337/sp-daaa-aiml-ca2-energy-consumption-forecast">
+  <picture>
+    <source media="(max-width: 600px) and (prefers-reduced-motion: no-preference)" srcset="./assets/portfolio-forecast-mobile.gif" />
+    <source media="(prefers-reduced-motion: no-preference)" srcset="./assets/portfolio-forecast.gif" />
+    <source media="(max-width: 600px)" srcset="./assets/portfolio-forecast-mobile-static.png" />
+    <img src="./assets/portfolio-forecast-static.png" width="100%" alt="Energy forecasting: monthly gas, electricity and water series pass through validation and chronological evaluation into separate ARIMA or SARIMAX models and forecasts." />
+  </picture>
+</a>
 
-- How can retrieval and conversational AI remain grounded, useful, and honest about uncertainty?
-- How should evaluation change when an AI system includes data pipelines, retrieval, interfaces, and human decisions—not only a model?
-- How can multimodal systems combine structured data, language, images, and sensor-like signals without losing interpretability?
-- Where can quantum or hybrid methods be compared with classical baselines in a bounded, reproducible way?
-- How can technical tools also become better learning objects for students, practitioners, and decision-makers?
+**Forecasting focus:** turn historical consumption into a reproducible modelling workflow.
 
-### The environments where I contribute best
+Developed a time-series workflow for monthly gas, electricity, and water consumption, combining data validation, outlier handling, ARIMA/SARIMAX modelling, residual analysis, and a configured **60-month forecast horizon**. Each target is modelled separately, with evaluation and limitations documented alongside the code.
 
-I am most interested in work where the problem is not fully solved by choosing a model: the data needs structure, the system crosses multiple layers, reliability matters, and the final result must be communicated clearly. That includes applied AI, data products, research engineering, evaluation, responsible-AI work, and technically grounded experimentation.
+`Python` · `pandas` · `statsmodels` · `scikit-learn` · `Time-series analysis`
 
-<details>
-<summary><b>How the claims on this profile are grounded</b></summary>
+**[Explore the forecasting workflow →](https://github.com/fishman7337/sp-daaa-aiml-ca2-energy-consumption-forecast)**
 
-<br />
+## More projects
 
-The profile deliberately separates documented build scope from measured outcomes. Project claims come from public repository documentation; experience and credential claims come from the public LinkedIn record. No awards, rankings, endorsements, or performance claims are inferred.
+More of my work across decision support, language algorithms, data structures, full-stack development, and reinforcement learning.
 
-**[Read the evidence notes →](./docs/TRUTH_GROUNDING.md)**
+### 06 · Student Performance Intelligence
 
-</details>
+<a href="https://github.com/fishman7337/sp-daaa-davi-ca2-student-performance-dashboard">
+  <picture>
+    <source media="(max-width: 600px) and (prefers-reduced-motion: no-preference)" srcset="./assets/portfolio-student-mobile.gif" />
+    <source media="(prefers-reduced-motion: no-preference)" srcset="./assets/portfolio-student.gif" />
+    <source media="(max-width: 600px)" srcset="./assets/portfolio-student-mobile-static.png" />
+    <img src="./assets/portfolio-student-static.png" width="100%" alt="Student Performance Intelligence: GPA and attendance feed configurable threshold rules, producing transparent tiers for cohort and trend analysis." />
+  </picture>
+</a>
 
-## Let’s compare notes
+Built a Dash dashboard for GPA, attendance, cohort trends, and survey analysis. Configurable rules mark a tier as high when both GPA and attendance fall below their thresholds, medium when one does, and low when neither does—making the decision logic easy to inspect.
 
-If you are evaluating my work for a role, exploring a collaboration, or simply working on careful AI systems, I would be glad to talk.
+`Python` · `Dash` · `Plotly` · `pandas`
 
-<p align="center">
-  <a href="mailto:kunmingaden@gmail.com"><b>Email me</b></a>
-  &nbsp;·&nbsp;
-  <a href="https://www.linkedin.com/in/gohkunming/"><b>Connect on LinkedIn</b></a>
-  &nbsp;·&nbsp;
-  <a href="https://github.com/fishman7337?tab=repositories"><b>Browse every repository</b></a>
-</p>
+**[Explore the dashboard →](https://github.com/fishman7337/sp-daaa-davi-ca2-student-performance-dashboard)**
+
+### 07 · HaikuForge AI
+
+<a href="https://github.com/fishman7337/sp-daaa-dsaa-ca1-haiku-generator">
+  <picture>
+    <source media="(max-width: 600px) and (prefers-reduced-motion: no-preference)" srcset="./assets/portfolio-haiku-mobile.gif" />
+    <source media="(prefers-reduced-motion: no-preference)" srcset="./assets/portfolio-haiku.gif" />
+    <source media="(max-width: 600px)" srcset="./assets/portfolio-haiku-mobile-static.png" />
+    <img src="./assets/portfolio-haiku-static.png" width="100%" alt="HaikuForge AI: text transformations and Markov transitions form syllable-aware lines targeting a 5–7–5 pattern, followed by word-level WAV narration." />
+  </picture>
+</a>
+
+Created a Python CLI combining syllable-aware Markov generation, thesaurus-based text transformations, and word-level WAV narration. It explores how language can be generated and reshaped with explicit algorithms and a 5–7–5 target.
+
+`Python` · `Markov chains` · `CLI` · `WAV audio`
+
+**[Explore language generation →](https://github.com/fishman7337/sp-daaa-dsaa-ca1-haiku-generator)**
+
+### 08 · Newspaper Restoration
+
+<a href="https://github.com/fishman7337/sp-daaa-dsaa-ca2-newspaper-restoration">
+  <picture>
+    <source media="(max-width: 600px) and (prefers-reduced-motion: no-preference)" srcset="./assets/portfolio-restoration-mobile.gif" />
+    <source media="(prefers-reduced-motion: no-preference)" srcset="./assets/portfolio-restoration.gif" />
+    <source media="(max-width: 600px)" srcset="./assets/portfolio-restoration-mobile-static.png" />
+    <img src="./assets/portfolio-restoration-static.png" width="100%" alt="Newspaper Restoration: damaged text is searched against a prefix trie using wildcards and edit distance to suggest candidate restorations and graph views." />
+  </picture>
+</a>
+
+Built a text-recovery CLI using prefix tries, wildcard matching, and edit-distance search to suggest restorations for damaged newspaper text. Ranked candidates and graph views make the search process inspectable.
+
+`Python` · `Prefix tries` · `NetworkX` · `Matplotlib`
+
+**[Explore text restoration →](https://github.com/fishman7337/sp-daaa-dsaa-ca2-newspaper-restoration)**
+
+### 09 · FitnessQuest
+
+<a href="https://github.com/fishman7337/sp-daaa-bed-ca-fitnessquest">
+  <picture>
+    <source media="(max-width: 600px) and (prefers-reduced-motion: no-preference)" srcset="./assets/portfolio-fitness-mobile.gif" />
+    <source media="(prefers-reduced-motion: no-preference)" srcset="./assets/portfolio-fitness.gif" />
+    <source media="(max-width: 600px)" srcset="./assets/portfolio-fitness-mobile-static.png" />
+    <img src="./assets/portfolio-fitness-static.png" width="100%" alt="FitnessQuest: browser interactions pass through an authenticated Express API to user-scoped MySQL state, challenges, and game progression." />
+  </picture>
+</a>
+
+Developed a gamified fitness web application with authenticated Express APIs, user-scoped MySQL data, challenges, and game progression. Browser-flow tests cover key journeys through the application.
+
+`JavaScript` · `Node.js / Express` · `MySQL` · `JWT` · `Playwright`
+
+**[Explore the application →](https://github.com/fishman7337/sp-daaa-bed-ca-fitnessquest)**
+
+### 10 · Pendulum Learning Lab
+
+<a href="https://github.com/fishman7337/sp-daaa-dele-ca2-pendulum-reinforcement-learning">
+  <picture>
+    <source media="(max-width: 600px) and (prefers-reduced-motion: no-preference)" srcset="./assets/portfolio-pendulum-mobile.gif" />
+    <source media="(prefers-reduced-motion: no-preference)" srcset="./assets/portfolio-pendulum.gif" />
+    <source media="(max-width: 600px)" srcset="./assets/portfolio-pendulum-mobile-static.png" />
+    <img src="./assets/portfolio-pendulum-static.png" width="100%" alt="Pendulum Learning Lab: a schematic reinforcement-learning loop connects simulated pendulum observations, a DQN agent, discrete torque actions, and environment feedback, with replay and target-network updates." />
+  </picture>
+</a>
+
+Developed a reinforcement-learning lab for comparing **Standard, Double, Dueling, and Rainbow-style DQN** on a simulated pendulum. Continuous torque is mapped into discrete actions, with reusable environment wrappers, replay buffers, training, and evaluation components. Seeded configurations and documented limitations make the experiments easier to inspect and reproduce.
+
+`Python` · `TensorFlow / Keras` · `Gymnasium` · `NumPy` · `Reinforcement learning`
+
+**[Explore the learning lab →](https://github.com/fishman7337/sp-daaa-dele-ca2-pendulum-reinforcement-learning)**
+
+**[Browse all public repositories →](https://github.com/fishman7337?tab=repositories)**
+
+## Experience
+
+**Research Engineer · NCS · Pragnition Labs**<br />
+*Internship · Oct 2026–present · Singapore*
+
+Turn business and technical requirements into research questions, testable hypotheses, and AI prototypes. Evaluate performance, reliability, latency, cost, security, and maintainability; communicate findings and build reusable components.
+
+**AI Research Intern · RSAF RAiD · AETHER**<br />
+*Apr–Aug 2026*
+
+Researched multimodal perception, geospatial data, neuromorphic vision, RF sensing, and language/vision-language reasoning. Built reproducible evaluations and documented methods, findings, and limitations for research handover.
+
+**AI & Data Solutions Researcher · Singapore Polytechnic · Department of Communications**<br />
+*Part-time · Mar 2026*
+
+Built role-aware departmental workflows, a Supabase data architecture, decision-support tools, and AI assistance, supported by release, access-control, and usability checks.
+
+**Co-Founder, Data & Intelligent Systems · Wagglo**<br />
+*Feb–Mar 2026*
+
+Designed compatibility scoring and recommendation workflows for a pet-owner matching concept, alongside privacy-conscious survey analysis to inform product priorities.
+
+**Student Developer · Singapore Polytechnic · School of Computing**<br />
+*Sep 2025–Mar 2026*
+
+Developed an institutional Open House assistant using Amazon Bedrock, hybrid retrieval, reranking, persistent conversation state, and controlled user evaluation, with a FastAPI backend and Next.js interface.
+
+**[Full journey on my website →](https://gohkunming.dev/#experience)** · **[LinkedIn experience →](https://www.linkedin.com/in/gohkunming/details/experience/)**
+
+## Technical toolkit
+
+### Models, research & data
+
+| Area | Tools & methods |
+| :--- | :--- |
+| **Machine learning & forecasting** | scikit-learn · XGBoost · statsmodels · ensemble learning · ARIMA / SARIMAX · Optuna |
+| **Deep learning & generative models** | PyTorch · TensorFlow / Keras · CNNs / ResNet · SimpleRNN / LSTM / GRU · GANs / VAEs |
+| **Reinforcement learning** | Standard / Double / Dueling / Rainbow DQN · experience replay · target networks · seeded evaluation |
+| **Vision & multimodal research** | OpenCV · Ultralytics YOLO · ONNX · multimodal perception · geospatial data · RF sensing |
+| **Simulation** | Unreal Engine 5 · AirSim · RGB / thermal / LiDAR experiments · sensor-fusion comparisons |
+| **Quantum & generative research** | Qiskit / Aer · latent-prior experiments · FID / KID evaluation · Jupyter |
+| **Statistics & optimisation** | Gradient descent · PCA · hypothesis testing · ANOVA / Tukey HSD · bootstrap analysis · cross-validation |
+| **Clustering & evaluation** | K-Means · agglomerative clustering · DBSCAN / OPTICS · error analysis · leakage checks · distribution drift |
+| **Retrieval & language** | Amazon Bedrock · OpenAI / Cohere embeddings · pgvector · BM25 · reciprocal-rank fusion · query rewriting · reranking · hallucination grading |
+| **Data engineering & analysis** | pandas · NumPy · PySpark · ETL · star-schema warehouses · data validation · geospatial enrichment |
+| **Visualisation & dashboards** | Matplotlib · Seaborn · Plotly / Dash · Tableau · Power BI · NetworkX |
+| **Algorithms & text processing** | Prefix tries · wildcard matching · edit-distance search · Markov chains · tokenisation |
+
+### Applications, infrastructure & delivery
+
+| Area | Tools & methods |
+| :--- | :--- |
+| **Languages** | Python · SQL · JavaScript · Rust · HTML / CSS |
+| **Application engineering** | FastAPI · Flask · Node.js / Express · React / Next.js · REST APIs · Zod |
+| **Databases** | PostgreSQL · MySQL · SQLite · Supabase |
+| **Cloud & model serving** | AWS / EC2 · Linux / Ubuntu · Docker · TensorFlow Serving · model registries |
+| **Access & data governance** | JWT · role-based access · row-level security · consent records · data-lifecycle design · audit logging |
+| **Testing & delivery** | pytest · Playwright · Jest · Supertest · Ruff · Git · GitHub Actions · CI/CD · technical documentation |
+
+### Coursework & continued learning
+
+My professional certificate programmes and further coursework extend my toolkit in these areas:
+
+| Area | Technologies & concepts studied |
+| :--- | :--- |
+| **AI agents & orchestration** | LangChain · LangGraph · CrewAI · AutoGen · BeeAI · tool calling · agent memory |
+| **Retrieval & agent interfaces** | LlamaIndex · FAISS · ChromaDB · Gradio · Model Context Protocol (MCP) · FastMCP |
+| **Transformers & LLM adaptation** | Hugging Face Transformers · PEFT · LoRA / QLoRA · quantisation · instruction tuning |
+| **Alignment & foundations** | RLHF · PPO · DPO · reward modelling · linear algebra · multivariate calculus · AI infrastructure & operations |
+
+**[Skills & experience on LinkedIn →](https://www.linkedin.com/in/gohkunming/)** · **[Explore my credential record →](https://www.linkedin.com/in/gohkunming/details/certifications/)**
+
+## How I build
+
+### Applied AI · From a need to a useful system
 
 <picture>
-  <source media="(max-width: 600px)" srcset="./assets/spatial-footer-mobile.svg" />
-  <img src="./assets/spatial-footer.svg" width="100%" alt="" />
+  <source media="(max-width: 600px) and (prefers-reduced-motion: no-preference)" srcset="./assets/process-applied-mobile.gif" />
+  <source media="(prefers-reduced-motion: no-preference)" srcset="./assets/process-applied.gif" />
+  <source media="(max-width: 600px)" srcset="./assets/process-applied-mobile-static.png" />
+  <img src="./assets/process-applied-static.png" width="100%" alt="Applied AI process: align with stakeholders on needs and success criteria, inspect data, evaluate a baseline, review prototypes together, validate and hand over the system, then use feedback and monitoring to iterate." />
 </picture>
 
-<p align="center"><sub>Curious by default. Clear by design.</sub></p>
+**Stakeholder alignment → data → baseline & evaluation → product integration & feedback → validation & handover → monitoring & iteration.**
+
+I start by engaging stakeholders to understand the users, decisions, success criteria, and practical constraints. I translate those needs into requirements, inspect data quality and leakage, and compare a baseline before connecting the model to an API and interface.
+
+**Stakeholder engagement continues throughout the build:** review prototypes together, explain trade-offs, gather feedback, and agree on acceptance criteria. Before release, I check behaviour, usability, access controls, failure cases, latency, and cost. Clear documentation and handover support adoption; feedback and monitoring guide the next iteration.
+
+### Research · From a question to defensible evidence
+
+<picture>
+  <source media="(max-width: 600px) and (prefers-reduced-motion: no-preference)" srcset="./assets/process-research-mobile.gif" />
+  <source media="(prefers-reduced-motion: no-preference)" srcset="./assets/process-research.gif" />
+  <source media="(max-width: 600px)" srcset="./assets/process-research-mobile-static.png" />
+  <img src="./assets/process-research-static.png" width="100%" alt="Research process: review literature and identify a gap, form a question and hypothesis, design a controlled study, run baselines and experiments, analyse uncertainty and limitations, then reproduce and communicate the findings." />
+</picture>
+
+**Literature & gap → question & hypothesis → study design → baselines & experiments → analysis & limitations → reproducibility & communication.**
+
+I begin with what is already known and what remains uncertain. I define a testable question, choose comparison conditions and evaluation criteria, and keep data splits and experiment settings explicit. I use ablations and error analysis to examine the result, report uncertainty and negative findings, and document enough detail for others to inspect or reproduce the work. The findings may refine the hypothesis or motivate the next study.
+
+## Beyond the projects
+
+### Education
+
+**Diploma in Applied AI & Analytics · Singapore Polytechnic**<br />
+*2024–2027 · In progress, Year 3*
+
+My studies span machine learning, data engineering, deep learning, cloud computing, and practical AI projects.
+
+**Singapore-Cambridge GCE O-Level · Yuhua Secondary School**<br />
+*2020–2023*
+
+### Professional certificates
+
+My professional certificates span AI engineering, agentic systems, deep learning, advanced analytics, and practical AI use.
+
+| Professional certificate | Focus |
+| :--- | :--- |
+| **IBM AI Engineering Professional Certificate** | Machine learning, deep learning, and generative AI engineering |
+| **IBM RAG and Agentic AI Professional Certificate** | Retrieval-augmented generation, tool use, MCP, and multi-agent workflows |
+| **IBM Deep Learning with PyTorch, Keras and TensorFlow Professional Certificate** | Neural networks, transfer learning, model training, and evaluation |
+| **Google Advanced Data Analytics Professional Certificate** | Statistical inference, regression, machine learning, and data storytelling |
+| **Google AI Professional Certificate** | Responsible AI use for research, communication, data analysis, and application building |
+
+**Additional specialisation:** *Mathematics for Machine Learning* — **Imperial College London**, issued October 2026; linear algebra, multivariate calculus, and PCA.
+
+**[View credentials on LinkedIn →](https://www.linkedin.com/in/gohkunming/details/certifications/)**
+
+My interests include **intelligent systems, AI safety and governance, quantum computing, and complexity science**. Education, practice, and service guide how I want to contribute: keep learning, test ideas carefully, and make knowledge useful to others.
+
+### Outside work
+
+Outside research and code, I enjoy gaming, music, discovering places to eat, coffee, time with family and friends, and travel. The Minecraft-inspired visuals are a nod to the server my polytechnic friends and I ran together in Year 2. I like building things that invite exploration.
+
+## Let's connect
+
+If your team is working on applied AI, research engineering, or data products, I'd be glad to discuss how my experience could contribute.
+
+**[Email Kun Ming](mailto:kunmingaden@gmail.com)** · **[Connect on LinkedIn](https://www.linkedin.com/in/gohkunming/)** · **[Read my résumé](https://gohkunming.dev/documents/resume/goh-kun-ming-resume.pdf)** · **[Explore my website](https://gohkunming.dev/)**
+
+<sub>Curious by default. Clear by design.</sub>

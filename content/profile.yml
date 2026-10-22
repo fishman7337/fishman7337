@@ -11,6 +11,9 @@ identity:
   email: kunmingaden@gmail.com
   github: https://github.com/fishman7337
   linkedin: https://www.linkedin.com/in/gohkunming/
+  website: https://gohkunming.dev/
+  resume: https://gohkunming.dev/documents/resume/goh-kun-ming-resume.pdf
+  reviewed: 2026-10-22
   tagline: AI systems, data products, and reliable delivery—from evidence to experience.
   motto: Curious by default. Clear by design.
 
@@ -42,7 +45,7 @@ about:
 
 approach:
   - title: Start with the decision
-    desc: Identify the user, constraint, decision, and useful outcome before choosing an algorithm.
+    desc: Engage stakeholders to agree on users, decisions, success criteria, and constraints before choosing an algorithm.
   - title: Treat data quality as part of the model
     desc: Make provenance, missingness, leakage, definitions, and validation explicit.
   - title: Build a baseline first
@@ -61,6 +64,7 @@ collaboration:
     - Honest documentation of limitations and trade-offs
     - Attention to data, testing, deployment, and maintenance layers
     - Technical communication through diagrams and structured documentation
+    - Stakeholder engagement through requirements, prototype feedback, acceptance criteria, and handover
   best_fit:
     - Applied AI systems
     - Data products and decision support
@@ -103,8 +107,30 @@ capabilities:
     delay: 2.4
 
 experience:
+  - role: Research Engineer
+    organisation: NCS · Pragnition Labs
+    dates: Oct 2026 – present
+    type: Internship
+    source: https://gohkunming.dev/#experience
+    scope: >-
+      Applied AI research and prototypes, translating business and technical requirements
+      into research questions, hypotheses, and experiments.
+    evidence:
+      - Evaluates performance, reliability, latency, computational cost, security, and maintainability
+      - Documents research, communicates findings, and builds reusable components
+  - role: AI Research Intern
+    organisation: RSAF RAiD · AETHER
+    dates: Apr 2026 – Aug 2026
+    type: Internship
+    source: https://gohkunming.dev/#experience
+    scope: >-
+      Applied AI research across multimodal perception, geospatial data,
+      neuromorphic vision, RF sensing, and language/vision-language reasoning.
+    evidence:
+      - Reproducible evaluations and research handover
+      - Documentation of methods, findings, and limitations
   - role: AI & Data Solutions Researcher
-    organisation: Singapore Polytechnic
+    organisation: Singapore Polytechnic · Department of Communications
     dates: Mar 2026
     type: Part-time
     scope: >-
@@ -115,7 +141,7 @@ experience:
       - 3 assisted workflows and a GPT-4.1 conversational assistant grounded in 14 documents and 1 institutional website
       - 238 tests, 31 browser end-to-end scenarios, and 4 continuous-delivery workflows
   - role: Student Developer
-    organisation: Singapore Polytechnic
+    organisation: Singapore Polytechnic · School of Computing
     dates: Sep 2025 – Mar 2026
     scope: >-
       Built an institutional retrieval-augmented application using hybrid search,
@@ -134,22 +160,42 @@ experience:
       - Top-K recommendation design with 9 weighted compatibility dimensions and 8 behavioural event types
       - Analysed 104 survey responses into 102 clean records to shape product priorities
 
+education:
+  - qualification: Diploma in Applied AI & Analytics
+    institution: Singapore Polytechnic
+    dates: 2024–2027
+    status: In progress, Year 3
+    source: https://gohkunming.dev/#experience
+  - qualification: Singapore-Cambridge GCE O-Level
+    institution: Yuhua Secondary School
+    dates: 2020–2023
+    source: https://gohkunming.dev/#experience
+
 credentials:
-  - name: Quantum Computing For Everyone - An Introduction
-    issuer: Fractal
-    issued: Jul 2026
-  - name: Ethical AI - AI Essentials For Everyone
-    issuer: University of Cambridge
-    issued: Jun 2026
-  - name: Introduction to Complexity Science
-    issuer: Nanyang Technological University Singapore
-    issued: Jun 2026
-  - name: Advanced Deep Learning with Keras
-    issuer: DataCamp
-    issued: Mar 2026
-  - name: Fundamentals of Deep Learning
-    issuer: NVIDIA
-    issued: Feb 2026
+  - name: IBM AI Engineering Professional Certificate
+    issuer: IBM
+    issued: Oct 2026
+    type: Professional Certificate
+  - name: IBM RAG and Agentic AI Professional Certificate
+    issuer: IBM
+    issued: Oct 2026
+    type: Professional Certificate
+  - name: IBM Deep Learning with PyTorch, Keras and TensorFlow Professional Certificate
+    issuer: IBM
+    issued: Oct 2026
+    type: Professional Certificate
+  - name: Google Advanced Data Analytics Professional Certificate
+    issuer: Google
+    issued: Oct 2026
+    type: Professional Certificate
+  - name: Google AI Professional Certificate
+    issuer: Google
+    issued: Sep 2026
+    type: Professional Certificate
+  - name: Mathematics for Machine Learning Specialisation
+    issuer: Imperial College London
+    issued: Oct 2026
+    type: Specialisation
 
 process:
   - Question
@@ -165,17 +211,12 @@ projects:
     theme: Generative ML
     desc: Classical GAN and 3-, 5-, and 7-qubit hybrid latent-prior experiments with PSD-safe evaluation utilities and 21 tests.
     stack: Qiskit · TensorFlow · GANs · FID/KID
-  - name: Leaf Object Detection
-    repo: leaf-object-detection
-    theme: Computer Vision
-    desc: A YOLO preparation-to-browser pipeline with a recorded 57,164-image dataset run, ONNX export, and 12 tests.
-    stack: Python · YOLO · ONNX · TensorFlow.js
   - name: HDB Price Dashboard
     repo: sp-daaa-davi-ca1-hdb-price-dashboard
     theme: Data Visualisation
     desc: Singapore resale analytics over 202,461 canonical cleaned records and a 216,695-row location-enriched table.
     stack: Python · Tableau · Geospatial data · Testing
-  - name: Student Risk Analytics
+  - name: Student Performance Intelligence
     repo: sp-daaa-davi-ca2-student-performance-dashboard
     theme: Decision Support
     desc: A reusable Dash application for latest-semester GPA and attendance analysis, with eight automated tests.
@@ -190,44 +231,173 @@ projects:
     theme: Multimodal ML
     desc: A tested property-price prototype combining structured, language, and image modelling in a Flask application.
     stack: Flask · scikit-learn · NLP · CNN
+  - name: Energy Consumption Forecasting
+    repo: sp-daaa-aiml-ca2-energy-consumption-forecast
+    theme: Time-series Modelling
+    desc: Monthly gas, electricity and water consumption workflows with validation, ARIMA/SARIMAX models and a configured 60-month forecast horizon.
+    stack: Python · pandas · statsmodels · scikit-learn
+
+  - name: HaikuForge AI
+    repo: sp-daaa-dsaa-ca1-haiku-generator
+    theme: Language Algorithms
+    desc: Syllable-aware Markov generation, text transformations, and word-level WAV narration in a Python CLI.
+    stack: Python · Markov chains · CLI · WAV audio
+  - name: Newspaper Restoration
+    repo: sp-daaa-dsaa-ca2-newspaper-restoration
+    theme: Data Structures
+    desc: Prefix tries, wildcard matching, edit-distance search, ranked candidate restorations, and graph views for damaged text.
+    stack: Python · Prefix tries · NetworkX · Matplotlib
+  - name: FitnessQuest
+    repo: sp-daaa-bed-ca-fitnessquest
+    theme: Full-stack Development
+    desc: Gamified fitness web application with authenticated Express APIs, user-scoped MySQL data, and browser-flow tests.
+    stack: JavaScript · Node.js · Express · MySQL · JWT · Playwright
+
+  - name: Pendulum Learning Lab
+    repo: sp-daaa-dele-ca2-pendulum-reinforcement-learning
+    theme: Reinforcement Learning
+    desc: A simulated Pendulum-v1 lab for DQN-family comparisons, with discrete torque actions, replay buffers, seeded configurations, and reusable training/evaluation components.
+    stack: Python · TensorFlow / Keras · Gymnasium · NumPy
 
 skills:
   AI & Machine Learning:
-    - Python
-    - PyTorch
-    - TensorFlow
-    - Keras
-    - scikit-learn
-    - Qiskit
-    - OpenCV
-    - RAG
+  - Python
+  - PyTorch
+  - TensorFlow
+  - Keras
+  - scikit-learn
+  - Qiskit
+  - OpenCV
+  - XGBoost
+  - statsmodels
+  - Optuna
+  - Ultralytics YOLO
+  - ONNX
+  - TensorFlow Serving
+  - RAG
+  - SimpleRNN
+  - LSTM
+  - GRU
+  - CNNs / ResNet
+  - GANs / VAEs
+  - Standard / Double / Dueling / Rainbow DQN
+  - Experience replay
+  - Target networks
+  - K-Means
+  - Agglomerative clustering
+  - DBSCAN / OPTICS
   Data & Visualisation:
-    - Pandas
-    - NumPy
-    - SQL
-    - ETL
-    - Matplotlib
-    - Plotly
-    - Tableau
-    - Power BI
+  - Pandas
+  - NumPy
+  - SQL
+  - ETL
+  - Matplotlib
+  - Seaborn
+  - PySpark
+  - Plotly
+  - Tableau
+  - Power BI
+  - Star-schema warehouses
+  - Geospatial enrichment
+  - NetworkX
   Product Engineering:
-    - FastAPI
-    - Flask
-    - React
-    - Next.js
-    - Node.js
-    - PostgreSQL
-    - Supabase
-    - REST APIs
+  - FastAPI
+  - Flask
+  - React
+  - Next.js
+  - Node.js
+  - Express
+  - JavaScript
+  - HTML / CSS
+  - MySQL
+  - SQLite
+  - PostgreSQL
+  - Supabase
+  - REST APIs
+  - Rust
+  - Zod
+  - JWT
+  - Row-level security
+  - Role-based access
+  - Consent records
+  - Data-lifecycle design
+  - Audit logging
   Quality & Delivery:
-    - pytest
-    - Playwright
-    - Docker
-    - GitHub Actions
-    - CI/CD
-    - AWS
-    - Documentation
-    - Model and data governance
+  - pytest
+  - Playwright
+  - Jest
+  - Supertest
+  - Ruff
+  - Git
+  - Docker
+  - GitHub Actions
+  - CI/CD
+  - AWS
+  - Documentation
+  - Model and data governance
+  - AWS EC2
+  - Linux / Ubuntu
+  - Model registries
+  Statistics & Research Methods:
+  - Gradient descent
+  - PCA
+  - Hypothesis testing
+  - ANOVA / Tukey HSD
+  - Bootstrap analysis
+  - Cross-validation
+  - Error analysis
+  - Leakage checks
+  - Distribution drift
+  - Unreal Engine 5
+  - AirSim
+  - Multimodal perception
+  - Sensor-fusion comparisons
+  - RF sensing
+  Retrieval & Language:
+  - Amazon Bedrock
+  - OpenAI embeddings
+  - Cohere embeddings
+  - pgvector
+  - BM25
+  - Reciprocal-rank fusion
+  - Query rewriting
+  - Reranking
+  - Hallucination grading
+  - Prefix tries
+  - Wildcard matching
+  - Edit-distance search
+  - Markov chains
+  - Tokenisation
+coursework_and_continued_learning:
+  AI agents & orchestration:
+  - LangChain
+  - LangGraph
+  - CrewAI
+  - AutoGen
+  - BeeAI
+  - Tool calling
+  - Agent memory
+  Retrieval & agent interfaces:
+  - LlamaIndex
+  - FAISS
+  - ChromaDB
+  - Gradio
+  - Model Context Protocol (MCP)
+  - FastMCP
+  Transformers & LLM adaptation:
+  - Hugging Face Transformers
+  - PEFT
+  - LoRA / QLoRA
+  - Quantisation
+  - Instruction tuning
+  Alignment & foundations:
+  - RLHF
+  - PPO
+  - DPO
+  - Reward modelling
+  - Linear algebra
+  - Multivariate calculus
+  - AI infrastructure & operations
 
 theme:
   bg0: "#080B12"

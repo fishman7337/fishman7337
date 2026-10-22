@@ -44,6 +44,10 @@ python -m compileall scripts tests
 ```text
 python scripts/build_assets.py
 python scripts/build_3d_mesh.py
+python scripts/build_recruiter_assets.py
+python scripts/build_portfolio_animations.py
+python scripts/build_profile_motion.py
+python scripts/build_more_project_animations.py
 git diff --exit-code -- assets
 ```
 

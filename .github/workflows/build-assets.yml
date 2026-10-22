@@ -1,4 +1,4 @@
-name: Rebuild editable SVG assets
+name: Rebuild profile artwork
 
 on:
   workflow_dispatch:
@@ -7,6 +7,12 @@ on:
       - "content/profile.yml"
       - "scripts/build_assets.py"
       - "scripts/build_3d_mesh.py"
+      - "scripts/build_recruiter_assets.py"
+      - "scripts/build_portfolio_animations.py"
+      - "scripts/build_profile_motion.py"
+      - "scripts/build_more_project_animations.py"
+      - "scripts/additional_project_scenes.py"
+      - "requirements.txt"
       - "assets/*-v1.png"
 
 permissions:
@@ -29,13 +35,17 @@ jobs:
         with:
           python-version: "3.12"
       - name: Install dependencies
-        run: pip install pyyaml
-      - name: Generate SVG assets
+        run: pip install -r requirements.txt
+      - name: Generate profile artwork
         run: |
           python scripts/build_assets.py
           python scripts/build_3d_mesh.py
+          python scripts/build_recruiter_assets.py
+          python scripts/build_portfolio_animations.py
+          python scripts/build_profile_motion.py
+          python scripts/build_more_project_animations.py
       - name: Commit generated assets
         uses: stefanzweifel/git-auto-commit-action@4a55954c782fc1ea30b9056cd3e7a2b40ca8887d # v7.2.0
         with:
-          commit_message: "chore: rebuild editable profile SVG assets"
-          file_pattern: "assets/*.svg assets/models/*.stl assets/models/*.obj"
+          commit_message: "chore: rebuild profile artwork"
+          file_pattern: "assets/*.svg assets/models/*.stl assets/models/*.obj assets/portfolio-*.gif assets/portfolio-*.png assets/profile-hero*.gif assets/profile-hero*.png assets/process-*.gif assets/process-*.png"

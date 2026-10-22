@@ -58,7 +58,10 @@ def test_profile_content_has_required_identity_and_project_evidence() -> None:
     assert len(content["projects"]) >= 6
     assert all(project.get("name") and project.get("desc") for project in content["projects"])
     assert len(content["capabilities"]) == 4
-    assert len(content["experience"]) == 3
+    assert len(content["experience"]) == 5
+    assert any(item["organisation"] == "RSAF RAiD · AETHER" for item in content["experience"])
+    assert content["experience"][0]["type"] == "Internship"
+    assert content["identity"]["website"] == "https://gohkunming.dev/"
     assert len(content["credentials"]) >= 5
     assert len(content["approach"]) == 6
     assert len(content["collaboration"]["strengths"]) >= 5
@@ -89,101 +92,84 @@ def test_main_generates_well_formed_svg_assets(
         assert root.attrib["viewBox"]
 
 
-def test_readme_uses_the_spatial_portfolio_visual_system() -> None:
-    readme = (REPO_ROOT / "README.md").read_text(encoding="utf-8")
-
-    for asset in [
-        "spatial-hero.svg",
-        "spatial-hero-mobile.svg",
-        "capability-map.svg",
-        "capability-map-mobile.svg",
-        "world-generative-vision.svg",
-        "world-data-intelligence.svg",
-        "world-ai-product-system.svg",
-        "curiosity-knot-wireframe.svg",
-        "tool-constellation.svg",
-        "spatial-footer.svg",
-        "spatial-footer-mobile.svg",
-    ]:
-        assert f"./assets/{asset}" in readme
-
-    assert "Applied AI & Analytics Student" in (REPO_ROOT / "content" / "profile.yml").read_text(
-        encoding="utf-8"
-    )
-    assert readme.count("<details") >= 14
-    assert "What I bring to a team" in readme
-    assert "Experience in practice" in readme
-    assert "public LinkedIn experience" in readme
+def test_recruiter_assets_reproduce_committed_files(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch
+) -> None:
+    """Catch missing or stale published artwork after editing its generator."""
+    assets = load_script("build_recruiter_assets.py")
+    monkeypatch.setattr(assets, "ASSETS", tmp_path)
+    assets.main()
+    generated = sorted(tmp_path.glob("*.svg"))
+    assert len(generated) == 8
+    assert sum(path.stat().st_size for path in generated) < 250_000
+    for path in generated:
+        assert path.read_bytes() == (REPO_ROOT / "assets" / path.name).read_bytes()
 
 
 def test_readme_has_substantive_public_biography() -> None:
-    """Keep the profile person-led instead of relying on artwork alone."""
+    """Keep current work and internship status visible without image rendering."""
     readme = (REPO_ROOT / "README.md").read_text(encoding="utf-8")
-
-    for section in [
-        "## About me",
-        "### A quick read",
-        "## How I approach a problem",
-        "## What teammates can expect from me",
-        "## Learning and research direction",
-        "### Problems I want to keep exploring",
-        "### The environments where I contribute best",
+    visible_intro = readme.split("## Selected work")[0]
+    for fact in [
+        "Goh Kun Ming",
+        "Research Engineer intern",
+        "Pragnition Labs",
+        "Singapore Polytechnic",
     ]:
-        assert section in readme
-
-    assert "AI academia" in readme
+        assert fact in visible_intro
+    assert "research and academia" in readme
     assert "teaching and mentoring" in readme.lower()
-    assert "<details open>" in readme
+    assert "Oct 2026–present" in readme
+    assert "AI Research Intern · RSAF RAiD · AETHER" in readme
+    assert "Apr–Aug 2026" in readme
 
 
-def test_readme_has_an_accessible_native_text_reading_path() -> None:
-    """Keep essential profile navigation and content outside the artwork."""
+def test_readme_local_references_and_navigation_resolve() -> None:
+    """Prevent broken relative links and fragment navigation after redesigns."""
     readme = (REPO_ROOT / "README.md").read_text(encoding="utf-8")
-
-    for anchor in [
-        "#about-me",
-        "#how-i-approach-a-problem",
-        "#what-i-bring-to-a-team",
-        "#experience-in-practice",
-        "#selected-work",
-        "#learning-and-research-direction",
-        "#lets-compare-notes",
-    ]:
-        assert f'href="{anchor}"' in readme
-
-    assert "Designed to be read, not merely viewed" in readme
-    assert "./docs/ACCESSIBILITY.md" in readme
-    assert "click here" not in readme.lower()
+    local_links = re.findall(r'(?:href|src|srcset)="(\./[^"]+)"|\]\((\./[^)]+)\)', readme)
+    assert local_links
+    for html_link, md_link in local_links:
+        target = html_link or md_link
+        assert (REPO_ROOT / target.split("#")[0]).is_file(), target
+    headings = re.findall(r"^#{1,6} (.+)$", readme, flags=re.MULTILINE)
+    anchors = {re.sub(r"[^\w\- ]", "", heading.lower()).replace(" ", "-") for heading in headings}
+    for fragment in re.findall(r'href="#([^"]+)"', readme):
+        assert fragment in anchors, fragment
 
 
 def test_readme_images_have_intentional_alt_text() -> None:
-    """Require useful text alternatives, with one explicitly decorative footer."""
+    """Keep image alternatives and separate narrow-screen hero/workflow views."""
     readme = (REPO_ROOT / "README.md").read_text(encoding="utf-8")
     image_tags = re.findall(r"<img\b[^>]*>", readme)
-
-    assert len(image_tags) == 8
+    assert image_tags
     for tag in image_tags:
-        assert re.search(r'\balt="[^"]*"', tag)
+        assert re.search(r'\balt="[^"]+"', tag), tag
+    assert 'media="(max-width: 600px)"' in readme
+    assert "profile-hero-mobile.gif" in readme
+    assert "process-applied-mobile.gif" in readme
+    assert "process-research-mobile.gif" in readme
 
-    empty_alts = [tag for tag in image_tags if 'alt=""' in tag]
-    assert len(empty_alts) == 1
-    assert "spatial-footer.svg" in empty_alts[0]
 
-
-def test_generated_readme_svgs_have_accessible_metadata_and_reduced_motion() -> None:
-    """Protect direct-open SVG semantics and motion preferences."""
-    readme = (REPO_ROOT / "README.md").read_text(encoding="utf-8")
-    asset_names = set(re.findall(r"\./assets/([\w-]+\.svg)", readme))
-
-    assert len(asset_names) == 11
+def test_vector_source_assets_have_accessible_metadata_and_reduced_motion() -> None:
+    """Protect SVG semantics, static fallback, motion preferences and self-containment."""
+    asset_names = {path.name for path in (REPO_ROOT / "assets").glob("recruiter-*.svg")}
+    assert asset_names
     for asset_name in asset_names:
         svg = (REPO_ROOT / "assets" / asset_name).read_text(encoding="utf-8")
         root = ET.fromstring(svg)
         assert root.attrib.get("role") == "img"
+        assert root.attrib["viewBox"]
         assert root.find("{http://www.w3.org/2000/svg}title") is not None
         assert root.find("{http://www.w3.org/2000/svg}desc") is not None
         assert "prefers-reduced-motion:reduce" in svg
-        assert "<animate" not in svg
+        assert "animation:none" in svg
+        for element in root.iter():
+            assert element.tag.split("}")[-1] not in {"script", "foreignObject", "animate", "image"}
+            for attr, value in element.attrib.items():
+                assert not attr.lower().startswith("on")
+                if attr.split("}")[-1] == "href":
+                    assert value.startswith("#")
 
 
 def test_core_visual_palette_has_enhanced_text_contrast() -> None:
@@ -206,6 +192,11 @@ def test_core_visual_palette_has_enhanced_text_contrast() -> None:
         ("#C9C6D4", "#050814"),
         ("#63D9D1", "#111725"),
         ("#FFF9EF", "#111725"),
+        ("#F4F0E8", "#08111C"),
+        ("#64E2CB", "#08111C"),
+        ("#FFA58A", "#08111C"),
+        ("#B8ADFF", "#08111C"),
+        ("#A5B4BF", "#08111C"),
     ]:
         assert contrast(foreground, background) >= 7
 
@@ -217,7 +208,7 @@ def test_employer_facing_claims_have_public_evidence_links() -> None:
     assert "https://www.linkedin.com/in/gohkunming/details/experience/" in readme
     assert "https://www.linkedin.com/in/gohkunming/details/certifications/" in readme
     assert readme.count("https://github.com/fishman7337/") >= 12
-    assert "business-impact claims" in readme
+    assert "https://gohkunming.dev/#experience" in readme
 
 
 def test_3d_mesh_generation_is_well_formed(tmp_path: Path, monkeypatch: pytest.MonkeyPatch) -> None:
@@ -239,17 +230,17 @@ def test_3d_mesh_generation_is_well_formed(tmp_path: Path, monkeypatch: pytest.M
     assert ET.parse(preview).getroot().tag.endswith("svg")
 
 
-def test_readme_mesh_claims_match_the_generator() -> None:
+def test_readme_keeps_calls_to_action_public_facing() -> None:
+    """Keep project evidence and contact links free of artwork production controls."""
     readme = (REPO_ROOT / "README.md").read_text(encoding="utf-8")
+    assert "./scripts/" not in readme
+    assert "./assets/models/" not in readme
+    assert "Explore the experiments" in readme
+    assert "Email Kun Ming" in readme
 
-    assert "1,728 vertices" in readme
-    assert "3,456 triangular faces" in readme
-    assert "./assets/models/curiosity-knot.stl" in readme
-    assert "./assets/models/curiosity-knot.obj" in readme
 
-
-def test_profile_does_not_use_retired_identity_framing() -> None:
-    """Keep earlier affiliations and paper-index branding out of the profile."""
+def test_profile_does_not_use_unrequested_publication_branding() -> None:
+    """Keep publication-index framing outside the requested professional profile."""
     paths = [
         REPO_ROOT / "README.md",
         REPO_ROOT / "content" / "profile.yml",
@@ -257,7 +248,7 @@ def test_profile_does_not_use_retired_identity_framing() -> None:
         REPO_ROOT / "manifest.json",
         *sorted((REPO_ROOT / "docs").glob("*.md")),
     ]
-    retired = ("ra" + "id", "rs" + "af", "ae" + "ther", "ar" + "xiv", "or" + "cid")
+    retired = ("ar" + "xiv", "or" + "cid")
 
     for path in paths:
         text = path.read_text(encoding="utf-8").lower()
