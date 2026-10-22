@@ -35,11 +35,17 @@ I work across **machine learning, computer vision, retrieval-augmented AI, and d
 
 ## Where I can contribute
 
-| Focus | What I work on | Evidence to explore |
-| :--- | :--- | :--- |
-| **Research & evaluation** | Hypothesis-driven experiments, classical baselines, generative modelling, and bounded quantum-ML comparisons | [Hybrid generative models](https://github.com/fishman7337/hybrid-quantum-classical-gan-research) |
-| **Applied AI systems** | Vision pipelines, model serving, APIs, and user-facing applications | [EstateScope AI](https://github.com/fishman7337/sp-daaa-doaa-ca1-housing-price-ml-application) · [VeggieAI](https://github.com/fishman7337/sp-daaa-doaa-ca2-vegetable-classification-application) |
-| **Data & decisions** | Data validation, exploratory analysis, statistical reasoning, and clear visual explanations | [HDB resale analytics](https://github.com/fishman7337/sp-daaa-davi-ca1-hdb-price-dashboard) |
+- **Research & evaluation**<br />
+  Hypothesis-driven experiments, classical baselines, generative modelling, and bounded quantum-ML comparisons<br />
+  [Hybrid generative models](https://github.com/fishman7337/hybrid-quantum-classical-gan-research)
+
+- **Applied AI systems**<br />
+  Vision pipelines, model serving, APIs, and user-facing applications<br />
+  [EstateScope AI](https://github.com/fishman7337/sp-daaa-doaa-ca1-housing-price-ml-application) · [VeggieAI](https://github.com/fishman7337/sp-daaa-doaa-ca2-vegetable-classification-application)
+
+- **Data & decisions**<br />
+  Data validation, exploratory analysis, statistical reasoning, and clear visual explanations<br />
+  [HDB resale analytics](https://github.com/fishman7337/sp-daaa-davi-ca1-hdb-price-dashboard)
 
 ## Selected work
 
@@ -264,42 +270,77 @@ Developed an institutional Open House assistant using Amazon Bedrock, hybrid ret
 
 ### Models, research & data
 
-| Area | Tools & methods |
-| :--- | :--- |
-| **Machine learning & forecasting** | scikit-learn · XGBoost · statsmodels · ensemble learning · ARIMA / SARIMAX · Optuna |
-| **Deep learning & generative models** | PyTorch · TensorFlow / Keras · CNNs / ResNet · SimpleRNN / LSTM / GRU · GANs / VAEs |
-| **Reinforcement learning** | Standard / Double / Dueling / Rainbow DQN · experience replay · target networks · seeded evaluation |
-| **Vision & multimodal research** | OpenCV · Ultralytics YOLO · ONNX · multimodal perception · geospatial data · RF sensing |
-| **Simulation** | Unreal Engine 5 · AirSim · RGB / thermal / LiDAR experiments · sensor-fusion comparisons |
-| **Quantum & generative research** | Qiskit / Aer · latent-prior experiments · FID / KID evaluation · Jupyter |
-| **Statistics & optimisation** | Gradient descent · PCA · hypothesis testing · ANOVA / Tukey HSD · bootstrap analysis · cross-validation |
-| **Clustering & evaluation** | K-Means · agglomerative clustering · DBSCAN / OPTICS · error analysis · leakage checks · distribution drift |
-| **Retrieval & language** | Amazon Bedrock · OpenAI / Cohere embeddings · pgvector · BM25 · reciprocal-rank fusion · query rewriting · reranking · hallucination grading |
-| **Data engineering & analysis** | pandas · NumPy · PySpark · ETL · star-schema warehouses · data validation · geospatial enrichment |
-| **Visualisation & dashboards** | Matplotlib · Seaborn · Plotly / Dash · Tableau · Power BI · NetworkX |
-| **Algorithms & text processing** | Prefix tries · wildcard matching · edit-distance search · Markov chains · tokenisation |
+- **Machine learning & forecasting**<br />
+  scikit-learn · XGBoost · statsmodels · ensemble learning · ARIMA / SARIMAX · Optuna
+
+- **Deep learning & generative models**<br />
+  PyTorch · TensorFlow / Keras · CNNs / ResNet · SimpleRNN / LSTM / GRU · GANs / VAEs
+
+- **Reinforcement learning**<br />
+  Standard / Double / Dueling / Rainbow DQN · experience replay · target networks · seeded evaluation
+
+- **Vision & multimodal research**<br />
+  OpenCV · Ultralytics YOLO · ONNX · multimodal perception · geospatial data · RF sensing
+
+- **Simulation**<br />
+  Unreal Engine 5 · AirSim · RGB / thermal / LiDAR experiments · sensor-fusion comparisons
+
+- **Quantum & generative research**<br />
+  Qiskit / Aer · latent-prior experiments · FID / KID evaluation · Jupyter
+
+- **Statistics & optimisation**<br />
+  Gradient descent · PCA · hypothesis testing · ANOVA / Tukey HSD · bootstrap analysis · cross-validation
+
+- **Clustering & evaluation**<br />
+  K-Means · agglomerative clustering · DBSCAN / OPTICS · error analysis · leakage checks · distribution drift
+
+- **Retrieval & language**<br />
+  Amazon Bedrock · OpenAI / Cohere embeddings · pgvector · BM25 · reciprocal-rank fusion · query rewriting · reranking · hallucination grading
+
+- **Data engineering & analysis**<br />
+  pandas · NumPy · PySpark · ETL · star-schema warehouses · data validation · geospatial enrichment
+
+- **Visualisation & dashboards**<br />
+  Matplotlib · Seaborn · Plotly / Dash · Tableau · Power BI · NetworkX
+
+- **Algorithms & text processing**<br />
+  Prefix tries · wildcard matching · edit-distance search · Markov chains · tokenisation
 
 ### Applications, infrastructure & delivery
 
-| Area | Tools & methods |
-| :--- | :--- |
-| **Languages** | Python · SQL · JavaScript · Rust · HTML / CSS |
-| **Application engineering** | FastAPI · Flask · Node.js / Express · React / Next.js · REST APIs · Zod |
-| **Databases** | PostgreSQL · MySQL · SQLite · Supabase |
-| **Cloud & model serving** | AWS / EC2 · Linux / Ubuntu · Docker · TensorFlow Serving · model registries |
-| **Access & data governance** | JWT · role-based access · row-level security · consent records · data-lifecycle design · audit logging |
-| **Testing & delivery** | pytest · Playwright · Jest · Supertest · Ruff · Git · GitHub Actions · CI/CD · technical documentation |
+- **Languages**<br />
+  Python · SQL · JavaScript · Rust · HTML / CSS
+
+- **Application engineering**<br />
+  FastAPI · Flask · Node.js / Express · React / Next.js · REST APIs · Zod
+
+- **Databases**<br />
+  PostgreSQL · MySQL · SQLite · Supabase
+
+- **Cloud & model serving**<br />
+  AWS / EC2 · Linux / Ubuntu · Docker · TensorFlow Serving · model registries
+
+- **Access & data governance**<br />
+  JWT · role-based access · row-level security · consent records · data-lifecycle design · audit logging
+
+- **Testing & delivery**<br />
+  pytest · Playwright · Jest · Supertest · Ruff · Git · GitHub Actions · CI/CD · technical documentation
 
 ### Coursework & continued learning
 
 My professional certificate programmes and further coursework extend my toolkit in these areas:
 
-| Area | Technologies & concepts studied |
-| :--- | :--- |
-| **AI agents & orchestration** | LangChain · LangGraph · CrewAI · AutoGen · BeeAI · tool calling · agent memory |
-| **Retrieval & agent interfaces** | LlamaIndex · FAISS · ChromaDB · Gradio · Model Context Protocol (MCP) · FastMCP |
-| **Transformers & LLM adaptation** | Hugging Face Transformers · PEFT · LoRA / QLoRA · quantisation · instruction tuning |
-| **Alignment & foundations** | RLHF · PPO · DPO · reward modelling · linear algebra · multivariate calculus · AI infrastructure & operations |
+- **AI agents & orchestration**<br />
+  LangChain · LangGraph · CrewAI · AutoGen · BeeAI · tool calling · agent memory
+
+- **Retrieval & agent interfaces**<br />
+  LlamaIndex · FAISS · ChromaDB · Gradio · Model Context Protocol (MCP) · FastMCP
+
+- **Transformers & LLM adaptation**<br />
+  Hugging Face Transformers · PEFT · LoRA / QLoRA · quantisation · instruction tuning
+
+- **Alignment & foundations**<br />
+  RLHF · PPO · DPO · reward modelling · linear algebra · multivariate calculus · AI infrastructure & operations
 
 **[Skills & experience on LinkedIn →](https://www.linkedin.com/in/gohkunming/)** · **[Explore my credential record →](https://www.linkedin.com/in/gohkunming/details/certifications/)**
 
@@ -349,13 +390,20 @@ My studies span machine learning, data engineering, deep learning, cloud computi
 
 My professional certificates span AI engineering, agentic systems, deep learning, advanced analytics, and practical AI use.
 
-| Professional certificate | Focus |
-| :--- | :--- |
-| **IBM AI Engineering Professional Certificate** | Machine learning, deep learning, and generative AI engineering |
-| **IBM RAG and Agentic AI Professional Certificate** | Retrieval-augmented generation, tool use, MCP, and multi-agent workflows |
-| **IBM Deep Learning with PyTorch, Keras and TensorFlow Professional Certificate** | Neural networks, transfer learning, model training, and evaluation |
-| **Google Advanced Data Analytics Professional Certificate** | Statistical inference, regression, machine learning, and data storytelling |
-| **Google AI Professional Certificate** | Responsible AI use for research, communication, data analysis, and application building |
+- **IBM AI Engineering Professional Certificate**<br />
+  Machine learning, deep learning, and generative AI engineering
+
+- **IBM RAG and Agentic AI Professional Certificate**<br />
+  Retrieval-augmented generation, tool use, MCP, and multi-agent workflows
+
+- **IBM Deep Learning with PyTorch, Keras and TensorFlow Professional Certificate**<br />
+  Neural networks, transfer learning, model training, and evaluation
+
+- **Google Advanced Data Analytics Professional Certificate**<br />
+  Statistical inference, regression, machine learning, and data storytelling
+
+- **Google AI Professional Certificate**<br />
+  Responsible AI use for research, communication, data analysis, and application building
 
 **Additional specialisation:** *Mathematics for Machine Learning* — **Imperial College London**, issued October 2026; linear algebra, multivariate calculus, and PCA.
 
