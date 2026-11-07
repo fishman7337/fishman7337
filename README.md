@@ -8,7 +8,7 @@
 <p align="center">
   <a href="https://gohkunming.dev/"><b>Explore my website</b></a>
   &nbsp;·&nbsp;
-  <a href="https://gohkunming.dev/documents/resume/goh-kun-ming-resume.pdf"><b>Résumé (PDF)</b></a>
+  <a href="https://github.com/fishman7337/fishman7337/blob/main/resume/Goh_Kun_Ming_Resume.pdf"><b>Résumé (PDF)</b></a>
   &nbsp;·&nbsp;
   <a href="https://www.linkedin.com/in/gohkunming/"><b>LinkedIn</b></a>
   &nbsp;·&nbsp;
@@ -419,6 +419,6 @@ Outside research and code, I enjoy gaming, music, discovering places to eat, cof
 
 If your team is working on applied AI, research engineering, or data products, I'd be glad to discuss how my experience could contribute.
 
-**[Email Kun Ming](mailto:kunmingaden@gmail.com)** · **[Connect on LinkedIn](https://www.linkedin.com/in/gohkunming/)** · **[Read my résumé](https://gohkunming.dev/documents/resume/goh-kun-ming-resume.pdf)** · **[Explore my website](https://gohkunming.dev/)**
+**[Email Kun Ming](mailto:kunmingaden@gmail.com)** · **[Connect on LinkedIn](https://www.linkedin.com/in/gohkunming/)** · **[Read my résumé](https://github.com/fishman7337/fishman7337/blob/main/resume/Goh_Kun_Ming_Resume.pdf)** · **[Explore my website](https://gohkunming.dev/)**
 
 <sub>Curious by default. Clear by design.</sub>
