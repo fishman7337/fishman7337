@@ -405,6 +405,9 @@ My professional certificates span AI engineering, agentic systems, deep learning
 - **Google AI Professional Certificate**<br />
   Responsible AI use for research, communication, data analysis, and application building
 
+- **Microsoft AI & ML Engineering Professional Certificate**<br />
+  AI infrastructure, machine learning, Azure workflows, troubleshooting agents, and responsible AI
+
 **Additional specialisation:** *Mathematics for Machine Learning* — **Imperial College London**, issued October 2026; linear algebra, multivariate calculus, and PCA.
 
 **[View credentials on LinkedIn →](https://www.linkedin.com/in/gohkunming/details/certifications/)**
